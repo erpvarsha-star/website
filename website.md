@@ -6,7 +6,7 @@
 > **Done and verified**
 > - SEO tags and JSON-LD on all 49 pages match FACTS.md. sameAs, Article schema, og:image, homepage FAQ and title are in place. Plant hours in schema are verified on Pune and Aurangabad.
 > - Redirects (F27) and the email-link typo (browser layer) are done.
-> - Browser correction layer: embed 1 rev 5, embed 2 rev 4, rules 1–136. It fixes page text; it cannot reach HTML-embed iframes.
+> - Browser correction layer (slimmed in W7): embed 1 rev 6, embed 2 rev 7. DOM-only rules (alt, mailto, Year Established, row hiding, dnp stopgap). Text rules now live in Velo. OPEN: 2 Wix FAQ-app answers (Pune machine counts, Aurangabad 0.5-50 kg) sit outside Velo; fix via FAQ API.
 > - Facts: all owner answers are recorded in FACTS.md. The rule is to ask Yash only on conflicts.
 > - Wix ↔ GitHub connected: `erpvarsha-star/VflWebsite`, main.
 > - W0 baseline done (9cf3803): 49 pages. Empty bodies: /transmission-and-driveline, /electric-mobility. Machine counts are in NATIVE text on 5 pages (india, pune, maharashtra, suspension, railways); W5 adds a Velo text-rules module for every page. Multiple H1s on /automotive-steering-powertrain (25), /forging-company-aurangabad (8) and /about-1-1 (6), queued for W6.
@@ -321,3 +321,8 @@ VflWebsite main fast-forwarded bf6ed6c → be4d7bc: merged w5-embeds, diagnostic
 
 ### 2026-11-22 — W5 verified live; W6 and W7 dispatched
 Auto-publish works (secret is named WIXKEY). W5: 17/17 pages pass, with 0 visible DNP hits. W7 (Sonnet) is removing machine-count strings from the browser layer and Velo rule source. W6 (Sonnet) is building the new page content on `w6-content`. **Owner instruction: when new pages are live and old pages corrected, return to Yash so he runs Sited.**
+
+### 2026-11-22 — W7: browser layers slimmed, Velo count rules made generic
+- Embed 1 `546ea6cc-...` rev 5 -> 6, 13,429 -> 1,007 chars (alt, mailto). Embed 2 `8733abc0-...` rev 5 -> 7, 14,576 -> 2,726 chars (Year Established pair, rows(), dnp stopgap). Read-back equals local `corrections/embed-layer*.js`; 0 machine-count matches; 0 non-ASCII. Full old rule source moved to `corrections/rules-src/layer-1.js` and `layer-2.js` (generator input).
+- VflWebsite `3a62db4`: count patterns in `corrections-rules.js` use `\d+`; eslint clean; publish run 45069516062 success.
+- Verify: ssr-check 45069569237 and Firecrawl in `baseline/w5-verify.md`. Open: Pune FAQ answer still states the machine counts and the Aurangabad FAQ answer says 0.5-50 kg; both are Wix FAQ-app content, so they need the FAQ API.

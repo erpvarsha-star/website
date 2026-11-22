@@ -127,3 +127,30 @@ Quick Wins + Medium-Term content expansion: 81 → 97 (Brand Authority capped at
 - **Delivered:** `OWNER-CONFIRM.md` (35 items, with defaults) and `PHASE2-YASH-CLICKLIST.md` (26 steps in 6 blocks, lead-critical first).
 - **F21 done (executor, API):** Article + author (Organization; no person byline is shown live) on `/forging-company-aurangabad`, `/company-profile`, `/assembly-services`. To stay under the size limit, `dpizt` dropped hours/geo/duplicate contactPoint/description and `slaet` dropped duplicate fields. Restore hours/geo after owner item 32.
 - **Dispatched (executor):** meta/title fixes on /railway, /media, /alloy-steel-forgings, /forging-presses-hammers (800T, not 500T).
+
+### 2026-11-22 (continued) — Fact confirmation round with Yash (one multiple-choice question at a time)
+Rule added to CLAUDE.md. All answers recorded in FACTS.md with [Y]. **Confirmed:**
+- Presses 800 T–2,500 T, incl. a new 1,000 T press
+- Weight range 1–25 kg
+- Tolerances: forging ±0.5 mm, machining ±0.02 mm
+- Pune since 2007
+- RDSO approved (not EN/UIC/AAR)
+- Rubber bonding and broaching are vendor processes
+- Capacity 12,000+ MT/yr and 3M+ pieces/yr
+- Carbon/alloy grades incl. A105/LF2/F11/F22, no stainless
+- Industries incl. oil & gas, mining/off-highway and e-buses, not aerospace
+- PPAP Levels 1–5, APQP, IMDS, export logistics (no ZLD)
+- Process temperatures, die steels, software, SPC/Cpk, testing
+- Assembly specs and JIT
+- Hours: Aurangabad 09–18, closed Friday; Pune 09–18, closed Sunday
+- 13 more customers (Corvette removed)
+- ACMA 2020 and Ashok Leyland 2023 awards
+- Piyush = Director
+- "Since 1989" phrasing, 60% OEM share
+- Full product range (no EV motor parts)
+- Surface treatments (no warm/cold/open-die forging)
+- Asia-Pacific exports, air freight for samples, virtual tours, 2D/3D drawings
+- Bios, CSR, Tier 1/2 (slogan removed)
+
+`OWNER-CONFIRM.md` is marked resolved. The weekly Monday task prompt now carries these facts, so it won't flag them as drift.
+**Dispatched:** (1) executor aligning the 7 drafts to the new facts (no Wix); (2) **owner-approved** ("Apply all now") executor correcting SEO/schema on all 49 pages, including restored opening hours. A reviewer verifies after.

@@ -62,6 +62,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
 - **Forged component weight range: 1 kg – 25 kg.** Correct every page that states 0.5–50 kg, 2–20 kg or 0.5–20 kg.
+- **Annual capacity: over 12,000 metric tons per annum; over 3 million assorted pieces per year.** [Y] 22 Nov 2026
 - **Tolerances: forging ±0.5 mm · machining ±0.02 mm.** Replace ±0.01 mm, ±0.2 mm, ±5 microns and the 'EN 10243-1 Grade F' citation wherever they appear.
 
 ## Dedicated vendor base (NOT in-house) [P]

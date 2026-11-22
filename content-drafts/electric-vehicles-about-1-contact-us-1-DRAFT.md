@@ -23,7 +23,7 @@ Products developed for electric vehicles sit within the wider range of component
 
 - **Suspension parts:** swing arms (RH and LH), eye ends, spherical ball pins, connectors, housing cups and monoshock components.
 - **Steering parts:** idler arms, sector shafts, drop arms, worms, end covers and spring saddles.
-- **Forged and machined parts:** upper control arms, yokes, shaft joints, front wheel hubs, pinions, planet gears, helical gears and wheel carriers.
+- **Forged and machined parts:** upper control arms, yokes, shaft joints, front wheel hubs, axle mounts, steering levers, torque rods, radius rods and V-links. Varsha Forgings does not supply EV motor parts, EV gearbox parts or EV gear blanks.
 
 To start an enquiry, send your drawing, material grade and annual volume through the Request for Quote page.
 
@@ -53,7 +53,7 @@ Varsha Forgings holds IATF 16949, ISO 9001:2015, ISO 45001:2018 and ISO 14001:20
 Yes. Supply for electric vehicles is a company milestone dated 2024, and products have been developed for electric vehicles.
 
 **What parts can you forge and machine?**
-Forged and machined parts such as swing arms, eye ends, spherical ball pins, upper control arms, front wheel hubs and gears. Send your drawing to discuss an EV application.
+Forged and machined parts such as swing arms, eye ends, spherical ball pins, upper control arms, front wheel hubs, torque rods, radius rods and V-links. Send your drawing to discuss an EV application.
 
 **How do I start an EV component enquiry?**
 Send your drawing, material grade and annual volume through our Request for Quote page, or email marketing@varshaforgings.com.
@@ -95,7 +95,7 @@ In closed-die forging, also called impression-die forging, the dies enclose the 
 
 Every forging moves through a fixed sequence: inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection.
 
-Heat treatment runs on a continuous tube furnace at 1 tonne per hour, a batch-type furnace, an electrical tempering furnace and an isothermal annealing furnace. The metallurgy lab checks chemistry on a Baird vacuum emission spectrometer and microstructure on a microscope with image analyser, alongside spark testing, polishing and hardness testing. Surface cracks are found with Magnaflux magnetic particle inspection at 400 A and 200 A. Dimensions are verified in the standards room on a Faro Arm CMM, a CMM, a Mitutoyo profile projector and a Zeiss contour tester. Forging tolerance is ±0.5 mm and machining tolerance ±0.02 mm. Surface and heat treatments offered include vacuum carburizing, induction hardening, hot-dip galvanizing and double quench and temper.
+Heat treatment runs on a continuous tube furnace at 1 tonne per hour, a batch-type furnace, an electrical tempering furnace and an isothermal annealing furnace. The metallurgy lab checks chemistry on a Baird vacuum emission spectrometer and microstructure on a microscope with image analyser, alongside spark testing, polishing and hardness testing. Surface cracks are found with Magnaflux magnetic particle inspection at 400 A and 200 A. Dimensions are verified in the standards room on a Faro Arm CMM, a CMM, a Mitutoyo profile projector and a Zeiss contour tester. Forging tolerance is ±0.5 mm and machining tolerance ±0.02 mm. Surface and heat treatments offered include normalizing, stress relieving, vacuum carburizing, induction hardening, hot-dip galvanizing and double quench and temper.
 
 **H2: How is each forging traced?**
 
@@ -165,13 +165,13 @@ Both plants can be reached on +91 8411000551 and at marketing@varshaforgings.com
 
 **H2: What can Varsha Forgings make for me?**
 
-We forge, machine and assemble steering and suspension components. Typical parts include idler arms, sector shafts, drop arms, worms, eye ends, spherical ball pins, swing arms, yokes, front wheel hubs, connecting rods, gear blanks, pinions, planet and helical gears, crown wheels and pinions, and wheel carriers. In-house we cover die making, forging, heat treatment, shot blasting, crack testing, machining, painting and final inspection. A dedicated vendor base adds gear cutting, rubber bonding, stamping, zinc plating, phosphating and anodizing, so a finished part or assembly can come from one supplier.
+We forge, machine and assemble steering and suspension components. Typical parts include idler arms, sector shafts, drop arms, worms, eye ends, spherical ball pins, swing arms, yokes, front wheel hubs, connecting rods, gear blanks, pinions, planet and helical gears, crown wheels and pinions, and wheel carriers. In-house we cover die making, forging, heat treatment, shot blasting, crack testing, grinding, machining, painting and final inspection. A dedicated vendor base adds gear cutting, rubber bonding, stamping, zinc plating, phosphating and anodizing, so a finished part or assembly can come from one supplier.
 
 Forgings of 1 kg to 25 kg are produced at the Aurangabad plant on presses from 800 T to 2,500 T (including a 1,000 T press) and 3 MT, 2 MT, 1.5 MT and 1 MT hammers. Quality checks include a metallurgy lab with a Baird vacuum emission spectrometer, hardness testing, Magnaflux magnetic particle inspection and a standards room with a Faro Arm CMM, and PPAP submission at Levels 1 to 5 is available for new part approvals.
 
 **H2: Who do you supply?**
 
-We supply OEMs, as a Tier 1 and Tier 2 supplier, including Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo, and export to Germany, Spain, Italy, Portugal, Austria, the United States and Asia-Pacific. Daimler India named Varsha Forgings its Best Supplier in 2016 and issued a Performance Appreciation Letter in 2023. All operations run under IATF 16949, ISO 9001:2015, ISO 45001:2018 and ISO 14001:2015.
+We supply OEMs, as a Tier 1 and Tier 2 supplier, including Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo, and export to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa. Our industries include commercial vehicles, agriculture, railway, electric vehicles, oil and gas, mining, construction, infrastructure and defense. Daimler India named Varsha Forgings its Best Supplier in 2016 and issued a Performance Appreciation Letter in 2023. All operations run under IATF 16949, ISO 9001:2015, ISO 45001:2018 and ISO 14001:2015.
 
 ### FAQ
 
@@ -188,4 +188,4 @@ Both plants can be reached on +91 8411000551 and at marketing@varshaforgings.com
 Yes. Customers are welcome to visit the plants after an RFQ.
 
 **Do you quote for export customers?**
-Yes. We export to Germany, Spain, Italy, Portugal, Austria, the United States and Asia-Pacific, with ISPM-15 export crates, GPS-tracked containers and JNPT (Nhava Sheva) port access. Include your delivery destination in the enquiry.
+Yes. We export to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa, with ISPM-15 export crates, GPS-tracked containers and JNPT (Nhava Sheva) port access. Include your delivery destination in the enquiry.

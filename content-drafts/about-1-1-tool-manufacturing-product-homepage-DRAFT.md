@@ -16,7 +16,7 @@ Varsha Forgings supplies forged, machined and assembled automotive components to
 
 **H1: Automotive Forgings Supplier in India — From Billet to Assembly**
 
-Varsha Forgings is an IATF 16949 certified automotive forgings supplier that takes a component from raw material to finished assembly under one supplier. Since the Forging Division was established in Aurangabad in 1989, the company has supplied forged and machined parts to automotive OEMs as a Tier 1 and Tier 2 supplier, has developed products for electric vehicles, and exports to Germany, Spain, Italy, Portugal, Austria, the United States and Asia-Pacific.
+Varsha Forgings is an IATF 16949 certified automotive forgings supplier that takes a component from raw material to finished assembly under one supplier. Since the Forging Division was established in Aurangabad in 1989, the company has supplied forged and machined parts to automotive OEMs as a Tier 1 and Tier 2 supplier, has developed products for electric vehicles, and exports to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa.
 
 **H2: Which automotive OEMs does Varsha Forgings supply?**
 
@@ -24,9 +24,9 @@ Varsha Forgings supplies OEMs including Daimler, Ashok Leyland, MAN Trucks India
 
 **H2: What does one supplier from billet to assembly mean in practice?**
 
-Every forged part follows a single, documented process flow: material inspection, CNC circular saw cutting, billet heating, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection. Because forging, heat treatment, inspection and machining are all in-house capabilities, a buyer deals with one supplier accountable for the finished part rather than coordinating a forge, a heat treater and a machine shop separately.
+Every forged part follows a single, documented process flow: material inspection, CNC circular saw cutting, billet heating, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection. Because forging, heat treatment (including normalizing), inspection, grinding and machining are all in-house capabilities, a buyer deals with one supplier accountable for the finished part rather than coordinating a forge, a heat treater and a machine shop separately.
 
-The Aurangabad plant runs presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press), alongside 3 MT, 2 MT, 1.5 MT and 1 MT hammers, for forged components of 1 kg to 25 kg. Capacity is over 12,000 metric tons and over 3 million pieces per year. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling and gear hobbing. A dedicated base of machining vendors extends in-house capacity with grinding, milling, broaching, turning, tapping and thread rolling. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division.
+The Aurangabad plant runs presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press), alongside 3 MT, 2 MT, 1.5 MT and 1 MT hammers, for forged components of 1 kg to 25 kg. Capacity is over 12,000 metric tons and over 3 million pieces per year. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling, gear hobbing and grinding. A dedicated base of machining vendors extends in-house capacity with extra grinding, milling, broaching, turning, tapping and thread rolling. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division.
 
 **H2: How is quality and traceability controlled?**
 
@@ -47,7 +47,7 @@ Yes. Varsha Forgings holds IATF 16949 certification and can submit PPAP at Level
 Yes. Forging, heat treatment, inspection and machining are done in Aurangabad, and assemblies are built at the Pune plant, so one supplier is accountable for the finished component.
 
 **Does Varsha Forgings export automotive components?**
-Yes, to customers in Germany, Spain, Italy, Portugal, Austria, the United States and Asia-Pacific. Samples and urgent needs can go by air freight.
+Yes, to customers in Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa. Samples and urgent needs can go by air freight.
 
 ---
 
@@ -122,11 +122,11 @@ For steering and suspension systems, Varsha Forgings supplies idler arms, sector
 
 **H2: What machined components are supplied?**
 
-Machined components include anchor pegs, planet gears, helical gears, crown wheel and pinion sets, and wheel carriers. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling and gear hobbing. Engine and driveline parts include crankshafts, connecting rods, steering knuckles, reverse gears, clutch bodies and differential gear blanks. Where a programme needs more capacity or a specialist process, a dedicated base of machining vendors extends in-house capacity with gear cutting, broaching, thread rolling, grinding, milling, turning, tapping and further CNC, VMC and HMC machining.
+Machined components include anchor pegs, planet gears, helical gears, crown wheel and pinion sets, and wheel carriers. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling, gear hobbing and grinding. Engine and driveline parts include crankshafts, connecting rods, steering knuckles, reverse gears, clutch bodies and differential gear blanks. Where a programme needs more capacity or a specialist process, a dedicated base of machining vendors extends in-house capacity with gear cutting, broaching, thread rolling, extra grinding capacity, milling, turning, tapping and further CNC, VMC and HMC machining.
 
 **H2: What suspension components and assemblies are available?**
 
-Suspension parts include eye ends, spherical ball pins, right-hand and left-hand swing arms, connectors, housing cups and monoshock components. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division. Vendor processes include rubber bonding, stamping, zinc plating, phosphating and anodizing.
+Suspension parts include eye ends, spherical ball pins, right-hand and left-hand swing arms, connectors, housing cups and monoshock components. Varsha Forgings also makes control-rod assemblies, both adjustable and crimped. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division. Vendor processes include rubber bonding, stamping, zinc plating, phosphating and anodizing.
 
 **H2: What railway and other components are available?**
 
@@ -138,7 +138,7 @@ Yes. Varsha Forgings has developed forged products for electric vehicles and beg
 
 **H2: Who uses these components?**
 
-Customers include Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo, and the company exports to Germany, Spain, Italy, Portugal, Austria, the United States and Asia-Pacific. For a quote on any part in this range, or a new part to your drawing, use the request for quote page.
+Customers include Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo, and the company exports to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa. Industries served include commercial vehicles, agriculture, railway, electric vehicles, electric transit buses, oil and gas and petrochemical, mining and off-highway, construction, infrastructure and defense. For a quote on any part in this range, or a new part to your drawing, use the request for quote page.
 
 ### FAQ
 

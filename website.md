@@ -103,3 +103,15 @@ Quick Wins + Medium-Term content expansion: 81 → 97 (Brand Authority capped at
 - **Owner confirmed:** RFQ sequence is drawing → feasibility → quotation → PPAP. Customers are welcome to visit the plants after an RFQ. Both added to `FACTS.md`.
 - **Correction to the tracker decision above:** no new sign-ups. The owner has already paid for Sited and uses it year-round, so visibility.ai is dropped (F17 closed). AI-citation tracking now comes from Sited's live AI check plus GA4 AI-referral visits.
 - **Queued after the reviewer finishes:** restore the RFQ steps and the post-RFQ visit offer in the `/contact-us-1` draft (executor), then re-review that page.
+
+### 2026-11-22 (continued) — Reviewer (Haiku) verdict: OVERALL FAIL. Findings and actions
+**Passed:** sameAs live on homepage `plew4` · Pune meta, LocalBusiness and FAQ in SEO/schema now Pune-specific with the in-house/vendor split · zero machine counts across all 49 pages' SEO data · drafts gate exit 0 · no banned terms in drafts · 9 of 10 fact-traces.
+
+**Failed:**
+1. Machine counts are still in the **visible body text** of `/forging-manufacturer-pune` ("over 60 CNC turning centers, 17 VMCs") and the `/forging-company-maharashtra` FAQ ("60 CNC machines, 17 VMCs, 2 HMCs"). The schema fix didn't touch Editor body text. → Yash, Phase 2.
+2. Only 11 of 49 live pages were swept. → A full fresh sweep has been dispatched to the reviewer.
+3. "Driveline" in the EV draft isn't in FACTS. → Executor dispatched.
+4. Live conflicts with FACTS: `/company-profile` "Pune plant established in 2007" (deck: Maxility 2007, Pune 2013); weight ranges `/forging` 1–25 kg vs Aurangabad 0.5–50 kg. → Owner to confirm.
+5. **Lead-critical:** footer and mailto use `marketing@varshaforging.com` (missing "s"). → Top of Yash's Phase 2 list.
+
+**Rules added to CLAUDE.md:** general engineering explanation is allowed; pre-existing live claims not in FACTS are batched for owner confirmation, not auto-deleted; schema fixes don't fix visible body text, so verify both.

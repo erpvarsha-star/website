@@ -19,4 +19,7 @@ Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifi
 - One Wix writer at a time: never run two executors that write to Wix in parallel.
 - Every phase passes a measured gate (script or read-back), never an agent's self-report.
 - Log every change in `website.md`; commit and push after every step.
-- Spend over $50 (one-time or recurring) needs the owner's explicit yes.
+- Spend over $50 (one-time or recurring) needs the owner's explicit yes. No new tool sign-ups without the owner's ask; Sited (already paid) plus GA4 are the measurement stack.
+- **General engineering explanation is allowed** (e.g. why forgings outperform castings) as long as it isn't a claim about Varsha. Company-specific claims must be in `FACTS.md`.
+- **Pre-existing live claims not in `FACTS.md` are not deleted automatically.** Batch them for owner yes/no; add confirmed ones to `FACTS.md`. Only claims that *conflict* with `FACTS.md`, or break a DO NOT PUBLISH rule, are fixed straight away.
+- Live visible body text on Wix Classic is Editor-only. The API changes SEO tags and JSON-LD only, so a fix in schema does not fix the visible page. Always verify both.

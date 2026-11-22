@@ -15,7 +15,7 @@ varshaforgings.com is a **Wix Editor (Classic)** site. Wix's REST APIs and MCP c
 
 ## Option A design
 - **One-time setup (Yash, ~15 min, owner-only clicks):**
-  1. Editor → Dev Mode → **Git integration** → connect a new GitHub repo (e.g. `erpvarsha-star/varsha-site-code`).
+  1. Editor → Dev Mode → **Git integration** → connect a new GitHub repo (e.g. `erpvarsha-star/VflWebsite`).
   2. Add that repo to Claude's GitHub access.
   3. Authorize the Wix CLI login once if the publish step needs it.
 - **Correction file** `src/public/corrections.js`: rules of 4 kinds:

@@ -9,7 +9,7 @@
 Forged Components for Electric Vehicles | Varsha Forgings, India
 
 ### Meta description
-IATF 16949 certified forged and machined suspension, steering and driveline components for electric vehicle OEMs, with heat-number traceability. Supply for electric vehicles began in 2024.
+IATF 16949 certified forged and machined suspension and steering components with heat-number traceability. Products developed for electric vehicles (2024). Aurangabad and Pune, India.
 
 ### Body copy
 
@@ -27,19 +27,19 @@ Products developed for electric vehicles sit within the wider range of component
 
 To start an enquiry, send your drawing, material grade and annual volume through the Request for Quote page.
 
-**H2: Why use forgings in an electric vehicle?**
+**H2: Why choose forged components for load-bearing parts?**
 
-Electric vehicles carry heavy battery packs low in the chassis and deliver high torque from standstill. That places sustained and peak loads on suspension, steering and driveline parts. Closed-die forging aligns the metal's grain flow with the shape of the part, which gives better fatigue strength and impact toughness than casting or machining from bar. For safety-critical EV parts, that margin matters.
+Suspension and steering parts see sustained and peak loads over their life. As a general engineering principle, closed-die forging aligns the metal's grain flow with the shape of the part, which gives better fatigue strength and impact toughness than casting or machining from bar. For safety-critical parts, that margin matters.
 
 In practice a forged part starts as a billet, cut on CNC circular saws, shearing machines or band saws, then heated and forged on a press or hammer before heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing and machining.
 
-**H2: How are EV parts made and checked?**
+**H2: How are Varsha Forgings parts made and checked?**
 
-EV components follow our standard process route: material inspection, CNC circular saw cutting, billet heating, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection.
+Our standard process route is: material inspection, CNC circular saw cutting, billet heating, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection.
 
 Our forging line runs a 2,500 T Erie press, two 1,300 T press lines and an 800 T screw press, alongside 3 MT, 2 MT, 1.5 MT and 1 MT hammers. Heat treatment runs on a continuous tube furnace rated at 1 tonne per hour, a batch-type furnace, an electrical tempering furnace and an isothermal annealing furnace. Chemistry is verified on a Baird vacuum emission spectrometer, microstructure under a microscope with image analyser, and surface cracks with Magnaflux magnetic particle inspection.
 
-**H2: Can every EV part be traced back to its raw material?**
+**H2: Can every part be traced back to its raw material?**
 
 Yes. Every raw-material heat receives its own batch code (A, B, C through Z). The code is engraved on the forging die for ball studs and ball pins, or marked on the part surface for sockets and housings. Setup and in-process inspection reports carry the raw-material heat number, and the final MTR and PDIR record the heat number, traceability code and invoice number. This lets a part be followed back to the heat it came from.
 
@@ -49,7 +49,7 @@ Varsha Forgings holds IATF 16949, ISO 9001:2015, ISO 45001:2018 and ISO 14001:20
 
 ### FAQ
 
-**Does Varsha Forgings supply electric vehicle OEMs?**
+**Has Varsha Forgings developed products for electric vehicles?**
 Yes. Supply for electric vehicles is a company milestone dated 2024, and products have been developed for electric vehicles.
 
 **What parts can you forge and machine?**
@@ -82,7 +82,7 @@ In closed-die forging, also called impression-die forging, the dies enclose the 
 
 - **Open-die forging** works the metal between flat or simple dies that do not enclose it. It suits large, simple shapes and short runs, but cannot match the dimensional repeatability or detail of closed-die parts.
 - **Casting** pours molten metal into a mould. It handles complex shapes, but the metal has no directional grain flow and can contain porosity, so cast parts are generally weaker under fatigue and impact loads.
-- **Closed-die forging** combines repeatable, detailed shapes with the strength of worked metal, which is why it is used for steering, suspension and driveline parts where failure is not acceptable.
+- **Closed-die forging** combines repeatable, detailed shapes with the strength of worked metal, which is why it is used for steering and suspension parts where failure is not acceptable.
 
 **H2: What equipment does Varsha Forgings use?**
 
@@ -130,9 +130,12 @@ The fastest way to reach Varsha Forgings is to call +91 8411000551 or email mark
 
 **H2: How do I request a quotation?**
 
-1. **Send the drawing.** Include the component drawing with material grade, annual volume and any inspection requirements.
-2. **State the scope.** Say whether you need the part forged only, forged and machined, or supplied as an assembly. Varsha Forgings covers forging, die making, heat treatment and machining in-house, and a dedicated vendor base extends machining and finishing processes.
-3. **Approval documentation.** PPAP Level 3 submission capability is available for new part approvals.
+1. **Customer drawing.** You send the component drawing, with material grade, annual volume and any inspection requirements.
+2. **Feasibility review.** We review the drawing for feasibility.
+3. **Quotation.** We send you a quotation.
+4. **PPAP.** Varsha Forgings has PPAP Level 3 submission capability for new part approvals.
+
+Customers are welcome to visit the plants after an RFQ.
 
 **H2: What should I include in my enquiry?**
 
@@ -160,7 +163,7 @@ Both plants can be reached on +91 8411000551 and at marketing@varshaforgings.com
 
 **H2: What can Varsha Forgings make for me?**
 
-We forge, machine and assemble steering, suspension and driveline components. Typical parts include idler arms, sector shafts, drop arms, worms, eye ends, spherical ball pins, swing arms, yokes, front wheel hubs, connecting rods, gear blanks, pinions, planet and helical gears, crown wheels and pinions, and wheel carriers. In-house we cover die making, forging, heat treatment, shot blasting, crack testing, machining, painting and final inspection. A dedicated vendor base adds gear cutting, rubber bonding, stamping, zinc plating, phosphating and anodizing, so a finished part or assembly can come from one supplier.
+We forge, machine and assemble steering and suspension components. Typical parts include idler arms, sector shafts, drop arms, worms, eye ends, spherical ball pins, swing arms, yokes, front wheel hubs, connecting rods, gear blanks, pinions, planet and helical gears, crown wheels and pinions, and wheel carriers. In-house we cover die making, forging, heat treatment, shot blasting, crack testing, machining, painting and final inspection. A dedicated vendor base adds gear cutting, rubber bonding, stamping, zinc plating, phosphating and anodizing, so a finished part or assembly can come from one supplier.
 
 Forgings are produced at the Aurangabad plant on a 2,500 T Erie press, two 1,300 T press lines, an 800 T screw press and 3 MT, 2 MT, 1.5 MT and 1 MT hammers. Quality checks include a metallurgy lab with a Baird vacuum emission spectrometer, hardness testing, Magnaflux magnetic particle inspection and a standards room with a Faro Arm CMM, and PPAP Level 3 submission capability is available for new part approvals.
 
@@ -175,6 +178,9 @@ Send your drawing, material grade and annual volume through the enquiry form or 
 
 **How can I reach the plants?**
 Both plants can be reached on +91 8411000551 and at marketing@varshaforgings.com. The forging plant is at Plot No. B-7, MIDC Waluj, Chhatrapati Sambhajinagar (Aurangabad) 431136; the assembly plant is at Gut No. 161, Mauje-Markal, Tal-Khed, Dist. Pune 412105.
+
+**Can we visit the plant?**
+Yes. Customers are welcome to visit the plants after an RFQ.
 
 **Do you quote for export customers?**
 Yes. We export to Germany, Spain, Italy, Portugal, Austria and the United States. Include your delivery destination in the enquiry.

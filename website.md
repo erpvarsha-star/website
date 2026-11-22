@@ -318,3 +318,6 @@ Live Pune vf-diag: env "backend"; 7 HtmlComponents (html1–7) with full filesus
 
 ### 2026-11-22 — W5 full release pushed to main
 VflWebsite main fast-forwarded bf6ed6c → be4d7bc: merged w5-embeds, diagnostic removed, lint clean, generator idempotent. Covers http-functions serving 38 corrected embeds, 41 src swaps on 17 pages, applyTextCorrections on all 56 pages, the footer email fix, and the Pune collapse kept as a fallback. Awaiting publish.
+
+### 2026-11-22 — W5 verified live; W6 and W7 dispatched
+Auto-publish works (secret is named WIXKEY). W5: 17/17 pages pass, with 0 visible DNP hits. W7 (Sonnet) is removing machine-count strings from the browser layer and Velo rule source. W6 (Sonnet) is building the new page content on `w6-content`. **Owner instruction: when new pages are live and old pages corrected, return to Yash so he runs Sited.**

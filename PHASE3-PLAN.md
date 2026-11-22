@@ -15,7 +15,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W2 | Brand kit: logo files/URLs, colours, fonts, spacing, button and heading styles from the live site → `BRAND.md` | Sonnet | Yes, now | Values read from the live site, not invented |
 | W3 | Content: finalise the 7 rewrites, F28 thin pages (/alloy-steel-forgings, /forged-machined-components-vf), the wrong article on /steering-suspension-components, and corrected HTML for every flagged embed → `content-drafts/`, `embeds/` | Sonnet | Yes, now | `check-wordcount.sh` + reviewer FACTS check |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
-| W5 | ⏳ Full release pushed to VflWebsite main be4d7bc (41 swaps / 17 pages + text rules on 56 pages); awaiting publish, then full verify vs baseline. Rollback: reset main to bf6ed6c + publish | `W5-DEPLOY.md` |
+| W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | Reviewer report; publish run 45068992337 |
 | W6 | New content live: the 7 rewrites, thin pages, homepage additions in the W2 brand style | Sonnet (sole writer) | After W5 batch 1 | Reviewer: FACTS, word count, H1, links, visual style vs `BRAND.md` |
 | W7 | Retire the browser layer rules that Velo now covers (keep the layer as backup until all Velo work verifies) | Sonnet | After W6 | No visible-text regressions |
 | W8 | SEO/schema touch-ups for changed pages; Sited re-run; KPI strip in the weekly task | Sonnet + Haiku | After W6 | Sited score vs 81 baseline |
@@ -34,9 +34,11 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
 | W3 | ✅ Drafted (ce78c18); review 4d2a602: 50/60 PASS; 5 true conflicts fixed (10f5a11; w5-embeds 7f64c4b); drafts PASS (review FAILs were non-conflicts) | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
-| W5 | ⏳ Full release pushed to VflWebsite main be4d7bc (41 swaps / 17 pages + text rules on 56 pages); awaiting publish, then full verify vs baseline. Rollback: reset main to bf6ed6c + publish | `W5-DEPLOY.md` |
-| W6–W8 | ⬜ Not started | — |
-| Auto-publish | ❌ Secret WIX_CLI_API_KEY reaches the job empty (runs a892ff1, bf6ed6c). Owner to re-check where it's saved. Fallback: Editor Publish | Fail-fast check added (bf6ed6c) |
+| W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | Reviewer report; publish run 45068992337 |
+| W6 | 🔄 Building on VflWebsite branch `w6-content` (Velo Text.html, BRAND.md style) | `W6-DESIGN.md` (pending) |
+| W7 | 🔄 Slimming the browser layer, removing DNP strings from the source | — |
+| W8 | ⬜ After W6+W7: SEO touch-ups, then **hand to Yash to run Sited** | — |
+| Auto-publish | ✅ Working: secret WIXKEY, run 45068992337 succeeded | VflWebsite 272441f |
 
 ## Rollout decision (owner challenge, 22 Nov 2026)
 Two releases, not four: (1) the diagnostic (a892ff1) proves how Velo sees the embeds; (2) ONE full W5 release covering all 17 pages, 41 swaps and the text rules on every page, built on what the diagnostic shows works. It is verified against `baseline/` in full, with a single revert if anything regresses. The code is written once; only publishing is split.

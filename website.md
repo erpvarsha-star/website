@@ -1,4 +1,26 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
+
+> ## HANDOVER — end of day 22 Nov 2026 (read this first)
+> **Done and verified live**
+> - SEO tags and JSON-LD corrected on all 49 pages to owner-confirmed facts. A re-scan of the forbidden patterns gives 0 hits.
+> - sameAs points to LinkedIn.
+> - Article schema added on 3 pages; og:image on 10 pages; homepage FAQ added and brand put in the title; plant hours restored.
+> - Redirects fixed (F27). The plain URLs may still serve a stale cache; a scheduled re-check fires at 06:19 UTC.
+> - **Email-link typo fixed site-wide** via the Custom Embed layer (verified live).
+>
+> **In flight when the session ended**
+> - Executor writing **batch 1 of visible-text corrections** into the Custom Embed (`corrections/embed-layer.js`, `corrections/RULES.md`).
+> - **Next session:** check `git log` and the embed revision (GET `https://www.wixapis.com/embeds/v1/custom-embeds`). If batch 1 was deployed, dispatch the **reviewer** to verify every affected page via Firecrawl. If it wasn't, re-dispatch the executor with the batch 1 brief: factual corrections per the FACTS.md Correction queue plus Click-list Blocks 2, 3 and 6.
+>
+> **Next steps, in order**
+> 1. Verify batch 1, then batch 2: the 7 page rewrites from `content-drafts/`, plus thin pages `/alloy-steel-forgings` and `/forged-machined-components-vf` (F28). These need new drafts first.
+> 2. Velo + GitHub (F26): waiting on Yash's one-time connection (`SETUP-VELO-GITHUB.md`). Then port the same rules server-side.
+> 3. Open SEO items: dpizt at its size limit (no legalName); leftover superlatives on a3evt, q1c5f, gfauz, odejn; "Forging Manufacturer in Pune" titles imply forging at Pune (ask Yash); "friction drop hammers" not in FACTS.
+> 4. Still manual or later: social icons that point to Wix's own accounts (F10; likely not reachable by code); privacy/terms pages (F22); Core Web Vitals and IndexNow (F23); case studies (F19, needs Yash); capability-sheet PDF (F20); off-site profiles (F15).
+> 5. Re-run the Sited report after batch 2 (already paid; flag any new charge).
+>
+> **Owner rules in force:** one multiple-choice question at a time for facts; Opus plans, Sonnet executes, Haiku reviews; no CIN; no machine counts; no new sign-ups; spend over $50 needs Yash's yes. The Monday 8:13 IST weekly task (`trig_01CcK6WNr29MzcPgQbkWaW9S`) carries the confirmed facts.
+
 **Source:** Sited AI Visibility Report, analysed 2026-11-22 · GEO Readiness Score 81/100 at time of report
 **Scope:** 10 crawled pages — homepage, /contact-us-1, /about-1, /assembly-services, /about-1-1, /product, /forging-company-aurangabad, /company-profile, /electric-vehicles, /tool-manufactring
 

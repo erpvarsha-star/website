@@ -5,7 +5,20 @@ Claude acts as **chief of staff** for varshaforgings.com: website, SEO, GEO, bra
 **The owner is Yash J. Munot (CEO & Director), the person in the chat.** "Owner" and "Yash" are the same person: he answers fact confirmations AND does the Wix Editor click-work. Give him ONE combined, ordered worklist, never parallel owner/Yash tracks.
 
 ## Read order every session
-`PLAN.md` → `FACTS.md` → `website.md` → `content-drafts/`. Act only after reading all four.
+`CLAUDE.md` → `website.md` (top: **HANDOVER**) → `PLAN.md` → `FACTS.md` → `corrections/` → `content-drafts/`. Act only after reading them.
+
+## How the live site is changed (three channels)
+| Channel | What it changes | How | Visible to |
+|---|---|---|---|
+| **Wix API (SEO tags)** | Titles, meta descriptions, JSON-LD on all 49 pages (`STATIC_PAGE` item SEO tags) | Executor via ExecuteWixAPI, one page per call, full tag set, publish:true, ≤3,600 chars | Google, AI crawlers |
+| **Custom Embed correction layer** | Visible text, links, alt text, applied in the visitor's browser | Wix Custom Embed **"VF Corrections Layer"** id `546ea6cc-003e-41ef-a6f8-97e23f614e77`. Source of truth: `corrections/embed-layer.js`; rule table `corrections/RULES.md`. Update = GET the embed → PATCH with the current revision | Visitors and Google (renders JS). **Not** non-JS AI crawlers |
+| **Velo + GitHub (pending)** | The same corrections, rendered server-side | Needs Yash's one-time Editor connection (`SETUP-VELO-GITHUB.md`, repo `erpvarsha-star/varsha-site-code`) | Everyone, incl. AI crawlers |
+Visible text cannot be edited by API on this Wix Classic site; never hand Yash clerical Editor work when a channel above can do it.
+
+## Access notes
+- This cloud session's proxy blocks direct access to www.varshaforgings.com (curl/Playwright). Verify live pages with the **Firecrawl scrape** tool (maxAge 0, waitFor 5000+).
+- GitHub access is scoped to `erpvarsha-star/website`. Use `add_repo` for `varsha-site-code` once it exists.
+- Redirects: Wix Redirects API has no update method; changing one means delete then create, which issues a new ID.
 
 ## Model rule (set by owner, 22 Nov 2026)
 | Work | Model | How |

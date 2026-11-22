@@ -1,4 +1,5 @@
 # Phase 2 — Yash's Editor click-list
+> **⚠ Superseded for most items (22 Nov 2026):** agents now apply visible-text fixes via the Custom Embed layer and, later, Velo + GitHub. See `CLAUDE.md` → "How the live site is changed". Block 1 email links are fixed. Remaining truly manual items: social-bar icons (if code can't reach them) and creating new pages (privacy/terms). Keep this file as the master list of *what* must change.
 **One sitting, top to bottom. Highest priority first.** Built from the 49-page audit (22 Nov 2026). Everything here is visible page text or layout, which the API can't change. Claude handles all SEO and schema work separately.
 
 Editor: `https://editor.wix.com/html/editor/web/renderer/edit/c27ae6f7-9963-4102-b1dd-70873a201ee3?metaSiteId=4a42e2d8-8fd2-43d7-95a8-1c319f041137`

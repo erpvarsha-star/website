@@ -32,7 +32,7 @@ Gate: no-JS ssr-check reports "60 CNC" 0, "0.5 kg" 0, "Charpy" 0, "warm forging"
 ### 2. W8 — SEO for changed pages (same API-channel question)
 - Refresh titles/meta/descriptions for the 10 W6 pages via the SEO tags API, one page per call, ≤3,600 chars JSON-LD.
 - Sited quick wins that are API-doable: confirm schema on /about-1-1, /product, /electric-vehicles, /tool-manufactring after the W6 content changes.
-- sameAs (Sited finding 1, High) is **blocked on real profile URLs from Yash** — ask once, with the list of profiles needed (LinkedIn, IndiaMART, etc.).
+- sameAs: the LinkedIn company page is already live in the homepage Organization schema (done 22 Nov, reviewer-verified). More verified profiles (IndiaMART, trade directories) would strengthen Brand Authority further — optional; only add real URLs Yash confirms.
 
 ### 3. Editor-only items for Yash (batch these into one ask)
 - /product, /transmission-and-driveline, /electric-mobility have no body Text elements — Velo cannot inject content there. Needs a Text element added in the Editor (then Velo can fill it), or direct Editor authoring.

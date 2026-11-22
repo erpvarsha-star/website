@@ -61,6 +61,8 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | No stainless [Y] | AISI 304/316, 304L/316L, dual-phase stainless | /about-1, /oil-and-gas | Click-list + API (oil-and-gas schema) |
 | No aerospace [Y] | "aerospace" | /about-1 | Click-list |
 | No ZLD claim [Y] | "ZLD effluent treatment" | /forging-manufacturer-india (body + schema) | Click-list + API |
+| Plant hours [Y] | Mon–Sat 08:00–18:00 (both plants) | Pune schema `lgtlq`; Aurangabad `dpizt` (hours dropped this session, restore) | API |
+| No rubber temp/hardness specs | −50/+200 °C, −60/+230 °C, 55–75 Shore A, NR/SBR | /rubber-bonded-components, /assembly-services | Click-list + API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -73,6 +75,15 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - Software: Creo 3.0 · SimuFact Forming 15.0 (simulation) · BricsCAD · Dell Cam (3D programming)
 - SPC on key control characteristics, Cpk ≥ 1.67
 - Testing: Brinell, Rockwell and micro-Vickers hardness · ASTM E112 grain size · ultrasonic testing · 100% MPI on safety-critical parts
+
+## Assembly & Pune operations [Y] (owner-confirmed 22 Nov 2026)
+- Assembly: hydraulic presses 5–50 T · automated circlip applicators · bolt torque classes 8.8 / 10.9 / 12.9 · pressure-decay leak testing · 100% torque audit
+- JIT and Kanban supply from Pune to the Chakan–Talegaon–Bhosari OEM belt
+- **Not confirmed, remove:** bonded-rubber temperature ranges (−50 to +200 °C, −60 to +230 °C), 55–75 Shore A, NR/SBR blends (rubber bonding is a vendor process)
+
+## Plant hours [Y] (owner-confirmed 22 Nov 2026)
+- **Aurangabad:** 09:00–18:00, closed **Friday** (open Sat–Thu)
+- **Pune:** 09:00–18:00, closed **Sunday** (open Mon–Sat)
 
 ## Export logistics [Y] (owner-confirmed 22 Nov 2026)
 ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access.

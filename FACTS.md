@@ -53,6 +53,10 @@ A dedicated base of machining vendors extends in-house capacity with CNC, VMC, H
 ## Process flow [P]
 Material inspection → CNC circular saw cutting → billet heating → forging (presses / hammers) → inspection → heat treatment → hardness testing → shot blasting → grinding & deburring → crack testing → machining → painting → final inspection
 
+## RFQ & customer engagement [Y]
+- **RFQ sequence (owner-confirmed 22 Nov 2026):** customer drawing → feasibility review → quotation → PPAP.
+- **Plant visits:** customers are welcome to visit the plants after an RFQ.
+
 ## Traceability [P]
 Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die (ball stud / ball pin) or surface-marked (socket / housing) · setup and in-process reports carry RM heat number · MTR & PDIR carry heat number, traceability code and invoice number.
 

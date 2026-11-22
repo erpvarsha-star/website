@@ -30,10 +30,9 @@ The last row is the honest gap: everything so far measures visibility, nothing m
 | 4–5 Measure | **Google Search Console** (Wix GSC API) | Which pages and queries earn impressions and clicks | $0 | Weekly (Monday task) |
 | 4–5 Measure | **GA4 via Windsor.ai**: referrals from chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com | Real visits arriving from AI answers, the bridge from visibility to traffic | $0 (connected) | Weekly |
 | 4–5 Measure | **Wix Forms submissions API** (RFQ + Contact forms) | **Leads per week.** The KPI everything else serves | $0 | Weekly |
-| 4–5 Measure | **visibility.ai Starter** | How often ChatGPT, Perplexity, Gemini, Copilot, Claude and Google AI name Varsha vs. competitors | **$39/mo** (under the $50 ceiling) | Weekly |
-| 4–5 Measure | Sited full report | GEO Readiness Score across 10 pages | $50 one-time | Quarterly |
+| 0–5 All | **Sited full report** (owner has already paid) | GEO Readiness Score across 10 pages, plus a live OpenAI check of whether Varsha is named in 4 buyer questions | Already paid; owner says usable year-round | After each phase, and at least monthly |
 
-**Why visibility.ai over the alternatives:** it covers 7 engines including Perplexity and Claude, where B2B buyers research, at $39/mo. Otterly's $29 tier covers 4 engines and lacks Claude. Rankscale is cheaper but credit-metered. Peec AI excludes Perplexity below Enterprise. Profound has no self-serve plan. One account-holder action is needed: Yash signs up and pays.
+**No new tool sign-ups (owner decision, 22 Nov 2026).** AI-citation tracking comes from Sited's live AI check in each report plus GA4 AI-referral visits. visibility.ai is dropped. Revisit a dedicated citation tracker only if these two prove insufficient after a full quarter. If a Sited re-run ever asks for payment, flag it to the owner before paying.
 
 **Competitor set to track** (from Sited's live AI checks): India Forge Industries · Forgix · Jai Parvati Forge · Microfit Industries · Bharat Forge · Quality Precision Industries · AT Forge · Unity Forgings.
 
@@ -115,7 +114,7 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F14 | Dynamic CMS page template | This session | Removes Editor bottleneck | 5 | Not scheduled |
 | F15 | Off-site presence (LinkedIn, Wikidata, directories) | Sited strategic | Lifts Brand cap 80 → 100 | 3 / 5 | Not started |
 | F16 | Topical content calendar | Sited strategic | Ongoing citations | 5 | Not started |
-| F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | **Decided: visibility.ai Starter $39/mo** (see tracker stack). Yash to sign up |
+| F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | **Closed:** no new sign-ups. Sited (already paid) + GA4 AI-referrals |
 | F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 
 ---

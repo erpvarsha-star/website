@@ -98,3 +98,8 @@ Quick Wins + Medium-Term content expansion: 81 → 97 (Brand Authority capped at
 - **Tracker stack decided** (`PLAN.md` §1): GSC, GA4 AI-referral visits via Windsor.ai, Wix Forms lead count, visibility.ai Starter $39/mo (Yash to sign up), Sited quarterly.
 - **Weekly Monday task updated** (`trig_01CcK6WNr29MzcPgQbkWaW9S`, Sonnet): now enforces the HARD RULES, checks sameAs, and reports a KPI strip (GSC · AI-referral visits · leads this week). Before this it measured no leads at all.
 - **Dispatched (Sonnet executors, in parallel, one Wix writer):** (1) add sameAs to homepage `plew4` + sweep all 49 pages for machine counts; (2) strip machine counts from `content-drafts/`. A Haiku reviewer verifies both before anything is logged as done.
+
+### 2026-11-22 (continued) — Owner answers; tracker plan corrected
+- **Owner confirmed:** RFQ sequence is drawing → feasibility → quotation → PPAP. Customers are welcome to visit the plants after an RFQ. Both added to `FACTS.md`.
+- **Correction to the tracker decision above:** no new sign-ups. The owner has already paid for Sited and uses it year-round, so visibility.ai is dropped (F17 closed). AI-citation tracking now comes from Sited's live AI check plus GA4 AI-referral visits.
+- **Queued after the reviewer finishes:** restore the RFQ steps and the post-RFQ visit offer in the `/contact-us-1` draft (executor), then re-review that page.

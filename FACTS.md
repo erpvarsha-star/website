@@ -125,6 +125,11 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **Machined:** anchor peg · planet gear · helical gear · crown wheel & pinion · wheel carrier
 - **Suspension:** eye end · spherical ball pin · swing arm (RH/LH) · connectors · housing cup · monoshock
 - **EV:** products developed for electric vehicles (2024 milestone)
+- **Also confirmed [Y] 22 Nov 2026:**
+  - Steering & suspension: ball joints · drag links · tie rods · anti-roll bar linkages · axle mounts · swing-arm mounts · steering levers · torque rods · radius rods · V-links
+  - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks · EV motor shafts
+  - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets
+  - Other: tow hooks · bearing bushes · end-body turning · flanges and valve bodies (oil & gas)
 
 ## Customers & markets [Y][L]
 - **OEMs (confirmed):** Daimler · Ashok Leyland · MAN Trucks India · Mahindra Trucks & Buses · Paccar · Scania · Tata Daewoo

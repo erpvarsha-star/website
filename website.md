@@ -223,3 +223,12 @@ All 3 redirects land correctly live (Haiku reviewer, Firecrawl). Edge cache clea
   - (3) Ten pages were covered only by global rules.
 - **Open owner items raised:** EN 10204 3.1/3.2; advance payment and LC terms; 15+ yr rubber life; "tier-one mills"; friction drop hammers; SAE1018 and C45 grades; duplicate EV paragraph on torque-rod and assembly pages; wrong article on /steering-suspension-components; "24–48 hour" lead time on Pune; Corvette logo image.
 - **Status:** NOT marked done. A reviewer verifies next.
+
+### 2026-11-22 — Batch 1 reviewer verdict: PARTIAL (8 of 48 pages fully clean)
+Haiku reviewer, all sitemap pages, Firecrawl waitFor 25 s.
+- **Clean:** /customer, /request-for-quote, /contact-us-1, /commercial-vehicle, /agriculture, /railway, /media, /industrial-application.
+- **Most remaining hits are (a) table cells, lists and HTML-embed iframes that the browser layer can't reach.** This includes machine counts on Pune, Maharashtra, suspension, railways and manufacturer-india; China/MOQ/lead-time tables; EV RPM/µm/motor parts; and 0.5–50 kg on about-1, about-1-1, oil-and-gas, forging-vs-casting, torque-rod and radius-rod.
+- **Rule misses to fix in the layer:** rule 13 ("up to 50 kg"), rule 62 ("DELIVER."), rule 119 ("LFull"), rule 29 (second 2009 history copy). hideText 1–4 and 10 didn't hide their targets.
+- **Reviewer over-flags, already confirmed in FACTS:** Daimler 2023 letter, ACMA 2019, SME100 27,467, bios incl. ZF "Managing Director" role.
+- **Untraced, ask owner:** construction/infrastructure/defense industries; "ape" logo; EV "drivetrain" wording; control-rod assemblies; normalizing; grinding in-house; Middle East & Africa exports; "complaint-free products".
+- **Conclusion:** the browser-layer channel can't clear the highest-risk content. **Velo + GitHub (server-side, can control HTML-embed components) or a paste of corrected HTML per embed block is required.**

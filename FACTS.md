@@ -16,6 +16,8 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Leadership | Chairman Jinendra Munot; CEO & Director Yash J. Munot; Director Piyush J. Munot | [S] |
 | Phone (both plants) | +91 8411000551 | [L] |
 | Email | marketing@varshaforgings.com | [L] |
+| LinkedIn (sameAs) | https://www.linkedin.com/company/varsha-forgings-private-limited/ | [Y] |
+| Facebook / Instagram | **None verified.** Site icons currently point to Wix's own accounts (F10). Do not use them in sameAs. | [L] |
 
 ## Plants
 | | Aurangabad (Plant 1, Forging) | Pune (Plant 2, Assembly) |
@@ -37,7 +39,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 ## Equipment — in-house [P]
 - **Presses:** 2,500 T Erie press · 1,300 T press line ×2 · 800 T screw press
 - **Hammers:** 3 MT · 2 MT · 1.5 MT · 1 MT
-- **Die shop:** VMC ×5 · Etchon laser machine · radial drilling · Dell Cam 3D programming software
+- **Die shop:** VMCs · Etchon laser machine · radial drilling · Dell Cam 3D programming software
 - **Material cutting:** CNC circular saw ×3 · shearing ×2 · band saw ×3
 - **Heat treatment:** continuous tube furnace (1 T/hour) · batch-type furnace · electrical tempering furnace · isothermal annealing furnace · MPI machine
 - **Metallurgy lab:** Baird vacuum emission spectrometer · microscope with image analyser · spark testing · polishing · hardness testing
@@ -46,7 +48,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 - **In-house machining:** facing & centering · CNC & VMC · SPM · drilling · gear hobbing
 
 ## Dedicated vendor base (NOT in-house) [P]
-15 vendors · 60 CNC · 17 VMC · 2 HMC · 5 hobbing · 1 grinding · 1 universal milling · 2 broaching · 10 lathes · 15 drilling · 2 tapping · 2 thread rolling. Vendor processes: gear cutting, rubber bonding, stamping, zinc plating, phosphating, anodizing.
+A dedicated base of machining vendors extends in-house capacity with CNC, VMC, HMC, hobbing, grinding, milling, broaching, turning, drilling, tapping and thread rolling. Vendor processes: gear cutting, rubber bonding, stamping, zinc plating, phosphating, anodizing. **No machine counts — see DO NOT PUBLISH.**
 
 ## Process flow [P]
 Material inspection → CNC circular saw cutting → billet heating → forging (presses / hammers) → inspection → heat treatment → hardness testing → shot blasting → grinding & deburring → crack testing → machining → painting → final inspection
@@ -74,10 +76,10 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 ## DO NOT PUBLISH
 | Claim | Why |
 |---|---|
-| CIN | Not supplied; owner instruction to leave out |
+| CIN | **Owner decision 22 Nov 2026: never published, anywhere** |
+| Any CNC / VMC / HMC / machine count (e.g. "60 CNC", "17 VMCs", "VMC ×5") | **Owner decision 22 Nov 2026:** capacity is split between in-house and vendors, so no counts. Describe capability, not numbers. Press tonnage and hammer weights are fine. |
 | BMW or KTM as named customers | Appear on product slides only; customer relationship unconfirmed |
 | Patent subject ("seven-groove torque rod") | Unconfirmed; deck says only "design patent, 2011" |
 | 0240-66172xx landlines | Wrong; live site uses +91 8411000551 |
 | Founding year 1988 | Wrong; 1989 confirmed |
 | "SME Chamber of India award" | Wrong name; real award is India SME Excellence Award in Innovation & Invention |
-| 60 CNC / 17 VMC described as in-house | Deck lists these as dedicated vendor capacity — see PLAN.md F18 |

@@ -20,6 +20,23 @@
 
 The last row is the honest gap: everything so far measures visibility, nothing measures leads. Phase 4 closes it.
 
+### Tracker stack by phase (decided by Claude as chief of staff, 22 Nov 2026)
+
+| Phase | Tracker | Answers | Cost | Cadence |
+|---|---|---|---|---|
+| 0–2 Build | `scripts/check-wordcount.sh` + Wix API read-back | Did the fix land exactly as specified? | $0 | Every step |
+| 0–2 Build | Sited free scorecard (2 per month) | Has the homepage GEO score moved after each Editor pass? | $0 | After each Editor pass |
+| 3 Identity | Schema read-back (`sameAs` live) | Can AI link the site to the LinkedIn entity? | $0 | Once, then weekly |
+| 4–5 Measure | **Google Search Console** (Wix GSC API) | Which pages and queries earn impressions and clicks | $0 | Weekly (Monday task) |
+| 4–5 Measure | **GA4 via Windsor.ai**: referrals from chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com | Real visits arriving from AI answers, the bridge from visibility to traffic | $0 (connected) | Weekly |
+| 4–5 Measure | **Wix Forms submissions API** (RFQ + Contact forms) | **Leads per week.** The KPI everything else serves | $0 | Weekly |
+| 4–5 Measure | **visibility.ai Starter** | How often ChatGPT, Perplexity, Gemini, Copilot, Claude and Google AI name Varsha vs. competitors | **$39/mo** (under the $50 ceiling) | Weekly |
+| 4–5 Measure | Sited full report | GEO Readiness Score across 10 pages | $50 one-time | Quarterly |
+
+**Why visibility.ai over the alternatives:** it covers 7 engines including Perplexity and Claude, where B2B buyers research, at $39/mo. Otterly's $29 tier covers 4 engines and lacks Claude. Rankscale is cheaper but credit-metered. Peec AI excludes Perplexity below Enterprise. Profound has no self-serve plan. One account-holder action is needed: Yash signs up and pays.
+
+**Competitor set to track** (from Sited's live AI checks): India Forge Industries · Forgix · Jai Parvati Forge · Microfit Industries · Bharat Forge · Quality Precision Industries · AT Forge · Unity Forgings.
+
 ---
 
 ## 2. Operating rules
@@ -82,7 +99,7 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 
 | ID | Finding | Source | Impact | Phase | Status |
 |---|---|---|---|---|---|
-| F1 | No `sameAs` links | Sited #1 | High · 30 pts | 3 | Blocked: need real profile URLs |
+| F1 | No `sameAs` links | Sited #1 | High · 30 pts | 3 | **Unblocked:** LinkedIn URL supplied, executor dispatched |
 | F2 | 7 pages < 500 words | Sited #2 | Med · 17 pts | 1 → 2 | Rework |
 | F3 | 4 pages without Organization/Service schema | Sited #3 | Med · 20 pts | 0 | ✅ |
 | F4 | No publication dates (3 pages) | Sited #4 | Med · 10 pts | 0 schema ✅ · 2 visible | Half done |
@@ -92,14 +109,14 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F8 | No H1 on `/product`, `/electric-vehicles` | Sited #8 | Low · 3 pts | 2 | Pending |
 | F9 | og:image missing | Sited | Low | 0 | ✅ |
 | F10 | Social icons link to `facebook.com/wix`, `instagram.com/wix` | Found in audit | Trust bug | 2 | Pending |
-| F11 | CIN for Organization schema | Master Log | — | 3 | Blocked: owner said leave out for now |
+| F11 | CIN for Organization schema | Master Log | — | — | **Closed:** owner decision, CIN is never published |
 | F12 | Certifications paste, footer typo, body typos, Awards nav | Master Log | — | 2 | Pending |
 | F13 | GBP ownership + Windsor.ai | Master Log | — | 5 | Pending |
 | F14 | Dynamic CMS page template | This session | Removes Editor bottleneck | 5 | Not scheduled |
 | F15 | Off-site presence (LinkedIn, Wikidata, directories) | Sited strategic | Lifts Brand cap 80 → 100 | 3 / 5 | Not started |
 | F16 | Topical content calendar | Sited strategic | Ongoing citations | 5 | Not started |
-| F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | Owner choice: Rankscale $17 / visibility.ai $39 |
-| **F18** | **Live `/forging-manufacturer-pune` FAQ says the Pune plant "houses over 60 CNC turning centers, 17 VMCs" — the company deck lists 60 CNC / 17 VMC as *dedicated vendor* capacity, not in-house** | Cross-check this session | **Accuracy risk** | 3 | **Needs owner confirmation before anything is changed** |
+| F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | **Decided: visibility.ai Starter $39/mo** (see tracker stack). Yash to sign up |
+| F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 
 ---
 
@@ -122,11 +139,14 @@ flowchart LR
     W[Monday scheduled task] -->|health check| L
 ```
 
-| Role | Who | Can do | Cannot do |
-|---|---|---|---|
-| Orchestrator | Main session | Read/write Wix via API, run gates, update `PLAN.md` / `website.md`, brief agents | — |
-| Drafting agents | Background forks, one per page group | Read `FACTS.md`, write `content-drafts/`, self-run the gate script | Touch Wix, invent facts, mark their own work complete |
-| Gate | `scripts/check-wordcount.sh` + live read-back | Pass/fail on measured evidence | — |
+**Model rule (owner, 22 Nov 2026):** Opus plans and dispatches · Sonnet executes · Haiku reads and reviews. The agent definitions live in `.claude/agents/`; the rule is also in `CLAUDE.md`.
+
+| Role | Who | Model | Can do | Cannot do |
+|---|---|---|---|---|
+| Orchestrator | Main session | **Opus** | Plan, brief, dispatch, own `PLAN.md` / `FACTS.md`, log, commit | Do bulk execution itself |
+| Executor | `executor` agent | **Sonnet** | Draft copy, edit repo files, Wix API writes (one at a time) | Change the plan, invent facts, mark own work done |
+| Reviewer | `reviewer` agent | **Haiku** | Read, audit, run gates, Wix read-back (GET only), PASS/FAIL with evidence | Edit anything |
+| Gate | `scripts/check-wordcount.sh` + live read-back | — | Pass/fail on measured evidence | — |
 | Operator | Yash | Editor click-work from one consolidated list | Decide what to build |
 | Monitor | Monday 8:13 IST scheduled task | Re-check SEO tags, GSC, cert wording; fix gaps the same way | Send external comms, delete, unpublish |
 

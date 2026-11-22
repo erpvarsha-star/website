@@ -80,6 +80,8 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | Legal name | "Varsha Forgings Ltd.", "Varsha Forgings Limited", "Pvt. Ltd." | /home, /company-profile | Click-list: "Varsha Forgings Private Limited" |
 | Hot closed-die only [Y] | "warm forging", "cold forging", "open-die" | /forging-company-maharashtra, /forging-presses-hammers, /oil-and-gas | Click-list + API |
 | EV: no motor parts [Y] | "motor shafts", "12,000 RPM", "10.9/12.9", "3D-printed patterns", "gear roll testers" | /forged-components-ev | Click-list + API |
+| No subsea / 1981 roots / 100% claims | "subsea extraction"; "roots trace to 1981"; "100% functional validation", "100% UT" (only 100% MPI on safety-critical parts is confirmed) | xr827, unlvj meta, pa6w8, l2sru | API |
+| 48 h = per single drawing | Any 48-hour promise without the "single drawing/part" qualifier | mfcwu, wu1va, zwiw1, pa6w8 HowTo | API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -103,7 +105,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - **Pune:** 09:00–18:00, closed **Sunday** (open Mon–Sat)
 
 ## Processes [Y] (owner-confirmed 22 Nov 2026)
-- **Surface and heat treatments offered:** vacuum carburizing · induction hardening · hot-dip galvanizing · double quench & temper
+- **Surface and heat treatments offered:** vacuum carburizing · induction hardening · hot-dip galvanizing · double quench & temper · **stress relieving** [Y]
 - **Not done, remove:** warm forging, cold forging, precision cold forging, open-die forging. Forging is hot closed-die only.
 - **Not confirmed, remove:** railway performance claims ("30+ year operational life", axle loads > 32 t, Charpy at −40 °C)
 
@@ -112,7 +114,7 @@ ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port acces
 **Not confirmed, remove:** open-account terms; specific CAD formats (STEP/IGES/Parasolid; say "2D and 3D drawings"); gear roll testers; 3D-printed patterns; EV motor shafts and motor-speed claims ("12,000 RPM"); bolt grades 10.9/12.9 for EV; ASME Class 150–2500 flange ratings.
 
 ## Industries served [Y] (owner-confirmed 22 Nov 2026)
-Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.
+Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** (not subsea [Y]) · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.
 
 ## Materials [Y] (owner-confirmed 22 Nov 2026)
 - **Carbon and alloy steels, all grades currently listed:** EN8, EN9, EN19, EN24, EN31, 20MnCr5, 16MnCr5, 42CrMo4, 20MoCr4E, SAE1541, SAE8620, AISI 4140, AISI 1045, ASTM A105, LF2, F11, F22.
@@ -127,6 +129,7 @@ Material inspection → CNC circular saw cutting → billet heating → forging 
 
 ## RFQ & customer engagement [Y]
 - **RFQ sequence (owner-confirmed 22 Nov 2026):** customer drawing → feasibility review → quotation → PPAP.
+- **Feasibility response: within 48 hours for a single drawing/part** [Y]. Don't promise 48 h for multi-part packages.
 - **Plant visits:** customers are welcome to visit the plants after an RFQ.
 
 ## Traceability [P]
@@ -143,6 +146,7 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
   - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks (**not EV motor parts** [Y])
   - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets
   - Other: tow hooks · bearing bushes · end-body turning · flanges and valve bodies (oil & gas)
+  - Commercial vehicle: **camshafts · axle shafts** [Y]
 
 ## Customers & markets [Y][L]
 - **OEMs (confirmed):** Daimler · Ashok Leyland · MAN Trucks India · Mahindra Trucks & Buses · Paccar · Scania · Tata Daewoo

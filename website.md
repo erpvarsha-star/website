@@ -213,3 +213,13 @@ The Redirects API has no update method, so each was deleted and recreated. All c
 
 ### 2026-11-22 10:40 UTC — Scheduled F27 re-check: PASS
 All 3 redirects land correctly live (Haiku reviewer, Firecrawl). Edge cache cleared. Batch 1 visible-text executor had failed on the usage limit with no changes made. It is queued for the next working session.
+
+### 2026-11-22 — Batch 1 visible-text corrections deployed via Custom Embeds (partial reach)
+- **Deployed:** embed 1 "VF Corrections Layer" (546ea6cc…, rev 2, 11.9k chars) and **new** embed 2 "VF Corrections Layer 2" (8733abc0-12cc-47f5-bf5a-41d7ee045d64, rev 1, 10.8k chars). Wix caps each embed at 15k chars.
+- **Rules:** 122 text, 11 hideText, 4 alt, 1 href. Sources are `corrections/embed-layer.js` and `corrections/embed-layer-2.js`; the table is `corrections/RULES.md`.
+- **Self-check findings:**
+  - (1) The layer applies **late** (corrected at 12–25 s, not at 6 s), so visitors briefly see the old text.
+  - (2) **Tables and bullet lists inside Wix HTML-embed iframes are unreachable** from page script: the Pune equipment table and diagram, the suspension machine-count table, the India-vs-China tables, the EV table, and railway Charpy/UIC/AAR. They stay wrong until fixed in the Editor or Velo.
+  - (3) Ten pages were covered only by global rules.
+- **Open owner items raised:** EN 10204 3.1/3.2; advance payment and LC terms; 15+ yr rubber life; "tier-one mills"; friction drop hammers; SAE1018 and C45 grades; duplicate EV paragraph on torque-rod and assembly pages; wrong article on /steering-suspension-components; "24–48 hour" lead time on Pune; Corvette logo image.
+- **Status:** NOT marked done. A reviewer verifies next.

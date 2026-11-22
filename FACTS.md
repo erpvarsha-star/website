@@ -13,7 +13,7 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Acquired by Munot Enterprises | 2005 | [P] |
 | Maxility Suspension & Machining Division | 2007 | [P] |
 | Pune plant | **Operating since 2007** (Maxility suspension & machining division) [Y] 22 Nov 2026. The deck's 2013 entry is the Pune Suspension & Machining Division milestone; don't present 2013 as the Pune founding year | [Y][P] |
-| Leadership | Chairman Jinendra Munot; CEO & Director Yash J. Munot; Director Piyush J. Munot | [S] |
+| Leadership | Chairman Jinendra Munot; CEO & Director Yash J. Munot; Director Piyush J. Munot (title confirmed **Director**, not Managing Director) | [S][Y] |
 | Phone (both plants) | +91 8411000551 | [L] |
 | Email | marketing@varshaforgings.com | [L] |
 | LinkedIn (sameAs) | https://www.linkedin.com/company/varsha-forgings-private-limited/ | [Y] |
@@ -66,6 +66,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | Plant hours [Y] | Mon–Sat 08:00–18:00 (both plants) | Pune schema `lgtlq`; Aurangabad `dpizt` (hours dropped this session, restore) | API |
 | No rubber temp/hardness specs | −50/+200 °C, −60/+230 °C, 55–75 Shore A, NR/SBR | /rubber-bonded-components, /assembly-services | Click-list + API |
 | No Corvette [Y] | Homepage image alt "corvtte customer" | Homepage | Click-list (or Media API) |
+| Piyush = Director [Y] | "Managing Director" | /company-profile body | Click-list |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)

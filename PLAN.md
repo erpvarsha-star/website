@@ -1,82 +1,145 @@
-# Varsha Forgings GEO/SEO — Master Plan
-**Created:** 2026-11-22 · Supersedes ad-hoc execution. This is the Blueprint Session deliverable: Logic, Data, Process, Phases, and the multi-agent execution model. `website.md` remains the dated action log; this file is the standing plan.
+# Varsha Forgings — GEO & Lead-Gen Operating Plan
+**v2.0 · 22 Nov 2026** · Replaces v1. Owner: Varsha Forgings · Architect: Claude · Editor operator: Yash
+
+> **New session? Read in this order:** `PLAN.md` (this) → `FACTS.md` (what may be published) → `website.md` (dated log of what's done) → `content-drafts/`. Do nothing until all four are read.
 
 ---
 
-## 1. Objective
+## 1. Goal and how we measure it
 
-Make Varsha Forgings the most cited, most trusted answer when AI engines (ChatGPT, Gemini, Perplexity, Copilot, Google AI Overviews) and human search are asked who supplies closed-die forgings, precision machining and assembly from India — and capture the enquiries that follow.
+**Goal:** when a buyer asks an AI engine or Google who makes closed-die forgings, precision machining and assemblies in India, Varsha Forgings is named — and that question turns into an RFQ.
 
-## 2. Data Sources Consolidated (so no finding is lost or duplicated)
+| KPI | Baseline (22 Nov 2026) | Target, Phase 4 exit | Measured by |
+|---|---|---|---|
+| Sited GEO Readiness Score | 81 / 100 | ≥ 90 | Sited re-scan |
+| Sited homepage scorecard | 70 / 100 | ≥ 85 | Sited free scorecard |
+| Named in Sited's live AI check | 2 of 4 questions | 3 of 4 | Sited report |
+| Pages under 500 words (of 10 crawled) | 7 | 0 | `scripts/check-wordcount.sh` + Sited |
+| Search Console 28-day impressions / clicks | Captured by Monday task | +25% | Weekly task |
+| RFQ + enquiry form submissions / month | **Not yet tracked** | Baseline set in Phase 4 | Wix Forms API |
 
-| Source | What it contributed |
+The last row is the honest gap: everything so far measures visibility, nothing measures leads. Phase 4 closes it.
+
+---
+
+## 2. Operating rules
+
+1. **Facts come only from `FACTS.md`.** Not from memory, not from a consultant, not from an agent's draft. A claim not in `FACTS.md` is not published.
+2. **One writer to Wix.** Only the main session writes to the live site through the API. Agents draft into `content-drafts/` and never touch Wix. This prevents two agents overwriting the same page's tags (Wix replaces the full tag set on every write).
+3. **Every phase has an exit gate, checked by a script or a live read-back — never by an agent's own report.** An agent saying "500+ words" is a claim; `check-wordcount.sh` is evidence.
+4. **Yash gets one consolidated click-list per phase,** with exact paths, never a drip of single requests.
+5. **Log every change** in `website.md` with date, method (API / Editor / draft) and the gate result. Commit and push after every phase.
+6. **Spend over $50 needs the owner's explicit yes** (one-time or recurring).
+
+---
+
+## 3. Process flow — how any finding is handled
+
+```mermaid
+flowchart LR
+    A[Finding<br/>audit · report · consultant] --> B{Fact in<br/>FACTS.md?}
+    B -- No --> C[Ask owner once<br/>park as BLOCKED]
+    B -- Yes --> D{Fix path}
+    D -- API --> E[Main session<br/>writes via Wix API]
+    D -- Copy --> F[Drafting agent<br/>writes content-drafts/]
+    D -- Editor only --> G[Add to Yash<br/>click-list]
+    D -- Not controllable --> H[Record reason<br/>close]
+    F --> I{Gate:<br/>check-wordcount.sh<br/>+ FACTS check}
+    I -- Fail --> F
+    I -- Pass --> G
+    E --> J[Live read-back]
+    G --> J
+    J --> K[Log in website.md<br/>commit + push]
+    C -. owner answers .-> B
+```
+
+---
+
+## 4. Phases and gates
+
+```mermaid
+flowchart TD
+    P0[Phase 0 · API quick wins<br/>DONE] --> P1[Phase 1 · Content drafting<br/>REWORK]
+    P1 -->|Gate 1| P2[Phase 2 · Editor pass<br/>Yash]
+    P3[Phase 3 · Identity<br/>owner inputs] --> P4
+    P2 -->|Gate 2| P4[Phase 4 · Measure & capture leads]
+    P4 -->|Gate 4| P5[Phase 5 · Scale<br/>continuous]
+```
+Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
+
+| Phase | Scope | Exit gate | Owner | Status |
+|---|---|---|---|---|
+| **0 · Quick wins** | Homepage title with brand (F5) · Organization + Service schema on 4 pages (F3) · `dateModified` + author in schema (F4, F6) · og:image on 10 pages (F9) · homepage FAQ schema · consultant facts folded into 5 pages · precision-forging-cost blog post | API read-back shows every tag present | Claude | ✅ Passed |
+| **1 · Content drafting** | Expanded copy for 7 thin pages (F2), using `FACTS.md` | `scripts/check-wordcount.sh 550` exits 0 · H1 + ≥ 2 H2 per page · every claim traceable to `FACTS.md` · owner reads and approves | Drafting agents → Claude verifies → owner approves | 🔁 **Failed first attempt (0/7 passed). Rework running.** |
+| **2 · Editor pass** | One sitting: paste 7 pages of copy · H1/H2 on `/product`, `/electric-vehicles` (F8) · visible date on 3 pages (F4) · visible byline on `/assembly-services` (F6) · fix social icons pointing to Wix's own accounts (F10) · certifications body paste, footer email typo, 2 body typos, Awards publish + nav (F12) | Live fetch: every crawled page ≥ 500 words, has an H1, no `facebook.com/wix` links | Yash | Waiting on Gate 1 |
+| **3 · Identity** | sameAs links (F1) · CIN (F11) · LinkedIn company page exists and is verified (F15) · resolve F18 | `sameAs` array live in homepage Organization schema | Owner supplies URLs → Claude writes | ⏳ Waiting on owner |
+| **4 · Measure & capture** | Sited re-scan · choose AI-visibility tracker (F17) · RFQ form baseline from Wix Forms API · fold lead count into Monday task | Sited ≥ 90 · lead baseline recorded · tracker live | Claude + owner decision | Not started |
+| **5 · Scale** | Monthly blog articles via API (no Yash) · off-site profiles (directories, Wikidata) · Dynamic CMS page template (F14) · GBP + Windsor.ai (F13) | Rolling monthly review against §1 KPIs | Claude + Yash | Not started |
+
+---
+
+## 5. Findings register
+
+| ID | Finding | Source | Impact | Phase | Status |
+|---|---|---|---|---|---|
+| F1 | No `sameAs` links | Sited #1 | High · 30 pts | 3 | Blocked: need real profile URLs |
+| F2 | 7 pages < 500 words | Sited #2 | Med · 17 pts | 1 → 2 | Rework |
+| F3 | 4 pages without Organization/Service schema | Sited #3 | Med · 20 pts | 0 | ✅ |
+| F4 | No publication dates (3 pages) | Sited #4 | Med · 10 pts | 0 schema ✅ · 2 visible | Half done |
+| F5 | Homepage title omits brand | Sited #5 | Med · 10 pts | 0 | ✅ |
+| F6 | No byline, `/assembly-services` | Sited #6 | Low · 5 pts | 0 schema ✅ · 2 visible | Half done |
+| F7 | No content-security-policy header | Sited #7 | Low · 5 pts | — | Closed: Wix-controlled; raise with Wix support only if score matters |
+| F8 | No H1 on `/product`, `/electric-vehicles` | Sited #8 | Low · 3 pts | 2 | Pending |
+| F9 | og:image missing | Sited | Low | 0 | ✅ |
+| F10 | Social icons link to `facebook.com/wix`, `instagram.com/wix` | Found in audit | Trust bug | 2 | Pending |
+| F11 | CIN for Organization schema | Master Log | — | 3 | Blocked: owner said leave out for now |
+| F12 | Certifications paste, footer typo, body typos, Awards nav | Master Log | — | 2 | Pending |
+| F13 | GBP ownership + Windsor.ai | Master Log | — | 5 | Pending |
+| F14 | Dynamic CMS page template | This session | Removes Editor bottleneck | 5 | Not scheduled |
+| F15 | Off-site presence (LinkedIn, Wikidata, directories) | Sited strategic | Lifts Brand cap 80 → 100 | 3 / 5 | Not started |
+| F16 | Topical content calendar | Sited strategic | Ongoing citations | 5 | Not started |
+| F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | Owner choice: Rankscale $17 / visibility.ai $39 |
+| **F18** | **Live `/forging-manufacturer-pune` FAQ says the Pune plant "houses over 60 CNC turning centers, 17 VMCs" — the company deck lists 60 CNC / 17 VMC as *dedicated vendor* capacity, not in-house** | Cross-check this session | **Accuracy risk** | 3 | **Needs owner confirmation before anything is changed** |
+
+---
+
+## 6. Multi-agent execution model
+
+```mermaid
+flowchart LR
+    O[Orchestrator<br/>main session<br/>sole Wix writer] -->|brief + FACTS.md| A[Drafting agent A]
+    O -->|brief + FACTS.md| B[Drafting agent B]
+    A --> D[(content-drafts/)]
+    B --> D
+    D --> G{Gate script<br/>check-wordcount.sh}
+    G -- fail --> O
+    G -- pass --> R[Owner review]
+    R --> Y[Yash click-list]
+    Y --> L[Live site]
+    O -->|API writes| L
+    L --> V[Read-back + Sited re-scan]
+    V --> O
+    W[Monday scheduled task] -->|health check| L
+```
+
+| Role | Who | Can do | Cannot do |
+|---|---|---|---|
+| Orchestrator | Main session | Read/write Wix via API, run gates, update `PLAN.md` / `website.md`, brief agents | — |
+| Drafting agents | Background forks, one per page group | Read `FACTS.md`, write `content-drafts/`, self-run the gate script | Touch Wix, invent facts, mark their own work complete |
+| Gate | `scripts/check-wordcount.sh` + live read-back | Pass/fail on measured evidence | — |
+| Operator | Yash | Editor click-work from one consolidated list | Decide what to build |
+| Monitor | Monday 8:13 IST scheduled task | Re-check SEO tags, GSC, cert wording; fix gaps the same way | Send external comms, delete, unpublish |
+
+**Briefing standard for every drafting agent:** target page and current word count · `FACTS.md` as the only fact source · ≥ 550 words of visible copy, H1 + ≥ 2 H2, question-style headings · run `scripts/check-wordcount.sh` and iterate until it passes · return the measured counts, not an estimate.
+
+---
+
+## 7. Risks and fallbacks
+
+| Risk | Fallback |
 |---|---|
-| `VarshaForgings_MASTER_LOG_22NOV2026.md` | Site facts, roles, prior work history, original pending list |
-| `GEO_Consultant_Plan_Review_22NOV2026.md` | 9-page build plan reviewed, facts held pending confirmation |
-| `PrecisionForgingCost_Page_Draft_22NOV2026.md` | Content for the one genuinely new page — published as a blog post |
-| `Certifications_Page_Draft_22NOV2026.md` | Final certifications copy — body-paste still pending |
-| Varsha's own company presentation (PPTX) | Source-verified founding year (1989), 2011 patent, 2014/2025 awards — corrected consultant's wrong dates |
-| Live site audit (this session) | Phone number correction, existing schema inventory on 5+ pages |
-| Sited AI Visibility Report (22 Nov 2026) | GEO Readiness Score 81/100, 8 numbered findings, full fix list |
-
-## 3. Master Findings Register
-
-Every open item, from every source, in one table. This is the single backlog — nothing gets worked outside of it.
-
-| ID | Finding | Source | Impact | Fix type | Owner | Status |
-|---|---|---|---|---|---|---|
-| F1 | No `sameAs` links on homepage Organization schema | Sited #1 | High (30 pts) | API, once URLs supplied | Claude + **Yash input** | Blocked |
-| F2 | 7 pages under 500 words | Sited #2 | Medium (17 pts) | Draft copy (Claude) → paste (Yash) | Claude draft, Yash paste | **Phase 2 — starting now** |
-| F3 | 4 pages lacked Organization/Service schema | Sited #3 | Medium (20 pts) | API | Claude | ✅ Done |
-| F4 | No publication dates, 3 pages | Sited #4 | Medium (10 pts) | Schema: API. Visible: Editor | Claude (schema) / Yash (visible) | Schema ✅ / Visible pending |
-| F5 | Homepage title omits brand name | Sited #5 | Medium (10 pts) | API | Claude | ✅ Done |
-| F6 | No author byline, `/assembly-services` | Sited #6 | Low (5 pts) | Schema: API. Visible: Editor | Claude (schema) / Yash (visible) | Schema ✅ / Visible pending |
-| F7 | Missing content-security-policy header | Sited #7 | Low (5 pts) | Server/CDN config | **Not owner-adjustable on Wix Classic — needs Wix support confirmation** | Blocked, low priority |
-| F8 | No H1/2+ H2 on `/product`, `/electric-vehicles` | Sited #8 | Low (3 pts) | Editor (page layout) | Yash | Pending |
-| F9 | og:image missing site-wide sweep | Sited (common problem) | Low | API | Claude | ✅ Done (10/10 crawled pages) |
-| F10 | Social icons link to Wix's own FB/IG, not Varsha's | Found this session, not in report | Not scored, real bug | Editor | Yash | Pending |
-| F11 | CIN number for Organization schema | Master Log #3 | Blocks sitewide Organization schema | Data only | **Yash input** | Blocked |
-| F12 | Editor-only typos/fixes (certifications body paste, footer email typo, 2 body typos, Awards publish+nav) | Master Log #5 | — | Editor | Yash | Pending |
-| F13 | GBP ownership conflict + Windsor.ai connection | Master Log #8/9 | — | External account action | Yash | Pending |
-| F14 | Dynamic CMS Page Template (permanent fix for page-creation bottleneck) | Agreed this session | — | One Editor session, then API forever | Yash (one-time) + Claude | Not scheduled |
-| F15 | Off-site brand presence (LinkedIn, Wikidata, directories) | Sited Strategic Initiatives | Caps Brand Authority at 80 until done | Account creation + verification | Yash | Not started |
-| F16 | Topical authority content calendar | Sited Strategic Initiatives | Ongoing | Content | Claude draft, Yash paste | Not started |
-| F17 | AI-visibility ongoing tracking tool | This session's decision | — | Subscription | Yash signs up | Not started — tool TBD (Rankscale/visibility.ai pending your call) |
-
-## 4. Process Flow (how a finding moves through the system)
-
-```
-Identify (audit/report/consultant) 
-   → Verify against live site / source documents (never invent facts)
-   → Classify: API-fixable | Draft-then-paste | Editor-only | Blocked-on-input | Not-actionable
-   → Route:
-       API-fixable        → Claude executes directly, logs in website.md
-       Draft-then-paste   → Claude drafts (fork agent) → user reviews → Yash pastes → Claude sets SEO/schema after
-       Editor-only        → Claude writes exact click-path instructions → Yash executes → Claude verifies live
-       Blocked-on-input   → Claude asks once, states exactly what's needed, parks until answered
-       Not-actionable     → Claude states why, removes from active work, revisits only if conditions change
-   → Verify live (re-fetch, re-audit where possible)
-   → Log in website.md with date + outcome
-```
-
-## 5. Implementation Phases
-
-| Phase | Scope | Status |
-|---|---|---|
-| **Phase 0** | Precision-forging-cost blog post, consultant-plan fold-in (5 pages), homepage og:image + FAQ, Sited Quick Wins (F3, F4-schema, F5, F6-schema, F9) | ✅ Complete |
-| **Phase 1** | Draft expanded copy for the 7 thin pages (F2) | **→ Launching now, as parallel agents, below** |
-| **Phase 2** | Yash executes the consolidated Editor click-list: paste Phase 1 copy, fix H1/H2 on 2 pages (F8), add visible dates/byline (F4/F6), fix social icon links (F10), certifications/typo cleanup (F12) | Blocked on Phase 1 output + Yash availability |
-| **Phase 3** | Input-blocked items: sameAs URLs (F1), CIN (F11), AI-visibility tool choice (F17) | **Waiting on you** |
-| **Phase 4** | Strategic: off-site presence build-out (F15), topical content calendar (F16), Dynamic CMS Page Template (F14) | Not started — scheduled after Phase 2/3 close |
-
-## 6. Multi-Agent Execution Plan
-
-Why split now: drafting 7 independent page-content pieces is parallelizable and doesn't touch the live site (no write conflicts), unlike the API work which must stay sequential in this session to avoid concurrent-write races on the same Wix site.
-
-| Agent | Task | Mode |
-|---|---|---|
-| **Fork A** | Draft 500+ word, fact-grounded copy for `/electric-vehicles`, `/about-1`, `/contact-us-1` (the 3 thinnest pages) | Background fork, inherits full session context and verified facts |
-| **Fork B** | Draft 500+ word copy for `/about-1-1`, `/tool-manufactring`, `/product`, plus the homepage expansion | Background fork, same constraints |
-| **Main session** | Stays free for Wix API work, your questions, and Phase 3 input as it arrives — does not draft content itself, to avoid duplicating Fork A/B's work | Foreground |
-
-Both forks are told explicitly: use only facts already verified in this conversation and the source documents (company presentation, confirmed OEM/export/award facts, live schema already on the site) — never invent customer names, numbers, or claims. Output: ready-to-paste Markdown per page, same format as the existing `PrecisionForgingCost_Page_Draft` file.
+| Wix API access drops | Monday task logs the failure, nothing corrupts; resume next session from `website.md` |
+| Agent invents a fact | `FACTS.md` rule + owner review at Gate 1; anything not in `FACTS.md` is struck |
+| Yash unavailable for Phase 2 | Content still ships as dated, bylined Blog posts via API (zero Editor work) — weaker than fixing the core pages, but not blocked |
+| Schema tag exceeds Wix's 4,096-byte limit | Compact JSON, trim redundant fields (done once on `/forging-company-maharashtra`) |
+| Sited score doesn't move after fixes | Re-scan checks only 10 pages; verify live HTML directly before assuming the fix failed |

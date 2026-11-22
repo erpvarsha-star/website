@@ -296,3 +296,6 @@ VflWebsite `w5-embeds` 9757629: 38 corrected-embed modules served by `/_function
 
 ### 2026-11-22 — W3 review ruled by Opus
 The Haiku review (embeds/REVIEW.md, 4d2a602) gave 50/60 PASS. Of its 17 FAIL items, Opus ruled 5 to be true conflicts: "under one roof" vs two plants, the EV motor item, "Pan-India", a competitor negative, and the NR rubber / in-house phosphating claims. The executor is fixing those and regenerating `w5-embeds`. The rest are pre-existing non-conflicts and stay [L]. The F28 draft FAILs were non-conflicts (SimuFact, 2D/3D drawings and the RFQ page are all in FACTS), so the drafts PASS. reviewer.md updated: FAIL only on conflicts.
+
+### 2026-11-22 — W3 conflicts fixed; W5 branch regenerated
+5 conflict fixes applied to corrected embeds (10f5a11). `w5-embeds` regenerated (7f64c4b), lint clean. Nit: `build-embed-modules.js` adds blank lines on each re-run, to fix before merge. **Everything is now waiting on Yash publishing the W4 pilot.**

@@ -68,6 +68,12 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - **Annual capacity: over 12,000 metric tons per annum; over 3 million assorted pieces per year.** [Y] 22 Nov 2026
 - **Tolerances: forging ±0.5 mm · machining ±0.02 mm.** Replace ±0.01 mm, ±0.2 mm, ±5 microns and the 'EN 10243-1 Grade F' citation wherever they appear.
 
+## Process & quality specifics [Y] (owner-confirmed 22 Nov 2026)
+- Induction billet heating, 1,100–1,250 °C · die steels H13 and DIN 1.2714 (DB6)
+- Software: Creo 3.0 · SimuFact Forming 15.0 (simulation) · BricsCAD · Dell Cam (3D programming)
+- SPC on key control characteristics, Cpk ≥ 1.67
+- Testing: Brinell, Rockwell and micro-Vickers hardness · ASTM E112 grain size · ultrasonic testing · 100% MPI on safety-critical parts
+
 ## Export logistics [Y] (owner-confirmed 22 Nov 2026)
 ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access.
 

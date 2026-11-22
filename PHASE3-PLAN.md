@@ -33,7 +33,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W1 | ✅ Done | `VELO-ROUTE.md` (c5e5b9d) |
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
 | W3 | ✅ Drafted (ce78c18); review 4d2a602: 50/60 PASS; 5 true conflicts fixed (10f5a11; w5-embeds 7f64c4b); drafts PASS (review FAILs were non-conflicts) | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
-| W4 | ⏳ Pushed `4ed2cab`, awaiting Yash Publish | `baseline/ssr-before.md` |
+| W4 | Velo not confirmed; diag pushed (NOT YET: held, see website.md 22 Nov); DNP stopgap via browser layer (embed 2 rev 5) | `baseline/ssr-before.md` |
 | W5 | ✅ Prepped on VflWebsite branch `w5-embeds` (7f64c4b); known nit: the build script adds 2 blank lines per page file on each run (fix before merge); lint clean; NOT merged. Blocked on: W4 publish+verify, W3 review | `W5-DEPLOY.md`: 38 embed modules, 41 swaps on 17 pages, text rules in all 56 page files |
 | W6–W8 | ⬜ Not started | — |
-| Auto-publish | ⬜ Yash to set up | `SETUP-AUTO-PUBLISH.md` |
+| Auto-publish | Secret `WIX_CLI_API_KEY` saved by owner; `.github/workflows/publish.yml` written locally in /home/user/vflwebsite, NOT pushed (push to main denied by permission system) | `SETUP-AUTO-PUBLISH.md` |

@@ -180,6 +180,10 @@ Fix pass (22 Nov 2026): matching is case-insensitive, whitespace/NBSP/dash toler
 
 | 1 | all | `mailto:marketing@varshaforging.com` | `mailto:marketing@varshaforgings.com` | href |
 
+## DO NOT PUBLISH stopgap (embed 2, `dnp()`, 22 Nov 2026)
+
+Hides the closest ancestor with an id starting `comp-` of any `iframe, wix-iframe, [data-src], [src]` in the parent page whose src/data-src contains `72f2bf_<prefix>` for one of these embeds whose ORIGINAL holds machine counts: `7edffdcc5c` (forging-company-maharashtra 1), `71d1f1bfef` (maharashtra 2), `d992c508cc` (forging-manufacturer-india 2), `67e78ccdca` (Pune 1), `cf35346801` (Pune 3), `42c4a400cf` (suspension-components 1), `6e0a302f0b` (forged-components-railways 4). Fallback on /forging-manufacturer-pune by wrapper id: `#comp-mscxleug`, `#comp-mscxlevk`. Runs at load, 1 s, 3 s, 8 s, 15 s, 25 s and on mutation.
+
 ## Timing
 
 The layer runs at once, again at 1 s, 3 s and 8 s after load, and 200 ms after every DOM mutation. Text is NBSP/whitespace-normalised before matching. No innerHTML is used.

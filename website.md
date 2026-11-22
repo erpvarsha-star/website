@@ -299,3 +299,9 @@ The Haiku review (embeds/REVIEW.md, 4d2a602) gave 50/60 PASS. Of its 17 FAIL ite
 
 ### 2026-11-22 — W3 conflicts fixed; W5 branch regenerated
 5 conflict fixes applied to corrected embeds (10f5a11). `w5-embeds` regenerated (7f64c4b), lint clean. Nit: `build-embed-modules.js` adds blank lines on each re-run, to fix before merge. **Everything is now waiting on Yash publishing the W4 pilot.**
+
+### 2026-11-22 - W4 follow-up: DNP stopgap in browser layer; Velo diagnostic prepared (not pushed)
+Sonnet executor.
+- **Embed 2** `8733abc0-...` revision 4 -> **5**, html 14,576 chars; read-back equals the patched html and the local `corrections/embed-layer-2.js` (djb2 3773504837 both, zero non-ASCII). New `dnp()` hides the `comp-` ancestor of iframes whose src holds one of 7 count-embed hash prefixes (see RULES.md) plus `#comp-mscxleug` / `#comp-mscxlevk` on Pune.
+- **Live check:** Firecrawl (maxAge 0, waitFor 25000) of /forging-manufacturer-pune still served the OLD embed 2 script (no `dnp`, `7edffdcc5c` absent), "x60" still present in markdown (1) and rawHtml (1). So the stopgap is NOT verified live; the served page appears cached. Recheck after the next site publish.
+- **Velo diag:** edited `masterPage.js` (meta `vf-diag`) and `Forging Manufacturer Pune.lgtlq.js` (meta `vf-diag-pune`, distinct name so the two do not overwrite each other) on VflWebsite main in the working tree; eslint clean. NOT committed or pushed: the commit+push command was denied by the permission system, and the auto-publish workflow `.github/workflows/publish.yml` is likewise written but not pushed. Parts 2 push and 3 wait for the owner's go.

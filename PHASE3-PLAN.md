@@ -29,7 +29,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 ## Status (update after every step)
 | # | Status | Evidence |
 |---|---|---|
-| W0 | 🔄 Running | `baseline/` partial |
+| W0 | ✅ Done (9cf3803) | 49 pages in `baseline/INDEX.md`; 2 empty bodies (/transmission-and-driveline, /electric-mobility) |
 | W1 | ✅ Done | `VELO-ROUTE.md` (c5e5b9d) |
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
 | W3 | ✅ Drafted (ce78c18); 🔄 Haiku gate running | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |

@@ -9,11 +9,11 @@
 > - Browser correction layer: embed 1 rev 5, embed 2 rev 4, rules 1–136. It fixes page text; it cannot reach HTML-embed iframes.
 > - Facts: all owner answers are recorded in FACTS.md. The rule is to ask Yash only on conflicts.
 > - Wix ↔ GitHub connected: `erpvarsha-star/VflWebsite`, main.
+> - W0 baseline done (9cf3803): 49 pages. Empty bodies: /transmission-and-driveline, /electric-mobility. Machine counts are in NATIVE text on 5 pages (india, pune, maharashtra, suspension, railways); W5 adds a Velo text-rules module for every page. Multiple H1s on /automotive-steering-powertrain (25), /forging-company-aurangabad (8) and /about-1-1 (6), queued for W6.
 > - Research done: `VELO-ROUTE.md`. Brand kit: `BRAND.md`. No-JS crawler checker: `.github/workflows/ssr-check.yml`; baseline in `baseline/ssr-before.md`.
 >
 > **In progress**
 > - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
-> - W0 baseline snapshot of all pages (Haiku), still running.
 > - W3 drafted (ce78c18): 60 embeds on 17 pages, 41 corrected with 175 edits. F28 drafts and the re-checked drafts pass the gate. The Haiku review is running (`embeds/REVIEW.md`). Claims that don't conflict are kept as [L], with no owner questions.
 > - W5 prep: Velo code on VflWebsite branch `w5-embeds` (does not sync to the live site until merged into main).
 >
@@ -287,3 +287,6 @@ Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (bra
 ### 2026-11-22 — W3 drafted; W3 review and W5 prep dispatched
 - W3 (ce78c18): 60 embeds, 41 corrected (175 edits), originals kept. F28 thin pages and the steering article drafted. Existing drafts updated to the newest facts. Gate PASS.
 - Dispatched: Haiku review of all corrected embeds (embeds/REVIEW.md); Sonnet W5 prep on VflWebsite branch `w5-embeds` (http-functions serving the corrected HTML plus a src swap). Main is untouched until the pilot is verified.
+
+### 2026-11-22 — W0 baseline complete
+49 sitemap entries snapshotted (`baseline/`). Empty bodies: /transmission-and-driveline, /electric-mobility (new copy needed in W6). Machine counts are in native text on 5 pages, so W5 scope now includes `src/public/corrections.js` (the RULES ported to Velo, called from every page). H1 structure problems are queued for W6.

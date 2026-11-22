@@ -35,7 +35,9 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 **Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
 
 ## Milestones & Awards [P]
-2009 TS-16949 · 2011 Design patent granted by the Indian Government · 2014 India SME Excellence Award in Innovation & Invention · 2014 Certificate of Excellence · 2015 Excellence in Manufacturing Gold Trophy (ACMA) · 2016 Daimler India Best Supplier Award · 2017 IATF 16949 · 2017 Best Employer Brand Award · 2018 Brand Leadership Award · 2018 Productivity Improvement Bronze Trophy (ACMA) · 2019 Best Performing Cluster Company (ACMA) · 2023 Daimler India Performance Appreciation Letter · 2024 Supply for electric vehicles · 2025 India SME 100 Award, final winner, 11th Edition
+2009 TS-16949 · 2011 Design patent granted by the Indian Government · 2014 India SME Excellence Award in Innovation & Invention · 2014 Certificate of Excellence · 2015 Excellence in Manufacturing Gold Trophy (ACMA) · 2016 Daimler India Best Supplier Award · 2017 IATF 16949 · 2017 Best Employer Brand Award · 2018 Brand Leadership Award · 2018 Productivity Improvement Bronze Trophy (ACMA) · 2019 Best Performing Cluster Company (ACMA) · 2023 Daimler India Performance Appreciation Letter · 2024 Supply for electric vehicles · 2025 India SME 100 Award, final winner, 11th Edition (from 27,467 nominations [Y])
+
+**Additional awards [Y] 22 Nov 2026:** ACMA Medal 2020 · ACMA Award 2020 · Ashok Leyland Medal 2023
 
 ## Equipment — in-house [P]
 - **Presses:** 2,500 T Erie press · 1,300 T press line ×2 · 1,000 T press (added recently [Y] 22 Nov 2026) · 800 T screw press — **range 800 T–2,500 T** [P][Y]

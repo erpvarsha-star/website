@@ -163,7 +163,8 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F25 | **Lead-critical: footer + contact mailto `varshaforging.com` typo** | 49-page audit | **High: enquiries may bounce** | 2 | Block 1 of Yash's click-list |
 | F23 | Verify Core Web Vitals + IndexNow | Sited technical (unverified) | Med | 4 | Not started |
 | F26 | **Visible-text corrections via Velo + GitHub layer** (owner chose this over manual Editor work) | Owner decision 22 Nov 2026 | Removes Yash's clerical Editor work | 2 | Waiting on Yash's one-time GitHub connection (`SETUP-VELO-GITHUB.md`), then pilot on the mailto typo |
-| F27 | Redirect `/forged-machined-components` → `/alloy-steel-forgings` hides page `arrpe`; 2 redirects point at a redirected path | Executor finding | Medium | 2 | Ask Yash: keep the page or keep the redirect |
+| F27 | Redirect `/forged-machined-components` → `/alloy-steel-forgings` hides page `arrpe`; 2 redirects point at a redirected path | Executor finding | Medium | 2 | **Owner-approved:** re-point to `/forged-machined-components-vf`; fix the 2 chained redirects. Executor dispatched |
+| F28 | Thin live pages `/alloy-steel-forgings` (~105 words) and `/forged-machined-components-vf` (~75 words), with wrong weight and in-house broaching in the body | Redirect review | Medium | 1 → F26 layer | Add to the content-drafting queue |
 | F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 
 ---

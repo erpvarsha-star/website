@@ -43,6 +43,15 @@ Full Sited report (GEO Readiness 81/100) read and parsed into the Prioritised Pl
 - **Finding 6 (no author byline on `/assembly-services`, Low, 5 pts) — schema-level DONE.** Added `author: Organization` to its schema node. **Visible byline still pending — Editor-only.**
 - **og:image sweep across all 10 Sited-crawled pages — DONE.** Added to the 9 pages that lacked it (`/contact-us-1`, `/about-1`, `/assembly-services`, `/about-1-1`, `/product`, `/forging-company-aurangabad`, `/company-profile`, `/electric-vehicles`, `/tool-manufactring`); homepage already fixed earlier this session.
 
+### 2026-11-22 (continued) — Phase 1 complete: thin-page content drafted
+
+Two background forks completed, per `PLAN.md` Phase 1. All 7 pages Sited flagged as under 500 words now have ready-to-paste expanded copy, committed to `content-drafts/`:
+
+- `content-drafts/electric-vehicles-about-1-contact-us-1-DRAFT.md` — `/electric-vehicles` (148→~450w), `/about-1` (222→~470w), `/contact-us-1` (267→~380w), each with H1 + H2 sections + FAQ block.
+- `content-drafts/about-1-1-tool-manufacturing-product-homepage-DRAFT.md` — `/about-1-1` (282→500+w), `/tool-manufactring` (352→500+w), `/product` (367→500+w, replaces bare gallery framing with per-product-family intros), homepage (+2 new H2 sections past the existing 483w, existing H1/H2/schema untouched).
+
+All copy grounded only in facts already verified this session — no invented customers, certs, or figures. **Status: drafted, not yet live.** Next step is Yash's Editor pass (Phase 2 per PLAN.md) — paste each page's copy, which also gives the chance to fix Findings 4/6/8 (visible dates, byline, H1/H2 structure) in the same sitting since the Editor is already open.
+
 ### Pending — needs Yash (Editor-only, no API path)
 - **Finding 8:** add a proper H1 + at least 2 H2 sections to `/product` and `/electric-vehicles` (both currently have a null H1).
 - **Finding 2:** expand 7 thin pages above 500 words — `/electric-vehicles` (148w), `/about-1` (222w), `/contact-us-1` (267w), `/about-1-1` (282w), `/tool-manufactring` (352w), `/product` (367w), homepage (483w). **Claude can draft this copy for Yash to paste — ask if you want that done now.**

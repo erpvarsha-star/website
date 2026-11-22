@@ -4,7 +4,7 @@ on:
     inputs:
       paths:
         description: "Space-separated paths"
-        default: "/ /forging-manufacturer-pune /contact-us-1"
+        default: "/ /forging-manufacturer-pune /contact-us-1 /forged-machined-components-vf /oil-and-gas /forging-company-aurangabad /about-1"
   push:
     branches: [ccr-6409486e-3vy613]
     paths: ['.github/ssr-trigger']
@@ -17,7 +17,7 @@ jobs:
           PATHS: ${{ github.event.inputs.paths }}
         run: |
           set -u
-          P="${PATHS:-/ /forging-manufacturer-pune /contact-us-1}"
+          P="${PATHS:-/ /forging-manufacturer-pune /contact-us-1 /forged-machined-components-vf /oil-and-gas /forging-company-aurangabad /about-1}"
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           mkdir -p out
           for p in $P; do
@@ -28,6 +28,8 @@ jobs:
             echo "varshaforgings.com: $(grep -o 'varshaforgings\.com' "$f.html" | wc -l)"
             echo "CNC Turning Centers: $(grep -o 'CNC Turning Centers' "$f.html" | wc -l)"
             echo "x60 (×60): $(grep -o '×60' "$f.html" | wc -l)"
+            echo "0.5 kg: $(grep -o '0\.5 kg' "$f.html" | wc -l)"
+            echo "vf-diag (must be 0): $(grep -c 'vf-diag' "$f.html")"
             echo "htmlComp-iframe: $(grep -o 'htmlComp-iframe' "$f.html" | wc -l)"
             echo "<h1: $(grep -o '<h1' "$f.html" | wc -l)"
             echo "filesusr html hashes:"

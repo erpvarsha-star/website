@@ -3,7 +3,7 @@
 Rule (owner instruction, 23 Nov 2026): **if a task fails more than once, stop, log it here, and move to the next task.** Review this file at the start of every session; retry an item only when its unblock condition is met.
 
 ## Blocked on a Wix API key with broader permissions
-The current key (`WIXKEY` GitHub secret) covers only CLI publish. These need a key with **FAQ app + SEO tags** permissions, or a Yash click-list.
+~~The current key covers only CLI publish.~~ **Update 23 Nov (late): Yash confirms the rotated WIXKEY has all permissions.** P1–P6 run via the content-ops workflow once Yash creates the workflow file (see Status note below).
 
 | # | Item | Exact change ready? | Unblock |
 |---|---|---|---|
@@ -22,6 +22,10 @@ The current key (`WIXKEY` GitHub secret) covers only CLI publish. These need a k
 | P8 | Visible publication date on /assembly-services, /forging-company-aurangabad, /company-profile; visible byline on /assembly-services | Schema-level done 22 Nov; visible text is Editor-only |
 | P9 | Homepage social icons point to facebook.com/wix and instagram.com/wix (template default) | Editor link swap |
 | P10 | CSP header (Sited finding 7) | Wix platform-level on Classic sites — raise with Wix support |
+
+## Status note (23 Nov 2026, late)
+Yash confirmed the rotated key has **all permissions**. P1–P6 unblocked in principle.
+**Failed twice (rule applied):** Claude pushing `.github/workflows/content-ops.yml` — the GitHub integration token lacks the `workflow` scope (403 both via push_files and create_or_update_file). Workaround in motion: Yash creates that one file via the GitHub web UI (exact content in chat, 2 minutes); `ops/run.js` + `ops/README.md` are already on VflWebsite main (84be594) and will run on the next ops push once the workflow file exists.
 
 ## Key creation steps (for Yash, 5 minutes)
 1. https://manage.wix.com/account/api-keys → Generate API Key, name it `Site content API`.

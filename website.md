@@ -186,3 +186,5 @@ The Redirects API has no update method, so each was deleted and recreated. All c
 - Source of truth: `corrections/embed-layer.js`. Future rules are added there and the embed is updated via the API (pass the revision).
 - **Limit:** runs in the browser, so humans and Google see the fix, but non-JS AI crawlers don't. Velo + GitHub (F26) gives the server-side version.
 - Verification: Playwright was blocked by the sandbox proxy (www.varshaforgings.com not allowed). The reviewer is verifying via Firecrawl instead.
+- **Pilot verified PASS (Haiku reviewer, Firecrawl browser render):** home and /contact-us-1 show every mailto href as `marketing@varshaforgings.com`; the embed script is present in the page body. The audit earlier today saw the typo in those hrefs, so the fix comes from the layer. **Lead-critical bug F25 is resolved for visitors.**
+- **Next:** batch 1 of factual visible-text corrections via the same embed (executor dispatched). The 7-page copy rewrites follow in a later batch.

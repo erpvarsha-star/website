@@ -139,7 +139,12 @@ for (const f of fs.readdirSync(pagesDir).filter((x) => x.endsWith('.js'))) {
   let i = 0;
   while (i < lines.length && /^\s*(\/\/.*)?$/.test(lines[i]) && !/^\$w\.onReady/.test(lines[i])) i++;
   // keep trailing blank lines of the comment block together
-  lines.splice(i, 0, header.replace(/\n$/, ''), '');
+  // Idempotence: a previous run leaves its separator blank lines behind. Collapse the blank run just
+  // before the header to exactly one, which is what the first run on a pristine file produces.
+  let j = i;
+  while (j > 0 && lines[j - 1] === '') j--;
+  const sep = j > 0 ? [''] : [];
+  lines.splice(j, i - j, ...sep, header.replace(/\n$/, ''), '');
   src = lines.join('\n');
   const re = /^\$w\.onReady\(function \(\) \{\n/m;
   if (!re.test(src)) throw new Error('no onReady in ' + f);

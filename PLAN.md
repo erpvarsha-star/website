@@ -1,5 +1,5 @@
 # Varsha Forgings — GEO & Lead-Gen Operating Plan
-**v2.0 · 22 Nov 2026** · Replaces v1. Owner: Varsha Forgings · Architect: Claude · Editor operator: Yash
+**v2.0 · 22 Nov 2026** · Replaces v1. Owner and Editor operator: Yash J. Munot (one person) · Chief of staff / architect: Claude
 
 > **New session? Read in this order:** `PLAN.md` (this) → `FACTS.md` (what may be published) → `website.md` (dated log of what's done) → `content-drafts/`. Do nothing until all four are read.
 

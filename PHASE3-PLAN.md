@@ -16,7 +16,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W3 | Content: finalise the 7 rewrites, F28 thin pages (/alloy-steel-forgings, /forged-machined-components-vf), the wrong article on /steering-suspension-components, and corrected HTML for every flagged embed → `content-drafts/`, `embeds/` | Sonnet | Yes, now | `check-wordcount.sh` + reviewer FACTS check |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
 | W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | `baseline/w5-verify.md`; publish run 45068992337 |
-| W6 | ⏸ Stopped at session end before any output (no branch pushed, no W6-DESIGN.md). Restart from the brief in NEXT-SESSION.md | — |
+| W6 | ✅ Live and verified 23 Nov: 3 approved content-drafts rendered by Velo on 10 pages, SSR-visible, 1 H1 each, 0 DNP | `W6-DESIGN.md`; VflWebsite dc457ea→e9629f4 |
 | W7 | Retire the browser layer rules that Velo now covers (keep the layer as backup until all Velo work verifies) | Sonnet | After W6 | No visible-text regressions |
 | W8 | SEO/schema touch-ups for changed pages; Sited re-run; KPI strip in the weekly task | Sonnet + Haiku | After W6 | Sited score vs 81 baseline |
 
@@ -35,10 +35,10 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W3 | ✅ Drafted (ce78c18); review 4d2a602: 50/60 PASS; 5 true conflicts fixed (10f5a11; w5-embeds 7f64c4b); drafts PASS (review FAILs were non-conflicts) | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
 | W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | `baseline/w5-verify.md`; publish run 45068992337 |
-| W6 | ⏸ Stopped at session end before any output (no branch pushed, no W6-DESIGN.md). Restart from the brief in NEXT-SESSION.md | — |
-| W7 | ⚠️ Layers slimmed and Velo rules made generic (VflWebsite 3a62db4, publish 45069516062 success). Embed 1 rev 6 (1,007 chars), embed 2 rev 7 (2,726 chars). ssr-check: typo 0, ×60 0, vf-diag 0, "17 VMC" 0; "60 CNC" 1 on Pune and "0.5 kg" 1 on Aurangabad, both in Wix FAQ-app answers. FAQ fix was started and stopped at session end; state unknown, so re-query all FAQ entries first | `baseline/w5-verify.md` |
-| W8 | ⬜ After W6+W7: SEO touch-ups, then **hand to Yash to run Sited** | — |
-| Auto-publish | ✅ Working: secret WIXKEY, run 45068992337 succeeded | VflWebsite 272441f |
+| W6 | ✅ Live and verified 23 Nov: branch `w6-content` merged (dc457ea), bundler line-length error fixed by splitting ops into per-page modules (e9629f4). All 10 pages serve the drafts in SSR HTML, 1 visible H1 each, 0 DNP hits, 656–1,678 words (all above Sited's 500 threshold) | `W6-DESIGN.md`; no-JS curl verification of /, /electric-vehicles, /alloy-steel-forgings re-confirmed 23 Nov |
+| W7 | ⚠️ Layers slimmed and Velo rules made generic (VflWebsite 3a62db4). Embed 1 rev 6, embed 2 rev 7. Remaining conflicts are all in Wix FAQ-app answers: Pune "60 CNC…", Aurangabad "0.5 kg…50 kg", railways "Charpy −40 °C", maharashtra "hot, warm, cold forging", ev "hot and warm forging". Replacement texts ready in NEXT-SESSION.md; write blocked on a Wix API channel with FAQ permissions (or Yash click-list) | `baseline/w5-verify.md` |
+| W8 | ⬜ Ready to start: SEO touch-ups for the 10 W6 pages + API-doable Sited items (schema refresh on /about-1-1, /product, /electric-vehicles, /tool-manufactring). Then **hand to Yash to run Sited** | — |
+| Auto-publish | ✅ Working: secret WIXKEY rotated by Yash 23 Nov, runs #6/#7 green | VflWebsite publish.yml |
 
 ## Rollout decision (owner challenge, 22 Nov 2026)
 Two releases, not four: (1) the diagnostic (a892ff1) proves how Velo sees the embeds; (2) ONE full W5 release covering all 17 pages, 41 swaps and the text rules on every page, built on what the diagnostic shows works. It is verified against `baseline/` in full, with a single revert if anything regresses. The code is written once; only publishing is split.

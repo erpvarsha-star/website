@@ -2,7 +2,7 @@
 
 Deployed in two Wix custom embeds (Wix limits embed html to 15,000 characters):
 - **VF Corrections Layer** `546ea6cc-003e-41ef-a6f8-97e23f614e77`, revision 4 (22 Nov 2026 fix pass), source `corrections/embed-layer.js` (rules 1-76 of the text table, all hide and alt rules, mailto href fix)
-- **VF Corrections Layer 2** `8733abc0-12cc-47f5-bf5a-41d7ee045d64`, revision 3 (22 Nov 2026 fix pass), source `corrections/embed-layer-2.js` (remaining text rules, plus 123-131)
+- **VF Corrections Layer 2** `8733abc0-12cc-47f5-bf5a-41d7ee045d64`, revision 3 (22 Nov 2026 fix pass), source `corrections/embed-layer-2.js` (remaining text rules, plus 123-136; table ends at 136)
 
 Rule types: **text** = find/replace on text nodes, matched across inline spans within the nearest block element; **hideText** = hide the closest li/tr/p/heading containing the phrase; **attr** = img alt rewrite; **href** = mailto typo fix (pilot). "Page" is a pathname regex; blank means every page. Finds are regular expressions (spaces match any whitespace incl. nbsp).
 
@@ -133,14 +133,21 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 | 121 | all | `/•?Keep feature on forging year over year/` | (removed) | text |
 | 122 | all | `/^We a leading/` | We are a leading | text |
 | 123 | all | `/\bWe has been/` | We have been | text |
-| 124 | all | `/\bFORGIN\s/` | FORGING | text |
+| 124 | all | `/\bFORGIN(?![A-Za-z])/` (round 2: matches at block end or before punctuation, never inside FORGING) | FORGING | text |
 | 125 | all | `/Commercial Vehicle['’]s/` | Commercial Vehicles | text |
 | 126 | all | `/IATF-\s*16949/` | IATF 16949 | text |
 | 127 | `pune` | `/Year Established\s*:?\s*2013/` and a cell-pair rule (label cell "Year Established", next cell "2013") | Year Established 2007 | text + pair |
 | 128 | all | `/\b08:00\b/` | 09:00 (FACTS: both plants open 09:00-18:00) | text |
-| 129 | `aurangabad` | `/Monday\s*-\s*Saturday/` | Saturday–Thursday (closed Friday) | text |
-| 130 | `aurangabad` | `/Mon\s*-\s*Sat\b/` | Sat–Thu (closed Fri) | text |
-(Pune closed Sunday: the live Pune text already reads Monday–Saturday, so no rule is needed.)
+| 129 | `aurangabad` | `/Monday\s*[-‐-―−]\s*Saturday(?!\s*\(closed)/` (hyphen, en dash, em dash) | Saturday–Thursday (closed Friday); with R128 the line reads "Saturday–Thursday (closed Friday), 09:00–18:00 IST" | text |
+| 130 | `aurangabad` | `/Mon\s*[-‐-―−]\s*Sat\b(?!\s*\(closed)/` | Sat–Thu (closed Fri) | text |
+| 131 | `pune` | `/Monday\s*[-‐-―−]\s*Saturday(?!\s*\(closed)/` | Monday–Saturday (closed Sunday) | text |
+| 132 | all | `/\b(CNC Turning Centers\|VMC\|HMC\|Gear Hobbing)\s*×\s*\d+/` (machine-count layout labels) | label only, no count | text |
+| 133 | all | `/CNC Turning, Precision Bore Boring,? (?:and )?Broaching,? and End-Face Machining/` | CNC Turning, Precision Bore Boring and End-Face Machining (broaching via vendor partners) | text |
+| 134 | all | `/55\s*[-‐-―−]\s*75\s*Shore A(?: \((?:Application-Specific\|Application-Tuned)\))?/i` | Application-specific hardness | text |
+| 135 | all | table rows whose first cell is CNC Turning Centers, Vertical Machining Centers (VMC), Horizontal Machining Centers, Gear Hobbing Machines or Broaching Units | row hidden (`rows()` in embed 2) | hide |
+| 136 | all | `li` that is exactly "Broaching" (or "Broaching (vendor partners)") inside an in-house capability list | hidden (`rows()` in embed 2) | hide |
+
+Round 2 limits (22 Nov 2026, found by reading the live raw HTML): R119 "LFull" sits in the "WHY BUYERS CHOOSE US" HTML-embed iframe (filesusr.com, cross-origin) on /forged-machined-components-vf, so no page script can reach it. The machine-count layout, equipment table and the Pune "Monday–Saturday, 08:00–18:00 IST" row are also inside HTML-embed iframes, as is the oil-and-gas "0.5 kg to 50 kg" table row; rules 129-136 only apply where the text is in the page DOM. The oil-and-gas paragraph "weights from 0.5 kg up to 50 kg" is not the miss: the live DOM already reads "1–25 kg" there (R13 works).
 
 ## hideText rules
 

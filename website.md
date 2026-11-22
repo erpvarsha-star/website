@@ -1,33 +1,19 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER — live status (updated 22 Nov 2026, ~20:30 UTC). Read this first.
-> Kept current after every step. Plan and status per workstream: `PHASE3-PLAN.md`.
+> ## HANDOVER: end of session 22 Nov 2026 (~21:15 UTC). Read `NEXT-SESSION.md` first.
+> **Live and verified**
+> - **Velo + GitHub:** `erpvarsha-star/VflWebsite`, main 3a62db4. Every push to main AUTO-PUBLISHES via `.github/workflows/publish.yml` (secret `WIXKEY`). Yash approved live pushes (CLAUDE.md).
+> - **W5:** 41 corrected HTML embeds on 17 pages are served from `/_functions/embed/<key>`. `applyTextCorrections` runs server-side on all 56 pages. 17/17 pages verified, with 0 visible DNP hits (`baseline/w5-verify.md`).
+> - **W7:** browser layers slimmed (embed 1 rev 6, embed 2 rev 7); no machine counts in any source. The no-JS ssr-check is clean except 2 Wix FAQ-app answers (Pune "60 CNC…", Aurangabad "0.5 kg…50 kg").
+> - SEO/schema on all 49 pages, redirects, sameAs and facts are all done earlier (see log below).
 >
-> **Done and verified**
-> - SEO tags and JSON-LD on all 49 pages match FACTS.md. sameAs, Article schema, og:image, homepage FAQ and title are in place. Plant hours in schema are verified on Pune and Aurangabad.
-> - Redirects (F27) and the email-link typo (browser layer) are done.
-> - Browser correction layer (slimmed in W7): embed 1 rev 6, embed 2 rev 7. DOM-only rules (alt, mailto, Year Established, row hiding, dnp stopgap). Text rules now live in Velo. OPEN: 2 Wix FAQ-app answers (Pune machine counts, Aurangabad 0.5-50 kg) sit outside Velo; fix via FAQ API.
-> - Facts: all owner answers are recorded in FACTS.md. The rule is to ask Yash only on conflicts.
-> - Wix ↔ GitHub connected: `erpvarsha-star/VflWebsite`, main.
-> - W0 baseline done (9cf3803): 49 pages. Empty bodies: /transmission-and-driveline, /electric-mobility. Machine counts are in NATIVE text on 5 pages (india, pune, maharashtra, suspension, railways); W5 adds a Velo text-rules module for every page. Multiple H1s on /automotive-steering-powertrain (25), /forging-company-aurangabad (8) and /about-1-1 (6), queued for W6.
-> - Research done: `VELO-ROUTE.md`. Brand kit: `BRAND.md`. No-JS crawler checker: `.github/workflows/ssr-check.yml`; baseline in `baseline/ssr-before.md`.
+> **Open, in order**
+> 1. **FAQ-app answers:** find all FAQ entries via the Wix FAQ API and fix conflicts (machine counts → capability wording, 1–25 kg). A fix was started and then stopped, so re-query first.
+> 2. **W6 new page content** live via Velo `Text.html`: 7 rewrites, homepage additions, 3 F28 pages, and 2 empty pages (/transmission-and-driveline, /electric-mobility). Fix multiple H1s. Use the BRAND.md style. Not started (the agent was stopped).
+> 3. **W8:** SEO for changed pages. **Then tell Yash to run Sited** (owner instruction).
+> 4. Later: F10 social icons, F22 privacy/terms, F23 CWV/IndexNow, F19 case studies, F20 capability sheet, F15 off-site profiles; SEO leftovers dpizt legalName and superlatives on a3evt, q1c5f, gfauz, odejn.
 >
-> **In progress**
-> - **W5 full release is on VflWebsite main (be4d7bc), WAITING FOR PUBLISH** (Editor click; auto-publish secret still empty). Then: ssr-check + Firecrawl on all 17 pages vs baseline/. Rollback: main → bf6ed6c, then publish.
-> - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
-> - W3 drafted (ce78c18): 60 embeds on 17 pages, 41 corrected with 175 edits. F28 drafts and the re-checked drafts pass the gate. The Haiku review is running (`embeds/REVIEW.md`). Claims that don't conflict are kept as [L], with no owner questions.
-> - W5 prepped on VflWebsite branch `w5-embeds` (9757629, lint clean, not merged). It contains http-functions serving the 38 corrected embeds, src swaps on 17 pages, and `applyTextCorrections` in all 56 page files. Rollout per `W5-DEPLOY.md`: one embed (vf LFull) plus Pune first. Untested risks: the src setter on code-mode embeds, frame headers on /_functions, iframe height, html reflow, SSR.
->
-> **Next, in order**
-> 1. Verify the W4 pilot.
-> 2. W5: Velo corrections. Pune "CNC Turning Centers" still appears 4× in the no-JS HTML (outside the embeds). Then use the `src` swap to corrected embed HTML (host: Velo http-functions).
-> 3. W6: new page content in the BRAND.md style.
-> 4. W7: retire the browser-layer rules that Velo covers.
-> 5. W8: SEO for changed pages, then re-run Sited.
-> 6. Auto-publish: Yash will set it up (`SETUP-AUTO-PUBLISH.md`). Then add the publish workflow to VflWebsite.
-> 7. Later: social icons (F10), privacy/terms (F22), CWV/IndexNow (F23), case studies (F19), capability sheet (F20), off-site profiles (F15). Open SEO items: dpizt legalName (at size cap) and leftover superlatives on a3evt, q1c5f, gfauz, odejn.
->
-> **Owner rules in force:** ask only on conflicts, one multiple-choice question at a time. Opus plans, Sonnet executes, Haiku reviews. No CIN. No machine counts. No new sign-ups. Spend over $50 needs Yash's yes. One Wix writer at a time. Yash clicks Publish until auto-publish is set up. Weekly task: Monday 8:13 IST (`trig_01CcK6WNr29MzcPgQbkWaW9S`).
+> **Rules:** Opus plans, Sonnet executes, Haiku reviews. Ask Yash only on fact conflicts or spend over $50. No CIN, no machine counts. One Wix writer at a time. Refresh this block and the PHASE3-PLAN.md Status after every step.
 
 **Source:** Sited AI Visibility Report, analysed 2026-11-22 · GEO Readiness Score 81/100 at time of report
 **Scope:** 10 crawled pages — homepage, /contact-us-1, /about-1, /assembly-services, /about-1-1, /product, /forging-company-aurangabad, /company-profile, /electric-vehicles, /tool-manufactring
@@ -326,3 +312,6 @@ Auto-publish works (secret is named WIXKEY). W5: 17/17 pages pass, with 0 visibl
 - Embed 1 `546ea6cc-...` rev 5 -> 6, 13,429 -> 1,007 chars (alt, mailto). Embed 2 `8733abc0-...` rev 5 -> 7, 14,576 -> 2,726 chars (Year Established pair, rows(), dnp stopgap). Read-back equals local `corrections/embed-layer*.js`; 0 machine-count matches; 0 non-ASCII. Full old rule source moved to `corrections/rules-src/layer-1.js` and `layer-2.js` (generator input).
 - VflWebsite `3a62db4`: count patterns in `corrections-rules.js` use `\d+`; eslint clean; publish run 45069516062 success.
 - Verify: ssr-check 45069569237 and Firecrawl in `baseline/w5-verify.md`. Open: Pune FAQ answer still states the machine counts and the Aurangabad FAQ answer says 0.5-50 kg; both are Wix FAQ-app content, so they need the FAQ API.
+
+### 2026-11-22 ~21:15 UTC: session end (usage limit)
+Stopped both agents: the FAQ-app fix (partial, state unknown) and W6 (no output). All work is committed. The next session starts from `NEXT-SESSION.md`.

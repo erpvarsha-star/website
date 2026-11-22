@@ -293,3 +293,6 @@ Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (bra
 
 ### 2026-11-22 — W5 prepped (not live)
 VflWebsite `w5-embeds` 9757629: 38 corrected-embed modules served by `/_functions/embed/<key>`, 41 src swaps on 17 pages, 136+11+1 rules ported to `src/public/corrections.js` and called on every page. Lint clean; mock tests pass. Merge only after the W4 pilot is published and verified and the W3 review passes. Rules with no Velo equivalent (Year Established cell-pair, rows(), image alt) stay in the browser layer.
+
+### 2026-11-22 — W3 review ruled by Opus
+The Haiku review (embeds/REVIEW.md, 4d2a602) gave 50/60 PASS. Of its 17 FAIL items, Opus ruled 5 to be true conflicts: "under one roof" vs two plants, the EV motor item, "Pan-India", a competitor negative, and the NR rubber / in-house phosphating claims. The executor is fixing those and regenerating `w5-embeds`. The rest are pre-existing non-conflicts and stay [L]. The F28 draft FAILs were non-conflicts (SimuFact, 2D/3D drawings and the RFQ page are all in FACTS), so the drafts PASS. reviewer.md updated: FAIL only on conflicts.

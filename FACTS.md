@@ -31,7 +31,8 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 Source: [P][L]
 
 ## Certifications [Y]
-IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 submission capability. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
+IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 submission capability · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; approval reference not yet supplied).
+**Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
 
 ## Milestones & Awards [P]
 2009 TS-16949 · 2011 Design patent granted by the Indian Government · 2014 India SME Excellence Award in Innovation & Invention · 2014 Certificate of Excellence · 2015 Excellence in Manufacturing Gold Trophy (ACMA) · 2016 Daimler India Best Supplier Award · 2017 IATF 16949 · 2017 Best Employer Brand Award · 2018 Brand Leadership Award · 2018 Productivity Improvement Bronze Trophy (ACMA) · 2019 Best Performing Cluster Company (ACMA) · 2023 Daimler India Performance Appreciation Letter · 2024 Supply for electric vehicles · 2025 India SME 100 Award, final winner, 11th Edition
@@ -53,6 +54,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 | Presses 800 T–2,500 T (+1,000 T) | "500T", "1,000 to 5,000 tons" | /forging-presses-hammers (title, meta, JSON-LD), /about-1 body | API (SEO/schema) + click-list (body) |
 | Weight 1–25 kg | 0.5–50 kg, 2–20 kg, 0.5–20 kg | Most pages incl. /forging-vs-casting, /automotive-steering-powertrain, /alloy-steel-forgings | API + click-list |
 | Forging ±0.5 mm · machining ±0.02 mm | ±0.01 mm, ±0.2 mm, ±5 microns, EN 10243-1 Gr F | /machining title, Pune, suspension, /about-1, /about-1-1, EV, oil & gas, radius-rod | API + click-list |
+| Railway: RDSO only | EN/UIC/AAR compliance; Charpy −40 °C, 100% volumetric UT, 30+ yr life, >32 t axle loads (unconfirmed, remove) | /forged-components-railways body+table+FAQ, /buying-forgings-from-india | Click-list + API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)

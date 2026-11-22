@@ -1,0 +1,39 @@
+name: ssr-check
+on:
+  workflow_dispatch:
+    inputs:
+      paths:
+        description: "Space-separated paths"
+        default: "/ /forging-manufacturer-pune /contact-us-1"
+  push:
+    branches: [ccr-6409486e-3vy613]
+    paths: ['.github/ssr-trigger']
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and summarise (no JS)
+        env:
+          PATHS: ${{ github.event.inputs.paths }}
+        run: |
+          set -u
+          P="${PATHS:-/ /forging-manufacturer-pune /contact-us-1}"
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          mkdir -p out
+          for p in $P; do
+            f="out/$(echo "$p" | tr '/' '_')"; [ "$f" = "out/_" ] && f="out/_root"
+            code=$(curl -sS -L -A "$UA" -o "$f.html" -w '%{http_code}' "https://www.varshaforgings.com$p" || echo curl-fail)
+            echo "=== $p  HTTP $code  bytes=$(wc -c < "$f.html" 2>/dev/null)"
+            echo "varshaforging.com (typo): $(grep -o 'varshaforging\.com' "$f.html" | wc -l)"
+            echo "varshaforgings.com: $(grep -o 'varshaforgings\.com' "$f.html" | wc -l)"
+            echo "CNC Turning Centers: $(grep -o 'CNC Turning Centers' "$f.html" | wc -l)"
+            echo "x60 (×60): $(grep -o '×60' "$f.html" | wc -l)"
+            echo "htmlComp-iframe: $(grep -o 'htmlComp-iframe' "$f.html" | wc -l)"
+            echo "<h1: $(grep -o '<h1' "$f.html" | wc -l)"
+            echo "filesusr html hashes:"
+            grep -o 'filesusr\.com/html/[A-Za-z0-9_]*' "$f.html" | sort -u | sed 's/^/  /'
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ssr-html
+          path: out/

@@ -2,7 +2,7 @@
 
 ## Start
 1. Run Opus as the main session (`/model opus`) and set the mode dropdown to **Auto**.
-2. Repos:
+2. Repos. **Both must be attached when the session starts.** If VflWebsite is missing, run `add_repo` right away; don't work without it.
    - `erpvarsha-star/website`, branch `ccr-6409486e-3vy613`: plans, facts, logs, drafts and scripts.
    - `erpvarsha-star/VflWebsite`, branch `main`: live site code. **A push to main auto-publishes the live site.** Attach it with `add_repo` (owner erpvarsha-star, repo VflWebsite, access push) and clone it to /home/user/vflwebsite.
 3. Read, in this order: `CLAUDE.md` → `website.md` (HANDOVER) → `PHASE3-PLAN.md` (Status table) → `FACTS.md` → `BRAND.md` → `W5-DEPLOY.md` → `baseline/w5-verify.md`.

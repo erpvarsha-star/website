@@ -154,3 +154,16 @@ Rule added to CLAUDE.md. All answers recorded in FACTS.md with [Y]. **Confirmed:
 
 `OWNER-CONFIRM.md` is marked resolved. The weekly Monday task prompt now carries these facts, so it won't flag them as drift.
 **Dispatched:** (1) executor aligning the 7 drafts to the new facts (no Wix); (2) **owner-approved** ("Apply all now") executor correcting SEO/schema on all 49 pages, including restored opening hours. A reviewer verifies after.
+
+### 2026-11-22 (continued) — Final SEO/schema cleanup batch; text-automation decision
+- **Cleanup batch (executor, all PATCH 200):**
+  - Pune described as machining and assembly (tfegr); hammers 1–3 MT (n2uai, l95rc).
+  - Positive single-supplier wording (arrpe, lgtlq, slaet, owlox); high-speed-rail overclaims removed (l2sru).
+  - h3p1f meta rewritten; "VFL" replaced (a3evt, odejn).
+  - EV pages now suspension and steering only (jq1y2); subsea removed (xr827); "1981 roots" removed (unlvj).
+  - 48-hour promise now says "single drawing or part" (mfcwu, pa6w8, wu1va, zwiw1).
+  - Organization nodes now have name "Varsha Forgings" plus legalName on all pages except dpizt (at its size limit).
+  - Oversized scripts compacted; to fit, BreadcrumbList was dropped on mfcwu, wu1va and zwiw1.
+  - Re-scan: 0 hits across 49 pages.
+- **Open:** dpizt is at its size limit (no legalName; hours and geo were trimmed earlier). Leftover superlatives ("leading", "renowned", "cost-effective") on a3evt, q1c5f, gfauz, odejn. "Forging Manufacturer in Pune" titles imply forging at Pune (lgtlq, jo7nt). "Friction drop hammers" is not in FACTS. **F27 redirect:** `/forged-machined-components` → `/alloy-steel-forgings` hides page arrpe.
+- **Decision (Yash):** visible-text corrections via a **Velo + GitHub code layer** (F26). Research is in `AUTOMATION-OPTIONS.md`, setup steps in `SETUP-VELO-GITHUB.md`.

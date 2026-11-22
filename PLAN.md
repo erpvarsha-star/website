@@ -162,6 +162,8 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F24 | **Site-wide fabricated / contradictory claims** (weights, tolerances, capacity, compliance, China claims; machine counts on 7 pages) | 49-page audit | **High: trust + AI confidence** | 2 | Owner answers `OWNER-CONFIRM.md` → Yash `PHASE2-YASH-CLICKLIST.md` |
 | F25 | **Lead-critical: footer + contact mailto `varshaforging.com` typo** | 49-page audit | **High: enquiries may bounce** | 2 | Block 1 of Yash's click-list |
 | F23 | Verify Core Web Vitals + IndexNow | Sited technical (unverified) | Med | 4 | Not started |
+| F26 | **Visible-text corrections via Velo + GitHub layer** (owner chose this over manual Editor work) | Owner decision 22 Nov 2026 | Removes Yash's clerical Editor work | 2 | Waiting on Yash's one-time GitHub connection (`SETUP-VELO-GITHUB.md`), then pilot on the mailto typo |
+| F27 | Redirect `/forged-machined-components` → `/alloy-steel-forgings` hides page `arrpe`; 2 redirects point at a redirected path | Executor finding | Medium | 2 | Ask Yash: keep the page or keep the redirect |
 | F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 
 ---

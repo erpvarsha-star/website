@@ -32,6 +32,9 @@ Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifi
 ## Fact-gathering rule (owner, 22 Nov 2026)
 When a gap or conflict is found (e.g. press sizes, weights, tolerances), ask Yash **one question at a time with multiple-choice answers** (AskUserQuestion), recommended option first. Record each answer in `FACTS.md` immediately with source [Y] and date, commit, then queue the correction everywhere it appears (API for SEO/schema, Yash's click-list for visible text).
 
+## Live-code releases (owner approval, 22 Nov 2026)
+Yash approved pushing to `erpvarsha-star/VflWebsite` main, which **auto-publishes the live site** via `.github/workflows/publish.yml` (secret `WIX_CLI_API_KEY`), now and for later staged releases. Conditions: one release at a time, lint clean, staged rollout, live verification (Firecrawl + ssr-check) after each, and revert immediately on any regression. Draft work stays on non-main branches.
+
 ## Hard rules
 - Facts only from `FACTS.md`. Never publish: CIN, CNC/VMC/HMC machine counts, anything in its DO NOT PUBLISH table.
 - One Wix writer at a time: never run two executors that write to Wix in parallel.

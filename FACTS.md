@@ -56,6 +56,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 | Forging ±0.5 mm · machining ±0.02 mm | ±0.01 mm, ±0.2 mm, ±5 microns, EN 10243-1 Gr F | /machining title, Pune, suspension, /about-1, /about-1-1, EV, oil & gas, radius-rod | API + click-list |
 | Railway: RDSO only | EN/UIC/AAR compliance; Charpy −40 °C, 100% volumetric UT, 30+ yr life, >32 t axle loads (unconfirmed, remove) | /forged-components-railways body+table+FAQ, /buying-forgings-from-india | Click-list + API |
 | No competitor claims | Negative claims about Chinese suppliers; freight $800–1,500/container, MOQ 1,000–5,000, sample lead 4–6 wks, 18–22 days to Rotterdam | /buying-forgings-from-india, /steering-suspension-components body | Click-list (rewrite as India/Varsha strengths) |
+| Rubber bonding = vendor partner [Y] | "executes precision rubber vulcanization bonding" (in-house claim) | /rubber-bonded-components | Click-list: "through a dedicated rubber-bonding partner, under Varsha's quality control" |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)

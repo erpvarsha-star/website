@@ -55,6 +55,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 | Weight 1–25 kg | 0.5–50 kg, 2–20 kg, 0.5–20 kg | Most pages incl. /forging-vs-casting, /automotive-steering-powertrain, /alloy-steel-forgings | API + click-list |
 | Forging ±0.5 mm · machining ±0.02 mm | ±0.01 mm, ±0.2 mm, ±5 microns, EN 10243-1 Gr F | /machining title, Pune, suspension, /about-1, /about-1-1, EV, oil & gas, radius-rod | API + click-list |
 | Railway: RDSO only | EN/UIC/AAR compliance; Charpy −40 °C, 100% volumetric UT, 30+ yr life, >32 t axle loads (unconfirmed, remove) | /forged-components-railways body+table+FAQ, /buying-forgings-from-india | Click-list + API |
+| No competitor claims | Negative claims about Chinese suppliers; freight $800–1,500/container, MOQ 1,000–5,000, sample lead 4–6 wks, 18–22 days to Rotterdam | /buying-forgings-from-india, /steering-suspension-components body | Click-list (rewrite as India/Varsha strengths) |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -100,4 +101,5 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 | Patent subject ("seven-groove torque rod") | Unconfirmed; deck says only "design patent, 2011" |
 | 0240-66172xx landlines | Wrong; live site uses +91 8411000551 |
 | Founding year 1988 | Wrong; 1989 confirmed |
+| Negative claims about competitors (incl. Chinese suppliers) | Owner decision 22 Nov 2026: present Varsha's strengths only |
 | "SME Chamber of India award" | Wrong name; real award is India SME Excellence Award in Innovation & Invention |

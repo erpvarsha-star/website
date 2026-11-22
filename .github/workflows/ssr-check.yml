@@ -30,6 +30,8 @@ jobs:
             echo "x60 (×60): $(grep -o '×60' "$f.html" | wc -l)"
             echo "0.5 kg: $(grep -o '0\.5 kg' "$f.html" | wc -l)"
             echo "vf-diag (must be 0): $(grep -c 'vf-diag' "$f.html")"
+            echo "60 CNC (must be 0): $(grep -o '60[[:space:]]CNC' "$f.html" | wc -l)"
+            echo "17 VMC (must be 0): $(grep -o '17[[:space:]]VMC' "$f.html" | wc -l)"
             echo "htmlComp-iframe: $(grep -o 'htmlComp-iframe' "$f.html" | wc -l)"
             echo "<h1: $(grep -o '<h1' "$f.html" | wc -l)"
             echo "filesusr html hashes:"

@@ -308,3 +308,6 @@ Sonnet executor.
 
 ### 2026-11-22 — Owner approved live pushes; auto-publish and diagnostic pushed
 Yash saved `WIX_CLI_API_KEY` in VflWebsite and approved pushes to main (recorded in CLAUDE.md). VflWebsite a892ff1 adds `.github/workflows/publish.yml` (login with the API key, `wix publish --source remote -y`) and the `vf-diag` / `vf-diag-pune` meta-tag diagnostic. Embed 2 rev 5 holds the DNP iframe-hide stopgap for 7 machine-count embeds, not yet seen served live (cache?). Verification is pending.
+
+### 2026-11-22 — Rollout cut to two releases (owner challenge)
+Diagnostic first, then one full W5 release. W5-DEPLOY.md's 4-stage plan is superseded.

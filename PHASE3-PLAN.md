@@ -37,3 +37,6 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W5 | ✅ Prepped on VflWebsite branch `w5-embeds` (7f64c4b); known nit: the build script adds 2 blank lines per page file on each run (fix before merge); lint clean; NOT merged. Blocked on: W4 publish+verify, W3 review | `W5-DEPLOY.md`: 38 embed modules, 41 swaps on 17 pages, text rules in all 56 page files |
 | W6–W8 | ⬜ Not started | — |
 | Auto-publish | 🔄 Workflow pushed (VflWebsite a892ff1); first run publishing the diagnostic | Owner approved live pushes 22 Nov |
+
+## Rollout decision (owner challenge, 22 Nov 2026)
+Two releases, not four: (1) the diagnostic (a892ff1) proves how Velo sees the embeds; (2) ONE full W5 release covering all 17 pages, 41 swaps and the text rules on every page, built on what the diagnostic shows works. It is verified against `baseline/` in full, with a single revert if anything regresses. The code is written once; only publishing is split.

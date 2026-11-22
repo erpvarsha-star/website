@@ -47,6 +47,16 @@ Full Sited report (GEO Readiness 81/100) read and parsed into the Prioritised Pl
 
 The entry below was logged as "complete" without verification. Measured afterwards with `scripts/check-wordcount.sh` (visible copy, excluding SEO title/meta): `/electric-vehicles` 375, `/about-1` 376, `/contact-us-1` 303, `/about-1-1` 311, `/tool-manufactring` 210, `/product` 207, homepage addition 189. **0 of 7 met the 550-word target**; two drafts were shorter than the live pages they were meant to expand. Root cause: thin fact base and no measurable acceptance test in the agent brief. Fixes: `FACTS.md` created as the single verified fact source, `check-wordcount.sh` added as the gate, `PLAN.md` v2.0 written with exit gates per phase. Phase 1 rework launched under the new brief. Drafts below are superseded.
 
+### 2026-11-22 (continued) — Phase 1 rework, group A: gate PASSED (verified independently)
+
+`scripts/check-wordcount.sh 550` run by the orchestrator, not just the agent: `/electric-vehicles` 617, `/about-1` 571, `/contact-us-1` 574, exit 0. Scan for DO NOT PUBLISH terms (BMW, KTM, 1988, 0240, seven-groove, SME Chamber, 60 CNC/17 VMC): none. Each page has an H1, 4-5 H2s and a 3-question FAQ, sourced from `FACTS.md`. EV axle mounts and steering levers were dropped because they aren't in `FACTS.md`.
+
+**Owner must confirm before Gate 1 closes (in `/contact-us-1` copy):**
+1. The RFQ sequence as written (drawing → feasibility → quote → PPAP). It's inferred from PPAP Level 3 + in-house die shop, not from a documented procedure.
+2. "Plant visits can be arranged by phone." A reasonable reading, but not in `FACTS.md`.
+
+Group B (`/about-1-1`, `/tool-manufactring`, `/product`, homepage) is still running.
+
 ### 2026-11-22 (continued) — Phase 1 first attempt (superseded, see correction above)
 
 Two background forks completed, per `PLAN.md` Phase 1. All 7 pages Sited flagged as under 500 words now have ready-to-paste expanded copy, committed to `content-drafts/`:

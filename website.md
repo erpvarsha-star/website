@@ -13,6 +13,7 @@
 > - Research done: `VELO-ROUTE.md`. Brand kit: `BRAND.md`. No-JS crawler checker: `.github/workflows/ssr-check.yml`; baseline in `baseline/ssr-before.md`.
 >
 > **In progress**
+> - **W5 full release is on VflWebsite main (be4d7bc), WAITING FOR PUBLISH** (Editor click; auto-publish secret still empty). Then: ssr-check + Firecrawl on all 17 pages vs baseline/. Rollback: main → bf6ed6c, then publish.
 > - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
 > - W3 drafted (ce78c18): 60 embeds on 17 pages, 41 corrected with 175 edits. F28 drafts and the re-checked drafts pass the gate. The Haiku review is running (`embeds/REVIEW.md`). Claims that don't conflict are kept as [L], with no owner questions.
 > - W5 prepped on VflWebsite branch `w5-embeds` (9757629, lint clean, not merged). It contains http-functions serving the 38 corrected embeds, src swaps on 17 pages, and `applyTextCorrections` in all 56 page files. Rollout per `W5-DEPLOY.md`: one embed (vf LFull) plus Pune first. Untested risks: the src setter on code-mode embeds, frame headers on /_functions, iframe height, html reflow, SSR.
@@ -314,3 +315,6 @@ Diagnostic first, then one full W5 release. W5-DEPLOY.md's 4-stage plan is super
 
 ### 2026-11-22 — Diagnostic read: Velo works server-side
 Live Pune vf-diag: env "backend"; 7 HtmlComponents (html1–7) with full filesusr src. No-JS typo count for varshaforging.com fell 2/2/4 → 0/0/0, so the Velo email fix renders server-side. The W4 collapse failed only because Yash's first Publish predated the code sync. "CNC Turning Centers" ×4 in the no-JS HTML on every page is the correction-layer script's own rule text, not visible copy. The DNP stopgap hides the Pune wrappers (display:none); Firecrawl still inlines iframe text, so its markdown can't prove visibility. Auto-publish is still failing on an empty secret. The full W5 release is being assembled on VflWebsite `release-w5`.
+
+### 2026-11-22 — W5 full release pushed to main
+VflWebsite main fast-forwarded bf6ed6c → be4d7bc: merged w5-embeds, diagnostic removed, lint clean, generator idempotent. Covers http-functions serving 38 corrected embeds, 41 src swaps on 17 pages, applyTextCorrections on all 56 pages, the footer email fix, and the Pune collapse kept as a fallback. Awaiting publish.

@@ -1,0 +1,14 @@
+# Baseline: forging-manufacturer-pune
+- URL: https://www.varshaforgings.com/forging-manufacturer-pune
+- Title: Forging Manufacturer in Pune | Varsha Forgings | CNC Machining & Assembly India
+- H1 count: 1
+- H1 text: "Precision CNC Machining & Assembly Hub"
+- Word count (visible body, manual estimate): ~1,050
+- Internal links: 0
+- Form or RFQ button present: No form. No RFQ button.
+- Status: ok
+- CRITICAL FLAG (DO NOT PUBLISH rule): visible body states "CNC Turning Centers x60", "VMC x17", "HMC x2", "Gear Hobbing x5" in the layout diagram and the "Precision CNC Machining Infrastructure" table (Quantity column). CNC/VMC/HMC machine counts are on the DO NOT PUBLISH list in FACTS.md. Reviewer has NOT verified FACTS.md in this W0 pass; W5 must fix this first.
+- Other flags for owner review: "Year Established 2013" in the plant table conflicts with "operational since 2007" in the intro. Full plant street address published ("Gut No. 161, Mauje-Markal, Tal-Khed, Pune 412105"). "Operating Hours Monday-Saturday 08:00-18:00 IST". Machining tolerance "+/-0.01 mm" here vs "+/-0.02 mm" on /machining and FAQ. "Chakan/Bhosari" OEM delivery belt. Customer-named OEM belt needs FACTS.md match.
+
+## First 300 words (visible body)
+Precision CNC Machining & Assembly Hub. The Pune Division of Varsha Forgings is the company's precision machining, sub-assembly, and Just-In-Time (JIT) logistics hub. Located in Markal, Tal-Khed, Pune, Maharashtra, this facility has been operational since 2007 and is positioned adjacent to India's densest automotive manufacturing ecosystem. Unlike the heavy forging operations at the Aurangabad plant, the Pune facility is engineered for high-tolerance finishing operations on near-net-shape forgings. It houses CNC turning, VMC machining and gear hobbing in-house, extended by a dedicated base of machining vendors, and dedicated assembly lines. This concentration of precision infrastructure makes it the designated production node for final machining, elastomeric bushing integration, hardware insertion, and sub-assembly of forged automotive, commercial vehicle, and railway components. PUNE PLANT, MARKAL, KHED LAYOUT: Incoming Forgings from Aurangabad, Ultrasonic Wash, CNC Turning Centers x60, VMC x17, HMC x2, Gear Hobbing x5, Broaching, Precision Boring, Faro Arm CMM, Zeiss Contour, Surface Roughness Test, Assembly Lines, Bushing Press-Fit, Hardware Insertion, VCI Packaging, JIT Staging, OEM Delivery: Chakan/Bhosari. Plant Specifications & Infrastructure table: Location, Plant Type, Year Established (2013), Quality Certification (IATF 16949, ISO 9001:2015), Machining Tolerance (+/-0.01 mm), Process Capability Target (Cpk 1.67), Operating Hours. Precision CNC Machining Infrastructure table (Equipment | Quantity | Primary Application): CNC Turning Centers 60; Vertical Machining Centers (VMC) 17; Horizontal Machining Centers (HMC) 2; Gear Hobbing Machines 5.

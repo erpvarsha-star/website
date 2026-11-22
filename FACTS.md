@@ -63,6 +63,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | No ZLD claim [Y] | "ZLD effluent treatment" | /forging-manufacturer-india (body + schema) | Click-list + API |
 | Plant hours [Y] | Mon–Sat 08:00–18:00 (both plants) | Pune schema `lgtlq`; Aurangabad `dpizt` (hours dropped this session, restore) | API |
 | No rubber temp/hardness specs | −50/+200 °C, −60/+230 °C, 55–75 Shore A, NR/SBR | /rubber-bonded-components, /assembly-services | Click-list + API |
+| No Corvette [Y] | Homepage image alt "corvtte customer" | Homepage | Click-list (or Media API) |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -119,6 +120,8 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 ## Customers & markets [Y][L]
 - **OEMs (confirmed):** Daimler · Ashok Leyland · MAN Trucks India · Mahindra Trucks & Buses · Paccar · Scania · Tata Daewoo
 - **Also on live /customer page:** Bajaj · Escorts · Exedy · Force Motors · Hendrickson · John Deere · TAFE · Tata Motors · TVS · VE Commercial Vehicles · Seaco
+- **Confirmed current [Y] 22 Nov 2026:** Ferrabyrne · Four Star Industries · Indo Schottle · Innova Rubbers · Jagadamba Auto-components · Laxmi-Agni · NR Industries · Mansons · MSL · Piaggio · Polybond · Sanjeev · Tork Motors
+- **Not a customer:** Corvette (remove the homepage image alt text "corvtte customer")
 - **Export countries:** Germany · Spain · Italy · Portugal · Austria · United States
 
 ## Sustainability [P]

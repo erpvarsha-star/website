@@ -38,6 +38,46 @@ The last row is the honest gap: everything so far measures visibility, nothing m
 
 ---
 
+## 1A. Sited report — priority view (the report's own order)
+
+Every action in the Sited AI Visibility Report's "Prioritised Action Plan" (22 Nov 2026), in its order, with live status. **Work the open items top to bottom.**
+
+### Quick Wins (report: "this week") — report says these alone take 81 → 90
+| # | Report action | Finding | Impact | Status | Next step / owner |
+|---|---|---|---|---|---|
+| QW1 | sameAs links on homepage Organization schema | F1 | High | ✅ Done, reviewer-verified (LinkedIn) | Add more profiles as they're verified (F15) |
+| QW2 | Brand name in homepage title | F5 | Medium | ✅ Done | — |
+| QW3 | Publication dates on `/assembly-services`, `/forging-company-aurangabad`, `/company-profile` | F4 | Medium | ◐ Schema `dateModified` done; **visible date pending** | Yash, Phase 2 |
+| QW4 | Author byline on `/assembly-services` | F6 | Low | ◐ Schema author done; **visible byline pending** | Yash, Phase 2 |
+| QW5 | H1 + ≥ 2 H2 on `/product`, `/electric-vehicles` | F8 | Low | ◐ Drafts have them; **paste pending** | Yash, Phase 2 |
+| QW6 | content-security-policy header | F7 | Low | ✕ Not owner-controllable on Wix Classic | Closed; costs ~1 point |
+
+### Medium-Term (report: "this month") — with Quick Wins, report says 97
+| # | Report action | Finding | Impact | Status | Next step / owner |
+|---|---|---|---|---|---|
+| MT1 | Structured data on `/about-1-1`, `/product`, `/electric-vehicles`, `/tool-manufactring` | F3 | Medium | ✅ Done | — |
+| MT2 | Expand 7 pages to 500+ words | F2 | Medium | ◐ Drafts gate-passed (560–653 words); **paste pending** | Owner read-through → Yash, Phase 2 |
+| MT3 | **Proof and FAQ content: case studies, certifications in prose, customer references** | **F19 (new)** | Medium | ✕ Not started (FAQ schema only) | Owner supplies 1–2 real case studies (problem → part → result). Claude drafts from them |
+| MT4 | og:image on pages without one | F9 | Low | ✅ Done (10 crawled pages) | Extend to all 49 in the weekly task |
+
+### Strategic (report: "this quarter")
+| # | Report action | Finding | Impact | Status | Next step / owner |
+|---|---|---|---|---|---|
+| ST1 | Build verified off-site presence (directories, Wikidata, etc.) for sameAs | F15 | High (lifts Brand cap 80 → 100) | ✕ Not started | Yash: IndiaMART / TradeIndia / ExportersIndia listings audit; Claude: Wikidata entry draft |
+| ST2 | Topical authority: dated, bylined articles answering buyer questions | F16 | Medium | ◐ 1 blog post live (precision forging cost) | Claude publishes via Blog API, zero Yash. Target 2 per month |
+| ST3 | **Downloadable technical resources: capability sheet, spec sheets, traceability docs** | **F20 (new)** | Medium | ✕ Not started | Claude builds a capability-sheet PDF from FACTS.md → owner approves → upload via API |
+
+### Other report items not in its action table (added)
+| # | Report item | Finding | Impact | Status | Next step |
+|---|---|---|---|---|---|
+| X1 | **Article + Author schema** on bylined pages (`/forging-company-aurangabad`, `/company-profile`, `/assembly-services`) | **F21 (new)** | High (report's schema table) | ✕ Not started | Executor, API. **Next API task** |
+| X2 | **Privacy policy and terms pages**; contact page linked in main nav | **F22 (new)** | Low (agent readiness 38/100) | ✕ Not started | Claude drafts copy; Yash creates pages (Editor) |
+| X3 | **Verify Core Web Vitals** (PageSpeed Insights) and **IndexNow** (Bing Webmaster Tools) | **F23 (new)** | Medium (unverified) | ✕ Not started | Reviewer runs PageSpeed via public API; Bing needs owner login |
+
+**Projected score** (report's own arithmetic): Quick Wins done except CSP ≈ **89** · plus Medium-Term ≈ **96** · Brand stays capped at 80 until ST1 off-site presence is verifiable.
+
+---
+
 ## 2. Operating rules
 
 1. **Facts come only from `FACTS.md`.** Not from memory, not from a consultant, not from an agent's draft. A claim not in `FACTS.md` is not published.
@@ -115,6 +155,11 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F15 | Off-site presence (LinkedIn, Wikidata, directories) | Sited strategic | Lifts Brand cap 80 → 100 | 3 / 5 | Not started |
 | F16 | Topical content calendar | Sited strategic | Ongoing citations | 5 | Not started |
 | F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | **Closed:** no new sign-ups. Sited (already paid) + GA4 AI-referrals |
+| F19 | Proof content: case studies, certifications in prose, customer references | Sited MT3 | Med | 4 | Needs 1–2 real case studies from owner |
+| F20 | Downloadable technical resources (zero found) | Sited ST3 | Med | 5 | Not started |
+| F21 | Article + Author schema on bylined pages | Sited schema table | High | 3 | **Next API task** |
+| F22 | Privacy policy + terms pages; contact in main nav | Sited agent readiness | Low | 2 | Not started |
+| F23 | Verify Core Web Vitals + IndexNow | Sited technical (unverified) | Med | 4 | Not started |
 | F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 
 ---

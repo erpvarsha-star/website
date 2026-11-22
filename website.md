@@ -179,3 +179,10 @@ The Redirects API has no update method, so each was deleted and recreated. All c
 - `/copy-of-alloy-steel-forgings` lands correctly.
 - The two plain `/forged-machined-components*` URLs still land on /alloy-steel-forgings, while cache-busted requests land on `-vf`. Likely a stale edge cache.
 - **Re-verify later**; if still stale, republish or ask Wix support.
+
+### 2026-11-22 (continued) — Custom Embed correction layer: pilot (owner-approved)
+- Created Wix custom embed **"VF Corrections Layer"** (id 546ea6cc-003e-41ef-a6f8-97e23f614e77, BODY_END, ESSENTIAL, loadOnce) via the Custom Embeds API. No Editor or GitHub step was needed. The site had no embeds before.
+- Pilot rule: rewrite `mailto:marketing@varshaforging.com` → `mailto:marketing@varshaforgings.com` on every page (browser-side, with a MutationObserver for Wix's client-side navigation).
+- Source of truth: `corrections/embed-layer.js`. Future rules are added there and the embed is updated via the API (pass the revision).
+- **Limit:** runs in the browser, so humans and Google see the fix, but non-JS AI crawlers don't. Velo + GitHub (F26) gives the server-side version.
+- Verification: Playwright was blocked by the sandbox proxy (www.varshaforgings.com not allowed). The reviewer is verifying via Firecrawl instead.

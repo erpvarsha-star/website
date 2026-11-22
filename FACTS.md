@@ -129,7 +129,8 @@ Material inspection → CNC circular saw cutting → billet heating → forging 
 
 ## RFQ & customer engagement [Y]
 - **RFQ sequence (owner-confirmed 22 Nov 2026):** customer drawing → feasibility review → quotation → PPAP.
-- **Feasibility response: within 48 hours for a single drawing/part** [Y]. Don't promise 48 h for multi-part packages.
+- **Feasibility response: within 48 hours for a single drawing/part** [Y].
+- **Prototype and low-volume enquiries accepted** alongside series production [Y]. Don't promise 48 h for multi-part packages.
 - **Plant visits:** customers are welcome to visit the plants after an RFQ.
 
 ## Traceability [P]
@@ -147,6 +148,8 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
   - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets
   - Other: tow hooks · bearing bushes · end-body turning · flanges and valve bodies (oil & gas)
   - Commercial vehicle: **camshafts · axle shafts** [Y]
+  - Rubber-bonded (bonding via partner): **engine mounts · vibration isolators / NVH bushes · bonded housings** [Y]
+  - EV: suspension and steering parts only. **No EV gearbox/powertrain parts or EV gear blanks** [Y]
 
 ## Customers & markets [Y][L]
 - **OEMs (confirmed):** Daimler · Ashok Leyland · MAN Trucks India · Mahindra Trucks & Buses · Paccar · Scania · Tata Daewoo

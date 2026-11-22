@@ -34,6 +34,6 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
 | W3 | ✅ Drafted (ce78c18); 🔄 Haiku gate running | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
 | W4 | ⏳ Pushed `4ed2cab`, awaiting Yash Publish | `baseline/ssr-before.md` |
-| W5 | 🔄 Prep on VflWebsite branch `w5-embeds` (not main): http-functions + src swap | `W5-DEPLOY.md` (pending) |
+| W5 | ✅ Prepped on VflWebsite branch `w5-embeds` (9757629); lint clean; NOT merged. Blocked on: W4 publish+verify, W3 review | `W5-DEPLOY.md`: 38 embed modules, 41 swaps on 17 pages, text rules in all 56 page files |
 | W6–W8 | ⬜ Not started | — |
 | Auto-publish | ⬜ Yash to set up | `SETUP-AUTO-PUBLISH.md` |

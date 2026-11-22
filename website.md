@@ -15,7 +15,7 @@
 > **In progress**
 > - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
 > - W3 drafted (ce78c18): 60 embeds on 17 pages, 41 corrected with 175 edits. F28 drafts and the re-checked drafts pass the gate. The Haiku review is running (`embeds/REVIEW.md`). Claims that don't conflict are kept as [L], with no owner questions.
-> - W5 prep: Velo code on VflWebsite branch `w5-embeds` (does not sync to the live site until merged into main).
+> - W5 prepped on VflWebsite branch `w5-embeds` (9757629, lint clean, not merged). It contains http-functions serving the 38 corrected embeds, src swaps on 17 pages, and `applyTextCorrections` in all 56 page files. Rollout per `W5-DEPLOY.md`: one embed (vf LFull) plus Pune first. Untested risks: the src setter on code-mode embeds, frame headers on /_functions, iframe height, html reflow, SSR.
 >
 > **Next, in order**
 > 1. Verify the W4 pilot.
@@ -290,3 +290,6 @@ Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (bra
 
 ### 2026-11-22 — W0 baseline complete
 49 sitemap entries snapshotted (`baseline/`). Empty bodies: /transmission-and-driveline, /electric-mobility (new copy needed in W6). Machine counts are in native text on 5 pages, so W5 scope now includes `src/public/corrections.js` (the RULES ported to Velo, called from every page). H1 structure problems are queued for W6.
+
+### 2026-11-22 — W5 prepped (not live)
+VflWebsite `w5-embeds` 9757629: 38 corrected-embed modules served by `/_functions/embed/<key>`, 41 src swaps on 17 pages, 136+11+1 rules ported to `src/public/corrections.js` and called on every page. Lint clean; mock tests pass. Merge only after the W4 pilot is published and verified and the W3 review passes. Rules with no Velo equivalent (Year Established cell-pair, rows(), image alt) stay in the browser layer.

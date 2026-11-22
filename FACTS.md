@@ -12,7 +12,7 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Forging Division established | 1989, Aurangabad | [P][Y] |
 | Acquired by Munot Enterprises | 2005 | [P] |
 | Maxility Suspension & Machining Division | 2007 | [P] |
-| Pune Suspension & Machining Division | 2013 | [P] |
+| Pune plant | **Operating since 2007** (Maxility suspension & machining division) [Y] 22 Nov 2026. The deck's 2013 entry is the Pune Suspension & Machining Division milestone; don't present 2013 as the Pune founding year | [Y][P] |
 | Leadership | Chairman Jinendra Munot; CEO & Director Yash J. Munot; Director Piyush J. Munot | [S] |
 | Phone (both plants) | +91 8411000551 | [L] |
 | Email | marketing@varshaforgings.com | [L] |
@@ -23,7 +23,7 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | | Aurangabad (Plant 1, Forging) | Pune (Plant 2, Assembly) |
 |---|---|---|
 | Address | Plot No. B-7, MIDC Waluj, Chhatrapati Sambhajinagar (Aurangabad) 431136 | Gut No. 161, Mauje-Markal, Tal-Khed, Dist. Pune 412105 |
-| Established | 1989 | 2013 |
+| Established | 1989 | 2007 [Y] |
 | Employees | 350 | 150 |
 | Land area | 20,234 m² | 60,702 m² |
 | Building area | 8,000 m² | 2,000 m² + 2,730 m² |
@@ -46,6 +46,14 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 - **Finishing:** shot blasting (steel & rubber conveyor) · Magnaflux MPI 400 A & 200 A
 - **Standards room:** Faro Arm CMM · CMM · Mitutoyo profile projector · Zeiss contour tester · contracer · surface table
 - **In-house machining:** facing & centering · CNC & VMC · SPM · drilling · gear hobbing
+
+## Correction queue (confirmed facts to apply everywhere)
+| Fact | Wrong text to find | Where (known) | Fix path |
+|---|---|---|---|
+| Presses 800 T–2,500 T (+1,000 T) | "500T", "1,000 to 5,000 tons" | /forging-presses-hammers (title, meta, JSON-LD), /about-1 body | API (SEO/schema) + click-list (body) |
+| Weight 1–25 kg | 0.5–50 kg, 2–20 kg, 0.5–20 kg | Most pages incl. /forging-vs-casting, /automotive-steering-powertrain, /alloy-steel-forgings | API + click-list |
+| Forging ±0.5 mm · machining ±0.02 mm | ±0.01 mm, ±0.2 mm, ±5 microns, EN 10243-1 Gr F | /machining title, Pune, suspension, /about-1, /about-1-1, EV, oil & gas, radius-rod | API + click-list |
+| Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
 - **Forged component weight range: 1 kg – 25 kg.** Correct every page that states 0.5–50 kg, 2–20 kg or 0.5–20 kg.

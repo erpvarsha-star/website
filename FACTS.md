@@ -30,6 +30,10 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Main products | Alloy steel forgings, machined components | Assemblies |
 Source: [P][L]
 
+## Business profile [Y] (owner-confirmed 22 Nov 2026)
+- Over 60% of production serves OEMs.
+- Write experience as **"since 1989"**, never a year count ("35 years" etc. goes stale).
+
 ## Certifications [Y]
 IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submission at **Levels 1–5** [Y] 22 Nov 2026 (supersedes "Level 3 capability") · APQP · IMDS · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; approval reference not yet supplied).
 **Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
@@ -67,6 +71,8 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | No rubber temp/hardness specs | −50/+200 °C, −60/+230 °C, 55–75 Shore A, NR/SBR | /rubber-bonded-components, /assembly-services | Click-list + API |
 | No Corvette [Y] | Homepage image alt "corvtte customer" | Homepage | Click-list (or Media API) |
 | Piyush = Director [Y] | "Managing Director" | /company-profile body | Click-list |
+| "Since 1989" | "35 Years of Forging Excellence" | /history meta (and any "X years" phrasing) | API + click-list |
+| Legal name | "Varsha Forgings Ltd.", "Varsha Forgings Limited", "Pvt. Ltd." | /home, /company-profile | Click-list: "Varsha Forgings Private Limited" |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)

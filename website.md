@@ -167,3 +167,15 @@ Rule added to CLAUDE.md. All answers recorded in FACTS.md with [Y]. **Confirmed:
   - Re-scan: 0 hits across 49 pages.
 - **Open:** dpizt is at its size limit (no legalName; hours and geo were trimmed earlier). Leftover superlatives ("leading", "renowned", "cost-effective") on a3evt, q1c5f, gfauz, odejn. "Forging Manufacturer in Pune" titles imply forging at Pune (lgtlq, jo7nt). "Friction drop hammers" is not in FACTS. **F27 redirect:** `/forged-machined-components` → `/alloy-steel-forgings` hides page arrpe.
 - **Decision (Yash):** visible-text corrections via a **Velo + GitHub code layer** (F26). Research is in `AUTOMATION-OPTIONS.md`, setup steps in `SETUP-VELO-GITHUB.md`.
+
+### 2026-11-22 (continued) — F27 redirects updated (owner-approved)
+The Redirects API has no update method, so each was deleted and recreated. All calls returned 200, and the new IDs are below.
+- `/forged-machined-components` → **`/forged-machined-components-vf`** (new ID 4fc5982d-e1f3-4442-914a-5a152295d346; was → /alloy-steel-forgings)
+- `/forged-machined-components-1` → **`/forged-machined-components-vf`** (75219b15-bd40-494a-9fea-75546e741a97; was chained)
+- `/copy-of-alloy-steel-forgings` → **`/alloy-steel-forgings`** (e30f2e8b-c10e-4714-9a19-6eb628973195; was chained)
+- `/blank` and `/about-us` untouched.
+
+**Live check:**
+- `/copy-of-alloy-steel-forgings` lands correctly.
+- The two plain `/forged-machined-components*` URLs still land on /alloy-steel-forgings, while cache-busted requests land on `-vf`. Likely a stale edge cache.
+- **Re-verify later**; if still stale, republish or ask Wix support.

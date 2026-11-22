@@ -1,11 +1,13 @@
-# Brief for the next session (updated 23 Nov 2026, after W6 went live)
+# Brief for the next session (updated 23 Nov 2026, session close-out)
+
+**New rules this session (CLAUDE.md):** fail twice → `pending.md`, move on · chief-of-staff growth mandate, plan in `PHASE4-PLAN.md`. Blocked items: `pending.md` P1–P10.
 
 ## Start
 1. Run Opus as the main session (`/model opus`) and set the mode dropdown to **Auto**.
 2. Repos. **Both must be attached when the session starts.** If VflWebsite is missing, run `add_repo` right away; don't work without it.
    - `erpvarsha-star/website`, branch `ccr-6409486e-3vy613`: plans, facts, logs, drafts and scripts.
    - `erpvarsha-star/VflWebsite`, branch `main`: live site code. **A push to main auto-publishes the live site.** Attach it with `add_repo` (owner erpvarsha-star, repo VflWebsite, access push) and clone it to /home/user/vflwebsite.
-3. Read, in this order: `CLAUDE.md` → `website.md` (HANDOVER) → `PHASE3-PLAN.md` (Status table) → `FACTS.md` → `BRAND.md` → `W6-DESIGN.md` (bundler line-length + collapse/SSR lessons) → `baseline/w5-verify.md`.
+3. Read, in this order: `CLAUDE.md` → `website.md` (HANDOVER) → `pending.md` → `PHASE4-PLAN.md` → `PHASE3-PLAN.md` (Status table) → `FACTS.md` → `BRAND.md` → `W6-DESIGN.md` (bundler line-length + collapse/SSR lessons) → `baseline/w5-verify.md`.
 
 ## Where things stand (23 Nov 2026)
 - **W6 is DONE and verified live.** All 3 approved content-drafts render via Velo on 10 pages; served no-JS HTML shows 1 visible H1 per page, 0 DNP hits, 656–1,678 words per touched page. See `W6-DESIGN.md`.
@@ -14,6 +16,9 @@
 - Sited findings 2 (thin pages) and 8 (EV H1) are closed by W6. Findings 5 and 6 were closed earlier at schema level.
 
 ## Do next, in order
+
+### 0. Check `pending.md` first
+Blocked items P1–P10 with unblock conditions. Retry only when unblocked (content API key, or Yash Editor work). Then execute `PHASE4-PLAN.md` sprint 1→4.
 
 ### 1. FAQ-app corrections (the only remaining on-site fact conflicts)
 Re-query ALL FAQ entries first (a fix was started and stopped once before). Known conflicts and their replacements:

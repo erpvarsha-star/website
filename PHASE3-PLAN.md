@@ -36,8 +36,9 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
 | W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | `baseline/w5-verify.md`; publish run 45068992337 |
 | W6 | ✅ Live and verified 23 Nov: branch `w6-content` merged (dc457ea), bundler line-length error fixed by splitting ops into per-page modules (e9629f4). All 10 pages serve the drafts in SSR HTML, 1 visible H1 each, 0 DNP hits, 656–1,678 words (all above Sited's 500 threshold) | `W6-DESIGN.md`; no-JS curl verification of /, /electric-vehicles, /alloy-steel-forgings re-confirmed 23 Nov |
-| W7 | ⚠️ Layers slimmed and Velo rules made generic (VflWebsite 3a62db4). Embed 1 rev 6, embed 2 rev 7. Remaining conflicts are all in Wix FAQ-app answers: Pune "60 CNC…", Aurangabad "0.5 kg…50 kg", railways "Charpy −40 °C", maharashtra "hot, warm, cold forging", ev "hot and warm forging". Replacement texts ready in NEXT-SESSION.md; write blocked on a Wix API channel with FAQ permissions (or Yash click-list) | `baseline/w5-verify.md` |
-| W8 | ⬜ Ready to start: SEO touch-ups for the 10 W6 pages + API-doable Sited items (schema refresh on /about-1-1, /product, /electric-vehicles, /tool-manufactring). Then **hand to Yash to run Sited** | — |
+| W7 | ⚠️ Layers slimmed and Velo rules made generic (VflWebsite 3a62db4). Embed 1 rev 6, embed 2 rev 7. Remaining conflicts are 5 Wix FAQ-app answers — parked in `pending.md` P1–P5 (fail-twice rule; blocked on a FAQ-permission API key or Yash click-list) | `baseline/w5-verify.md`; `pending.md` |
+| W8 | ⏸ Parked in `pending.md` P6: SEO touch-ups for the 10 W6 pages need the same content API key. Then **hand to Yash to run Sited** (he may run it now; expect the 5 FAQ residues) | `pending.md` |
+| Phase 4 | 🆕 Growth plan approved by owner 23 Nov: top-of-search worldwide for sourcing forgings from India + weekly business-growth rhythm | `PHASE4-PLAN.md` |
 | Auto-publish | ✅ Working: secret WIXKEY rotated by Yash 23 Nov, runs #6/#7 green | VflWebsite publish.yml |
 
 ## Rollout decision (owner challenge, 22 Nov 2026)

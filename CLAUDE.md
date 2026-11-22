@@ -44,3 +44,9 @@ Yash approved pushing to `erpvarsha-star/VflWebsite` main, which **auto-publishe
 - **General engineering explanation is allowed** (e.g. why forgings outperform castings) as long as it isn't a claim about Varsha. Company-specific claims must be in `FACTS.md`.
 - **Ask Yash only on conflicts (owner, 22 Nov 2026: "If there are no conflicts why ask on data that is there").** A pre-existing live claim that does not conflict with `FACTS.md` or the DO NOT PUBLISH table stays as is, without questioning; record it in `FACTS.md` as [L]. Claims that *conflict* with `FACTS.md`, or break DO NOT PUBLISH, are fixed straight away; ask only when the conflict can't be resolved from `FACTS.md`.
 - Live visible body text on Wix Classic is Editor-only. The API changes SEO tags and JSON-LD only, so a fix in schema does not fix the visible page. Always verify both.
+
+## Task-failure rule (owner, 23 Nov 2026)
+If a task fails more than once, stop attempting it, log it in `pending.md` with its unblock condition, and move to the next task. Before declaring the session's work done, double-check the work (measured gates, not self-report), then update ALL md files (website.md handover + log, PHASE3-PLAN.md status, NEXT-SESSION.md, pending.md).
+
+## Growth mandate (owner, 23 Nov 2026)
+Act as chief of staff for business growth, strategy and branding. Goal: Varsha Forgings at the top of any search worldwide for sourcing forgings from India or for a good forging company in India. Beyond SEO/GEO, run the weekly strategy in `PHASE4-PLAN.md`: content cadence, LinkedIn, email campaigns, lead-generation tools (spend >$50 still needs approval), directories and trade shows.

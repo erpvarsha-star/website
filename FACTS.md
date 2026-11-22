@@ -32,6 +32,10 @@ Source: [P][L]
 
 ## Business profile [Y] (owner-confirmed 22 Nov 2026)
 - Over 60% of production serves OEMs.
+- Positioned as a **Tier 1 and Tier 2 supplier** to OEMs.
+- Leadership bios on /company-profile are accurate (ZF Steering Gear 1981, Prima Feintechnik 2005, KCTR JV 2013 for Tata Motors & Mahindra, youngest AIFI president, EO Pune, Stego Lifestyle LLP).
+- CSR: blood donation · tree plantation · education sponsorship; 150 kW rooftop solar.
+- **Remove:** the slogan "Under Promise, Over Delivery" (/quality).
 - Write experience as **"since 1989"**, never a year count ("35 years" etc. goes stale).
 
 ## Certifications [Y]

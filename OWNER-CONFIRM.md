@@ -1,4 +1,6 @@
 # Owner confirmation list — live-site claims
+> **✅ RESOLVED 22 Nov 2026.** Yash answered every item through one-at-a-time multiple-choice questions. All answers are recorded in `FACTS.md`, and the corrections are queued in its "Correction queue". This file is kept for history only.
+
 **From the full 49-page audit, 22 Nov 2026.** Each line is a claim currently live on varshaforgings.com that is either wrong according to your own deck or can't be verified.
 
 **How to answer:** reply with the numbers you want to keep (e.g. "keep 4, 9, 12; rest default"). Any item you don't mention gets the **Default** action. Kept items go into `FACTS.md`; everything else is corrected or removed by Yash in the Editor pass.

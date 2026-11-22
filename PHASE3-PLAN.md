@@ -32,7 +32,8 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W0 | 🔄 Running | `baseline/` partial |
 | W1 | ✅ Done | `VELO-ROUTE.md` (c5e5b9d) |
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
-| W3 | 🔄 Running | `embeds/original/` partial |
+| W3 | ✅ Drafted (ce78c18); 🔄 Haiku gate running | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
 | W4 | ⏳ Pushed `4ed2cab`, awaiting Yash Publish | `baseline/ssr-before.md` |
-| W5–W8 | ⬜ Not started | — |
+| W5 | 🔄 Prep on VflWebsite branch `w5-embeds` (not main): http-functions + src swap | `W5-DEPLOY.md` (pending) |
+| W6–W8 | ⬜ Not started | — |
 | Auto-publish | ⬜ Yash to set up | `SETUP-AUTO-PUBLISH.md` |

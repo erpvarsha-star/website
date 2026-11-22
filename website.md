@@ -14,7 +14,8 @@
 > **In progress**
 > - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
 > - W0 baseline snapshot of all pages (Haiku), still running.
-> - W3: corrected HTML for every flagged embed (`embeds/`) plus F28 thin pages and the steering article (Sonnet), still running.
+> - W3 drafted (ce78c18): 60 embeds on 17 pages, 41 corrected with 175 edits. F28 drafts and the re-checked drafts pass the gate. The Haiku review is running (`embeds/REVIEW.md`). Claims that don't conflict are kept as [L], with no owner questions.
+> - W5 prep: Velo code on VflWebsite branch `w5-embeds` (does not sync to the live site until merged into main).
 >
 > **Next, in order**
 > 1. Verify the W4 pilot.
@@ -282,3 +283,7 @@ Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (bra
 - Site-code commit `4ed2cab` pushed to `erpvarsha-star/VflWebsite` main (not published): `masterPage.js` footer email fix (marketing@varshaforging.com -> marketing@varshaforgings.com, Button link + Text html, try/catch); `Forging Manufacturer Pune.lgtlq.js` DO NOT PUBLISH stopgap that collapses the embeds with hashes `72f2bf_67e78ccdca212a0b2190ce8f60a915e2` (plant layout, CNC/VMC/HMC/hobbing counts) and `72f2bf_cf35346801ce140403d76fe7f1fd6dcc` (equipment table). ESLint clean.
 - SSR checker `.github/workflows/ssr-check.yml` ran OK; baseline in `baseline/ssr-before.md`.
 - Unverified until Publish + re-run: that `$w('Button')`/`$w('Text')` hit the footer, that `HtmlComponent.src` returns the filesusr URL in code mode, and SSR effect.
+
+### 2026-11-22 — W3 drafted; W3 review and W5 prep dispatched
+- W3 (ce78c18): 60 embeds, 41 corrected (175 edits), originals kept. F28 thin pages and the steering article drafted. Existing drafts updated to the newest facts. Gate PASS.
+- Dispatched: Haiku review of all corrected embeds (embeds/REVIEW.md); Sonnet W5 prep on VflWebsite branch `w5-embeds` (http-functions serving the corrected HTML plus a src swap). Main is untouched until the pilot is verified.

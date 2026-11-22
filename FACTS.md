@@ -72,7 +72,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | No stainless [Y] | AISI 304/316, 304L/316L, dual-phase stainless | /about-1, /oil-and-gas | Click-list + API (oil-and-gas schema) |
 | No aerospace [Y] | "aerospace" | /about-1 | Click-list |
 | No ZLD claim [Y] | "ZLD effluent treatment" | /forging-manufacturer-india (body + schema) | Click-list + API |
-| Plant hours [Y] | 09:00–18:00; Aurangabad closed Friday, Pune closed Sunday (owner 22 Nov 2026; old value Mon–Sat 08:00 superseded) | Pune schema `lgtlq`; Aurangabad `dpizt` (hours dropped this session, restore) | API |
+| Plant hours [Y] | 09:00–18:00; Aurangabad closed Friday, Pune closed Sunday (owner 22 Nov 2026; old value Mon–Sat 08:00 superseded) | Pune schema `lgtlq`; Aurangabad `dpizt` (schema hours verified correct 22 Nov 2026) | API |
 | No rubber temp/hardness specs | −50/+200 °C, −60/+230 °C, 55–75 Shore A, NR/SBR | /rubber-bonded-components, /assembly-services | Click-list + API |
 | No Corvette [Y] | Homepage image alt "corvtte customer" | Homepage | Click-list (or Media API) |
 | Piyush = Director [Y] | "Managing Director" | /company-profile body | Click-list |

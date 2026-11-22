@@ -271,3 +271,8 @@ Sonnet executor. Root causes found by reading the live raw HTML (Firecrawl, maxA
 
 ### 2026-11-22 — Phase 3 plan (PHASE3-PLAN.md)
 Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (brand kit) and W3 (content and embed HTML) start in parallel with W1 (Velo research). All Wix writes stay serial.
+
+## 22 Nov 2026 - W4 Velo pilot (awaiting owner Publish)
+- Site-code commit `4ed2cab` pushed to `erpvarsha-star/VflWebsite` main (not published): `masterPage.js` footer email fix (marketing@varshaforging.com -> marketing@varshaforgings.com, Button link + Text html, try/catch); `Forging Manufacturer Pune.lgtlq.js` DO NOT PUBLISH stopgap that collapses the embeds with hashes `72f2bf_67e78ccdca212a0b2190ce8f60a915e2` (plant layout, CNC/VMC/HMC/hobbing counts) and `72f2bf_cf35346801ce140403d76fe7f1fd6dcc` (equipment table). ESLint clean.
+- SSR checker `.github/workflows/ssr-check.yml` ran OK; baseline in `baseline/ssr-before.md`.
+- Unverified until Publish + re-run: that `$w('Button')`/`$w('Text')` hit the footer, that `HtmlComponent.src` returns the filesusr URL in code mode, and SSR effect.

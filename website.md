@@ -268,3 +268,6 @@ Sonnet executor. Root causes found by reading the live raw HTML (Firecrawl, maxA
 - Contents: `src/pages/*.js` for all ~60 pages (named `<Page>.<pageId>.js`), `masterPage.js`, `src/backend`, `src/public`.
 - The repo is attached to this session (clone at /home/user/vflwebsite). Next: a pilot with one fix (footer email href) in `masterPage.js`, after the layer round-2 executor finishes (one Wix writer at a time).
 - `erpvarsha-star/website` stays as the ops/docs repo; Wix only syncs with the repo it created.
+
+### 2026-11-22 — Phase 3 plan (PHASE3-PLAN.md)
+Yash's side is complete. Workstreams W0–W8 are defined; W0 (baseline), W2 (brand kit) and W3 (content and embed HTML) start in parallel with W1 (Velo research). All Wix writes stay serial.

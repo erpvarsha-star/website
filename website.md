@@ -1,25 +1,31 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER — end of day 22 Nov 2026 (read this first)
-> **Done and verified live**
-> - SEO tags and JSON-LD corrected on all 49 pages to owner-confirmed facts. A re-scan of the forbidden patterns gives 0 hits.
-> - sameAs points to LinkedIn.
-> - Article schema added on 3 pages; og:image on 10 pages; homepage FAQ added and brand put in the title; plant hours restored.
-> - Redirects fixed (F27). **Re-check 22 Nov 10:40 UTC: all 3 PASS live** (both `/forged-machined-components*` URLs land on `-vf`; `/copy-of-alloy-steel-forgings` lands on `/alloy-steel-forgings`).
-> - **Email-link typo fixed site-wide** via the Custom Embed layer (verified live).
+> ## HANDOVER — live status (updated 22 Nov 2026, ~20:30 UTC). Read this first.
+> Kept current after every step. Plan and status per workstream: `PHASE3-PLAN.md`.
 >
-> **Not started (hit the usage limit)**
-> - The batch 1 executor stopped on the 5-hour usage limit before making any change. The embed is still revision 1 (mailto rule only); no `corrections/RULES.md` yet. **Re-dispatch batch 1 when Yash is back** (he asked to conserve usage).
-> - **Next session:** check `git log` and the embed revision (GET `https://www.wixapis.com/embeds/v1/custom-embeds`). If batch 1 was deployed, dispatch the **reviewer** to verify every affected page via Firecrawl. If it wasn't, re-dispatch the executor with the batch 1 brief: factual corrections per the FACTS.md Correction queue plus Click-list Blocks 2, 3 and 6.
+> **Done and verified**
+> - SEO tags and JSON-LD on all 49 pages match FACTS.md. sameAs, Article schema, og:image, homepage FAQ and title are in place. Plant hours in schema are verified on Pune and Aurangabad.
+> - Redirects (F27) and the email-link typo (browser layer) are done.
+> - Browser correction layer: embed 1 rev 5, embed 2 rev 4, rules 1–136. It fixes page text; it cannot reach HTML-embed iframes.
+> - Facts: all owner answers are recorded in FACTS.md. The rule is to ask Yash only on conflicts.
+> - Wix ↔ GitHub connected: `erpvarsha-star/VflWebsite`, main.
+> - Research done: `VELO-ROUTE.md`. Brand kit: `BRAND.md`. No-JS crawler checker: `.github/workflows/ssr-check.yml`; baseline in `baseline/ssr-before.md`.
 >
-> **Next steps, in order**
-> 1. Verify batch 1, then batch 2: the 7 page rewrites from `content-drafts/`, plus thin pages `/alloy-steel-forgings` and `/forged-machined-components-vf` (F28). These need new drafts first.
-> 2. Velo + GitHub (F26): waiting on Yash's one-time connection (`SETUP-VELO-GITHUB.md`). Then port the same rules server-side.
-> 3. Open SEO items: dpizt at its size limit (no legalName); leftover superlatives on a3evt, q1c5f, gfauz, odejn; "Forging Manufacturer in Pune" titles imply forging at Pune (ask Yash); "friction drop hammers" not in FACTS.
-> 4. Still manual or later: social icons that point to Wix's own accounts (F10; likely not reachable by code); privacy/terms pages (F22); Core Web Vitals and IndexNow (F23); case studies (F19, needs Yash); capability-sheet PDF (F20); off-site profiles (F15).
-> 5. Re-run the Sited report after batch 2 (already paid; flag any new charge).
+> **In progress**
+> - **W4 pilot is pushed to VflWebsite (`4ed2cab`) and is WAITING FOR YASH TO PUBLISH.** It covers the footer email fix (masterPage.js) and collapsing the 2 Pune machine-count embeds. After Publish: re-run ssr-check, Firecrawl the live pages, and diff against `baseline/`.
+> - W0 baseline snapshot of all pages (Haiku), still running.
+> - W3: corrected HTML for every flagged embed (`embeds/`) plus F28 thin pages and the steering article (Sonnet), still running.
 >
-> **Owner rules in force:** one multiple-choice question at a time for facts; Opus plans, Sonnet executes, Haiku reviews; no CIN; no machine counts; no new sign-ups; spend over $50 needs Yash's yes. The Monday 8:13 IST weekly task (`trig_01CcK6WNr29MzcPgQbkWaW9S`) carries the confirmed facts.
+> **Next, in order**
+> 1. Verify the W4 pilot.
+> 2. W5: Velo corrections. Pune "CNC Turning Centers" still appears 4× in the no-JS HTML (outside the embeds). Then use the `src` swap to corrected embed HTML (host: Velo http-functions).
+> 3. W6: new page content in the BRAND.md style.
+> 4. W7: retire the browser-layer rules that Velo covers.
+> 5. W8: SEO for changed pages, then re-run Sited.
+> 6. Auto-publish: Yash will set it up (`SETUP-AUTO-PUBLISH.md`). Then add the publish workflow to VflWebsite.
+> 7. Later: social icons (F10), privacy/terms (F22), CWV/IndexNow (F23), case studies (F19), capability sheet (F20), off-site profiles (F15). Open SEO items: dpizt legalName (at size cap) and leftover superlatives on a3evt, q1c5f, gfauz, odejn.
+>
+> **Owner rules in force:** ask only on conflicts, one multiple-choice question at a time. Opus plans, Sonnet executes, Haiku reviews. No CIN. No machine counts. No new sign-ups. Spend over $50 needs Yash's yes. One Wix writer at a time. Yash clicks Publish until auto-publish is set up. Weekly task: Monday 8:13 IST (`trig_01CcK6WNr29MzcPgQbkWaW9S`).
 
 **Source:** Sited AI Visibility Report, analysed 2026-11-22 · GEO Readiness Score 81/100 at time of report
 **Scope:** 10 crawled pages — homepage, /contact-us-1, /about-1, /assembly-services, /about-1-1, /product, /forging-company-aurangabad, /company-profile, /electric-vehicles, /tool-manufactring

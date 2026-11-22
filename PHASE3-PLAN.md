@@ -25,3 +25,14 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 - **Velo can't reach the HTML embeds:** go to W3's corrected HTML for each embed. The fallback is a one-time owner paste (~6 blocks), which needs the owner's agreement first.
 - **Publish needs the owner:** one Publish click per batch, batched to at most once a day.
 - **A tool or API is down:** the browser correction layer stays live as the interim fix.
+
+## Status (update after every step)
+| # | Status | Evidence |
+|---|---|---|
+| W0 | 🔄 Running | `baseline/` partial |
+| W1 | ✅ Done | `VELO-ROUTE.md` (c5e5b9d) |
+| W2 | ✅ Done | `BRAND.md` (d37863c) |
+| W3 | 🔄 Running | `embeds/original/` partial |
+| W4 | ⏳ Pushed `4ed2cab`, awaiting Yash Publish | `baseline/ssr-before.md` |
+| W5–W8 | ⬜ Not started | — |
+| Auto-publish | ⬜ Yash to set up | `SETUP-AUTO-PUBLISH.md` |

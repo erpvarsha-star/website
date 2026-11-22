@@ -236,3 +236,12 @@ Haiku reviewer, all sitemap pages, Firecrawl waitFor 25 s.
 ### 2026-11-22 — Facts added; ask-only-on-conflict rule
 - FACTS.md [Y]: construction/infrastructure/defense industries; Middle East & Africa exports; normalizing; grinding in-house; control-rod assemblies (adjustable/crimped).
 - CLAUDE.md: Yash is asked only when live data conflicts with FACTS.md. Non-conflicting live claims stay and are logged as [L].
+
+### 2026-11-22 — Batch 1 rule-miss fix pass: embeds redeployed
+Sonnet executor. Fixed the misses from the batch 1 reviewer verdict and redeployed both embeds (GET then PATCH with the current revision; read-back html equals the local files, djb2 hashes match).
+- **Embed 1** `546ea6cc-...` revision 2 -> **4**, 13,299 chars html (13,282 source; local file `corrections/embed-layer.js`). **Embed 2** `8733abc0-...` revision 1 -> **3**, 12,446 chars html (12,429 source; `corrections/embed-layer-2.js`). Both under 15,000. (Revision 3 / 2 was an intermediate deploy that held literal invisible characters; revision 4 / 3 holds the `\u` escapes.)
+- **Rules changed:** 13 (tolerant of spacing, dash type, NBSP, "up to"); 29 (heading prefix dropped so every copy matches); 35 (tolerant IATF dash/space); 62 (live text is "DELIVER." not "DELIVERY"; fragment rules added); 119 (`/LFull/`); hideText 1-4 and 10 (case-insensitive, whitespace/dash tolerant, deepest element then enclosing tr/li/p, wrapper climb).
+- **New rules 123-130:** "We has been"; "FORGIN "; "Commercial Vehicle's"; "IATF- 16949"; Pune "Year Established 2013" (inline and table-cell pair); "08:00" -> "09:00"; Aurangabad Mon-Sat -> Sat-Thu (closed Friday). Pune already reads Mon-Sat, so closed-Sunday needs no rule.
+- **Engine:** NBSP/whitespace normalised before matching; no innerHTML; runs at load, 1 s, 3 s, 8 s plus the MutationObserver.
+- **Checked:** `node --check` passes on both files; a jsdom smoke test showed the rule 13 variants, DELIVER motto, LFull, FORGIN, Commercial Vehicles, IATF, year, hours and hide rules all applying. Live pages not verified (reviewer next). The Aurangabad hours rule is untested live because the exact live wording was not found.
+- **Status:** NOT marked done. A reviewer verifies next.

@@ -1,8 +1,8 @@
 # Corrections layer rules (batch 1)
 
 Deployed in two Wix custom embeds (Wix limits embed html to 15,000 characters):
-- **VF Corrections Layer** `546ea6cc-003e-41ef-a6f8-97e23f614e77`, revision 2, source `corrections/embed-layer.js` (rules 1-76 of the text table, all hide and alt rules, mailto href fix)
-- **VF Corrections Layer 2** `8733abc0-12cc-47f5-bf5a-41d7ee045d64`, revision 1, source `corrections/embed-layer-2.js` (remaining text rules)
+- **VF Corrections Layer** `546ea6cc-003e-41ef-a6f8-97e23f614e77`, revision 4 (22 Nov 2026 fix pass), source `corrections/embed-layer.js` (rules 1-76 of the text table, all hide and alt rules, mailto href fix)
+- **VF Corrections Layer 2** `8733abc0-12cc-47f5-bf5a-41d7ee045d64`, revision 3 (22 Nov 2026 fix pass), source `corrections/embed-layer-2.js` (remaining text rules, plus 123-131)
 
 Rule types: **text** = find/replace on text nodes, matched across inline spans within the nearest block element; **hideText** = hide the closest li/tr/p/heading containing the phrase; **attr** = img alt rewrite; **href** = mailto typo fix (pilot). "Page" is a pathname regex; blank means every page. Finds are regular expressions (spaces match any whitespace incl. nbsp).
 
@@ -22,7 +22,7 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 | 10 | `^/suspension-components` | `/^5 Machines$/` | In-house gear hobbing | text |
 | 11 | all | `/Multi-axis VMCs and HMCs machine/` | Multi-axis VMCs (HMC work via vendor partners) machine | text |
 | 12 | all | `/\b(?:over )?\d+ (CNC(?: Turning)?(?: Centers\| machines\|s)?\|VMCs?\|HMCs?)\b/i` | $1 | text |
-| 13 | all | `/\b(?:0\.5\|2)\s?(?:kg\s)?(?:to\|–\|-)\s?(?:50(?:\.0)?\|20)\s?kg/` | 1–25 kg | text |
+| 13 | all | `/\b(?:0\.5\|2)\s*(?:kg\s*)?(?:up\s+to\|to\|[-‐-―−])\s*(?:50(?:\.0)?\|20)\s*kg/i` (fix pass: tolerant of spacing, dash type, NBSP, \"up to\") | 1–25 kg | text |
 | 14 | all | `/0\.5 kg precision parts (?:to\|up to heavy-duty) 50 kg/` | 1 kg precision parts to 25 kg | text |
 | 15 | all | `/1\.1 lbs to 110 lbs/` | 2.2 lbs to 55 lbs | text |
 | 16 | all | `/Forgings exceeding 50 kg may require open-die forging or casting depending on geometry\./` | Forgings heavier than 25 kg are outside our current component range. | text |
@@ -38,13 +38,13 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 | 26 | all | `/Pune, established in 2013/` | Pune, established in 2007 | text |
 | 27 | `history` | `/Division Founded/` | Division Milestone | text |
 | 28 | `history` | `/The company established its Suspension & Machining Division in Pune, India, marking a significant expansion/` | Milestone at the Suspension & Machining Division in Pune, India, operating since 2007 | text |
-| 29 | `history` | `/(2009 Quality Certification )The company is acquired by Munot Enterprises, leading to expansion and diversification/` | $1The company achieves TS-16949 Quality Certification, demonstrating its commitment to excellence | text |
+| 29 | `history` | `/The company is acquired by Munot Enterprises, leading to expansion and diversification/` (fix pass: no heading prefix, so every copy matches) | The company achieves TS-16949 Quality Certification, demonstrating its commitment to excellence | text |
 | 30 | all | `/PPAP \(Level 1 through 5 as required, standardizing on Level 3\)/` | PPAP (Levels 1–5 as required) | text |
 | 31 | all | `/PPAP Level 3/` | PPAP Levels 1–5 | text |
 | 32 | all | `/35 Years of Forging Excellence/i` | Forging Excellence Since 1989 | text |
 | 33 | all | `/Varsha Forgings (?:Pvt\.?\s?Ltd\.?\|Ltd\.?\|Limited)/` | Varsha Forgings Private Limited | text |
 | 34 | all | `/joining as Managing Director/` | joining as Director | text |
-| 35 | `certifications` | `/(IATF- 16949 Quality Certification \()2024\)/` | $12017) | text |
+| 35 | `certifications` | `/(IATF[-\s]+16949 Quality Certification \()2024\)/` | $12017) | text |
 | 36 | `certifications` | `/Best Leadership Award/` | Brand Leadership Award | text |
 | 37 | `certifications` | `/Best Employer Award/` | Best Employer Brand Award | text |
 | 38 | `copy-of-articles` | `/Productivity Improvement Bronze Trophy from ACMA 2016/` | Productivity Improvement Bronze Trophy from ACMA 2018 | text |
@@ -71,7 +71,7 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 | 59 | all | `/ Warm Forging works at an intermediate temperature.*?components\./` | (removed) | text |
 | 60 | all | `/closed-die hot and warm forging/` | closed-die hot forging | text |
 | 61 | all | `/zero-liquid discharge \(ZLD\) effluent treatment, /` | (removed) | text |
-| 62 | all | `/\s?Our commitment to quality is encapsulated in our motto:\s?["“”]?UNDER PROMISE, OVER DELIVERY\.?["“”]?/i` | (removed) | text |
+| 62 | all | `/(?:\s?Our commitment to quality is encapsulated in our motto:)?\s?[\"“”]?UNDER PROMISE, OVER DELIVER(?:Y)?\.?[\"“”]?/i` (fix pass: live text is \"DELIVER.\", not \"DELIVERY\"; plus fragment rules `^DELIVER\.?$` and `^UNDER PROMISE, OVER$` for split blocks) | (removed) | text |
 | 63 | all | `/Indian Railways \(RDSO\), European \(EN\), and international \(UIC\/AAR\) standards/` | Indian Railways (RDSO) standards | text |
 | 64 | all | `/Indian Railways \(RDSO\) specifications, EN 10204 3\.1\/3\.2 material certification, and international UIC\/AAR rail safety standards/` | Indian Railways (RDSO) specifications | text |
 | 65 | all | `/additional compliance to RDSO, EN, UIC, and AAR standards as required/` | RDSO approval for Indian Railways | text |
@@ -128,12 +128,23 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 | 116 | all | `/Swingram Mount/` | Swing Arm Mount | text |
 | 117 | all | `/Agriculutre\|Agrecluture/` | Agriculture | text |
 | 118 | all | `/Applicatin\b/` | Application | text |
-| 119 | all | `/\bLFull/` | Full | text |
+| 119 | all | `/LFull/` | Full | text |
 | 120 | all | `/Pune pune/` | Pune | text |
 | 121 | all | `/•?Keep feature on forging year over year/` | (removed) | text |
 | 122 | all | `/^We a leading/` | We are a leading | text |
+| 123 | all | `/\bWe has been/` | We have been | text |
+| 124 | all | `/\bFORGIN\s/` | FORGING | text |
+| 125 | all | `/Commercial Vehicle['’]s/` | Commercial Vehicles | text |
+| 126 | all | `/IATF-\s*16949/` | IATF 16949 | text |
+| 127 | `pune` | `/Year Established\s*:?\s*2013/` and a cell-pair rule (label cell "Year Established", next cell "2013") | Year Established 2007 | text + pair |
+| 128 | all | `/\b08:00\b/` | 09:00 (FACTS: both plants open 09:00-18:00) | text |
+| 129 | `aurangabad` | `/Monday\s*-\s*Saturday/` | Saturday–Thursday (closed Friday) | text |
+| 130 | `aurangabad` | `/Mon\s*-\s*Sat\b/` | Sat–Thu (closed Fri) | text |
+(Pune closed Sunday: the live Pune text already reads Monday–Saturday, so no rule is needed.)
 
 ## hideText rules
+
+Fix pass (22 Nov 2026): matching is case-insensitive, whitespace/NBSP/dash tolerant, on the element's full text. The deepest element holding the phrase is found, then the enclosing `tr`/`li` (if small) or `p`/heading is hidden, climbing up to 3 wrapper levels while the parent holds no other text.
 
 | # | Page | Phrase | Behaviour | Type |
 |---|---|---|---|---|
@@ -161,6 +172,10 @@ Rule types: **text** = find/replace on text nodes, matched across inline spans w
 ## href rule (pilot, kept)
 
 | 1 | all | `mailto:marketing@varshaforging.com` | `mailto:marketing@varshaforgings.com` | href |
+
+## Timing
+
+The layer runs at once, again at 1 s, 3 s and 8 s after load, and 200 ms after every DOM mutation. Text is NBSP/whitespace-normalised before matching. No innerHTML is used.
 
 ## Known limits
 

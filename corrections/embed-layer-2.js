@@ -41,18 +41,27 @@ var T=[[/Global sourcing strategies for forged components are undergoing a struc
 [/Swingram Mount/,"Swing Arm Mount"],
 [/Agriculutre|Agrecluture/,"Agriculture"],
 [/Applicatin\b/,"Application"],
-[/\bLFull/,"Full"],
+[/LFull/,"Full"],
 [/Pune pune/,"Pune"],
 [/•?Keep feature on forging year over year/,""],
-[/^We a leading/,"We are a leading"]],H=[],A=[];
+[/^We a leading/,"We are a leading"],
+[/\bWe has been/,"We have been"],
+[/\bFORGIN\s/,"FORGING "],
+[/Commercial Vehicle['’]s/,"Commercial Vehicles"],
+[/IATF-\s*16949/,"IATF 16949"],
+[/Year Established\s*:?\s*2013/,"Year Established 2007","pune"],
+[/\b08:00\b/,"09:00"],
+[/Monday\s*[-\u2010-\u2015]\s*Saturday/,"Saturday–Thursday (closed Friday)","aurangabad"],
+[/Mon\s*[-\u2010-\u2015]\s*Sat\b/,"Sat–Thu (closed Fri)","aurangabad"]],H=[],A=[];
 var SK={SCRIPT:1,STYLE:1,NOSCRIPT:1,TEXTAREA:1},BL='p,h1,h2,h3,h4,h5,h6,li,td,th,dt,dd,figcaption,blockquote,div';
 function rx(x,g){var s=x instanceof RegExp?x:new RegExp(String(x).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
 return new RegExp(s.source.replace(/ /g,'[\\s\\u00a0]+'),(g?'g':'')+s.flags.replace('g',''))}
+function nz(s){return String(s).replace(/[\s\u00a0\u2009\u202f\u200b]+/g,' ').replace(/[\u2010-\u2015\u2212]/g,'-').toLowerCase().trim()}
 T=T.map(function(r){return{a:rx(r[0],1),b:rx(r[0]),to:r[1],p:r[2]&&new RegExp(r[2])}});
-H=H.map(function(r){return{k:r[0],p:r[1]&&new RegExp(r[1]),f:r[2]}});
+H=H.map(function(r){return{k:nz(r[0]),p:r[1]&&new RegExp(r[1]),f:r[2]}});
 A=A.map(function(r){return{n:r[0],b:rx(r[1]),to:r[2]}});
 function fix(ns,rs){rs.forEach(function(r){
-var s=ns.map(function(n){return n.data}).join(''),ms=[],m;r.a.lastIndex=0;
+var s=ns.map(function(n){return n.data}).join('').replace(/[\u00a0\u2009\u202f\u2007]/g,' '),ms=[],m;r.a.lastIndex=0;
 while((m=r.a.exec(s))){if(!m[0]){r.a.lastIndex++;continue}ms.push(m)}
 if(!ms.length)return;
 var st=[],L=[],o=0;ns.forEach(function(n){st.push(o);L.push(n.data.length);o+=n.data.length});
@@ -61,22 +70,41 @@ if(rep===m[0])continue;
 for(var i=0;i<ns.length;i++){var x=Math.max(a,st[i])-st[i],y=Math.min(b,st[i]+L[i])-st[i];
 if(y<=x)continue;var d=ns[i].data;ns[i].data=d.slice(0,x)+(first?rep:'')+d.slice(y);first=0}}
 })}
+function hide(hr){hr.forEach(function(r){
+if(nz(document.body.textContent).indexOf(r.k)<0)return;
+var c=new Map();function has(e){var v=c.get(e);if(v===undefined){v=nz(e.textContent).indexOf(r.k)>-1;c.set(e,v)}return v}
+var all=document.body.querySelectorAll('*'),seen=[],j=0;
+for(var i=0;i<all.length;i++){var e=all[i];if(SK[e.nodeName]||!has(e))continue;
+var leaf=1;for(var q=e.firstElementChild;q;q=q.nextElementSibling){if(has(q)){leaf=0;break}}
+if(!leaf)continue;
+var t=e.closest('tr,li');if(t&&nz(t.textContent).length>r.k.length*4+100)t=null;
+t=t||e.closest('p,h1,h2,h3,h4,h5,h6')||e;
+for(var n=0;n<3&&t.parentElement&&t.parentElement!==document.body&&nz(t.parentElement.textContent)===nz(t.textContent);n++)t=t.parentElement;
+if(seen.indexOf(t)>-1)continue;seen.push(t);
+if(r.f&&j++===0)continue;
+t.style.setProperty('display','none','important')}})}
+function pairs(P){[[/^Year Established:?$/i,/^\s*2013\s*$/,'2007','pune']].forEach(function(r){
+if(!new RegExp(r[3]).test(P))return;
+var w=document.createTreeWalker(document.body,4,null),n,L=[];
+while((n=w.nextNode())){if(!SK[n.parentNode.nodeName]&&r[0].test(n.data.replace(/\u00a0/g,' ').trim()))L.push(n)}
+L.forEach(function(n){var el=n.parentNode.closest('td,th,dt,li,p,div'),s=el&&el.nextElementSibling;
+if(!s)return;var w2=document.createTreeWalker(s,4,null),m;
+while((m=w2.nextNode())){if(r[1].test(m.data))m.data=m.data.replace(/2013/,r[2])}})})}
 function run(){var P=location.pathname;
 var tr=T.filter(function(r){return!r.p||r.p.test(P)}),hr=H.filter(function(r){return!r.p||r.p.test(P)});
-if(document.body){
+if(!document.body)return;
 var w=document.createTreeWalker(document.body,4,null),g=new Map(),n;
 while((n=w.nextNode())){if(SK[n.parentNode.nodeName]||!n.data.trim())continue;
 var b=n.parentNode.closest(BL)||document.body,l=g.get(b);if(!l)g.set(b,l=[]);l.push(n)}
-var hs=hr.map(function(){return[]});
-g.forEach(function(ns,b){fix(ns,tr);
-if(hr.length){var s=ns.map(function(n){return n.data}).join('').replace(/\s+/g,' ');
-hr.forEach(function(r,i){if(s.indexOf(r.k)>-1){var t=b.closest('li,tr,p,h1,h2,h3,h4,h5,h6')||b;if(hs[i].indexOf(t)<0)hs[i].push(t)}})}});
-hr.forEach(function(r,i){hs[i].forEach(function(t,j){if(r.f&&j===0)return;t.style.setProperty('display','none','important')})});
+g.forEach(function(ns){fix(ns,tr)});
+pairs(P);
+if(hr.length)hide(hr);
 document.querySelectorAll('img[alt]').forEach(function(e){var v=e.getAttribute('alt');
 A.forEach(function(r){v=v.replace(r.b,r.to)});
 if(v!==e.getAttribute('alt'))e.setAttribute('alt',v)});
-}}
-var t;function later(){clearTimeout(t);t=setTimeout(function(){try{run()}catch(e){}},200)}
-try{run()}catch(e){}
+}
+var t;function go(){try{run()}catch(e){}}
+function later(){clearTimeout(t);t=setTimeout(go,200)}
+go();[1000,3000,8000].forEach(function(d){setTimeout(go,d)});
 new MutationObserver(later).observe(document.body,{childList:true,subtree:true});
 })();

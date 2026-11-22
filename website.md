@@ -311,3 +311,6 @@ Yash saved `WIX_CLI_API_KEY` in VflWebsite and approved pushes to main (recorded
 
 ### 2026-11-22 — Rollout cut to two releases (owner challenge)
 Diagnostic first, then one full W5 release. W5-DEPLOY.md's 4-stage plan is superseded.
+
+### 2026-11-22 — Diagnostic read: Velo works server-side
+Live Pune vf-diag: env "backend"; 7 HtmlComponents (html1–7) with full filesusr src. No-JS typo count for varshaforging.com fell 2/2/4 → 0/0/0, so the Velo email fix renders server-side. The W4 collapse failed only because Yash's first Publish predated the code sync. "CNC Turning Centers" ×4 in the no-JS HTML on every page is the correction-layer script's own rule text, not visible copy. The DNP stopgap hides the Pune wrappers (display:none); Firecrawl still inlines iframe text, so its markdown can't prove visibility. Auto-publish is still failing on an empty secret. The full W5 release is being assembled on VflWebsite `release-w5`.

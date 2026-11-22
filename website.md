@@ -1,6 +1,6 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: end of session 23 Nov 2026. Read `NEXT-SESSION.md` first.
+> ## HANDOVER: end of session 23 Nov 2026 (close-out). Read `NEXT-SESSION.md` first; blocked items live in `pending.md`; the growth plan is `PHASE4-PLAN.md`.
 > **Live and verified**
 > - **Velo + GitHub:** `erpvarsha-star/VflWebsite`, main dc457ea (W6 merge) + follow-ups to e9629f4. Every push to main AUTO-PUBLISHES via `.github/workflows/publish.yml` (secret `WIXKEY`, rotated by Yash 23 Nov — publish runs green). Yash approved live pushes (CLAUDE.md).
 > - **W5:** 41 corrected HTML embeds on 17 pages served from `/_functions/embed/<key>`. `applyTextCorrections` runs server-side on all 56 pages. 17/17 pages verified, 0 visible DNP hits (`baseline/w5-verify.md`).
@@ -8,12 +8,11 @@
 > - **W7:** browser layers slimmed (embed 1 rev 6, embed 2 rev 7); no machine counts in any source. The no-JS ssr-check is clean except 3 Wix FAQ-app answers (Pune "60 CNC…", Aurangabad "0.5 kg…50 kg", + railways Charpy / maharashtra "hot, warm, cold forging" / ev "hot and warm forging" wordings found on re-query).
 > - SEO/schema on all 49 pages, redirects and facts done earlier (see log below). **sameAs: LinkedIn live on the homepage schema (22 Nov); extra profiles optional, real URLs only.**
 >
-> **Open, in order**
-> 1. **FAQ-app answers (3 visible conflicts):** railways "Charpy … −40 °C", maharashtra "hot forging, warm forging, cold forging", ev "closed-die hot and warm forging" → hot closed-die only wording; Pune machine counts → capability wording; Aurangabad 0.5–50 kg → 1–25 kg. Replacement texts are ready in `NEXT-SESSION.md`. **Blocked on a Wix API channel with FAQ permissions — either a broader API key from Yash or a 5-item FAQ-app click-list for him.**
-> 2. **W8 SEO:** titles/meta/schema touch-ups for the 10 W6-changed pages + Sited quick wins that are API-doable (schema refresh on /about-1-1, /product, /electric-vehicles, /tool-manufactring; dates already in schema). Same API-channel blocker as FAQ.
-> 3. **/product (hd575), /transmission-and-driveline (dqw97), /electric-mobility (jo7nt):** no body Text elements, so Velo cannot add content — needs Yash in the Editor (add a Text element) or an Editor-session change; schema-only via API meanwhile.
-> 4. **Tell Yash to run Sited** (owner instruction) — new pages ARE live and verified; do it once the FAQ corrections land (or tell him to run it now and expect the FAQ residues to show).
-> 5. Later: F10 social icons, F22 privacy/terms, F23 CWV/IndexNow, F19 case studies, F20 capability sheet, F15 off-site profiles; CSP header is a Wix platform setting (Yash/Wix support); SEO leftovers dpizt legalName and superlatives on a3evt, q1c5f, gfauz, odejn.
+> **Open, in order** (details in `pending.md` P1–P10 and `PHASE4-PLAN.md`)
+> 1. **Blocked on a content API key (FAQ + SEO permissions) or Yash click-list:** 5 FAQ-app fixes (P1–P5, replacement texts ready) and W8 SEO writes (P6). Key-creation steps for Yash are in `pending.md`.
+> 2. **Blocked on the Editor (Yash):** /product, /transmission-and-driveline, /electric-mobility bodies (P7); visible dates/byline (P8); social icons (P9); CSP is a Wix-support question (P10).
+> 3. **Phase 4 (growth):** execute `PHASE4-PLAN.md` — sprint 1 closes site gaps, sprint 2 off-site profiles/listicles, sprint 3 content engine, sprint 4 weekly rhythm (LinkedIn, email, lead-gen). KPIs against the 81/0% Sited baseline.
+> 4. **Yash to run Sited** — new pages are live and verified; expect the 5 FAQ residues to show until the key/click-list lands.
 >
 > **Rules:** Opus plans, Sonnet executes, Haiku reviews. Ask Yash only on fact conflicts or spend over $50. No CIN, no machine counts. One Wix writer at a time. Refresh this block and the PHASE3-PLAN.md Status after every step.
 
@@ -327,6 +326,13 @@ Branch `w6-content` → PR #1 → merged to main (dc457ea); follow-up fixes to e
 - **Wix bundler error and fix:** publish failed with a parse error on the original ~44 KB single-line `W6_OPS` JSON in `w6content.js` (node --check and eslint both passed — the limit is Wix's bundler, not JS). Fixed by splitting the payload into one small module per page, all lines < ~6 KB. Yash was told **not** to publish while the error stood; the fix went in first.
 - **H1 lesson:** `collapse()` never reaches SSR markup. about-1 was fixed with `demoteH1`; home's empty H1 lived *inside* the same rich-text element as the main H1, so a new `stripEmptyH1` op rewrites the tag away. Home now serves exactly 1 H1.
 - **Verification (no-JS curl, scripts stripped before counting):** all 10 pages serve the new content server-side; exactly 1 visible H1 each; 0 hits for "60 CNC", "17 VMC", "0.5 kg", "2 kg – 20 kg", "Charpy", "warm forging", "cold forging"; word counts home 656, about-1 725, contact 998, about-1-1 1021, tool 1678, alloy 1090, machined 781, steering 1365, ev 828, v-link 912 — every touched page above Sited's 500-word threshold. Full details in `W6-DESIGN.md`.
-- **Sited mapping:** findings 2 (thin pages) and 8 (/electric-vehicles H1) are now covered by W6. Remaining report items: 1 sameAs (LinkedIn live on homepage schema 22 Nov; extra profiles optional), 3 schema on 4 pages (done earlier; re-confirm after W6), 4 dates (schema done earlier; visible date Editor), 5 brand in homepage title (done earlier), 6 byline (schema done earlier; visible Editor), 7 CSP (Wix platform).
+- **Sited mapping:** findings 2 (thin pages) and 8 (/electric-vehicles H1) are now covered by W6. Remaining report items: 1 sameAs (LinkedIn live on the homepage schema since 22 Nov; extra profiles optional), 3 schema on 4 pages (done earlier; re-confirm after W6), 4 dates (schema done earlier; visible date Editor), 5 brand in homepage title (done earlier), 6 byline (schema done earlier; visible Editor), 7 CSP (Wix platform).
 - **FAQ re-query** found 3 further visible conflicts beyond the 2 known: railways "Charpy … −40 °C", maharashtra "hot forging, warm forging, cold forging", ev "closed-die hot and warm forging". Replacement texts prepared; the write is blocked on a Wix API channel with FAQ permissions (or a Yash click-list).
 - **Empty-body pages:** /product, /transmission-and-driveline, /electric-mobility have no body Text elements — Velo cannot inject; flagged for Editor work.
+
+### 2026-11-23 (later) — Session close: owner rules added, Phase 4 planned
+- **New owner rules (CLAUDE.md):** (1) a task that fails more than once goes to `pending.md` with its unblock condition and work moves on; (2) growth mandate — chief-of-staff role for business growth/strategy/branding; goal is top-of-search worldwide for sourcing forgings from India, with a weekly plan beyond SEO/GEO (email, LinkedIn, lead-gen tools).
+- **Final verification sweep (no-JS curl, scripts stripped):** /, /about-1, /contact-us-1, /tool-manufactring, /steering-suspension-components, /forged-machined-components-vf, /electric-vehicles — all 1 visible H1, 0 banned-term hits, 659–1,684 words. Site state confirmed good.
+- **Blocked items parked in `pending.md` (P1–P10):** 5 FAQ-app answers + W8 SEO writes (need a Wix API key with FAQ + SEO permissions — creation steps documented for Yash), 3 empty-body pages + visible dates/byline + social icons + CSP (Editor/Wix-support only).
+- **Competitor study (scraped live):** Bharat Forge wins on brand/off-site, not on-page depth; mid-size rivals (Shivam Forge 6,700-word homepage + 10 JSON-LD blocks; JK Forge 4,100-word capability pages with 24 h RFQ CTA) win AI citations with long-form + FAQ + schema. Directory/listicle ecosystem (Moglix, Tofler) ranks for our target searches and is the fastest off-site win. Full findings and the plan in `PHASE4-PLAN.md`.
+- **PHASE4-PLAN.md created:** keyword clusters (sourcing/capability/product/industry/buyer-process), 4 sprints (close site gaps → off-site profiles + listicles → content engine → measure), weekly business-growth rhythm (2 LinkedIn posts, email sequences, lead-gen tools — Apollo/Lusha/IndiaMART/TradeIndia/Kompass/ThomasNet, trade shows), KPI table with 8-week and 6-month targets against the Sited baseline (81 GEO, 0% prompt visibility).

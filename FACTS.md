@@ -73,6 +73,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | Piyush = Director [Y] | "Managing Director" | /company-profile body | Click-list |
 | "Since 1989" | "35 Years of Forging Excellence" | /history meta (and any "X years" phrasing) | API + click-list |
 | Legal name | "Varsha Forgings Ltd.", "Varsha Forgings Limited", "Pvt. Ltd." | /home, /company-profile | Click-list: "Varsha Forgings Private Limited" |
+| Hot closed-die only [Y] | "warm forging", "cold forging", "open-die" | /forging-company-maharashtra, /forging-presses-hammers, /oil-and-gas | Click-list + API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -94,6 +95,11 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 ## Plant hours [Y] (owner-confirmed 22 Nov 2026)
 - **Aurangabad:** 09:00–18:00, closed **Friday** (open Sat–Thu)
 - **Pune:** 09:00–18:00, closed **Sunday** (open Mon–Sat)
+
+## Processes [Y] (owner-confirmed 22 Nov 2026)
+- **Surface and heat treatments offered:** vacuum carburizing · induction hardening · hot-dip galvanizing · double quench & temper
+- **Not done, remove:** warm forging, cold forging, precision cold forging, open-die forging. Forging is hot closed-die only.
+- **Not confirmed, remove:** railway performance claims ("30+ year operational life", axle loads > 32 t, Charpy at −40 °C)
 
 ## Export logistics [Y] (owner-confirmed 22 Nov 2026)
 ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access.

@@ -110,6 +110,10 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - **Not confirmed, remove:** railway performance claims ("30+ year operational life", axle loads > 32 t, Charpy at −40 °C)
 
 ## Export logistics & commercial [Y] (owner-confirmed 22 Nov 2026)
+- **Material certificates:** EN 10204 type 3.1, and 3.2 on request [Y]
+- **Payment terms:** Letter of Credit or advance payment [Y]
+- **Raw material:** sourced from tier-one steel mills [Y]
+- **Hammers:** friction drop hammers, 1–3 MT [Y]
 ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access · **air freight for samples and urgent customer needs** · **virtual plant tours available** · drawings accepted in **2D and 3D**.
 **Not confirmed, remove:** open-account terms; specific CAD formats (STEP/IGES/Parasolid; say "2D and 3D drawings"); gear roll testers; 3D-printed patterns; EV motor shafts and motor-speed claims ("12,000 RPM"); bolt grades 10.9/12.9 for EV; ASME Class 150–2500 flange ratings.
 

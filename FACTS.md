@@ -49,6 +49,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
 - **Forged component weight range: 1 kg – 25 kg.** Correct every page that states 0.5–50 kg, 2–20 kg or 0.5–20 kg.
+- **Tolerances: forging ±0.5 mm · machining ±0.02 mm.** Replace ±0.01 mm, ±0.2 mm, ±5 microns and the 'EN 10243-1 Grade F' citation wherever they appear.
 
 ## Dedicated vendor base (NOT in-house) [P]
 A dedicated base of machining vendors extends in-house capacity with CNC, VMC, HMC, hobbing, grinding, milling, broaching, turning, drilling, tapping and thread rolling. Vendor processes: gear cutting, rubber bonding, stamping, zinc plating, phosphating, anodizing. **No machine counts — see DO NOT PUBLISH.**

@@ -81,3 +81,12 @@ Source: each page's `rawHtml` (Firecrawl, maxAge 0, waitFor 8000) contains every
 - `buying-forgings-from-india__1`: time-zone offsets, DIN/SAE/AISI/JIS/BS equivalency row.
 - `forging-vs-casting__2`: forging vs casting percentages (general engineering) and break-even figures (5,000 pieces, 10 years).
 - `forged-machined-components-vf__1`: "Lower logistics cost and faster lead time".
+
+## Opus decision 22 Nov 2026 (applied)
+Only claims that conflict with FACTS or the DO NOT PUBLISH list were changed (text only). Edits to `embeds/corrected/`:
+- `buying-forgings-from-india__1`: "Forging + machining under one roof" to "Forging, machining and assembly from one supplier"; "India's largest container port" to "JNPT (Nhava Sheva) port".
+- `forged-components-ev__6`: "Motor Harmonic Dampening" row removed (no EV motor parts); antioxidant/antiozonant line attributed to rubber-bonding partners.
+- `forging-manufacturer-india__2`: "Pan-India Manufacturing" to "Maharashtra-Based Manufacturing".
+- `suspension-components__1`: competitor comparison replaced by a neutral statement of what Varsha supplies.
+- `torque-rod-assemblies__2`: "Natural Rubber (NR)" removed, now "Rubber-Bonded (via partners)"; Zinc-Phosphate Conversion marked as done via vendor partners.
+All other REVIEW items are left as they are ([L] in REVIEW.md).

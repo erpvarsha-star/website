@@ -165,3 +165,16 @@ Checked and correct: plant hours, 1–25 kg, ±0.5 mm and ±0.02 mm, 12,000 t an
 - Markup: all 60 pairs balanced and script/style identical; buying-forgings-from-india__1 fails the text-only rule.
 - The 10 FAIL files: about-1__1, buying-forgings-from-india__1, forged-components-ev__3, forged-components-ev__5, forged-components-ev__6, forged-machined-components-vf__1, forging-company-maharashtra__2, forging-manufacturer-india__2, suspension-components__1, torque-rod-assemblies__2.
 - Recommendation: fix the FAIL items and re-run this gate before W4/W5 uses these embeds. Batch the FLAG list to the owner for yes/no.
+
+## Opus decision 22 Nov 2026
+
+Rule: change only claims that conflict with FACTS or the DO NOT PUBLISH list. Fixed (text only, see INDEX.md): F2 (a, b), F5, F8 (a), F9, F10. Every other item below is left as is, marked [L].
+
+- [L] F1 about-1__1 materials list
+- [L] F2(c) buying-forgings-from-india__1 table markup (column removed; not reverted)
+- [L] F3 forged-components-ev__3 "micro-alloyed steels"
+- [L] F4 forged-components-ev__5 micro-alloyed substitution; "EV range optimization"
+- [L] F6 forged-machined-components-vf__1 "Lower logistics cost and faster lead time."
+- [L] F7 forging-company-maharashtra__2 "India's largest automotive ecosystem"
+- [L] F8(b) "primary Indian manufacturing node"; F8(c) "IMDS Submissions for REACH and RoHS Compliance"
+- [L] All FLAG items and draft issues D1 to D3 and the rest

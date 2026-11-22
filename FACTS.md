@@ -59,6 +59,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 | Rubber bonding = vendor partner [Y] | "executes precision rubber vulcanization bonding" (in-house claim) | /rubber-bonded-components | Click-list: "through a dedicated rubber-bonding partner, under Varsha's quality control" |
 | Broaching = vendor [Y] | Broaching listed as in-house | /about-1, /alloy-steel-forgings, /forged-machined-components-vf, /forging-manufacturer-pune | Click-list (+ API where in schema) |
 | No stainless [Y] | AISI 304/316, 304L/316L, dual-phase stainless | /about-1, /oil-and-gas | Click-list + API (oil-and-gas schema) |
+| No aerospace [Y] | "aerospace" | /about-1 | Click-list |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -66,10 +67,13 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 - **Annual capacity: over 12,000 metric tons per annum; over 3 million assorted pieces per year.** [Y] 22 Nov 2026
 - **Tolerances: forging ±0.5 mm · machining ±0.02 mm.** Replace ±0.01 mm, ±0.2 mm, ±5 microns and the 'EN 10243-1 Grade F' citation wherever they appear.
 
+## Industries served [Y] (owner-confirmed 22 Nov 2026)
+Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.
+
 ## Materials [Y] (owner-confirmed 22 Nov 2026)
 - **Carbon and alloy steels, all grades currently listed:** EN8, EN9, EN19, EN24, EN31, 20MnCr5, 16MnCr5, 42CrMo4, 20MoCr4E, SAE1541, SAE8620, AISI 4140, AISI 1045, ASTM A105, LF2, F11, F22.
 - **No stainless steel.** Remove AISI 304, 316, 304L, 316L and dual-phase stainless wherever they appear.
-- *Pending:* the "aerospace" application claim on /about-1 (not yet confirmed).
+
 
 ## Dedicated vendor base (NOT in-house) [P]
 A dedicated base of machining vendors extends in-house capacity with CNC, VMC, HMC, hobbing, grinding, milling, broaching, turning, drilling, tapping and thread rolling. Vendor processes: gear cutting, rubber bonding, stamping, zinc plating, phosphating, anodizing. **No machine counts — see DO NOT PUBLISH.**

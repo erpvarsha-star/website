@@ -245,3 +245,10 @@ Sonnet executor. Fixed the misses from the batch 1 reviewer verdict and redeploy
 - **Engine:** NBSP/whitespace normalised before matching; no innerHTML; runs at load, 1 s, 3 s, 8 s plus the MutationObserver.
 - **Checked:** `node --check` passes on both files; a jsdom smoke test showed the rule 13 variants, DELIVER motto, LFull, FORGIN, Commercial Vehicles, IATF, year, hours and hide rules all applying. Live pages not verified (reviewer next). The Aurangabad hours rule is untested live because the exact live wording was not found.
 - **Status:** NOT marked done. A reviewer verifies next.
+
+### 2026-11-22 — Layer rev 4/3 live check (reviewer, 10 pages): 3 clean, 35 FAIL items
+- Clean: /, /company-profile, /contact-us-1.
+- ~28 FAILs sit in tables/HTML embeds the layer can't reach. This includes the Pune machine-count table (DO NOT PUBLISH), 0.5–50 kg tables, stainless and ASME tables on /about-1 and /oil-and-gas, and the Pune/Aurangabad hours tables. **Needs Velo + GitHub or the embed HTML paste.**
+- ~7 rule gaps queued for executor round 2: R129/130 en dash; R124 FORGIN at block end; R119 LFull still live; R13 paragraph on /oil-and-gas; ×N machine-count layout; R42 Broaching variants; 55–75 Shore A.
+- FACTS.md correction-queue hours line updated to the owner-confirmed 09:00–18:00.
+- Untraced but non-conflicting claims (IATF 16949:2016, 24–48 h lead time, cryogenic, Industrial Enamel, 3–25 kg) stay per the ask-only-on-conflict rule and are logged as [L].

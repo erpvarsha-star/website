@@ -74,6 +74,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 | "Since 1989" | "35 Years of Forging Excellence" | /history meta (and any "X years" phrasing) | API + click-list |
 | Legal name | "Varsha Forgings Ltd.", "Varsha Forgings Limited", "Pvt. Ltd." | /home, /company-profile | Click-list: "Varsha Forgings Private Limited" |
 | Hot closed-die only [Y] | "warm forging", "cold forging", "open-die" | /forging-company-maharashtra, /forging-presses-hammers, /oil-and-gas | Click-list + API |
+| EV: no motor parts [Y] | "motor shafts", "12,000 RPM", "10.9/12.9", "3D-printed patterns", "gear roll testers" | /forged-components-ev | Click-list + API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
@@ -101,8 +102,9 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - **Not done, remove:** warm forging, cold forging, precision cold forging, open-die forging. Forging is hot closed-die only.
 - **Not confirmed, remove:** railway performance claims ("30+ year operational life", axle loads > 32 t, Charpy at −40 °C)
 
-## Export logistics [Y] (owner-confirmed 22 Nov 2026)
-ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access.
+## Export logistics & commercial [Y] (owner-confirmed 22 Nov 2026)
+ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access · **air freight for samples and urgent customer needs** · **virtual plant tours available** · drawings accepted in **2D and 3D**.
+**Not confirmed, remove:** open-account terms; specific CAD formats (STEP/IGES/Parasolid; say "2D and 3D drawings"); gear roll testers; 3D-printed patterns; EV motor shafts and motor-speed claims ("12,000 RPM"); bolt grades 10.9/12.9 for EV; ASME Class 150–2500 flange ratings.
 
 ## Industries served [Y] (owner-confirmed 22 Nov 2026)
 Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.
@@ -133,7 +135,7 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **EV:** products developed for electric vehicles (2024 milestone)
 - **Also confirmed [Y] 22 Nov 2026:**
   - Steering & suspension: ball joints · drag links · tie rods · anti-roll bar linkages · axle mounts · swing-arm mounts · steering levers · torque rods · radius rods · V-links
-  - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks · EV motor shafts
+  - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks (**not EV motor parts** [Y])
   - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets
   - Other: tow hooks · bearing bushes · end-body turning · flanges and valve bodies (oil & gas)
 
@@ -142,7 +144,7 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **Also on live /customer page:** Bajaj · Escorts · Exedy · Force Motors · Hendrickson · John Deere · TAFE · Tata Motors · TVS · VE Commercial Vehicles · Seaco
 - **Confirmed current [Y] 22 Nov 2026:** Ferrabyrne · Four Star Industries · Indo Schottle · Innova Rubbers · Jagadamba Auto-components · Laxmi-Agni · NR Industries · Mansons · MSL · Piaggio · Polybond · Sanjeev · Tork Motors
 - **Not a customer:** Corvette (remove the homepage image alt text "corvtte customer")
-- **Export countries:** Germany · Spain · Italy · Portugal · Austria · United States
+- **Export markets:** Germany · Spain · Italy · Portugal · Austria · United States · **Asia-Pacific** [Y]
 
 ## Sustainability [P]
 150 kW rooftop solar installation.

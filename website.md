@@ -5,11 +5,11 @@
 > - SEO tags and JSON-LD corrected on all 49 pages to owner-confirmed facts. A re-scan of the forbidden patterns gives 0 hits.
 > - sameAs points to LinkedIn.
 > - Article schema added on 3 pages; og:image on 10 pages; homepage FAQ added and brand put in the title; plant hours restored.
-> - Redirects fixed (F27). The plain URLs may still serve a stale cache; a scheduled re-check fires at 06:19 UTC.
+> - Redirects fixed (F27). **Re-check 22 Nov 10:40 UTC: all 3 PASS live** (both `/forged-machined-components*` URLs land on `-vf`; `/copy-of-alloy-steel-forgings` lands on `/alloy-steel-forgings`).
 > - **Email-link typo fixed site-wide** via the Custom Embed layer (verified live).
 >
-> **In flight when the session ended**
-> - Executor writing **batch 1 of visible-text corrections** into the Custom Embed (`corrections/embed-layer.js`, `corrections/RULES.md`).
+> **Not started (hit the usage limit)**
+> - The batch 1 executor stopped on the 5-hour usage limit before making any change. The embed is still revision 1 (mailto rule only); no `corrections/RULES.md` yet. **Re-dispatch batch 1 when Yash is back** (he asked to conserve usage).
 > - **Next session:** check `git log` and the embed revision (GET `https://www.wixapis.com/embeds/v1/custom-embeds`). If batch 1 was deployed, dispatch the **reviewer** to verify every affected page via Firecrawl. If it wasn't, re-dispatch the executor with the batch 1 brief: factual corrections per the FACTS.md Correction queue plus Click-list Blocks 2, 3 and 6.
 >
 > **Next steps, in order**
@@ -210,3 +210,6 @@ The Redirects API has no update method, so each was deleted and recreated. All c
 - Verification: Playwright was blocked by the sandbox proxy (www.varshaforgings.com not allowed). The reviewer is verifying via Firecrawl instead.
 - **Pilot verified PASS (Haiku reviewer, Firecrawl browser render):** home and /contact-us-1 show every mailto href as `marketing@varshaforgings.com`; the embed script is present in the page body. The audit earlier today saw the typo in those hrefs, so the fix comes from the layer. **Lead-critical bug F25 is resolved for visitors.**
 - **Next:** batch 1 of factual visible-text corrections via the same embed (executor dispatched). The 7-page copy rewrites follow in a later batch.
+
+### 2026-11-22 10:40 UTC — Scheduled F27 re-check: PASS
+All 3 redirects land correctly live (Haiku reviewer, Firecrawl). Edge cache cleared. Batch 1 visible-text executor had failed on the usage limit with no changes made. It is queued for the next working session.

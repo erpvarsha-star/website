@@ -112,8 +112,15 @@ document.querySelectorAll('img[alt]').forEach(function(e){var v=e.getAttribute('
 A.forEach(function(r){v=v.replace(r.b,r.to)});
 if(v!==e.getAttribute('alt'))e.setAttribute('alt',v)});
 }
-var t;function go(){try{run()}catch(e){}}
+var DH=['7edffdcc5c', '71d1f1bfef', 'd992c508cc', '67e78ccdca', 'cf35346801', '42c4a400cf', '6e0a302f0b'],DC=['comp-mscxleug','comp-mscxlevk'];
+function dnp(){var q=document.querySelectorAll('iframe,wix-iframe,[data-src],[src]'),i,e,u,k,a;
+for(i=0;i<q.length;i++){e=q[i];u=(e.getAttribute('src')||'')+(e.getAttribute('data-src')||'');
+if(u.indexOf('72f2bf_')<0)continue;for(k=0;k<DH.length;k++){if(u.indexOf('72f2bf_'+DH[k])>-1){
+a=e;while(a&&!(a.id&&a.id.indexOf('comp-')===0))a=a.parentElement;
+if(a)a.style.setProperty('display','none','important');break}}}
+if(/forging-manufacturer-pune/.test(location.pathname))DC.forEach(function(c){var x=document.getElementById(c);if(x)x.style.setProperty('display','none','important')})}
+var t;function go(){try{dnp()}catch(e){}try{run()}catch(e){}}
 function later(){clearTimeout(t);t=setTimeout(go,200)}
-go();[1000,3000,8000].forEach(function(d){setTimeout(go,d)});
+go();[1000,3000,8000,15000,25000].forEach(function(d){setTimeout(go,d)});
 new MutationObserver(later).observe(document.body,{childList:true,subtree:true});
 })();

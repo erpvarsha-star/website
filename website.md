@@ -262,3 +262,9 @@ Sonnet executor. Root causes found by reading the live raw HTML (Firecrawl, maxA
 - **Also unreachable (iframes):** on /forging-manufacturer-pune the machine-count layout "[CNC Turning Centers ×60] → [VMC ×17] → [HMC ×2]", "[Gear Hobbing ×5]", the equipment table rows and "Monday–Saturday, 08:00–18:00 IST" are all inside HTML-embed iframes. R132, R135 and the Pune hours rule only help where the text is in the page DOM. These need Velo or an Editor paste of corrected embed HTML (DO NOT PUBLISH machine counts remain live in them).
 - **Schema hours (Part B), read-back, no write needed:** STATIC_PAGE `lgtlq` (Pune) openingHoursSpecification = Monday–Saturday 09:00–18:00; `dpizt` (Aurangabad) = Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday 09:00–18:00 (closed Friday). Both already correct, so no PATCH was sent. JSON-LD sizes: lgtlq 3,523 chars (3 tags), dpizt 3,600 chars (4 tags; at the 3,600 cap, so no growth is possible). Neither graph has a separate `openingHours` string property.
 - **Status:** NOT marked done. Live pages not verified (per brief); reviewer next.
+
+### 2026-11-22 — Velo + GitHub connected
+- Yash connected the Wix site to GitHub. Repo `erpvarsha-star/VflWebsite` (private), branch `main`, initial commit 5e7dc78; `wix.config.json` siteId matches 4a42e2d8.
+- Contents: `src/pages/*.js` for all ~60 pages (named `<Page>.<pageId>.js`), `masterPage.js`, `src/backend`, `src/public`.
+- The repo is attached to this session (clone at /home/user/vflwebsite). Next: a pilot with one fix (footer email href) in `masterPage.js`, after the layer round-2 executor finishes (one Wix writer at a time).
+- `erpvarsha-star/website` stays as the ops/docs repo; Wix only syncs with the repo it created.

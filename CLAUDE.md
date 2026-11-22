@@ -12,7 +12,7 @@ Claude acts as **chief of staff** for varshaforgings.com: website, SEO, GEO, bra
 |---|---|---|---|
 | **Wix API (SEO tags)** | Titles, meta descriptions, JSON-LD on all 49 pages (`STATIC_PAGE` item SEO tags) | Executor via ExecuteWixAPI, one page per call, full tag set, publish:true, ≤3,600 chars | Google, AI crawlers |
 | **Custom Embed correction layer** | Visible text, links, alt text, applied in the visitor's browser | Wix Custom Embed **"VF Corrections Layer"** id `546ea6cc-003e-41ef-a6f8-97e23f614e77`. Source of truth: `corrections/embed-layer.js`; rule table `corrections/RULES.md`. Update = GET the embed → PATCH with the current revision | Visitors and Google (renders JS). **Not** non-JS AI crawlers |
-| **Velo + GitHub (pending)** | The same corrections, rendered server-side | Needs Yash's one-time Editor connection (`SETUP-VELO-GITHUB.md`, repo `erpvarsha-star/VflWebsite`) | Everyone, incl. AI crawlers |
+| **Velo + GitHub (connected 22 Nov 2026)** | The same corrections, rendered server-side | Needs Yash's one-time Editor connection (`SETUP-VELO-GITHUB.md`, repo `erpvarsha-star/VflWebsite`) | Everyone, incl. AI crawlers |
 Visible text cannot be edited by API on this Wix Classic site; never hand Yash clerical Editor work when a channel above can do it.
 
 ## Access notes

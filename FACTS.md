@@ -31,7 +31,7 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 Source: [P][L]
 
 ## Certifications [Y]
-IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 submission capability · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; approval reference not yet supplied).
+IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submission at **Levels 1–5** [Y] 22 Nov 2026 (supersedes "Level 3 capability") · APQP · IMDS · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; approval reference not yet supplied).
 **Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
 
 ## Milestones & Awards [P]
@@ -60,12 +60,16 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 | Broaching = vendor [Y] | Broaching listed as in-house | /about-1, /alloy-steel-forgings, /forged-machined-components-vf, /forging-manufacturer-pune | Click-list (+ API where in schema) |
 | No stainless [Y] | AISI 304/316, 304L/316L, dual-phase stainless | /about-1, /oil-and-gas | Click-list + API (oil-and-gas schema) |
 | No aerospace [Y] | "aerospace" | /about-1 | Click-list |
+| No ZLD claim [Y] | "ZLD effluent treatment" | /forging-manufacturer-india (body + schema) | Click-list + API |
 | Pune since 2007 | "est. 2013" / "established in 2013" for Pune | Live Pune meta (set this session), content-drafts, homepage draft | API + drafts |
 
 ## Capability ranges [Y] (owner-confirmed 22 Nov 2026)
 - **Forged component weight range: 1 kg – 25 kg.** Correct every page that states 0.5–50 kg, 2–20 kg or 0.5–20 kg.
 - **Annual capacity: over 12,000 metric tons per annum; over 3 million assorted pieces per year.** [Y] 22 Nov 2026
 - **Tolerances: forging ±0.5 mm · machining ±0.02 mm.** Replace ±0.01 mm, ±0.2 mm, ±5 microns and the 'EN 10243-1 Grade F' citation wherever they appear.
+
+## Export logistics [Y] (owner-confirmed 22 Nov 2026)
+ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port access.
 
 ## Industries served [Y] (owner-confirmed 22 Nov 2026)
 Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.

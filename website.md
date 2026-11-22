@@ -232,3 +232,7 @@ Haiku reviewer, all sitemap pages, Firecrawl waitFor 25 s.
 - **Reviewer over-flags, already confirmed in FACTS:** Daimler 2023 letter, ACMA 2019, SME100 27,467, bios incl. ZF "Managing Director" role.
 - **Untraced, ask owner:** construction/infrastructure/defense industries; "ape" logo; EV "drivetrain" wording; control-rod assemblies; normalizing; grinding in-house; Middle East & Africa exports; "complaint-free products".
 - **Conclusion:** the browser-layer channel can't clear the highest-risk content. **Velo + GitHub (server-side, can control HTML-embed components) or a paste of corrected HTML per embed block is required.**
+
+### 2026-11-22 — Facts added; ask-only-on-conflict rule
+- FACTS.md [Y]: construction/infrastructure/defense industries; Middle East & Africa exports; normalizing; grinding in-house; control-rod assemblies (adjustable/crimped).
+- CLAUDE.md: Yash is asked only when live data conflicts with FACTS.md. Non-conflicting live claims stay and are logged as [L].

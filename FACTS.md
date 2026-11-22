@@ -105,7 +105,8 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submissi
 - **Pune:** 09:00–18:00, closed **Sunday** (open Mon–Sat)
 
 ## Processes [Y] (owner-confirmed 22 Nov 2026)
-- **Surface and heat treatments offered:** vacuum carburizing · induction hardening · hot-dip galvanizing · double quench & temper · **stress relieving** [Y]
+- **Surface and heat treatments offered:** vacuum carburizing · induction hardening · hot-dip galvanizing · double quench & temper · **stress relieving** [Y] · **normalizing** [Y 22 Nov 2026]
+- **Grinding is done in-house** [Y 22 Nov 2026] (overrides the deck's vendor listing; vendors also grind for extra capacity).
 - **Not done, remove:** warm forging, cold forging, precision cold forging, open-die forging. Forging is hot closed-die only.
 - **Not confirmed, remove:** railway performance claims ("30+ year operational life", axle loads > 32 t, Charpy at −40 °C)
 
@@ -118,7 +119,7 @@ ISPM-15 export crates · GPS-tracked containers · JNPT (Nhava Sheva) port acces
 **Not confirmed, remove:** open-account terms; specific CAD formats (STEP/IGES/Parasolid; say "2D and 3D drawings"); gear roll testers; 3D-printed patterns; EV motor shafts and motor-speed claims ("12,000 RPM"); bolt grades 10.9/12.9 for EV; ASME Class 150–2500 flange ratings.
 
 ## Industries served [Y] (owner-confirmed 22 Nov 2026)
-Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** (not subsea [Y]) · **mining & off-highway** · **electric transit buses**. **Not aerospace:** remove that claim.
+Automotive (commercial vehicles, steering/suspension/powertrain) · agriculture · railway · electric vehicles · **oil & gas / petrochemical** (not subsea [Y]) · **mining & off-highway** · **electric transit buses** · **construction, infrastructure & defense** [Y 22 Nov 2026]. **Not aerospace:** remove that claim.
 
 ## Materials [Y] (owner-confirmed 22 Nov 2026)
 - **Carbon and alloy steels, all grades currently listed:** EN8, EN9, EN19, EN24, EN31, 20MnCr5, 16MnCr5, 42CrMo4, 20MoCr4E, SAE1541, SAE8620, AISI 4140, AISI 1045, ASTM A105, LF2, F11, F22.
@@ -155,12 +156,15 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
   - Rubber-bonded (bonding via partner): **engine mounts · vibration isolators / NVH bushes · bonded housings** [Y]
   - EV: suspension and steering parts only. **No EV gearbox/powertrain parts or EV gear blanks** [Y]
 
+## Products — added [Y] 22 Nov 2026
+- **Control-rod assemblies** (adjustable and crimped) are made by Varsha.
+
 ## Customers & markets [Y][L]
 - **OEMs (confirmed):** Daimler · Ashok Leyland · MAN Trucks India · Mahindra Trucks & Buses · Paccar · Scania · Tata Daewoo
 - **Also on live /customer page:** Bajaj · Escorts · Exedy · Force Motors · Hendrickson · John Deere · TAFE · Tata Motors · TVS · VE Commercial Vehicles · Seaco
 - **Confirmed current [Y] 22 Nov 2026:** Ferrabyrne · Four Star Industries · Indo Schottle · Innova Rubbers · Jagadamba Auto-components · Laxmi-Agni · NR Industries · Mansons · MSL · Piaggio · Polybond · Sanjeev · Tork Motors
 - **Not a customer:** Corvette (remove the homepage image alt text "corvtte customer")
-- **Export markets:** Germany · Spain · Italy · Portugal · Austria · United States · **Asia-Pacific** [Y]
+- **Export markets:** Germany · Spain · Italy · Portugal · Austria · United States · **Asia-Pacific** [Y] · **Middle East & Africa** [Y 22 Nov 2026]
 
 ## Sustainability [P]
 150 kW rooftop solar installation.

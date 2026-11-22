@@ -39,5 +39,5 @@ When a gap or conflict is found (e.g. press sizes, weights, tolerances), ask Yas
 - Log every change in `website.md`; commit and push after every step.
 - Spend over $50 (one-time or recurring) needs the owner's explicit yes. No new tool sign-ups without the owner's ask; Sited (already paid) plus GA4 are the measurement stack.
 - **General engineering explanation is allowed** (e.g. why forgings outperform castings) as long as it isn't a claim about Varsha. Company-specific claims must be in `FACTS.md`.
-- **Pre-existing live claims not in `FACTS.md` are not deleted automatically.** Batch them for owner yes/no; add confirmed ones to `FACTS.md`. Only claims that *conflict* with `FACTS.md`, or break a DO NOT PUBLISH rule, are fixed straight away.
+- **Ask Yash only on conflicts (owner, 22 Nov 2026: "If there are no conflicts why ask on data that is there").** A pre-existing live claim that does not conflict with `FACTS.md` or the DO NOT PUBLISH table stays as is, without questioning; record it in `FACTS.md` as [L]. Claims that *conflict* with `FACTS.md`, or break DO NOT PUBLISH, are fixed straight away; ask only when the conflict can't be resolved from `FACTS.md`.
 - Live visible body text on Wix Classic is Editor-only. The API changes SEO tags and JSON-LD only, so a fix in schema does not fix the visible page. Always verify both.

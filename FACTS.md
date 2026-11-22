@@ -32,6 +32,7 @@ Source: [P][L]
 
 ## Business profile [Y] (owner-confirmed 22 Nov 2026)
 - Over 60% of production serves OEMs.
+- **Origins: founded 1989 only.** Don't write "group roots trace to 1981"; 1981 appears only in the leadership bio (ZF Steering Gear). [Y]
 - Positioned as a **Tier 1 and Tier 2 supplier** to OEMs.
 - Leadership bios on /company-profile are accurate (ZF Steering Gear 1981, Prima Feintechnik 2005, KCTR JV 2013 for Tata Motors & Mahindra, youngest AIFI president, EO Pune, Stego Lifestyle LLP).
 - CSR: blood donation · tree plantation · education sponsorship; 150 kW rooftop solar.

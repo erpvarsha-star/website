@@ -55,7 +55,15 @@ The entry below was logged as "complete" without verification. Measured afterwar
 1. The RFQ sequence as written (drawing → feasibility → quote → PPAP). It's inferred from PPAP Level 3 + in-house die shop, not from a documented procedure.
 2. "Plant visits can be arranged by phone." A reasonable reading, but not in `FACTS.md`.
 
-Group B (`/about-1-1`, `/tool-manufactring`, `/product`, homepage) is still running.
+### 2026-11-22 (continued) — Phase 1 rework, group B: gate PASSED. All 7 drafts pass.
+
+Orchestrator re-ran the gate across both files: `/about-1-1` 608, `/tool-manufactring` 607, `/product` 574, homepage addition 166 (takes the live page from 483 to ~649), exit 0. No DO NOT PUBLISH claims. Vendor capacity on `/product` is correctly framed as "15 dedicated machining vendors", not in-house (F18).
+
+**Owner must confirm before Gate 1 closes (group B):**
+3. Industry-segment wording (passenger vehicle, two-wheeler, agricultural) on `/about-1-1` and `/product`. It's inferred from the customer list (Bajaj, TVS, John Deere, TAFE), not stated in `FACTS.md`.
+4. Optional: add steel grades to `FACTS.md`. The live `/forging-company-aurangabad` schema lists EN8, EN9, EN19, EN24, 20MnCr5, 16MnCr5, 42CrMo4, 20MoCr4E and SAE1541. If you confirm them, `/product` can name grades.
+
+**Gate 1 status:** word-count and fact checks passed. Waiting on the owner's read-through plus items 1-3. Once approved, the Phase 2 click-list goes to Yash.
 
 ### 2026-11-22 (continued) — Phase 1 first attempt (superseded, see correction above)
 

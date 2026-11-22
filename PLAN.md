@@ -70,7 +70,7 @@ Every action in the Sited AI Visibility Report's "Prioritised Action Plan" (22 N
 ### Other report items not in its action table (added)
 | # | Report item | Finding | Impact | Status | Next step |
 |---|---|---|---|---|---|
-| X1 | **Article + Author schema** on bylined pages (`/forging-company-aurangabad`, `/company-profile`, `/assembly-services`) | **F21 (new)** | High (report's schema table) | ✕ Not started | Executor, API. **Next API task** |
+| X1 | **Article + Author schema** on bylined pages (`/forging-company-aurangabad`, `/company-profile`, `/assembly-services`) | **F21 (new)** | High (report's schema table) | ✅ Done on 3 pages (author = company; no person shown on live pages) | Reviewer to verify |
 | X2 | **Privacy policy and terms pages**; contact page linked in main nav | **F22 (new)** | Low (agent readiness 38/100) | ✕ Not started | Claude drafts copy; Yash creates pages (Editor) |
 | X3 | **Verify Core Web Vitals** (PageSpeed Insights) and **IndexNow** (Bing Webmaster Tools) | **F23 (new)** | Medium (unverified) | ✕ Not started | Reviewer runs PageSpeed via public API; Bing needs owner login |
 
@@ -157,8 +157,10 @@ Phase 3 runs in parallel with 1 and 2 — it only waits on your answers.
 | F17 | Ongoing AI-visibility tracker | This session | Measurement | 4 | **Closed:** no new sign-ups. Sited (already paid) + GA4 AI-referrals |
 | F19 | Proof content: case studies, certifications in prose, customer references | Sited MT3 | Med | 4 | Needs 1–2 real case studies from owner |
 | F20 | Downloadable technical resources (zero found) | Sited ST3 | Med | 5 | Not started |
-| F21 | Article + Author schema on bylined pages | Sited schema table | High | 3 | **Next API task** |
+| F21 | Article + Author schema on bylined pages | Sited schema table | High | 3 | ✅ Done |
 | F22 | Privacy policy + terms pages; contact in main nav | Sited agent readiness | Low | 2 | Not started |
+| F24 | **Site-wide fabricated / contradictory claims** (weights, tolerances, capacity, compliance, China claims; machine counts on 7 pages) | 49-page audit | **High: trust + AI confidence** | 2 | Owner answers `OWNER-CONFIRM.md` → Yash `PHASE2-YASH-CLICKLIST.md` |
+| F25 | **Lead-critical: footer + contact mailto `varshaforging.com` typo** | 49-page audit | **High: enquiries may bounce** | 2 | Block 1 of Yash's click-list |
 | F23 | Verify Core Web Vitals + IndexNow | Sited technical (unverified) | Med | 4 | Not started |
 | F18 | Machine counts on the live site (e.g. Pune "60 CNC turning centers, 17 VMCs") | Cross-check this session | Accuracy risk | 3 | **Owner rule: no machine counts anywhere.** Executor dispatched to sweep all pages |
 

@@ -115,3 +115,15 @@ Quick Wins + Medium-Term content expansion: 81 → 97 (Brand Authority capped at
 5. **Lead-critical:** footer and mailto use `marketing@varshaforging.com` (missing "s"). → Top of Yash's Phase 2 list.
 
 **Rules added to CLAUDE.md:** general engineering explanation is allowed; pre-existing live claims not in FACTS are batched for owner confirmation, not auto-deleted; schema fixes don't fix visible body text, so verify both.
+
+### 2026-11-22 (continued) — Full 49-page live audit; Article schema; owner and Yash deliverables
+- **Full live audit (Haiku reviewer, 49/49 pages fresh):**
+  - Machine counts are in the visible text of **7 pages**: Pune, Maharashtra, suspension, railways, and the radius-rod, V-link and torque-rod assemblies pages.
+  - 12 claims conflict with the company deck (Pune "2007", acquisition "2009", IATF "2024", award years, "500T" and "1,000–5,000 T" presses, rubber bonding described as in-house, and others).
+  - The site contradicts itself on weight range and tolerance.
+  - High-risk unsupported claims: RDSO/EN/UIC/AAR compliance; competitor claims about Chinese suppliers.
+  - Many untraceable specifics, apparently from earlier AI/consultant passes.
+  - **mailto typo `varshaforging.com` in the footer on every page and on /contact-us-1, so enquiries may bounce.**
+- **Delivered:** `OWNER-CONFIRM.md` (35 items, with defaults) and `PHASE2-YASH-CLICKLIST.md` (26 steps in 6 blocks, lead-critical first).
+- **F21 done (executor, API):** Article + author (Organization; no person byline is shown live) on `/forging-company-aurangabad`, `/company-profile`, `/assembly-services`. To stay under the size limit, `dpizt` dropped hours/geo/duplicate contactPoint/description and `slaet` dropped duplicate fields. Restore hours/geo after owner item 32.
+- **Dispatched (executor):** meta/title fixes on /railway, /media, /alloy-steel-forgings, /forging-presses-hammers (800T, not 500T).

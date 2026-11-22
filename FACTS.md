@@ -37,7 +37,7 @@ IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP Level 3 
 2009 TS-16949 · 2011 Design patent granted by the Indian Government · 2014 India SME Excellence Award in Innovation & Invention · 2014 Certificate of Excellence · 2015 Excellence in Manufacturing Gold Trophy (ACMA) · 2016 Daimler India Best Supplier Award · 2017 IATF 16949 · 2017 Best Employer Brand Award · 2018 Brand Leadership Award · 2018 Productivity Improvement Bronze Trophy (ACMA) · 2019 Best Performing Cluster Company (ACMA) · 2023 Daimler India Performance Appreciation Letter · 2024 Supply for electric vehicles · 2025 India SME 100 Award, final winner, 11th Edition
 
 ## Equipment — in-house [P]
-- **Presses:** 2,500 T Erie press · 1,300 T press line ×2 · 800 T screw press
+- **Presses:** 2,500 T Erie press · 1,300 T press line ×2 · 1,000 T press (added recently [Y] 22 Nov 2026) · 800 T screw press — **range 800 T–2,500 T** [P][Y]
 - **Hammers:** 3 MT · 2 MT · 1.5 MT · 1 MT
 - **Die shop:** VMCs · Etchon laser machine · radial drilling · Dell Cam 3D programming software
 - **Material cutting:** CNC circular saw ×3 · shearing ×2 · band saw ×3

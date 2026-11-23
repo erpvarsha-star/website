@@ -1,7 +1,12 @@
-# German Buyer's Guide DRAFT — Stanzschmiedeteile aus Indien beziehen
-**Status: DRAFT — REQUIRES NATIVE-SPEAKER REVIEW BEFORE PUBLISHING.** This is a professional-quality German draft, but German engineering buyers notice register and terminology errors instantly. Have a native German speaker (ideally with engineering/procurement background) review before it goes live.
+# German Buyer's Guide — Stanzschmiedeteile aus Indien beziehen
+**Status: LIVE — 23 Nov 2026.** Owner approved after review ("reviewed german and good to go"). Published via the content-ops blog payload channel (VflWebsite commit 1df641c, run-2026-11-23T06-31-51-197Z). Verified live: HTTP 200, full German body in headless render, 0 banned terms.
 
-**Planned use:** one German-language page (translation of the buyer's-guide approach) with hreflang pairing to the English original. Measure traffic 60 days before deciding on more German content or a Spanish version.
+**Live URL:** https://www.varshaforgings.com/post/stanzschmiedeteile-aus-indien-beziehen-der-leitfaden-f%C3%BCr-eink%C3%A4ufer
+(Wix derives the slug from the title — see the blog API lessons in NEXT-SESSION.md.)
+
+**Reviewer checklist — RESOLVED by owner approval.** Open terminology notes for any future German content: title uses "Stanzschmiedeteile" (search volume) while the body uses "Gesenkschmiede-" (industry standard); "Bärn" kept as the plural of Bär (drop hammer). Both were in the approved text and are live as written.
+
+**Still open:** hreflang pairing between the EN / ES / DE buyer's-guide posts (tracked in handover/2026-11-23-german-page-and-sited-83.md).
 
 Facts: all from FACTS.md. No CIN, no machine counts, hot closed-die only, 1–25 kg, "seit 1989".
 
@@ -51,11 +56,3 @@ A: Jede Charge enthält Werkstoffzeugnisse nach EN 10204 Typ 3.1 (Typ 3.2 auf An
 
 **F: Fertigt Varsha Forgings auch Prototypen oder Kleinserien für europäische Kunden?**
 A: Ja. Neben der Serienfertigung nehmen wir Prototypen- und Kleinserienanfragen an und antworten bei einer Einzelzeichnung innerhalb von 48 Stunden mit einer Machbarkeitsbewertung. So können europäische Einkäufer unsere Schmiedeteile qualifizieren, bevor sie Serienvolumen beauftragen.
-
----
-
-**Reviewer checklist (native speaker):**
-1. Register: formal "Sie" throughout — confirm consistent.
-2. Terms: "Gesenkschmiedeteile" vs "Stanzschmiedeteile" — industry uses both; confirm preferred term for the target audience and apply consistently (title currently uses Stanzschmiedeteile for search volume, body uses Gesenkschmiede-).
-3. "Bärn" (plural of Bär/drop hammer) — confirm; alternatives: "Schmiedehämmer" / "Fallhämmer".
-4. All numbers, certs, and facts must remain identical to FACTS.md — do not let translation introduce new claims.

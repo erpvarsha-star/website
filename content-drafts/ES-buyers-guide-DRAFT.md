@@ -1,8 +1,16 @@
-# Spanish Buyer's Guide DRAFT — Cómo comprar piezas forjadas en India
-**Status: PUBLISHED 23 Nov via content-ops blog channel** (owner directive: build and deploy; same fact set as the audited EN version). URL: https://www.varshaforgings.com/post/como-comprar-piezas-forjadas-en-india-guia-para-compradores-europeos
-**Note:** like the German page, a native-speaker polish pass is welcome when convenient — facts are already verified against FACTS.md, so any review is tone/register only, not content accuracy.
+# Spanish Buyer's Guide — LIVE
+**Status: LIVE 23 Nov via content-ops blog channel (ops/run.js v6e/v6f).**
+URL: https://www.varshaforgings.com/post/cómo-comprar-piezas-forjadas-en-india-guía-para-compradores-europeos-2
+Verified in headless browser: full body renders (EN 10204 ×8, IATF ×6, RDSO, FAQ section present), 0 banned terms. Note: this post's body hydrates client-side rather than SSR (curl shows shell only; browser shows all). Google renders JS, so it indexes; SSR may catch up on a later publish.
+A native-speaker polish pass is welcome when convenient — facts are verified against FACTS.md, so any review is tone/register only, not content accuracy.
 
 Facts: all from FACTS.md. No CIN, no machine counts, hot closed-die only, 1–25 kg, "desde 1989".
+
+**API lessons this deploy (logged in website.md too):**
+- `language:'es'` on draft-posts orphans the post (bare-200 publish, never listed) — omit the language field.
+- Wix reuses the draft id for the published post — a draft purge MUST skip ids present in the posts inventory (v6e deleted the live EN post; v6f fixed + republished it).
+- Requested slug is ignored; live slug is title-derived (hence the `-2` suffix from earlier orphan attempts) — match posts by TITLE for idempotency.
+- Publish returns a bare 200 without a post object — verify by curling the live site, not the response.
 
 ---
 

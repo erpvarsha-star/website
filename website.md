@@ -1,6 +1,7 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: end of session 23 Nov 2026 (content-ops close-out). Read `NEXT-SESSION.md` first; blocked items live in `pending.md`; the growth plan is `PHASE4-PLAN.md`.
+> ## HANDOVER: end of session 23 Nov 2026 (Phase 4 Sprint 1/2 kickoff). Read `pending.md` first (P4b/P9 still unresolved — verified live, not Yash's doing yet); the growth plan is `PHASE4-PLAN.md`.
+> **New this session:** 2nd blog post live (`/post/how-to-source-closed-die-forgings-from-india-a-buyer-s-guide`, Blog v3 API, FAQPage + BlogPosting JSON-LD confirmed live, 1,163 words, 0 DNP hits). Off-site Sprint 2 drafts committed: `content-drafts/capability-onepager-DRAFT.md`, `content-drafts/offsite-profiles-DRAFT.md` (IndiaMART/TradeIndia/Kompass/ThomasNet/GBP ×2), `content-drafts/linkedin-posts-batch1-DRAFT.md` (first 4 posts, 2 need a photo from Yash/Piyush). All on branch `ccr-1e875ebc-2tltlt`, PR open.
 > **Live and verified**
 > - **Velo + GitHub:** `erpvarsha-star/VflWebsite`, main 750cc2d (W6 merge + follow-ups + content-ops + republish). Every push to main AUTO-PUBLISHES via `.github/workflows/publish.yml` (secret `WIXKEY`, rotated by Yash 23 Nov — publish runs green). Yash approved live pushes (CLAUDE.md).
 > - **Content-ops pipeline (NEW, live end-to-end):** `.github/workflows/content-ops.yml` (created by Yash via web UI) runs `ops/run.js` with `secrets.WIXKEY` against the Wix FAQ + SEO APIs and commits results to `ops/results/`. This is the channel for ALL future FAQ/SEO API work — the key never leaves GitHub.
@@ -353,3 +354,23 @@ Branch `w6-content` → PR #1 → merged to main (dc457ea); follow-up fixes to e
 - **Maharashtra FAQ widget staleness — parked as P4b (fail-twice rule).** The FAQ DB is clean, but the live page uses the LEGACY faq-builder widget (faq-ooi bundle), which serves a baked copy of the old answer ("hot forging, warm forging, cold forging, closed-die forging, and precision forging … Erie presses, screw presses, and friction drop hammer systems") in both the accordion and the FAQ JSON-LD. Site republish does not refresh it; no public API reaches the legacy store (only `/faq/v1/categories` responds; legacy FAQ API deprecates 2026-12-31). Also misdiagnosed initially as ricos page text — `src/public/richtext.js` (deployed, harmless) only reaches RichContentViewer elements, not app widgets. Unblock: Yash edits the answer in the FAQ app (exact replacement text in `pending.md`), which re-bakes the widget; longer term migrate to the current FAQ app.
 - **Md close-out:** pending.md, NEXT-SESSION.md, PHASE3-PLAN.md and this file updated with all outcomes (commit e28efa4 on website ccr-6409486e-3vy613).
 - **Next:** Yash does P4b (5 min) and runs Sited; then Phase 4 sprints per `PHASE4-PLAN.md`.
+
+### 2026-11-23 (new session) — Phase 4 Sprint 1/2: 2nd blog post + off-site drafts
+
+Checked `pending.md` first: P4b and P9 confirmed still live-unresolved (Firecrawl re-verify of `/forging-company-maharashtra` — FAQ still serves "hot forging, warm forging, cold forging..."; homepage social icons still `facebook.com/wix` / `instagram.com/wix`). Both need Yash; nothing new to do there. Proceeded into `PHASE4-PLAN.md` Sprint 1/2 per owner's standing growth mandate.
+
+**Blog post (Sprint 1, ST2):** Dispatched Sonnet executor to draft and publish "How to Source Closed-Die Forgings from India: A Buyer's Guide" via the Wix Blog v3 API (same Owner's-Path method as `/precision-forging-cost`) — grounded only in `FACTS.md`, no Editor work. Independently re-verified live via Firecrawl (not just the agent's self-report):
+- URL: `https://www.varshaforgings.com/post/how-to-source-closed-die-forgings-from-india-a-buyer-s-guide`
+- 1,163 words visible body, 0 DO NOT PUBLISH hits
+- FAQPage JSON-LD live with all 5 Q&A; BlogPosting JSON-LD with dateModified/datePublished
+- SEO title + meta description set via `PATCH /promote/seo/v1/item-seo-tags/BLOG_POST/{postId}` (fieldMask must be a comma-separated string, not `{paths:[...]}` — new API quirk, noting here)
+- Byline shows "Admin Varsha Forgings" (Wix's blog-author default, tied to the dashboard account) — cosmetic, folds into existing P8 byline work, not a fact issue.
+
+**Off-site content drafts (Sprint 2):** Drafted directly (no agent needed — plain copy, no live writes), self-scanned clean against DO NOT PUBLISH:
+- `content-drafts/capability-onepager-DRAFT.md` — one-page capability sheet for listicle/directory submissions
+- `content-drafts/offsite-profiles-DRAFT.md` — ready-to-paste copy for IndiaMART, TradeIndia, Kompass, ThomasNet, Google Business Profile (both plants)
+- `content-drafts/linkedin-posts-batch1-DRAFT.md` — company page setup text + first 4 posts (2 flagged `[PHOTO NEEDED]` for Yash/Piyush)
+
+All committed to branch `ccr-1e875ebc-2tltlt` (this session's branch); `PLAN.md` ST2 and `PHASE3-PLAN.md` status table updated to match. PR to be opened this session.
+
+**Still open, unchanged:** P4b, P7, P8, P9, P10 (pending.md) — all need Yash. Sprint 3 (weekly content engine) and the rest of Sprint 2 (actually claiming/submitting the off-site profiles, which needs Yash's identity/email to create accounts) are next.

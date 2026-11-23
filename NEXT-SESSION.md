@@ -1,4 +1,9 @@
-# Brief for the next session (updated 23 Nov 2026, content-ops close-out)
+# Brief for the next session (updated 23 Nov 2026, Phase 4 Sprint 1/2)
+
+**Branch note:** this session's branch is `ccr-1e875ebc-2tltlt` (not `ccr-6409486e-3vy613` — each session gets a new branch name; check `CLAUDE.md`'s "Git Development Branch Requirements" section for the current one, don't assume the name in this file is still right).
+
+**Since the close-out below:** P4b and P9 confirmed STILL unresolved (live-checked, not just assumed). 2nd blog post published (`/post/how-to-source-closed-die-forgings-from-india-a-buyer-s-guide`) and 3 off-site content drafts committed — see `website.md`'s latest log entry. Next: either push Yash again on P4b/P7–P10, or continue Sprint 2 (he needs to actually create/claim the IndiaMART/TradeIndia/Kompass/ThomasNet/GBP accounts — Claude can't sign up for him) and Sprint 3 (weekly content cadence).
+
 
 **New rules this session (CLAUDE.md):** fail twice → `pending.md`, move on · chief-of-staff growth mandate, plan in `PHASE4-PLAN.md`. Blocked items: `pending.md` P4b, P7–P10.
 

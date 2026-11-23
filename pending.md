@@ -20,9 +20,19 @@ Rule (owner instruction, 23 Nov 2026): **if a task fails more than once, stop, l
 | # | Item | Why blocked |
 |---|---|---|
 | P7 | /product (hd575), /transmission-and-driveline (dqw97), /electric-mobility (jo7nt) body content | No body Text elements on these pages — Velo cannot inject. Add one Text element per page in the Editor; then Velo can fill it (drafts ready in content-drafts/) |
-| P8 | Visible publication date on /assembly-services, /forging-company-aurangabad, /company-profile; visible byline on /assembly-services | Schema-level done 22 Nov; visible text is Editor-only |
-| P9 | Homepage social icons point to facebook.com/wix and instagram.com/wix (template default) | Editor link swap |
-| P10 | CSP header (Sited finding 7) | Wix platform-level on Classic sites — raise with Wix support |
+
+## Closed — needs a paid upgrade, not a fix (23 Nov 2026)
+
+| # | Item | Finding |
+|---|---|---|
+| P10 | CSP header (Sited finding 7) | **Confirmed via Wix Help Center, not just "ask support":** custom security headers (CSP included) are Wix Studio Enterprise-only — unavailable on this site's plan (Premium, Classic Editor) by any means, code or otherwise. Not a support ticket; it's an upgrade decision (cost unknown, likely >$50/mo) for 5 of 100 GEO points. Parked pending Yash's explicit go-ahead to price it; not pursued further this session. |
+
+## Re-testing via Velo (23 Nov 2026) — were assumed Editor-only, now in progress
+
+| # | Item | Why re-opened |
+|---|---|---|
+| P8 | Visible publication date on /assembly-services, /forging-company-aurangabad, /company-profile; visible byline on /assembly-services | The "Editor-only" call predates the W5/W6 proof that Velo CAN touch visible text on these exact pages. Executor dispatched to append the visible date/byline the same way W6 appended new H2 sections. Will update this row with the measured result. |
+| P9 | Homepage social icons point to facebook.com/wix, instagram.com/wix (template default); WhatsApp icon has no link | Yash confirmed (23 Nov) no real Facebook/Instagram exist — fix is to unlink, not relink, which doesn't need Editor access if Velo can reach the icon elements. Also adding WhatsApp click-to-chat (wa.me/918411000551), which Yash approved as standard on peer forging sites. Executor testing reachability via masterPage.js's existing element-rewrite pattern (same one that already fixes the footer email typo site-wide). Will update this row with the measured result — if Velo genuinely can't reach these elements, falls back to an Editor click for Yash. |
 
 ## Status note (23 Nov 2026, late)
 The content-ops pipeline is live end-to-end: `.github/workflows/content-ops.yml` on VflWebsite (created by Yash via web UI — the GitHub integration token lacks the `workflow` scope, so Claude cannot push workflow files; 403 confirmed on both push tools). `ops/run.js` reads `secrets.WIXKEY` (never leaves GitHub), runs Wix API reads/writes, and commits results to `ops/results/` for read-back verification.

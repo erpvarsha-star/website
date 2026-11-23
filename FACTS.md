@@ -17,7 +17,8 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Phone (both plants) | +91 8411000551 | [L] |
 | Email | marketing@varshaforgings.com | [L] |
 | LinkedIn (sameAs) | https://www.linkedin.com/company/varsha-forgings-private-limited/ | [Y] |
-| Facebook / Instagram | **None verified.** Site icons currently point to Wix's own accounts (F10). Do not use them in sameAs. | [L] |
+| Facebook / Instagram | **No real accounts [Y] 23 Nov 2026.** Site icons point to Wix's own accounts — remove the links (don't fabricate a URL); do not use in sameAs. | [Y] |
+| WhatsApp | Click-to-chat should use the real number: https://wa.me/918411000551 (Yash approved adding/fixing WhatsApp if it's standard on peer forging-company sites, 23 Nov 2026) | [Y] |
 
 ## Plants
 | | Aurangabad (Plant 1, Forging) | Pune (Plant 2, Assembly) |

@@ -1,18 +1,20 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: end of session 23 Nov 2026 (close-out). Read `NEXT-SESSION.md` first; blocked items live in `pending.md`; the growth plan is `PHASE4-PLAN.md`.
+> ## HANDOVER: end of session 23 Nov 2026 (content-ops close-out). Read `NEXT-SESSION.md` first; blocked items live in `pending.md`; the growth plan is `PHASE4-PLAN.md`.
 > **Live and verified**
-> - **Velo + GitHub:** `erpvarsha-star/VflWebsite`, main dc457ea (W6 merge) + follow-ups to e9629f4. Every push to main AUTO-PUBLISHES via `.github/workflows/publish.yml` (secret `WIXKEY`, rotated by Yash 23 Nov — publish runs green). Yash approved live pushes (CLAUDE.md).
+> - **Velo + GitHub:** `erpvarsha-star/VflWebsite`, main 750cc2d (W6 merge + follow-ups + content-ops + republish). Every push to main AUTO-PUBLISHES via `.github/workflows/publish.yml` (secret `WIXKEY`, rotated by Yash 23 Nov — publish runs green). Yash approved live pushes (CLAUDE.md).
+> - **Content-ops pipeline (NEW, live end-to-end):** `.github/workflows/content-ops.yml` (created by Yash via web UI) runs `ops/run.js` with `secrets.WIXKEY` against the Wix FAQ + SEO APIs and commits results to `ops/results/`. This is the channel for ALL future FAQ/SEO API work — the key never leaves GitHub.
 > - **W5:** 41 corrected HTML embeds on 17 pages served from `/_functions/embed/<key>`. `applyTextCorrections` runs server-side on all 56 pages. 17/17 pages verified, 0 visible DNP hits (`baseline/w5-verify.md`).
-> - **W6 (DONE 23 Nov):** all 3 approved content-drafts live via Velo `Text.html` on 10 pages (home, about-1, contact-us-1, about-1-1, tool-manufactring, alloy-steel-forgings, forged-machined-components-vf, steering-suspension-components, electric-vehicles, v-link-assemblies). Verified in served no-JS HTML: exactly 1 visible H1 per page, 0 DNP hits ("60 CNC"/"17 VMC"/"0.5 kg"/"Charpy"/"warm forging"/"cold forging" all 0), every touched page now 656–1,678 words (all above Sited's 500-word threshold). Design note: `W6-DESIGN.md`. Two hard-won lessons recorded there: (a) the Wix bundler rejects very long single lines — split big payloads into small public modules; (b) `collapse()` does not affect SSR markup — rewrite tags for H1 fixes.
-> - **W7:** browser layers slimmed (embed 1 rev 6, embed 2 rev 7); no machine counts in any source. The no-JS ssr-check is clean except 3 Wix FAQ-app answers (Pune "60 CNC…", Aurangabad "0.5 kg…50 kg", + railways Charpy / maharashtra "hot, warm, cold forging" / ev "hot and warm forging" wordings found on re-query).
-> - SEO/schema on all 49 pages, redirects and facts done earlier (see log below). **sameAs: LinkedIn live on the homepage schema (22 Nov); extra profiles optional, real URLs only.**
+> - **W6 (DONE 23 Nov):** all 3 approved content-drafts live via Velo on 10 pages. Verified in served no-JS HTML: exactly 1 visible H1 per page, 0 DNP hits, 656–1,678 words per touched page. Design note: `W6-DESIGN.md`.
+> - **W7 (DONE 23 Nov):** browser layers slimmed; no machine counts in any source; **all 5 FAQ-app fact conflicts cleared at the data layer** — 500 FAQ v2 entries verified clean via content-ops; live gates 0 hits on pune/aurangabad/railway/ev. One residue parked: P4b (legacy FAQ widget on /forging-company-maharashtra serves a baked stale copy; Yash dashboard edit, text in `pending.md`).
+> - **W8 (DONE 23 Nov):** 5 SEO fixes saved via `seo-metatags-server/v1/item-seo-tags` and verified rendering live after a forced republish — og:image on all 5 pages, trimmed V-Link title, short tool-mfg description. **Lesson: item-seo-tags writes render only after the next site publish.**
+> - SEO/schema on all 49 pages, redirects and facts done earlier (see log below). sameAs: LinkedIn live on the homepage schema (22 Nov).
 >
-> **Open, in order** (details in `pending.md` P1–P10 and `PHASE4-PLAN.md`)
-> 1. **Blocked on a content API key (FAQ + SEO permissions) or Yash click-list:** 5 FAQ-app fixes (P1–P5, replacement texts ready) and W8 SEO writes (P6). Key-creation steps for Yash are in `pending.md`.
-> 2. **Blocked on the Editor (Yash):** /product, /transmission-and-driveline, /electric-mobility bodies (P7); visible dates/byline (P8); social icons (P9); CSP is a Wix-support question (P10).
-> 3. **Phase 4 (growth):** execute `PHASE4-PLAN.md` — sprint 1 closes site gaps, sprint 2 off-site profiles/listicles, sprint 3 content engine, sprint 4 weekly rhythm (LinkedIn, email, lead-gen). KPIs against the 81/0% Sited baseline.
-> 4. **Yash to run Sited** — new pages are live and verified; expect the 5 FAQ residues to show until the key/click-list lands.
+> **Open, in order** (details in `pending.md` and `PHASE4-PLAN.md`)
+> 1. **Yash, 5 minutes (P4b):** FAQ app → edit "What forging processes does Varsha Forgings offer?" → "Varsha Forgings provides hot closed-die forging solutions supported by its press and hammer systems." → Save.
+> 2. **Yash: run Sited.** Everything API-fixable is live and verified; the only expected residue is the Maharashtra FAQ sentence until P4b is done.
+> 3. **Blocked on the Editor (Yash):** /product, /transmission-and-driveline, /electric-mobility bodies (P7); visible dates/byline (P8); social icons (P9); CSP is a Wix-support question (P10).
+> 4. **Phase 4 (growth):** execute `PHASE4-PLAN.md` — sprint 1 closes site gaps, sprint 2 off-site profiles/listicles, sprint 3 content engine, sprint 4 weekly rhythm (LinkedIn, email, lead-gen). KPIs against the 81/0% Sited baseline. Apollo/Lusha ~$50–100/mo needs his explicit approval.
 >
 > **Rules:** Opus plans, Sonnet executes, Haiku reviews. Ask Yash only on fact conflicts or spend over $50. No CIN, no machine counts. One Wix writer at a time. Refresh this block and the PHASE3-PLAN.md Status after every step.
 
@@ -28,15 +30,15 @@ This file is the single working log for this fix cycle. Every action taken is lo
 | # | Finding | Impact | Fixable by | Status |
 |---|---|---|---|---|
 | 1 | No `sameAs` links on homepage Organization schema | High (30 pts) | Claude, API — **needs real profile URLs from Yash first** | ⏳ Blocked on input |
-| 2 | 7 of 10 pages under 500 words | Medium (17 pts) | Editor (Yash pastes expanded copy) — Claude can draft the copy | ⏳ Drafting |
+| 2 | 7 of 10 pages under 500 words | Medium (17 pts) | Editor (Yash pastes expanded copy) — Claude can draft the copy | ✅ Done (W6) |
 | 3 | 4 pages carry no structured data (`/about-1-1`, `/product`, `/electric-vehicles`, `/tool-manufactring`) | Medium (20 pts) | Claude, API | ✅ Done |
 | 4 | No publication dates on 3 substantial pages | Medium (10 pts) | Schema-level: Claude, API. Visible on-page date: Editor (Yash) | ✅ Schema done / ⏳ visible date pending |
 | 5 | Homepage title omits brand name | Medium (10 pts) | Claude, API | ✅ Done |
 | 6 | No author byline on `/assembly-services` | Low (5 pts) | Schema-level: Claude, API. Visible byline: Editor (Yash) | ✅ Schema done / ⏳ visible byline pending |
 | 7 | Missing `content-security-policy` header | Low (5 pts) | Wix-controlled on Classic Editor sites — likely not site-owner-adjustable | ⏳ Needs confirmation from Wix support |
-| 8 | 2 pages (`/product`, `/electric-vehicles`) lack H1/H2 structure | Low (3 pts) | Editor only (page layout) | ⏳ Pending Yash |
-| — | og:image missing on pages that lack one | Low | Claude, API | ✅ Homepage done this session; sweeping other 9 crawled pages now |
-| — | Social icons on homepage link to Wix's own Facebook/Instagram, not Varsha's | Not scored, but a real bug | Editor only | ⏳ Flagged for Yash |
+| 8 | 2 pages (`/product`, `/electric-vehicles`) lack H1/H2 structure | Low (3 pts) | Editor only (page layout) | ✅ /electric-vehicles done (W6); /product pending P7 |
+| — | og:image missing on pages that lack one | Low | Claude, API | ✅ Done — all Sited-crawled pages + W6 pages verified live 23 Nov |
+| — | Social icons on homepage link to Wix's own Facebook/Instagram, not Varsha's | Not scored, but a real bug | Editor only | ⏳ Flagged for Yash (P9) |
 
 ---
 
@@ -340,3 +342,14 @@ Branch `w6-content` → PR #1 → merged to main (dc457ea); follow-up fixes to e
 ### 2026-11-23 (late) — Yash: rotated key has ALL permissions → FAQ/SEO unblocked
 - **Plan:** run the Wix FAQ + SEO APIs from a GitHub Actions workflow (`content-ops.yml`) on VflWebsite, using the `WIXKEY` secret; results committed to `ops/results/` for read-back. `ops/run.js` (5 FAQ fact fixes with read-back gate + SEO read of the 10 W6 pages) and `ops/README.md` pushed to main (84be594).
 - **Failed twice (rule applied, logged in pending.md):** pushing `.github/workflows/content-ops.yml` — the GitHub integration token lacks the `workflow` scope (403 via both push tools). **Yash creates that one file via the GitHub web UI** (content provided in chat); once it lands, a re-push of `ops/run.js` triggers the run.
+
+### 2026-11-23 (close-out) — Content-ops pipeline live; FAQ DB clean; W8 SEO live and verified
+- **Content-ops pipeline proven end-to-end.** Yash created `.github/workflows/content-ops.yml` via the web UI (token lacks the `workflow` scope — 403 on both push tools, parked per the fail-twice rule). 8 runs executed; results committed to `ops/results/` (latest `run-2026-11-23T00-54-38-610Z.json`).
+- **Correct API endpoints (from dev.wix.com, after two 404 rounds on guessed paths):** FAQ v2 `POST https://www.wixapis.com/faq/v2/question-entries/query` with cursor paging (`pagingMetadata.cursors.next` / `hasNext`); SEO `GET/PATCH https://www.wixapis.com/seo-metatags-server/v1/item-seo-tags/STATIC_PAGE/{itemId}` with `fieldMask:"tags", publish:true`. PATCH replaces the item's tags IN FULL — always resend the complete list (helper `slim()` keeps only type/props/children/meta).
+- **FAQ fact contamination cleared at the data layer (P1–P3, P5 + P4's DB copy).** First gate saw only 50 entries (paging bug — false clean); with cursor paging the full DB is 500 entries, ALL clean of every banned pattern (60 CNC / 17 VMC / 0.5 kg / Charpy / warm forging / cold forging). The 22-Nov killed agent's writes (or dashboard edits) had already landed. Live no-JS gates re-confirmed 0 hits on /forging-manufacturer-pune, /forging-company-aurangabad, /railway, /electric-vehicles.
+- **W8 SEO (P6) executed via API:** 5 fixes — trimmed /v-link-assemblies title, shortened /tool-manufactring description to 173 chars, added og:image to /v-link-assemblies, /alloy-steel-forgings, /forged-machined-components-vf, /steering-suspension-components (and re-sent full tag lists everywhere). API read-back confirmed all saved.
+- **Render lag diagnosed and solved:** the PATCHes were saved but did NOT render in served HTML even after hours. Root cause: **item-seo-tags writes only bake into SSR `<head>` on the next site publish.** Forced a republish (750cc2d, comment bump in richtext.js) → all 5 fixes verified live by curl: og:image on all 5 pages, /tool-manufactring serving the new description, /v-link-assemblies serving the trimmed title. **Lesson recorded: API read-back ≠ live render; always republish then curl.**
+- **Empty-commit lesson:** a byte-identical re-push produces no diff, so the `paths:` filter never matches and the workflow silently doesn't run. Always bump a comment line.
+- **Maharashtra FAQ widget staleness — parked as P4b (fail-twice rule).** The FAQ DB is clean, but the live page uses the LEGACY faq-builder widget (faq-ooi bundle), which serves a baked copy of the old answer ("hot forging, warm forging, cold forging, closed-die forging, and precision forging … Erie presses, screw presses, and friction drop hammer systems") in both the accordion and the FAQ JSON-LD. Site republish does not refresh it; no public API reaches the legacy store (only `/faq/v1/categories` responds; legacy FAQ API deprecates 2026-12-31). Also misdiagnosed initially as ricos page text — `src/public/richtext.js` (deployed, harmless) only reaches RichContentViewer elements, not app widgets. Unblock: Yash edits the answer in the FAQ app (exact replacement text in `pending.md`), which re-bakes the widget; longer term migrate to the current FAQ app.
+- **Md close-out:** pending.md, NEXT-SESSION.md, PHASE3-PLAN.md and this file updated with all outcomes (commit e28efa4 on website ccr-6409486e-3vy613).
+- **Next:** Yash does P4b (5 min) and runs Sited; then Phase 4 sprints per `PHASE4-PLAN.md`.

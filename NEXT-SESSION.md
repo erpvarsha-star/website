@@ -29,6 +29,8 @@
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
 ## START HERE (end of 26 Nov session 3)
+**Scheduled restart:** task 'Varsha site work resume 2:15 IST' (trig_01PTT36Du9dsPRy9JdovtZzo) fires a fresh session at 27 Nov 02:15 IST with the full task list. It was created WITHOUT connectors (Firecrawl/Wix) — Yash should add them in claude.ai scheduled tasks, else the reviewer cannot scrape live pages.
+**In flight at handover:** executor fixing /quality slide-1 clipped heading (owner phone screenshot) + P17 extra H1s; needs reviewer verification.
 1. Follow the model rule strictly: Opus briefs only; executor (Sonnet) does; **reviewer (Haiku) verifies** — Opus never scrapes/greps itself.
 2. Verify the in-progress internal-links release (see website.md HANDOVER) via `reviewer`; revert if broken.
 3. Then: LinkedIn batch 2 scheduling help for Yash, GBP walkthrough once Yash answers, KPI re-check 10 Dec.

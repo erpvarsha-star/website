@@ -21,6 +21,7 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 
 ## City name [Y] (owner 26 Nov 2026)
 - Write **Chhatrapati Sambhajinagar (Aurangabad)** everywhere the city is named (official spelling since 2023; old name kept in brackets for search). Short form only where space is tight: "Chh. Sambhajinagar (Aurangabad)".
+- Keep the page URL `/forging-company-aurangabad` unchanged (owner 26 Nov 2026), to preserve rankings and links.
 
 ## Plants
 | | Aurangabad (Plant 1, Forging) | Pune (Plant 2, Assembly) |

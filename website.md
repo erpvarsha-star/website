@@ -610,3 +610,11 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - **Reviewed and left (general engineering, not Varsha claims):** 4 entries comparing closed-die with open-die forging; NR vs EPDM rubber explanation (no Shore/temperature spec); forging-vs-casting answer using "long service life" generically; MOQ and sea-freight questions (no numbers); "800 T to 2,500 T" press range (confirmed fact).
 - FACTS.md: queue row added for ZLD on /forging-company-maharashtra (no fact values changed). pending.md W2-1 closed. No repo change, so no publish run.
 
+## 26 Nov 2026: schema-layer audit and clean close of Wave 2 (executor)
+- **Item SEO tags (STATIC_PAGE, `item-seo-tags`):** 50 of 55 ids read (j5a7q, x4qot, t4x9d, t4x9e, t4x9f return 404: not static SEO items); 49 carry FAQPage JSON-LD. Scanned full tag sets against the same banned set as the FAQ audit. Only hits: "800 T to 2,500 T" (confirmed press range, regex false positive) on l95rc, l2sru, n2uai. **0 violations; nothing patched.**
+- **Blog seoData:** 25 posts, 23 with FAQPage JSON-LD. 2 hits for "Level 3" (761ed1bd, af789bb2): buyer-education Q&A comparing PPAP Level 3 and Level 5, not a claim about Varsha's capability, so left as is. **0 violations.**
+- **Velo override (`src/public/seo-override.js`, 11 ids):** title and meta strings scanned; 0 hits, generator unchanged.
+- **FAQ v2 layer:** clean (256 entries, see entry above), so FAQ store and schema now agree.
+- **Publish:** no VflWebsite or SEO tag change in this step, so no publish needed. Last Publish runs (b895aa7, d87a072, 5c23c76) green.
+- **Clean close of the session's live work:** Wave 1 + Wave 2 + FAQ re-audit + schema audit complete; nothing parked except what pending.md already lists (P19/P20, P9, P10, P13).
+

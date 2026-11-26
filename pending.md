@@ -105,3 +105,4 @@ Found in the P12 live check; baseline (22 Nov) had 1. Not caused by the SEO over
 ## W2-1 (26 Nov, Wave 2): two FAQ entries still say "PPAP Level 3 documentation"
 FAQ v2 ids `163738ab-fc88-49ef-916e-a3a43e9839b8` (custom suspension assemblies) and `25ab412d-53ec-4c0d-a7d3-75d1df2c31f8` (custom V-Link assemblies): "...with full APQP and PPAP Level 3 documentation." FACTS: PPAP Levels 1-5 supersedes "Level 3 capability". Fix path: FAQ API, same as Wave 2 (change to "PPAP documentation (Levels 1 to 5 as required)"). Unblock: orchestrator go-ahead; no Yash work. Also: add /forging-company-maharashtra to FACTS correction queue for ZLD (FACTS.md is orchestrator-owned).
 
+**W2-1 CLOSED 26 Nov:** all four "PPAP Level 3" FAQ entries fixed and read back (163738ab, 25ab412d, f4a5114b, affc7440); full 256-entry re-audit clean. See website.md.

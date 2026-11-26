@@ -43,3 +43,8 @@ Estimated: one working session. Cost $0. Rollback: revert the main commit (auto-
 | 2 | **PASS** | `layer-3.js` rules a-e (+ "Aurangabad (MIDC Waluj)" form), no lookbehind (old-Safari safe). `tests/city-rename.test.cjs` runs the real `applyTextCorrections`: 25 cases, all outputs match, second pass changes nothing, no bare name left; href/slug/email/already-correct/short-form strings unchanged. |
 | 3 | **PASS** | 10/10 items PATCHED (HTTP 200), read-back 0 bare in every item, JSON-LD all <= 3,600 (dpizt 3,595, n1h72 3,531). Backups: `ops/results/rename-csn-backup-apply-2026-11-26T12-11-00-412Z.json`. Two JSON-LD blocks needed trims to fit (see website.md log). Live scrape (maxAge 0) already shows the new titles/descriptions. |
 | 4 | **PASS** (FAQ v2 had 0 entries), blog PASS | FAQ v2: 500 entries queried, 0 contain "aurangabad", nothing to change (read-back 0). 3 blog posts PATCHED (UPDATE_PUBLISH), read-back 0 bare, slugs unchanged. 6 live FAQ strings sit outside FAQ v2: see `pending.md` P11. |
+
+## Result (26 Nov 2026)
+- **Live and verified:** footer on all 55 pages (110 → 0), page body text (56 → 0 outside the FAQ widget), blog posts 3 → 0, contact attributes 2 → 0, no double wraps, all pages 200, URL unchanged. Release VflWebsite d07e5eb (+ republish 78dd6ec).
+- **Saved in Wix, not yet rendering:** SEO titles, meta and JSON-LD on 10 pages. Parked as **P14** under the fail-twice rule.
+- **Owner:** the legacy FAQ app answers (P11, 5 edits), plus Google Business Profile, LinkedIn and directories (P13).

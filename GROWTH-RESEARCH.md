@@ -27,6 +27,8 @@ These target search intents competitors rank for and Varsha does not. Each maps 
 
 ## Part 2 — Blog posts (buyer-intent prompts to own)
 
+**STATUS 26 Nov: B1-B10 ALL LIVE** (URLs in website.md 26 Nov session 3 log).
+
 Live posts already: /post/precision-forging-cost-what-drives-the-price, /post/how-to-source-closed-die-forgings-from-india-a-buyer-s-guide, /post/a-proven-indian-forging-partner-for-german-and-european-manufacturers (L3). Saturday agent rotation updated to this list.
 
 | # | Working title | Prompt/query it answers | Angle |

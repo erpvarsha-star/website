@@ -35,7 +35,7 @@
 - L1 and L2 LIVE as blog posts (verified). B1 drafted and gated: publish next via content-ops (append to VflWebsite ops/payloads/blog-posts.json, no `language` field, avoid BLOG_BANNED words incl. 'stainless'), then B2-B10.
 
 - P14 + P12 CLOSED via Velo SEO override (`src/public/seo-override.js`, generator `ops/tools/gen-seo-override.js`). SEO head of those 11 pages is now owned by Velo — edit via the generator, not the API.
-- Next for Claude: P16 (contact page 2 H1s), publish B1 via content-ops, draft B2-B10, then L5/L6.
+- DONE: P16 (false positive), B1-B10 live. LinkedIn batch 2 ready with real URLs (Yash posts or schedules). Next for Claude: L5-L8 publish, then hub/internal links from service pages to the new posts, then GEO probe of the 8 prompts in GROWTH-RESEARCH Part 3.
 - Yash: P9 social icons (steps given in chat 26 Nov), Google Business Profile (ask if one exists), P13 text. Apollo/Lusha parked (recommend not now).
 
 ## First: P14 re-check, then the rest

@@ -15,7 +15,7 @@ We forge tie rod ends on their own for buyers who want just the forging, and we 
 
 A tie rod end carries every steering input and every road shock, so it is one of the parts where forging beats casting.
 
-Our guide covers what to put on the drawing and what to ask for in the RFQ: {LINK:L1}
+Our guide covers what to put on the drawing and what to ask for in the RFQ: https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready
 
 Are you sourcing the forging, the assembly, or both?
 
@@ -28,7 +28,7 @@ Five things to settle before you send an RFQ to an Indian forging company: drawi
 
 When the drawing is complete we run a feasibility review within 48 hours for a single drawing or part. Prototype and low-volume enquiries are welcome alongside series production. Our sequence is simple: drawing, feasibility review, quotation, then PPAP.
 
-I put the five questions in one short article: {LINK:B7}
+I put the five questions in one short article: https://www.varshaforgings.com/post/5-questions-to-ask-before-an-rfq-to-an-indian-forging-company
 
 What is the one item missing from most RFQs you receive or send?
 
@@ -41,7 +41,7 @@ Forging, casting or machining from bar? The right answer depends on the part, no
 
 As a rule of thumb: forge when the part is highly stressed or safety-critical, cast when the shape is complex and the loads are modest, machine from bar when you need a few parts fast. Many good designs combine two, such as a forged blank finished by machining.
 
-We do hot closed-die forging for parts from 1 to 25 kg, with machining and assembly in the same group. Our decision guide compares the three on strength, lifecycle cost, tolerance, volume and lead time: {LINK:B1}
+We do hot closed-die forging for parts from 1 to 25 kg, with machining and assembly in the same group. Our decision guide compares the three on strength, lifecycle cost, tolerance, volume and lead time: https://www.varshaforgings.com/post/forging-vs-casting-vs-machining-a-buyer-s-decision-guide
 
 Which process does your drawing call for today?
 
@@ -56,7 +56,7 @@ Railway forgings in India start with one gate: RDSO approval.
 
 Varsha Forgings is RDSO approved. Our railway work includes bogie guide links, traction rods, brake levers, drawbar hooks and damper brackets, all hot closed-die forged and traceable by raw-material heat.
 
-If you supply or buy for Indian Railways and need a forging partner, the page below sets out what we make and how a drawing becomes a quote: {LINK:L2}
+If you supply or buy for Indian Railways and need a forging partner, the page below sets out what we make and how a drawing becomes a quote: https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable
 
 Send the drawing, material specification and volume to marketing@varshaforgings.com and we will review feasibility.
 
@@ -69,7 +69,7 @@ PPAP Level 3 or Level 5? Choose by the risk of the part, not by habit.
 
 We submit PPAP at Levels 1 to 5, so the level is your call. Level 3 is the common default for new parts. Level 5 suits the most critical parts, or a new supplier, when you want to review the evidence at the plant itself.
 
-Our article explains what each level contains and what a forging supplier should be able to show you: {LINK:B2}
+Our article explains what each level contains and what a forging supplier should be able to show you: https://www.varshaforgings.com/post/ppap-levels-1-to-5-what-to-ask-a-forging-supplier
 
 We are IATF 16949 certified and work with APQP and IMDS, so the paperwork follows a familiar automotive flow.
 
@@ -84,7 +84,7 @@ Steering parts carry cyclic load, shock load and torque, and their failure remov
 
 It does not make a part perfect, so inspection still matters. On safety-critical parts we run 100% magnetic particle inspection, and each raw-material heat carries a batch code through to the finished part.
 
-Failure mechanisms and inspection points, written for design and quality engineers: {LINK:B10}
+Failure mechanisms and inspection points, written for design and quality engineers: https://www.varshaforgings.com/post/why-safety-critical-steering-parts-are-forged-not-cast
 
 Which inspection step do you trust most on a steering part?
 
@@ -103,7 +103,7 @@ All three are medium-carbon alloy steels that respond well to quenching and temp
 
 We forge all three, along with EN8, EN9, EN31, 20MnCr5, 16MnCr5, SAE8620 and AISI 4140, among others. The right grade depends on load, section size and what your drawing already names.
 
-Our qualitative comparison and how to choose: {LINK:B3}
+Our qualitative comparison and how to choose: https://www.varshaforgings.com/post/en19-vs-en24-vs-42crmo4-steel-for-forged-steering-parts
 
 Which grade is on your drawing at the moment?
 
@@ -114,7 +114,7 @@ A forging gets its shape from the press. It gets its working strength from heat 
 
 If the heat treatment is left open on the drawing, the result is left open too. We offer vacuum carburizing, induction hardening, double quench and temper, normalizing and stress relieving, with hardness testing and grain size checks to ASTM E112.
 
-Our guide explains what each process does and what to write on your drawing and in your RFQ: {LINK:B8}
+Our guide explains what each process does and what to write on your drawing and in your RFQ: https://www.varshaforgings.com/post/heat-treatment-for-forged-components-what-to-specify
 
 Do your drawings state the heat treatment route, or only the final hardness?
 
@@ -127,7 +127,7 @@ Pick one current part, ask to trace it from steel to dispatch, and ask to see re
 
 If a site visit is hard, we offer virtual plant tours, and customers are welcome to visit our plants after an RFQ. Our traceability runs from a batch code on each raw-material heat to the final report.
 
-The full checklist: {LINK:B5}
+The full checklist: https://www.varshaforgings.com/post/how-to-audit-an-indian-forging-supplier-a-checklist
 
 What is the first record you ask to see in a supplier audit?
 
@@ -144,7 +144,7 @@ An RDSO claim should be checked, not assumed.
 
 Three things to confirm with any supplier: the approval is current, it covers the exact item you want, and the plant behind it can repeat the quality. Rules change, so always confirm the current position with the railway authority or the purchaser.
 
-We are RDSO approved, and we expect buyers to ask these questions. Our checklist shows which documents to request and which red flags to watch for: {LINK:B4}
+We are RDSO approved, and we expect buyers to ask these questions. Our checklist shows which documents to request and which red flags to watch for: https://www.varshaforgings.com/post/rdso-approval-a-buyer-s-checklist-for-indian-railway-forgings
 
 Scope questions on a specific railway item are welcome at marketing@varshaforgings.com.
 
@@ -157,7 +157,7 @@ Electric vehicles still need arms, links, ball joints and tie rods. What changes
 
 The battery adds mass and sits low in the vehicle, which shifts the loads on the chassis. For forged suspension and steering parts, that means more questions about fatigue life, traceability and process control.
 
-We have supplied parts developed for electric vehicles since 2024, in suspension and steering. Our article covers load, weight, NVH and validation points for design and sourcing engineers: {LINK:B6}
+We have supplied parts developed for electric vehicles since 2024, in suspension and steering. Our article covers load, weight, NVH and validation points for design and sourcing engineers: https://www.varshaforgings.com/post/ev-suspension-and-steering-forgings-what-is-different
 
 Which chassis part on your EV platform worries you most?
 
@@ -170,7 +170,7 @@ Most delays come from a missing document or an unclear agreement, not from the f
 
 For reference, we issue EN 10204 type 3.1 material certificates (3.2 on request), pack in ISPM-15 crates, ship through JNPT (Nhava Sheva), and accept Letter of Credit or advance payment. We export to Germany, Spain, Italy, Portugal and Austria.
 
-The step-by-step guide: {LINK:B9}
+The step-by-step guide: https://www.varshaforgings.com/post/sourcing-forgings-from-india-to-europe-logistics-and-certificates
 
 What is the document your customs team asks for first?
 

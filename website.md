@@ -5,6 +5,7 @@
 > - **P14 CLOSED via Velo `wix-seo-frontend` override** (VflWebsite e18884e, 484469a): 10 pages now serve the renamed SEO head; future SEO edits on those 10 pages go through `ops/tools/gen-seo-override.js` (Velo overrides the API values). Yash's Editor Publish did not help, which ruled out the publish route.
 > - **P12 CLOSED** (9af45ca): 3 short titles live; /electric-mobility + /transmission-and-driveline noindex (P7 decision: keep /product gallery). P16 was a false positive (warmup-JSON copy).
 > - **LIVE 26 Nov:** L1 tie-rod-end post (https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready) and L2 RDSO railway post (https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable), via content-ops (VflWebsite f8159a6, results 6e020f9). Verified by Firecrawl maxAge 0: body renders, all claims in FACTS. 7 posts live.
+> - **B2-B10 LIVE 26 Nov** (VflWebsite 534d0e0; 17 blog posts total incl. L1/L2/L3/ES/DE/2 older). LinkedIn batch 2 (12 posts, real URLs) ready: `content-drafts/linkedin-posts-batch2-DRAFT.md`. Drafting L5-L8.
 > - **B1 LIVE 26 Nov:** /post/forging-vs-casting-vs-machining-a-buyer-s-decision-guide (VflWebsite 8b5baf6). B2-B10 drafted + gated (website 065db9d, ab2c605); publishing as one content-ops batch now. P13 off-site text ready for Yash.
 >
 > ## HANDOVER (previous): as of 26 Nov 2026 (two concurrent threads, same account — confirmed fine by Yash). Read `pending.md` first. Growth plan is `PHASE4-PLAN.md`.
@@ -484,4 +485,20 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - P12 + noindex release 9af45ca verified (agent table + Opus checks: /electric-mobility robots "follow, noindex", /quality og:url/og:type/twitter:card present). Regression caught and fixed in the same release: P14 setMetaTags had dropped og:url/og:site_name/og:type/twitter:card/twitter:image for ~1 hour.
 - P16 closed: false positive (1 DOM H1; 2nd match is warmup JSON). B1 published + verified live (8 posts). B2-B10 drafted by 2 executors, Opus gate re-run (0 DNP, 0 bare Aurangabad; galvanizing/GPS/JNPT/ISPM-15 confirmed FACTS l.113/123); batch publish dispatched.
 - **Lesson:** count headings as DOM elements; Wix rawHtml carries escaped copies in warmup JSON.
+- **B2-B10 published (534d0e0), all 9 live 200 + first H2 verified by agent; Opus re-verified B4 + B9 live.** Blog template renders post title as the single H1. Live URLs:
+
+| Post | URL |
+|---|---|
+| L1 | https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready |
+| L2 | https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable |
+| B1 | https://www.varshaforgings.com/post/forging-vs-casting-vs-machining-a-buyer-s-decision-guide |
+| B2 | https://www.varshaforgings.com/post/ppap-levels-1-to-5-what-to-ask-a-forging-supplier |
+| B3 | https://www.varshaforgings.com/post/en19-vs-en24-vs-42crmo4-steel-for-forged-steering-parts |
+| B4 | https://www.varshaforgings.com/post/rdso-approval-a-buyer-s-checklist-for-indian-railway-forgings |
+| B5 | https://www.varshaforgings.com/post/how-to-audit-an-indian-forging-supplier-a-checklist |
+| B6 | https://www.varshaforgings.com/post/ev-suspension-and-steering-forgings-what-is-different |
+| B7 | https://www.varshaforgings.com/post/5-questions-to-ask-before-an-rfq-to-an-indian-forging-company |
+| B8 | https://www.varshaforgings.com/post/heat-treatment-for-forged-components-what-to-specify |
+| B9 | https://www.varshaforgings.com/post/sourcing-forgings-from-india-to-europe-logistics-and-certificates |
+| B10 | https://www.varshaforgings.com/post/why-safety-critical-steering-parts-are-forged-not-cast |
 

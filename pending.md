@@ -8,10 +8,11 @@
 | C1-4 | C1-C4 blog posts | Claude | CLOSED 27 Nov: reviewer PASS live |
 | QS1 | /quality slide 1 heading clipped on mobile | Claude | Attempt 2 (VflWebsite 62adc58) reviewer PASS: 1 H1. Remaining: 'Capability claims:' label, see CC (7354946 pending reviewer) |
 | P17 | /automotive-steering-powertrain 23 DOM H1s | Claude | CLOSED 27 Nov: attempt 2 (62adc58) reviewer PASS, 1 H1 |
-| CC | 'Capability claims:' label on /quality, homepage, /forging | Claude | /quality PASS. Homepage + /forging: attempt 2 pushed (VflWebsite 4fca538, `removeLines` op; label is a `<br>`-separated text line inside one `<p>`, not a block); AWAITING reviewer verify. If it persists = failed twice: Editor delete by Yash |
-| P18 | /forging has 3 DOM H1s (descriptive title, empty `&nbsp;` h1, 'FORGING') | Claude | Pushed 4fca538: empty H1 stripped, 'FORGING' h1 -> p, descriptive H1 kept. AWAITING reviewer verify (expect 1 H1) |
+| CC | 'Capability claims:' label on /quality, homepage, /forging | Claude | CLOSED 27 Nov: reviewer PASS on all three (4fca538) |
+| P18 | /forging 3 DOM H1s | Claude | CLOSED 27 Nov: reviewer PASS, exactly 1 H1 (4fca538) |
 | Note | Reviewer 'title run-together' on /forging-company-aurangabad | - | Parser artifact: SVG `<title>` elements inside the body, not an SEO bug. Pune H1 contains 'CNC' without a count: allowed |
-| FAQ-LD | FAQPage JSON-LD on blog posts | Claude | DONE 27 Nov: 21/21 via Draft Posts PATCH seoData (VflWebsite 9dfa187); reviewer to confirm live |
+| FAQ-LD | FAQPage JSON-LD on blog posts | Claude | CLOSED 27 Nov: 21/21 via Draft Posts PATCH (9dfa187), reviewer PASS |
+| MD | Blog posts had no `<meta name="description">` | Claude | DONE 27 Nov: 25/25 via `ops/blog-meta.js` (VflWebsite b5ce3a7), API read-back all present; AWAITING reviewer live `<head>` verify |
 | P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
 | P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |
 | RDSO | Approval reference number | Yash (optional) | Add to L2/B4 posts when supplied |

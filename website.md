@@ -1,6 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: 27 Nov run 2 (READ THIS FIRST; supersedes the 02:15 block below)
+> ## HANDOVER: 27 Nov run 3 (READ THIS FIRST; supersedes 'run 2' below)
+> - **Reviewer PASS (reported by orchestrator):** FAQPage JSON-LD on 21 blog posts; 'Capability claims:' label removed on homepage and /forging (CC closed); /forging exactly 1 H1 (P18 closed).
+> - **Blog meta description fix: DONE via Wix Blog API (VflWebsite b5ce3a7 all posts, 574f4a7 canary, 355b59e job removed; results `ops/results/run-2026-11-26T21-09-00-027Z.json` (canary) and the following 'ops results' commit 57d874e).** Reviewer found live posts had no `<meta name="description">`. New job `ops/blog-meta.js` (same Draft Posts PATCH `UPDATE_PUBLISH` mechanism as the FAQ job): appends meta description (post excerpt, 130-154 chars) keeping all existing tags. Read-back, all 25 posts: `metaDescriptionPresent` true, `hasUnpublishedChanges` false, slug unchanged; FAQPage tag still present on 23 (ES and DE posts never had one). 22 posts patched, 3 already had a description (L3, buyer-guide, precision-forging-cost). **Awaiting reviewer verify live `<head>`** (2-3 posts incl. ES/DE).
+> - Next: reviewer verifies meta descriptions live; KPI re-check 10 Dec; LinkedIn batch 2; GBP walkthrough once Yash answers.
+>
+> ## HANDOVER: 27 Nov run 2 (superseded by run 3)
 > - **Reviewer results (reported by orchestrator):** C1-C4 blog posts PASS live; links round 2 (IL2) PASS 5/5 pages; 'Capability claims:' label PASS on /quality; homepage and /forging label still present after attempt 1 (7354946).
 > - **Capability-claims attempt 2 (VflWebsite 4fca538, Publish green):** live markup is not a `<p>`: it is a text line inside one `<p>`, `...<br>\nCapability claims:<br>\n• ...`. New `removeLines` op in `w6content.js` removes the label line plus its `<br>` (whole-line match; inline sentences kept). Applied to plew4 (homepage) and a3evt (/forging). Unit tests extended (live-markup case), lint clean. **Awaiting reviewer verify.** If it persists, this is fail-twice: Editor delete by Yash (pending.md CC).
 > - **/forging H1s (P18, same release):** DOM has 3 H1s: descriptive 'Closed-Die Forging for Carbon and Alloy Steel Components' (KEPT as page H1), an empty `<h1>&nbsp;</h1>` (removed with the existing `stripEmptyH1` op; it sits in the same rich-text element as the descriptive H1), and 'FORGING' (retagged h1 -> p, inline styles kept). **Awaiting reviewer verify** (expect exactly 1 H1).
@@ -82,6 +87,9 @@ This file is the single working log for this fix cycle. Every action taken is lo
 ---
 
 ## Action Log
+
+### 2026-11-27 - Blog meta descriptions on all 25 posts (executor)
+Reviewer PASS (per orchestrator): FAQPage schema on 21 posts; 'Capability claims:' label removed on homepage and /forging; /forging has 1 H1 (P18 closed). Reviewer then found live blog posts had no `<meta name="description">`. Fix: `ops/blog-meta.js` + job file (VflWebsite 574f4a7 canary on the L3 post, b5ce3a7 all, 355b59e job removed, README updated). Canary read-back: description present, FAQPage kept, slug unchanged. Full run read-back, 25/25: meta description present, hasUnpublishedChanges false, slug unchanged; 22 PATCHED, 3 already had one; FAQPage present on 23 (ES/DE have none by design). Backups in `ops/results/blog-meta-backup-*.json`. Live `<head>` check pending reviewer.
 
 ### 2026-11-27 - FAQPage JSON-LD on 21 blog posts; Capability claims attempt 2; /forging H1s (executor)
 - **FAQPage:** new `ops/blog-faq.js` + `ops/payloads/blog-faq-schema.json` in VflWebsite (job-file mode like the rename job; job file deleted after the run). Wix docs: Posts API is read-only; edits go through Draft Posts PATCH with `action: UPDATE_PUBLISH`. Canary on 1 post (2aa5b24) read back OK, then all 21 (9dfa187): 21/21 PATCHED/ALREADY, 0 failures, 0 retries. Q&A copied exactly from payload nodes; no trimming needed (max 1,836 chars vs 3,600 limit). Backups in `ops/results/blog-faq-backup-*.json`.

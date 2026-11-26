@@ -28,7 +28,12 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
-## START HERE (27 Nov run 2)
+## START HERE (27 Nov run 3)
+1. **Reviewer (Haiku) verifies blog meta descriptions live:** `<meta name="description">` present in `<head>` on 3 posts (one EN, ES, DE) and the FAQPage JSON-LD still parses (VflWebsite b5ce3a7; API read-back 25/25 already done).
+2. CC, P18, FAQ-LD are closed (reviewer PASS). Nothing else in flight.
+3. KPI re-check 10 Dec (PHASE4-PLAN.md), LinkedIn batch 2, GBP walkthrough once Yash answers. Do not ask Yash to run Sited.
+
+## START HERE (27 Nov run 2; superseded)
 1. **Reviewer (Haiku) verifies VflWebsite 4fca538 live:** (a) 'Capability claims:' gone on homepage and /forging (bullets and prose intact); (b) /forging has exactly 1 DOM H1 ('Closed-Die Forging for Carbon and Alloy Steel Components'), no empty h1, 'FORGING' now a p; (c) FAQPage JSON-LD present, parseable and Q&A matching visible text on 3 sample posts (e.g. tie-rod-end, forging-vs-casting, L3 Germany), and each sampled post's `<head>` still has title and description (FAQPage was their only seoData tag). Results of the last run: `ops/results/run-2026-11-26T21-00-49-647Z.json`.
 2. If (a) or (b) fails: failed twice, Editor delete by Yash (pending.md CC, P18); otherwise close CC and P18.
 3. KPI re-check 10 Dec (PHASE4-PLAN.md), LinkedIn batch 2, GBP walkthrough once Yash answers. Do not ask Yash to run Sited.

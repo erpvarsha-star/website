@@ -19,6 +19,9 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | LinkedIn (sameAs) | https://www.linkedin.com/company/varsha-forgings-private-limited/ | [Y] |
 | Facebook / Instagram | **None verified.** Site icons currently point to Wix's own accounts (F10). Do not use them in sameAs. | [L] |
 
+## City name [Y] (owner 26 Nov 2026)
+- Write **Chhatrapati Sambhajinagar (Aurangabad)** everywhere the city is named (official spelling since 2023; old name kept in brackets for search). Short form only where space is tight: "Chh. Sambhajinagar (Aurangabad)".
+
 ## Plants
 | | Aurangabad (Plant 1, Forging) | Pune (Plant 2, Assembly) |
 |---|---|---|

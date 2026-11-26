@@ -3,7 +3,7 @@
 > ## HANDOVER: as of 26 Nov 2026, session 3 (latest first; older handover text below is history)
 > - **Sited re-run (owner, 26 Nov): 83/100.** Only finding (homepage H1->H6) is already fixed live (verified: 1 H1, 10 H2, 0 H3-H6). **Never ask Yash to run Sited again** (CLAUDE.md rule).
 > - **P14 CLOSED via Velo `wix-seo-frontend` override** (VflWebsite e18884e, 484469a): 10 pages now serve the renamed SEO head; future SEO edits on those 10 pages go through `ops/tools/gen-seo-override.js` (Velo overrides the API values). Yash's Editor Publish did not help, which ruled out the publish route.
-> - **Running:** P12 shorter titles + noindex on /electric-mobility and /transmission-and-driveline (P7 decision: keep /product, hide the 2 empty pages).
+> - **P12 CLOSED** (9af45ca): 3 short titles live; /electric-mobility + /transmission-and-driveline noindex (P7 decision: keep /product gallery). Open: P16 /contact-us-1 has 2 H1s.
 > - **LIVE 26 Nov:** L1 tie-rod-end post (https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready) and L2 RDSO railway post (https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable), via content-ops (VflWebsite f8159a6, results 6e020f9). Verified by Firecrawl maxAge 0: body renders, all claims in FACTS. 7 posts live.
 > - **Drafted:** P13 off-site address text (for Yash), B1 forging vs casting vs machining (gated, publish next via content-ops).
 >
@@ -481,4 +481,5 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - B1 draft committed (1,244 words, 0 DNP, all Varsha claims traced to FACTS).
 - Noted: Spanish post live slug ends in "-2" (possible earlier duplicate/deleted original); social bar still links facebook.com/wix (P9, Yash).
 - P14 closed via Velo SEO override (stage 1 dpizt, stage 2 nine more; lint clean, city-rename tests 25/25). Opus independently verified /forging-company-aurangabad and /contact-us-1 live. Note: /tool-manufactring meta says "CNC and VMC machining" (capability mention, no count) — allowed; counts stay banned.
+- P12 + noindex release 9af45ca verified (agent table + Opus checks: /electric-mobility robots "follow, noindex", /quality og:url/og:type/twitter:card present). Regression caught and fixed in the same release: P14 setMetaTags had dropped og:url/og:site_name/og:type/twitter:card/twitter:image for ~1 hour.
 

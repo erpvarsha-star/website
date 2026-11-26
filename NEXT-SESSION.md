@@ -34,6 +34,10 @@
 - P13 off-site address text drafted (`content-drafts/P13-offsite-address-strings-DRAFT.md`) for Yash.
 - L1 and L2 LIVE as blog posts (verified). B1 drafted and gated: publish next via content-ops (append to VflWebsite ops/payloads/blog-posts.json, no `language` field, avoid BLOG_BANNED words incl. 'stainless'), then B2-B10.
 
+- P14 + P12 CLOSED via Velo SEO override (`src/public/seo-override.js`, generator `ops/tools/gen-seo-override.js`). SEO head of those 11 pages is now owned by Velo — edit via the generator, not the API.
+- Next for Claude: P16 (contact page 2 H1s), publish B1 via content-ops, draft B2-B10, then L5/L6.
+- Yash: P9 social icons (steps given in chat 26 Nov), Google Business Profile (ask if one exists), P13 text. Apollo/Lusha parked (recommend not now).
+
 ## First: P14 re-check, then the rest
 1. Re-scrape `/forging-company-aurangabad?nc=<new>` (Firecrawl maxAge 0). If the `<title>` now says "Chh. Sambhajinagar (Aurangabad)", P14 fixed itself: update pending.md, then do P12. If still bare, ask Yash for the one Editor Publish click, or write up the Wix support repro (API GET new value; 3 CLI publishes later live HTML old).
 2. ~~Ask Yash to run Sited~~ — removed by owner, 26 Nov.

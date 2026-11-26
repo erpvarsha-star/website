@@ -439,3 +439,22 @@ Yash asked why P4b/P11 needed him, pushed back, and asked for the FAQ app/widget
 **New open item (P15):** the /buying-forgings-from-india and /steering-suspension-components "India vs China" body-text comparison table (negative competitor claims + invented MOQ/freight numbers) was flagged in FACTS.md's correction queue back on 22 Nov but was never actually fixed — it's Editor-only body text inside an HTML embed, not FAQ v2. Logged in pending.md; replacement copy not yet drafted.
 
 **Lesson for future sessions:** a prior session's "N entries, 0 hits, verified clean" claim is not self-evidently trustworthy — this session found it was wrong twice (wrong total count, and a live banned-content hit that should have been caught). Re-verify data-layer claims independently (direct API GET, not just trusting a logged scan result) before treating something as closed, especially before telling the owner an item needs their manual intervention.
+
+### 2026-11-26 (continued) — All 6 additional FAQ v2 violations fixed; P4b/P11 fully closed
+
+Second executor pass fixed the 6 genuine violations from the full re-scan, all independently re-verified live (not just self-report):
+- 2× duplicate "warm or cold forging" tolerance claims (/steering-suspension-components) → rewritten around confirmed forging/machining tolerances (±0.5mm / ±0.02mm), no warm/cold forging assertion.
+- 1× EV "warm forging" question (/forged-components-ev) → question rewritten to hot forging only; answer was already clean.
+- 1× unconfirmed Charpy −40°C railway claim (/forged-components-railways) → rewritten around confirmed testing capability (Brinell/Rockwell/micro-Vickers hardness, ASTM E112 grain size, ultrasonic testing, 100% MPI).
+- 1× "open account terms" payment claim (/buying-forgings-from-india) → rewritten to LC/advance payment only.
+- 1× invented freight-cost figures (/buying-forgings-from-india) → rewritten to the confirmed logistics facts (JNPT port, ISPM-15 crating, GPS-tracked containers, air freight for samples), no invented pricing.
+
+Independently re-verified the payment-terms and freight answers live myself via Firecrawl — both render correctly, old wording gone.
+
+**P4b and P11 are now fully closed — no Yash action needed for either.** The FAQ-app-migration ask turned out not to need a migration at all: one existing app, bad data, now fixed.
+
+**Two more body-text items found during verification, not yet actioned (both Editor-only, added to pending.md):**
+- P15: `/steering-suspension-components` India-vs-China comparison section (negative competitor framing + invented MOQ/transit numbers) — flagged in FACTS.md since 22 Nov, never fixed.
+- `/forged-components-railways`: separate unconfirmed railway claims in body/table text (axle loads >32t, 100% volumetric UT) plus a "Low-Temperature Impact Validation" section repeating the Charpy claim outside the one FAQ entry already fixed.
+
+Both are visible body text (Editor-only), not reachable by any API channel — same category as P7/P9. Replacement copy not yet drafted for either.

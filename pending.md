@@ -25,6 +25,40 @@
 | KPI | Search re-check | Claude | 10 Dec + 24 Dec (queries in PHASE4-PLAN.md) |
 
 
+## OPEN 27 Nov 2026, final wave (executor; reviewer sitemap audit)
+
+| # | Item | Owner | Status / next step |
+|---|---|---|---|
+| P22 | Duplicate-page clusters: redirect/merge job (NOT done this wave) | Claude (+ Yash Editor for nav) | Scoped spec below. Do one cluster at a time, merge content FIRST, redirect LAST. |
+| P23 | /forging "Key Features" repeater shows the same 3-bullet block in 4 items (Key Features / Industries Served / Equipment and Capacity / Product Range) | Yash (Editor) | FAILED twice 27 Nov (VflWebsite 98d3113 `rep.data` filter, 9f8d86c blank Text html in `forEachItem`; live DOM unchanged both times; same SSR limit as P19). Editor: open /forging, click the repeater, in items 2-4 replace the body text with real content for that heading (Industries Served, Equipment and Capacity, Product Range, all from FACTS.md) or delete items 2-4. Unblock for Claude: a repeater element id. The `dedupeRepeater` W6 op stays in `w6content.js` (tested) but is not wired to any page. |
+| P24 | "VFL" used as the company name on /heat-treatment, /design, /certifications, /history (FACTS legal name: Varsha Forgings Private Limited) | Claude | Low priority. Add path-scoped text rules in `sitewide-fixes.js` (VFL -> Varsha Forgings). Quote each live string first; do not touch the "-vf" slugs. |
+| P25 | /electric-mobility and /transmission-and-driveline are noindex yet listed in pages-sitemap.xml | Claude / Yash | Low priority. Either remove them from the sitemap (Editor, page SEO settings) or lift noindex if they should rank. Needs an owner choice; evidence: reviewer sitemap audit 27 Nov. |
+| P26 | Orphan headings left after de-duplication (cosmetic) | Yash (Editor) | /forged-components-ev: "Elastomeric Bushing Engineering", "Quality Systems & EV Validation", "EV-Specific Validation Protocols" now have no body (paragraph blanked in the SSR HTML, empty box remains). /about-1-1: "Engine & Powertrain Components" now sits above a blank embed. Fill each with FACTS-backed text or delete the heading and empty box. Also "Verified Shop-Floor Equipment" (H2, /forging-presses-hammers) uses the same unsupported "Verified" word as the H1 fixed on /automotive-steering-powertrain; owner decision whether to reword. |
+
+### P22 job spec: duplicate clusters (reviewer sitemap audit, 27 Nov 2026)
+
+**Hard constraints.** Wix Redirects API has NO update method: every change is delete-then-create and issues a NEW redirect id. Do not redirect or merge anything until the unique content of the old page lives on the canonical page. `/about-1` vs `/about-1-1` and `/electric-vehicles` vs `/forged-components-ev` are NOT duplicates (different content and purpose): never redirect them. `/tool-manufacturing` returns 404, so the misspelled `/tool-manufactring` is the live slug and MUST be kept (main nav links to it).
+
+**Evidence collected 27 Nov (Firecrawl maxAge 0, rawHtml; canonical = `<link rel=canonical>`):**
+| Old slug | Proposed canonical | Old: words / H1 / canonical | Canonical page: words / H1 / canonical |
+|---|---|---|---|
+| /assembly | /assembly-services | 393 / "ASSEMBLY" / self | 1,303 / "Contract Assembly & Sub-Assembly Services for OEM Line-Ready..." / self |
+| /heat-treatment | /heat-treatment-metallurgy | 437 / "HEAT TREATMENT" / self | 1,361 / "Heat Treatment & Metallurgical Validation for Forged Steel C..." / self |
+| /railway | /forged-components-railways | 137 / no H1 (image-only) / self | 1,351 / "Forged Components for Railway Rolling Stock & Bogie Systems" / self |
+| /forged-machined-components | /forged-machined-components-vf | 837 / same H1 / **already canonical to -vf** | 837 / "Forged and Machined Components from One Supplier" / self |
+| /forging + /forging-presses-hammers | keep BOTH (different intent: process page vs equipment page) | /forging: 1 H1 "Closed-Die Forging for Carbon and Alloy Steel Components" | /forging-presses-hammers: 1 H1 "Precision Forging Presses & Hammer Capacities | IATF 16949 Certified" |
+| /copy-of-awards -> /copy-of-articles | **DO NOT REDIRECT**: not a duplicate | /copy-of-awards is "Company Milestones" (H1 "AIFI's 2nd Annual Conference 2026", nav label "Moments") | /copy-of-articles is "Awards & Recognition" (nav label "Awards") |
+
+**Per cluster (order of work):**
+1. /assembly -> /assembly-services. MERGE FIRST: read both live bodies; anything on /assembly not on /assembly-services (393 words; list in the Wix Editor) must be added to /assembly-services (Velo `append` op or Editor). Linkers to repoint: main nav "Assembly" and footer "Assembly" both point to `/assembly` (seen on /copy-of-articles 27 Nov); homepage and any "Related buyer guides" / `w6-xlink` blocks. Nav is Editor-only (Menu items), so Yash edits the nav target, then Claude creates the 301.
+2. /heat-treatment -> /heat-treatment-metallurgy. Same method. Nav "Heat Treatment" (header and footer) points to `/heat-treatment`; homepage "Know More" link on /forging ("HEAT TREATMENT" block) probably does too (verify the href). Merge unique content from the 437-word page first (it also uses "VFL" as company name; see P24).
+3. /railway -> /forged-components-railways. Nothing unique expected (137 words, image-only, no H1). Check which pages link to /railway (nav shows Railway via /product tabs, not /railway; scan the 49 pages). Repoint any link, then 301.
+4. /forged-machined-components -> /forged-machined-components-vf. Canonical already points to -vf and the body is identical, so only the 301 plus link repoint remain. Find linkers first (nav "Capabilities"?).
+5. /forging + /forging-presses-hammers: no redirect. Decide only whether /forging-presses-hammers should absorb the "Equipment and Capacity" repeater content (see P23).
+6. /copy-of-awards: no action (distinct "Moments" page). Rename slug is a separate, optional job (slug "copy-of-..." is ugly); a rename = new URL + 301 + nav edit, so owner decision.
+
+**Open evidence still needed before any redirect:** (a) full main-nav and footer membership for every old slug (this reviewer could verify the header/footer anchors only from /copy-of-articles; the Editor menu is the source of truth); (b) an in-site link scan of all 49 pages for each old slug (rawHtml href grep); (c) GSC clicks/impressions per old slug (a slug with traffic needs the 301 even more, and its title must be matched); (d) confirm no external links (Sited backlink export). **Redirect mechanics:** create via the Wix Redirects API (301); to change one later, delete then create (new id); log each id in `website.md`. After each: Firecrawl the old slug (expect final URL = canonical) and the canonical page (1 H1, content intact).
+
 Rule (owner instruction, 23 Nov 2026): **if a task fails more than once, stop, log it here, and move to the next task.** Review this file at the start of every session; retry an item only when its unblock condition is met.
 
 ## Resolved this session (23 Nov 2026, content-ops pipeline)

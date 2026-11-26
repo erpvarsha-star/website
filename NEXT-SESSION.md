@@ -28,6 +28,12 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
+## START HERE (27 Nov 2026, after the final wave)
+1. **Done and live (Firecrawl verified):** award captions on /copy-of-articles (Bronze 2018, Gold 2015), "Verified" dropped from the /automotive-steering-powertrain H1, multi-H1 fixed on /rubber-bonded-components (7 -> 1) and /forging-presses-hammers (4 -> 1), repeated paragraph/block/table removed on /forged-components-ev and /about-1-1. See website.md HANDOVER.
+2. **Claude next:** reviewer re-verifies the five pages above; P22 redirect/merge job (spec in pending.md; /copy-of-awards is NOT a duplicate; merge content before any redirect); P24 "VFL" company-name text rules; KPI re-check 10 Dec.
+3. **Editor-only for Yash:** P23 /forging repeater duplicate bullets, P26 empty headings left after de-duplication, plus the older P19/P20/P9/P13/P10 list.
+4. **Lessons:** `collapse()` is not SSR-visible, blank `t.html` instead; Wix gallery captions are item data (`$w('Gallery').items`), not Text; /forging slideshow makes Firecrawl h1 counts vary with waitFor (use 1000 to see slide 1).
+
 ## START HERE (26 Nov 2026, after Wave 2)
 1. **Done and live:** Wave 1 (llms.txt, sitewide fixes, /alloy-steel-forgings embed) and Wave 2 (ZLD and PPAP FAQ fixes, railway row/heading/RDSO wording, China-free intro, links to /forging-manufacturer-india from 7 pages). See website.md HANDOVER.
 2. **Next for Claude:** pending.md W2-1 (two FAQ entries with "PPAP Level 3 documentation"), reviewer re-verify of Wave 2, P19/P20 (Yash Editor), KPI re-check 10 Dec and 24 Dec.

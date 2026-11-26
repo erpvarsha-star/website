@@ -16,7 +16,7 @@ Varsha Forgings supplies forged, machined and assembled automotive components to
 
 **H1: Automotive Forgings Supplier in India — From Billet to Assembly**
 
-Varsha Forgings is an IATF 16949 certified automotive forgings supplier that takes a component from raw material to finished assembly under one supplier. Since the Forging Division was established in Aurangabad in 1989, the company has supplied forged and machined parts to automotive OEMs as a Tier 1 and Tier 2 supplier, has developed products for electric vehicles, and exports to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa.
+Varsha Forgings is an IATF 16949 certified automotive forgings supplier that takes a component from raw material to finished assembly under one supplier. Since the Forging Division was established in Chhatrapati Sambhajinagar (Aurangabad) in 1989, the company has supplied forged and machined parts to automotive OEMs as a Tier 1 and Tier 2 supplier, has developed products for electric vehicles, and exports to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa.
 
 **H2: Which automotive OEMs does Varsha Forgings supply?**
 
@@ -26,7 +26,7 @@ Varsha Forgings supplies OEMs including Daimler, Ashok Leyland, MAN Trucks India
 
 Every forged part follows a single, documented process flow: material inspection, CNC circular saw cutting, billet heating, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining, painting and final inspection. Because forging, heat treatment (including normalizing), inspection, grinding and machining are all in-house capabilities, a buyer deals with one supplier accountable for the finished part rather than coordinating a forge, a heat treater and a machine shop separately.
 
-The Aurangabad plant runs presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press), alongside 3 MT, 2 MT, 1.5 MT and 1 MT hammers, for forged components of 1 kg to 25 kg. Capacity is over 12,000 metric tons and over 3 million pieces per year. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling, gear hobbing and grinding. A dedicated base of machining vendors extends in-house capacity with extra grinding, milling, broaching, turning, tapping and thread rolling. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division.
+The Chhatrapati Sambhajinagar (Aurangabad) plant runs presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press), alongside 3 MT, 2 MT, 1.5 MT and 1 MT hammers, for forged components of 1 kg to 25 kg. Capacity is over 12,000 metric tons and over 3 million pieces per year. In-house machining covers facing and centering, CNC and VMC machining, special-purpose machines, drilling, gear hobbing and grinding. A dedicated base of machining vendors extends in-house capacity with extra grinding, milling, broaching, turning, tapping and thread rolling. Assemblies are built at the Pune plant in Markal, Khed, operating since 2007 as the Maxility suspension and machining division.
 
 **H2: How is quality and traceability controlled?**
 
@@ -44,7 +44,7 @@ The company was acquired by Munot Enterprises in 2005, established the Maxility 
 Yes. Varsha Forgings holds IATF 16949 certification and can submit PPAP at Levels 1 to 5 for new part approvals.
 
 **Can Varsha Forgings forge, machine and assemble the same part?**
-Yes. Forging, heat treatment, inspection and machining are done in Aurangabad, and assemblies are built at the Pune plant, so one supplier is accountable for the finished component.
+Yes. Forging, heat treatment, inspection and machining are done in Chhatrapati Sambhajinagar (Aurangabad), and assemblies are built at the Pune plant, so one supplier is accountable for the finished component.
 
 **Does Varsha Forgings export automotive components?**
 Yes, to customers in Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, and the Middle East & Africa. Samples and urgent needs can go by air freight.
@@ -110,7 +110,7 @@ Varsha Forgings' product range: yokes, connecting rods, gear blanks, steering dr
 
 **H1: Forged and Machined Components — Product Range**
 
-Varsha Forgings manufactures forgings, machined components and assemblies for automotive OEMs and has developed products for electric vehicles. Forgings of 1 kg to 25 kg are produced at the Aurangabad plant on presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press) or 1 MT to 3 MT hammers, then heat treated, inspected and, where required, machined; assemblies are built at the Pune plant. Forging tolerance is ±0.5 mm and machining tolerance ±0.02 mm. The paragraphs below set out what each product family covers.
+Varsha Forgings manufactures forgings, machined components and assemblies for automotive OEMs and has developed products for electric vehicles. Forgings of 1 kg to 25 kg are produced at the Chhatrapati Sambhajinagar (Aurangabad) plant on presses from 800 T to 2,500 T (a 2,500 T Erie press, two 1,300 T press lines, a 1,000 T press and an 800 T screw press) or 1 MT to 3 MT hammers, then heat treated, inspected and, where required, machined; assemblies are built at the Pune plant. Forging tolerance is ±0.5 mm and machining tolerance ±0.02 mm. The paragraphs below set out what each product family covers.
 
 **H2: What forged components does Varsha Forgings make?**
 
@@ -157,7 +157,7 @@ The documented process flow ends with final inspection after machining and paint
 
 **H2: Two Plants, One Supplier**
 
-Varsha Forgings operates two plants in Maharashtra. The Aurangabad plant at MIDC Waluj, established in 1989, employs 350 people on a 20,234 m² site and produces alloy steel forgings and machined components. The Pune plant at Markal, Khed, operating since 2007, employs 150 people on a 60,702 m² site and builds assemblies. Together they take a part from raw-material inspection through forging, heat treatment, machining and assembly, with every part traceable to its raw-material heat.
+Varsha Forgings operates two plants in Maharashtra. The Chhatrapati Sambhajinagar (Aurangabad) plant at MIDC Waluj, established in 1989, employs 350 people on a 20,234 m² site and produces alloy steel forgings and machined components. The Pune plant at Markal, Khed, operating since 2007, employs 150 people on a 60,702 m² site and builds assemblies. Together they take a part from raw-material inspection through forging, heat treatment, machining and assembly, with every part traceable to its raw-material heat.
 
 **H2: Recognised by Customers and Industry**
 

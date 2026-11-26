@@ -1,5 +1,12 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 26 Nov 2026 Wave 2 (reviewer FACTS violations, wording, de-orphaning /forging-manufacturer-india) (READ THIS FIRST; supersedes the Wave 1 block below)
+> - **4 FACTS violations FIXED live (Firecrawl maxAge 0 verified):** (1)+(2) ZLD clause removed from FAQ v2 entries `3864f222...` and `a0abdceb...` (both pages show "waste-heat recovery systems, solar roof installations, and scrap metal recycling"; the /forging-company-maharashtra copy still ends "under ISO 14001 guidelines"); (3) /forging-manufacturer-india PPAP now "complete PPAP (Levels 1 to 5 as required)" (FAQ entry `5b700a87...`); (4) /forged-components-railways 'Long Service Life' row removed (VflWebsite b895aa7, corrected copy of embed `forged-components-railways__2` in `embeds-extra.js`).
+> - **Wording:** (5) table re-headed "Material and Inspection Standards" and (7) /buying-forgings-from-india intro without the China comparison (VflWebsite d87a072, new W6 ops `sub` and `rewriteFirstP`, `tests/wave2.test.cjs`); (6) RDSO FAQ answer now "...manufactured under Varsha Forgings' Indian Railways (RDSO) approval." (FAQ entry `655f4204...`, API).
+> - **De-orphaning (VflWebsite 5c23c76):** one `w6-xlink` paragraph with a distinct anchor on 7 pages (/, /about-1, /forging, /machining, /quality, /automotive-steering-powertrain, /forged-components-railways); each verified live (exactly 1 link, 1 H1). /machining page code now has the W6 hook. Ops in `src/public/w6ops-wave2.js`.
+> - **Lesson:** the earlier "all 256 FAQ v2 entries clean" claim missed ZLD and PPAP Level 3 because the scan list was incomplete. FAQ query needs cursor paging (`paging.limit` 50 returns hasNext); always paginate before declaring 0 hits.
+> - **Open (queued, not done):** two FAQ entries still say "full APQP and PPAP Level 3 documentation" (suspension and V-Link custom-assembly Q&As, ids `163738ab...`, `25ab412d...`); conflicts with FACTS (Levels 1-5). `/forging-company-maharashtra` ZLD was not in FACTS correction queue (FACTS.md not edited by executor).
+>
 > ## HANDOVER: 26 Nov 2026 reviewer-fix release (llms.txt breach, sitewide, /product, /alloy-steel-forgings) (READ THIS FIRST; supersedes the 02:15 block below)
 > - **llms.txt DO NOT PUBLISH breach FIXED live** (Wix-managed `/llms.txt`, served by the Wix Llms Txt API, not by VflWebsite): machine counts, BMW and 2013 Pune removed, rewritten from FACTS.md. Firecrawl maxAge 0 confirms. Edit it only via `PUT /promote-seo-robots-server/v2/llms` (ExecuteWixAPI).
 > - **Sitewide (VflWebsite 312339b, 5fea826):** footer 2026, footer link https, nav "Customers" (menu + footer). Rules in the NEW hand-written `src/public/sitewide-fixes.js` because `corrections-rules.js` is generated. Test: `tests/sitewide-fixes.test.cjs`.
@@ -589,3 +596,10 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 ## 27 Nov 2026 (end of 02:15 run): blog meta descriptions verified, run closed
 - Reviewer rv6 PASS: exactly 1 `<meta name="description">` on the tie-rod, railway-bogie and DE posts; FAQPage + BlogPosting JSON-LD parse; titles and first H2 OK. Closes pending.md row MD (25/25 via `ops/blog-meta.js`, VflWebsite b5ce3a7).
 - Run state: QS1/P17/P18/CC closed, C1-C4 live (25 posts), links round 2 on 5 pages, FAQPage JSON-LD on 21 posts, meta description on all 25 posts, all reviewer-verified. HANDOVER, NEXT-SESSION.md and PHASE3-PLAN.md refreshed.
+
+## 26 Nov 2026: Wave 2 reviewer-fix release (executor)
+- Brief: 4 FACTS violations + 3 wording changes + internal links to /forging-manufacturer-india. Three commits on VflWebsite main, each Publish run green before the next: b895aa7 (embed row), d87a072 (wording ops), 5c23c76 (links).
+- Route per item: 1,2,3,6 FAQ v2 data (Wix FAQ API, paginated 256 entries, PATCH + GET read-back, no repo change); 4 embed override (`EXTRA_EMBEDS["forged-components-railways__2"]`, same served key so no page-code swap needed); 5,7 Velo W6 ops (the older corrections-rules entry for the China paragraph never matched live); 8 Velo `xlink` op.
+- Gates: `npx eslint src` clean; all `tests/*.cjs` 0 FAIL (new `tests/wave2.test.cjs`); Firecrawl maxAge 0: ZLD/PPAP text, new heading, RDSO wording and China-free intro confirmed; 7 pages each 1 `w6-xlink` and 1 DOM H1; target page returns 200.
+- Not touched: FACTS.md, PLAN.md. Remaining PPAP Level 3 FAQ entries logged in pending.md (W2-1).
+

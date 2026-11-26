@@ -102,3 +102,6 @@ Paid contact databases (~$50-100/mo) for cold email to OEM procurement staff. Pa
 Only 1 real H1 ("Contact Varsha Forgings", comp-m0amumye, from w6ops-kihd6.js). The 2nd raw `<h1` match is an escaped copy inside Wix warmup JSON. Lesson: count DOM headings, not raw-string matches. Old note: /contact-us-1 serves 2 H1s
 Found in the P12 live check; baseline (22 Nov) had 1. Not caused by the SEO override (head only). Next: find which element is the 2nd H1 (raw HTML), fix via Velo retag (h1->h2) like the homepage fix.
 
+## W2-1 (26 Nov, Wave 2): two FAQ entries still say "PPAP Level 3 documentation"
+FAQ v2 ids `163738ab-fc88-49ef-916e-a3a43e9839b8` (custom suspension assemblies) and `25ab412d-53ec-4c0d-a7d3-75d1df2c31f8` (custom V-Link assemblies): "...with full APQP and PPAP Level 3 documentation." FACTS: PPAP Levels 1-5 supersedes "Level 3 capability". Fix path: FAQ API, same as Wave 2 (change to "PPAP documentation (Levels 1 to 5 as required)"). Unblock: orchestrator go-ahead; no Yash work. Also: add /forging-company-maharashtra to FACTS correction queue for ZLD (FACTS.md is orchestrator-owned).
+

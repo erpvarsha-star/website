@@ -73,6 +73,7 @@ The content-ops pipeline is live end-to-end: `.github/workflows/content-ops.yml`
 ## Apollo / Lusha (26 Nov): recommendation = NOT NOW
 Paid contact databases (~$50-100/mo) for cold email to OEM procurement staff. Park until: (1) the site's inbound engine is complete (L-pages, B1-B10 live), (2) a written email sequence exists, (3) someone at Varsha owns follow-up replies within 24 h. Re-evaluate Q1 2027.
 
-## P16 (new, 26 Nov): /contact-us-1 serves 2 H1s
+## P16 — ✅ CLOSED 26 Nov: false positive
+Only 1 real H1 ("Contact Varsha Forgings", comp-m0amumye, from w6ops-kihd6.js). The 2nd raw `<h1` match is an escaped copy inside Wix warmup JSON. Lesson: count DOM headings, not raw-string matches. Old note: /contact-us-1 serves 2 H1s
 Found in the P12 live check; baseline (22 Nov) had 1. Not caused by the SEO override (head only). Next: find which element is the 2nd H1 (raw HTML), fix via Velo retag (h1->h2) like the homepage fix.
 

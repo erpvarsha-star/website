@@ -473,4 +473,5 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - P14 re-scraped `/forging-company-aurangabad?nc=261126a` (Firecrawl maxAge 0): title still old. API GET item-seo-tags dpizt/kihd6/n1h72: renamed values in both `tags` and `resolvedTags`. Render gap confirmed, not a data problem. Next: Yash Editor Publish click.
 - Owner sent Sited result 83/100; one issue (homepage H1->H6). Verified fixed in live served HTML (0 H3-H6 tags, H1 then H2s) by the existing Velo retag in `Company.plew4.js` + `masterPage.js`. Owner rule added to CLAUDE.md: never ask him to run Sited.
 - Dispatched executor: P13 address strings + L1/L2 landing drafts.
+- Executor delivered `content-drafts/P13-offsite-address-strings-DRAFT.md`, `L1-tie-rod-end-forgings-DRAFT.md` (955 words, JSON-LD 2,064 min), `L2-railway-forgings-rdso-DRAFT.md` (840 words, JSON-LD 2,170 min). Opus gate re-run: 0 bare "Aurangabad", 0 DNP terms (L1 has 4 "stainless" hits, all denials). Open fact gap: FACTS lists "tie rods", not "tie rod ends" (asked Yash). RDSO reference number still not supplied (L2 states approval without a number).
 

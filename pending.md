@@ -13,6 +13,10 @@
 | Note | Reviewer 'title run-together' on /forging-company-aurangabad | - | Parser artifact: SVG `<title>` elements inside the body, not an SEO bug. Pune H1 contains 'CNC' without a count: allowed |
 | FAQ-LD | FAQPage JSON-LD on blog posts | Claude | CLOSED 27 Nov: 21/21 via Draft Posts PATCH (9dfa187), reviewer PASS |
 | MD | Blog posts had no `<meta name="description">` | Claude | DONE 27 Nov: 25/25 via `ops/blog-meta.js` (VflWebsite b5ce3a7), API read-back all present; reviewer rv6 PASS live (1 meta description on tie-rod, railway-bogie, DE posts); CLOSED 27 Nov |
+| P19 | /product button labels: "Secotr Shaft" (12), "Steering Level" (4), "Swingram Mount" (4) | Yash (Editor) | FAILED twice 26 Nov (Velo `$item('Button')` then `$item('StylableButton')` in repeater `onItemReady`; served HTML unchanged; the tab label did work). Editor: open /product, click each repeater button, change text: Secotr Shaft -> Sector Shaft; Steering Level -> Steering Lever; Swingram Mount -> Swing Arm Mount. Unblock for Claude: a Velo element id for the repeater. |
+| P20 | /product has 0 h1 | Yash (Editor) | No page-level Text element exists on /product (all text is master-page footer), so Velo cannot retag or inject. Editor: add a Text element at the top of /product, set it to Heading 1, text "Forged and Machined Components for Automotive, Railway and Industrial Applications". |
+| P21 | /alloy-steel-forgings table (weight, broaching) | Claude | CLOSED 26 Nov: embed swap live (embeds-extra.js). |
+| LLMS | /llms.txt DO NOT PUBLISH breach | Claude | CLOSED 26 Nov: rewritten via Wix Llms Txt API, live. Edit only through that API; any Editor SEO-settings change could override it. |
 | P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
 | P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |
 | RDSO | Approval reference number | Yash (optional) | Add to L2/B4 posts when supplied |

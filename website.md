@@ -1,6 +1,13 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: end of 27 Nov 02:15 run (READ THIS FIRST; supersedes 'run 3' below)
+> ## HANDOVER: 26 Nov 2026 reviewer-fix release (llms.txt breach, sitewide, /product, /alloy-steel-forgings) (READ THIS FIRST; supersedes the 02:15 block below)
+> - **llms.txt DO NOT PUBLISH breach FIXED live** (Wix-managed `/llms.txt`, served by the Wix Llms Txt API, not by VflWebsite): machine counts, BMW and 2013 Pune removed, rewritten from FACTS.md. Firecrawl maxAge 0 confirms. Edit it only via `PUT /promote-seo-robots-server/v2/llms` (ExecuteWixAPI).
+> - **Sitewide (VflWebsite 312339b, 7e9c4fa):** footer 2026, footer link https, nav "Customers" (menu + footer). Rules in the NEW hand-written `src/public/sitewide-fixes.js` because `corrections-rules.js` is generated. Test: `tests/sitewide-fixes.test.cjs`.
+> - **/product:** tab label fixed; repeater button typos (Secotr, Steering Level, Swingram) and the missing H1 FAILED twice, parked in `pending.md` (P19, P20).
+> - **/alloy-steel-forgings (P21):** capabilities table was an HTML embed; swapped to a corrected copy (1 kg-25 kg; broaching via vendor partners) via `src/backend/embeds-extra.js` + page-code swap. Live.
+> - **Next:** reviewer re-verifies; Yash Editor work for P19/P20 (pending.md).
+>
+> ## HANDOVER: end of 27 Nov 02:15 run (superseded by the 26 Nov reviewer-fix block above; supersedes 'run 3' below)
 > - **DONE, all reviewer-verified live:** QS1, P17, P18, CC closed (exactly 1 H1 on /quality, /automotive-steering-powertrain and /forging; 'Capability claims:' label gone on /quality, homepage and /forging). C1-C4 blog posts live (25 posts total). Links round 2 live on 5 pages. FAQPage JSON-LD on 21 posts. Meta description on all 25 posts (reviewer rv6 PASS: exactly 1 meta description on tie-rod, railway-bogie and DE posts; FAQPage + BlogPosting JSON-LD parse; titles and first H2 OK). Row MD closed in pending.md.
 > - **OPEN for Yash:** P9 social icons (steps in pending.md); Google Business Profile (does one exist?); P13 off-site address text; LinkedIn batch 2 posting; optional RDSO reference; P10 decision (Enterprise cost).
 > - **OPEN for Claude next:** KPI search re-check 10 Dec and 24 Dec (PHASE4-PLAN.md); LinkedIn batch 2 links for C1-C4 (add 4 posts); next content wave. Do not ask Yash to run Sited.
@@ -92,6 +99,13 @@ This file is the single working log for this fix cycle. Every action taken is lo
 ---
 
 ## Action Log
+
+### 2026-11-26 - Reviewer-fix release: llms.txt, sitewide rules, /product, /alloy-steel-forgings (executor)
+- **P1 llms.txt (DO NOT PUBLISH breach):** `/llms.txt` is the Wix-managed file (Llms Txt API, `GET/PUT https://www.wixapis.com/promote-seo-robots-server/v2/llms`, `manuallyEdited: true`), not served from VflWebsite. It carried machine counts (CNC 60, VMC 17, HMC 2, hobbing 5, drilling 15, lathe 10), "2013 (Pune Plant)", BMW MTG Brackets/N597, plus warm/cold forging claims and the short name "Chhatrapati Sambhajinagar". Whole file rewritten from FACTS.md (2,297 chars): since 1989, Pune since 2007, full certification list, 1 kg-25 kg, +/-0.5 mm and +/-0.02 mm, 800-2,500 T presses, 1-3 MT friction drop hammers, capability-only machining line, no BMW, full city name, phone and email. PUT 200, API read-back equals the content, Firecrawl maxAge 0 shows it live. Previous content saved in this log only as above (counts not reproduced).
+- **P2 sitewide (VflWebsite 312339b, 7e9c4fa, both Publish green):** new `src/public/sitewide-fixes.js` (text rules + https href rewrite) wired into `corrections.js`; menu labels via `menuItems`. Live on /assembly (SSR): footer "2026", footer link https, nav label "Customers". Remaining "Customer's" strings are page-title metadata JSON only. Test `tests/sitewide-fixes.test.cjs` (idempotency, URLs/slugs/emails untouched); city test still 25/25; eslint clean. First footer-year rule missed (symbol form), fixed in 7e9c4fa.
+- **P3 /product:** tab label "Commercial Vehicle's" fixed live. Repeater buttons (Secotr 12, Steering Level 4, Swingram 4) not reachable after 2 attempts (4baf...: `Button`, then `StylableButton` inside `onItemReady`), served HTML unchanged. No page-level Text element exists on /product (only master-page footer), so an H1 cannot be injected or retagged. Both logged in pending.md (P19, P20).
+- **P4 /alloy-steel-forgings:** the "Forging Weight Range 0.5 kg - 20 kg" and "Broaching" cells are inside HTML embed `72f2bf_1da1ed23...`. Corrected copy `alloy-steel-forgings__1` in new `src/backend/embeds-extra.js` (not in the generated `embeds/` folder, which the generator wipes), merged in `http-functions.js`; `uqck0` page code swaps the iframe src. Live: iframe src is `/_functions/embed/alloy-steel-forgings__1`, table reads "1 kg - 25 kg" and "Broaching (through vendor partners)".
+- Note: existing generated rule maps "Swingram Mount" to "Swing Arm Mount" (brief said "Swingarm Mount"); kept, matches FACTS "swing arm".
 
 ### 2026-11-27 - Blog meta descriptions on all 25 posts (executor)
 Reviewer PASS (per orchestrator): FAQPage schema on 21 posts; 'Capability claims:' label removed on homepage and /forging; /forging has 1 H1 (P18 closed). Reviewer then found live blog posts had no `<meta name="description">`. Fix: `ops/blog-meta.js` + job file (VflWebsite 574f4a7 canary on the L3 post, b5ce3a7 all, 355b59e job removed, README updated). Canary read-back: description present, FAQPage kept, slug unchanged. Full run read-back, 25/25: meta description present, hasUnpublishedChanges false, slug unchanged; 22 PATCHED, 3 already had one; FAQPage present on 23 (ES/DE have none by design). Backups in `ops/results/blog-meta-backup-*.json`. Live `<head>` check pending reviewer.

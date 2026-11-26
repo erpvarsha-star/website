@@ -414,3 +414,14 @@ Picked back up after confirming with Yash that the parallel thread (city-rename 
 - **No new attempts made** on P11/P14 this pass — just an honest, independent read-back so the next session (whichever thread picks it up) isn't working from a stale assumption either way.
 - Updated `NEXT-SESSION.md`: removed the stale "verify P8/P9 before trusting" caveat (now confirmed done), reordered the Yash/Claude queues to include P11–P14, and softened the "two threads" warning to reflect that it's expected, not a risk to flag every time.
 - Refreshed the top HANDOVER block in this file to summarize both threads' work in one place (previously only reflected this thread's).
+
+### 2026-11-26 (continued) — P14 investigated and ruled out, genuinely stuck; checked legacy FAQ app for a hidden Data Collection (P4b/P11)
+
+**P4b/P11 re-investigated once more (Yash asked why these need him):** checked whether the legacy faq-builder widget's answers live in a Wix CMS Data Collection, which Velo could write to even without a public REST endpoint. Listed every data collection on the site via `GET /data/v2/collections` — no FAQ-related collection exists at all (only Blog, Forms, Members, Products and the page-content collections). Combined with the earlier confirmed 404s on `/faq/v1/...` write paths, there is no code path left; this is genuinely Editor-only. Not a case of giving up early — a second real path was checked and it isn't there either.
+
+**P14 — both hypotheses from the previous entry tested and ruled out:**
+- **H1 (a later run re-reverted the values):** ruled out. `GET /seo-metatags-server/v1/item-seo-tags/STATIC_PAGE/dpizt` directly, independent of any ops run, confirms the title and meta description are correctly stored as "Chhatrapati Sambhajinagar (Aurangabad)" / "Chh. Sambhajinagar (Aurangabad)". The data layer is correct.
+- **H2 (CLI publish skips SEO re-bake when `src/` is unchanged):** tested directly — pushed a real `src/public/richtext.js` comment-line change (`4ae5a92`), the same technique that fixed W8 on 23 Nov. The GitHub Action ran and completed successfully (`wix publish --source remote -y`). Checked live immediately after, and again 3 minutes later with a fresh cache-bust query param: both times still served the old, pre-rename title/meta/og tags. Ruled out CDN propagation delay as well.
+- **Status: genuinely stuck.** Two root-cause attempts exhausted per the fail-twice rule. Parked in `pending.md` with a suggested next diagnostic (one Editor-triggered publish from Yash, to test whether this is a CLI-publish-specific gap worth reporting to Wix) rather than a third blind guess.
+
+No other files touched; `richtext.js`'s comment bump is harmless and left in place (it's accurate — it genuinely was pushed to test the re-bake).

@@ -8,10 +8,10 @@ Target query: "low volume forging supplier India". Secondary: "prototype forging
 ---
 
 ### SEO title
-Prototype and Low-Volume Forgings from India | Varsha Forgings
+Prototype and Low-Volume Forgings India | Varsha
 
 ### Meta description
-Prototype and low-volume enquiries accepted alongside series production. Hot closed-die forgings, 1–25 kg, 48 h feasibility per drawing. IATF 16949. Since 1989.
+Prototype and low-volume forging enquiries accepted. Hot closed-die, 1–25 kg, 48 h feasibility per drawing. IATF 16949. Since 1989.
 
 ### H1
 Prototype and Low-Volume Forgings from India: Start with One Drawing

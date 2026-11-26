@@ -8,7 +8,7 @@ Target query: "tractor forgings India". Secondary: "agricultural machinery forgi
 ---
 
 ### SEO title
-Tractor and Agriculture Forgings from India | Varsha Forgings
+Tractor and Agriculture Forgings India | Varsha
 
 ### Meta description
 Hot closed-die forgings for agricultural machinery from India, 1–25 kg, carbon and alloy steel. IATF 16949, PPAP Levels 1–5, EN 10204 3.1. Since 1989.
@@ -18,7 +18,7 @@ Agricultural Machinery Forgings from India: Hot Closed-Die, Traceable, PPAP-Read
 
 ## H2: Forgings for Tractors and Agricultural Machinery
 
-Agricultural machinery works hard. Tractors, implements and farm vehicles run through long seasons with heavy draft loads, shock from uneven ground, dust and mud, and little time for repair when the crop is waiting. Components in the drivetrain, steering, suspension and linkages need strength and fatigue life that a casting of the same size often cannot match. Hot closed-die forging shapes heated steel in a die so the grain flow follows the part, which is why designers choose forgings for highly loaded parts.
+Agricultural machinery works hard. Tractors and implements run long seasons with heavy draft loads, shock from uneven ground, and dust. Components in the drivetrain, steering, suspension and linkages need strength and fatigue life that a casting of the same size often cannot match. Hot closed-die forging shapes heated steel in a die so the grain flow follows the part, which is why designers choose forgings for highly loaded parts.
 
 Varsha Forgings Private Limited has made hot closed-die forgings since 1989 at our plant in Chhatrapati Sambhajinagar (Aurangabad). Agriculture is one of the industries we serve, alongside commercial vehicles, railway, electric vehicles (suspension and steering parts only), mining and off-highway, construction, infrastructure, defense and oil and gas. We forge components from 1 kg to 25 kg.
 
@@ -55,12 +55,9 @@ The last column is general engineering guidance, not a statement about a specifi
 Every forging follows one controlled route: material inspection, saw cutting, induction billet heating at 1,100–1,250 °C, forging on presses or hammers, inspection, heat treatment, hardness testing, shot blasting, grinding and deburring, crack testing, machining and final inspection.
 
 - **Forging:** presses from 800 T to 2,500 T and friction drop hammers from 1 to 3 MT. Dies are made in our own die shop from H13 and DIN 1.2714 die steel, and die filling is simulated in SimuFact Forming.
-- **Capacity:** over 12,000 metric tons per annum and over 3 million assorted pieces per year.
 - **Testing:** Brinell, Rockwell and micro-Vickers hardness, ASTM E112 grain size, ultrasonic testing and a vacuum emission spectrometer for chemistry.
 - **Crack detection:** 100% magnetic particle inspection (MPI) on safety-critical parts.
 - **Measurement:** Faro Arm CMM, profile projector and contour tester. Forging tolerance is ±0.5 mm and machining tolerance is ±0.02 mm.
-- **Statistical control:** SPC on key control characteristics, with a Cpk of 1.67 or better.
-- **Machining:** grinding is done in-house, and a dedicated vendor base extends machining capacity under our quality control.
 
 ## H2: Traceability, PPAP and Documentation
 
@@ -70,9 +67,8 @@ Each raw-material heat receives a batch code, and setup and in-process reports c
 - PPAP submission at Levels 1–5, with APQP and IMDS
 - EN 10204 type 3.1 material certificates, and type 3.2 on request
 
-## H2: Customers and Markets
 
-Over 60% of our production serves OEMs, as a Tier 1 and Tier 2 supplier. Our customer page lists agricultural and vehicle makers including Escorts, John Deere and TAFE, alongside Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo. We have exported to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, the Middle East and Africa.
+Over 60% of our production serves OEMs, as a Tier 1 and Tier 2 supplier. Our customer page lists agricultural and vehicle makers including Escorts, John Deere and TAFE, alongside Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo.
 
 ## H2: How to Request a Quote
 
@@ -93,14 +89,8 @@ EN8, EN9, EN19, EN24, 20MnCr5, 16MnCr5, 42CrMo4, 20MoCr4E, SAE1541, SAE8620, AIS
 **What weight range and tolerances can you supply?**
 Forged components from 1 kg to 25 kg. Forging tolerance is ±0.5 mm and machining tolerance is ±0.02 mm.
 
-**What is your annual capacity?**
-Over 12,000 metric tons per annum, and over 3 million assorted pieces per year.
-
 **Do you offer PPAP and material certificates?**
 Yes. PPAP submission at Levels 1–5, with APQP and IMDS. Material certificates are EN 10204 type 3.1, and type 3.2 on request.
-
-**Can I order a prototype or a small batch?**
-Yes. Prototype and low-volume enquiries are accepted alongside series production, with a feasibility response within 48 hours for a single part.
 
 ## H2: Internal link suggestions (not page copy)
 - /automotive-steering-powertrain (anchor: steering and powertrain forgings)
@@ -159,14 +149,6 @@ Yes. Prototype and low-volume enquiries are accepted alongside series production
     },
     {
      "@type": "Question",
-     "name": "What is the annual capacity of Varsha Forgings?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Over 12,000 metric tons per annum and over 3 million assorted pieces per year."
-     }
-    },
-    {
-     "@type": "Question",
      "name": "Does Varsha Forgings offer PPAP and material certificates?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -187,7 +169,6 @@ Yes. Prototype and low-volume enquiries are accepted alongside series production
 | Part families: gear blanks, carrier gear, pinion, crown wheel and pinion, reverse gears, clutch bodies, differential gear blanks, camshafts, axle shafts, shaft joint, yoke, gear shifter lever, steering levers, sector shaft, tie rods, drag links, ball joints, idler arm, drop arm, steering knuckles, swing arm, torque rods, radius rods, front wheel hub, wheel carrier, axle mounts, connecting rods, tow hooks, bearing bushes | Products [P] and "Also confirmed [Y]". Presented as the Varsha range, not as agriculture-specific parts |
 | Grade list (subset of confirmed list; full list in FAQ) | Materials [Y] |
 | Heat treatments; grinding in-house; vendor base | Processes [Y]; Dedicated vendor base [P] |
-| Capacity 12,000 t per annum and 3 million pieces | Capability ranges [Y] |
 | Hot closed-die since 1989; 1–25 kg; Chhatrapati Sambhajinagar (Aurangabad) | Identity [P][Y]; City name [Y]; Capability ranges [Y] |
 | Presses 800–2,500 T; friction drop hammers 1–3 MT; H13 and DIN 1.2714; SimuFact | Equipment [P][Y]; Process & quality specifics [Y] |
 | Process flow; induction 1,100–1,250 °C | Process flow [P]; Process & quality specifics [Y] |
@@ -197,6 +178,5 @@ Yes. Prototype and low-volume enquiries are accepted alongside series production
 | IATF 16949, ISO 9001/14001/45001, PPAP 1–5, APQP, IMDS | Certifications [Y] |
 | EN 10204 3.1 / 3.2; LC or advance; air freight; virtual tours; 2D/3D | Export logistics & commercial [Y] |
 | Over 60% OEM; Tier 1 and Tier 2; OEM list | Business profile [Y]; Customers [Y] |
-| Export markets | Customers & markets [Y] |
 | RFQ sequence; 48 h per single drawing; prototype/low volume | RFQ & customer engagement [Y] |
 | Phone, email | Identity [L] |

@@ -7,10 +7,10 @@ Target query: "forged steering knuckle manufacturer India". Secondary: "steering
 ---
 
 ### SEO title
-Forged Steering Knuckle Manufacturer India | Varsha Forgings
+Forged Steering Knuckle Manufacturer India | Varsha
 
 ### Meta description
-Hot closed-die forged steering knuckles and steering parts, 1–25 kg, from India. IATF 16949, PPAP Levels 1–5, 100% MPI on safety-critical parts. Since 1989.
+Hot closed-die forged steering knuckles, 1–25 kg, from India. IATF 16949, PPAP Levels 1–5, 100% MPI on safety-critical parts. Since 1989.
 
 ### H1
 Forged Steering Knuckles from India: Hot Closed-Die, Traceable, PPAP-Ready
@@ -23,14 +23,11 @@ Varsha Forgings Private Limited has made hot closed-die forgings since 1989 at o
 
 ## H2: The Steering Range Around the Knuckle
 
-A knuckle works with other parts, and many buyers source them together. Varsha forges and machines a wide steering and suspension range:
+Buyers often source the knuckle with the parts around it. Our steering and suspension range includes:
 
 - **Steering gear parts:** idler arm, sector shaft, drop arm, steering levers, end cover, worm and spring saddle
 - **Linkage:** tie rods (complete assemblies, and tie rod ends as forgings only), drag links, ball joints and anti-roll bar linkages
 - **Suspension:** upper control arm, swing arms, torque rods, radius rods, V-links, axle mounts and spherical ball pins
-- **Wheel end:** front wheel hub and wheel carrier
-
-Sourcing several parts from one forge keeps documentation, PPAP and traceability under one quality system.
 
 ## H2: Grades We Forge
 
@@ -56,8 +53,6 @@ Every knuckle forging follows one controlled route: material inspection, saw cut
 - **Testing:** Brinell, Rockwell and micro-Vickers hardness, ASTM E112 grain size, ultrasonic testing and a vacuum emission spectrometer for chemistry.
 - **Crack detection:** 100% magnetic particle inspection (MPI) on safety-critical parts, which includes steering parts.
 - **Measurement:** Faro Arm CMM, profile projector and contour tester in a dedicated standards room. Forging tolerance is ±0.5 mm and machining tolerance is ±0.02 mm.
-- **Statistical control:** SPC on key control characteristics, with a Cpk of 1.67 or better.
-- **Machining:** grinding is done in-house, and a dedicated vendor base extends machining capacity under our quality control.
 
 ## H2: Traceability, PPAP and Documentation
 
@@ -69,9 +64,8 @@ Our documentation suits OEM and Tier 1 purchasing:
 - PPAP submission at Levels 1–5, with APQP and IMDS
 - EN 10204 type 3.1 material certificates, and type 3.2 on request
 
-## H2: Who We Supply
 
-Our OEM customers include Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo. We serve commercial vehicles, agriculture, railway, electric vehicles (suspension and steering parts only), mining and off-highway, construction and defense. We have exported to Germany, Spain, Italy, Portugal, Austria, the United States, Asia-Pacific, the Middle East and Africa.
+Our OEM customers include Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo. We serve commercial vehicles, agriculture, railway, electric vehicles (suspension and steering parts only), mining and off-highway, construction and defense.
 
 ## H2: How to Request a Quote
 
@@ -79,7 +73,7 @@ Our OEM customers include Daimler, Ashok Leyland, MAN Trucks India, Mahindra Tru
 2. We review feasibility, with a response within 48 hours for a single drawing or part.
 3. You receive a quotation, then we plan PPAP.
 
-Prototype and low-volume enquiries are welcome alongside series production. Terms are Letter of Credit or advance payment. Samples and urgent needs can move by air freight, and virtual plant tours are available. Customers are welcome to visit our plants after an RFQ.
+Prototype and low-volume enquiries are welcome alongside series production. Terms are Letter of Credit or advance payment. Samples and urgent needs can move by air freight, and virtual plant tours are available.
 
 ## H2: Frequently Asked Questions
 
@@ -94,9 +88,6 @@ Forged components from 1 kg to 25 kg. Forging tolerance is ±0.5 mm and machinin
 
 **What inspection is done on safety-critical steering forgings?**
 100% magnetic particle inspection on safety-critical parts, plus hardness testing, grain size checks to ASTM E112, ultrasonic testing and dimensional checks on CMM and profile projector.
-
-**Do you offer PPAP and material certificates?**
-Yes. PPAP submission at Levels 1–5, with APQP and IMDS. Material certificates are EN 10204 type 3.1, and type 3.2 on request.
 
 **Can I order a prototype or a small batch of knuckles?**
 Yes. Prototype and low-volume enquiries are accepted alongside series production. Send a drawing and we respond on feasibility within 48 hours for a single part.
@@ -197,6 +188,6 @@ Yes. Prototype and low-volume enquiries are accepted alongside series production
 | EN 10204 3.1 / 3.2; Letter of Credit or advance; air freight; virtual tours; 2D/3D drawings | Export logistics & commercial [Y] |
 | Over 60% OEM; Tier 1 and Tier 2 | Business profile [Y] |
 | Industries; EV suspension and steering only | Industries served [Y]; Products [Y] |
-| OEM list; export markets | Customers & markets [Y][L] |
+| OEM list | Customers (confirmed) [Y][L] |
 | RFQ sequence; 48 h per single drawing; prototype/low volume; plant visits after RFQ | RFQ & customer engagement [Y] |
 | Phone, email | Identity [L] |

@@ -1,5 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 27 Nov 02:15 run (READ THIS FIRST; supersedes the 'IN PROGRESS' block below)
+> - **QS1 + P17 attempt 2** (VflWebsite 62adc58, w6content text-matching): reviewer PASS on exactly 1 H1 on /quality and /automotive-steering-powertrain.
+> - **C1-C4 blog posts LIVE** (content-ops fd57fe0, run-2026-11-26T20-50-40-925Z, drafts e6df43c): total 25 posts. C1 `how-to-choose-a-closed-die-forging-company-in-india-for-oems`, C2 `ppap-level-5-forging-supplier-in-india-a-capability-profile`, C3 `iatf-16949-forging-supplier-in-india-export-to-europe`, C4 `railway-bogie-component-forgings-from-india-buyer-guide` (all under /post/). Wix returned bare 200; reviewer must confirm each URL.
+> - **Links round 2 + 'Capability claims:' label removal** pushed to VflWebsite 7354946 (+ f6989dd test fix), both Publish runs green. Related buyer guides on /about-1 (l95rc), /forging-manufacturer-india (q1c5f), /forging-company-maharashtra (n1h72), /forging-company-aurangabad (dpizt), /forging-manufacturer-pune (lgtlq); new `removeParas` op removes the label paragraph on /quality, homepage and /forging. **Awaiting reviewer verification of both.**
+> - Next: reviewer verifies step 3 live; FAQPage JSON-LD for posts; KPI re-check 10 Dec.
+>
 > ## HANDOVER: as of 26 Nov 2026, end of session 3 (READ THIS FIRST)
 > **IN PROGRESS (27 Nov ~01:30 IST), first attempt FAILED, not yet fail-twice:**
 > 1. **QS1** /quality slide-1: VflWebsite aa1e9cb + 000d668 pushed, publish green, but reviewer rv2 (Firecrawl maxAge 0) shows served HTML still has 'Capability claims:' and 2 DOM H1s.
@@ -524,4 +530,20 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 | L7 | https://www.varshaforgings.com/post/agricultural-machinery-forgings-from-india-hot-closed-die-traceable-ppap-ready |
 | L8 | https://www.varshaforgings.com/post/valve-body-and-flange-forgings-from-india-a105-lf2-f11-and-f22 |
 - Session 3 end: owner flagged the model-rule breach (Opus verifying instead of Haiku reviewer). Gotcha added to CLAUDE.md. Internal-links job still running at session end (see HANDOVER).
+
+## 27 Nov 2026 (02:15 run): C1-C4 live, links round 2, label removal
+- Drafts C1-C4 edited per reviewer notes, website commit e6df43c (C1 lab sentence + quoted search phrase, C2 spectrometer sentence, C3 'Export markets', C4 B4 mention kept as plain text).
+- content-ops: VflWebsite fd57fe0 'content-ops: publish C1-C4' (existing 18 entries byte-identical, no `language`, BLOG_BANNED 0, no bare Aurangabad; words 1130/920/915/928). Run `ops/results/run-2026-11-26T20-50-40-925Z.json`: all 4 PUBLISHED_BARE_200_VERIFY_BY_CURL. Live slugs (from inventoryAfter):
+
+| Draft | Live URL |
+|---|---|
+| C1 | https://www.varshaforgings.com/post/how-to-choose-a-closed-die-forging-company-in-india-for-oems |
+| C2 | https://www.varshaforgings.com/post/ppap-level-5-forging-supplier-in-india-a-capability-profile |
+| C3 | https://www.varshaforgings.com/post/iatf-16949-forging-supplier-in-india-export-to-europe |
+| C4 | https://www.varshaforgings.com/post/railway-bogie-component-forgings-from-india-buyer-guide |
+
+- Velo release VflWebsite 7354946 'Links round 2 + remove Capability claims label' (+ f6989dd, test count fix). ESLint clean; tests guides (39 slugs), removeparas, city-rename pass. Both Publish runs: success.
+  - Related buyer guides anchors: /about-1 (l95rc, after the W6 set element; 4 posts), /forging-manufacturer-india (q1c5f, 'Supported by advanced inspection systems'; 4), /forging-company-maharashtra (n1h72, h4 'Regional Supply Chain Synergy', the last native text element, rest is embeds; 4 incl. C3), /forging-company-aurangabad (dpizt, same anchor as the P8 date op; 4), /forging-manufacturer-pune (lgtlq, last paragraph; 4). Page code for a3evt, q1c5f, n1h72, lgtlq gained the W6 call. Skipped: none; /railway and /agriculture remain image-only from round 1.
+  - Label removal: new op `removeParas` (w6content.js) deletes the whole `<p>` whose text is exactly 'Capability claims:'; registered for t6wcz, plew4, a3evt in w6ops-retag.js. Anchors taken from live DOM on /quality only; homepage and /forging assume the same standalone-paragraph structure (unverified until the reviewer checks).
+- Not self-verified live; reviewer to confirm.
 

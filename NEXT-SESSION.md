@@ -28,7 +28,13 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
-## START HERE (end of 26 Nov session 3)
+## START HERE (27 Nov 02:15 run)
+1. **Reviewer (Haiku) verifies VflWebsite 7354946 live:** (a) Related buyer guides block on /about-1, /forging-manufacturer-india, /forging-company-maharashtra, /forging-company-aurangabad, /forging-manufacturer-pune (links resolve, exactly 1 H1 each, no DNP hits); (b) 'Capability claims:' paragraph gone on /quality, homepage, /forging; (c) C1-C4 posts live at the URLs in website.md (27 Nov entry). Revert on any regression.
+2. FAQPage JSON-LD for the blog posts (executor).
+3. KPI re-check 10 Dec (PHASE4-PLAN.md), then LinkedIn batch 2 help, GBP walkthrough once Yash answers.
+4. QS1/P17 attempt 2 reviewer PASS (1 H1). Do not ask Yash to run Sited.
+
+## START HERE (previous, end of 26 Nov session 3; superseded)
 **Scheduled restart:** task 'Varsha site work resume 2:15 IST' (trig_01PTT36Du9dsPRy9JdovtZzo) fires a fresh session at 27 Nov 02:15 IST with the full task list. It was created WITHOUT connectors (Firecrawl/Wix) — Yash should add them in claude.ai scheduled tasks, else the reviewer cannot scrape live pages.
 **In flight at handover:** executor fixing /quality slide-1 clipped heading (owner phone screenshot) + P17 extra H1s; needs reviewer verification.
 1. Follow the model rule strictly: Opus briefs only; executor (Sonnet) does; **reviewer (Haiku) verifies** — Opus never scrapes/greps itself.

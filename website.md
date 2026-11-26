@@ -1,6 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: 27 Nov run 3 (READ THIS FIRST; supersedes 'run 2' below)
+> ## HANDOVER: end of 27 Nov 02:15 run (READ THIS FIRST; supersedes 'run 3' below)
+> - **DONE, all reviewer-verified live:** QS1, P17, P18, CC closed (exactly 1 H1 on /quality, /automotive-steering-powertrain and /forging; 'Capability claims:' label gone on /quality, homepage and /forging). C1-C4 blog posts live (25 posts total). Links round 2 live on 5 pages. FAQPage JSON-LD on 21 posts. Meta description on all 25 posts (reviewer rv6 PASS: exactly 1 meta description on tie-rod, railway-bogie and DE posts; FAQPage + BlogPosting JSON-LD parse; titles and first H2 OK). Row MD closed in pending.md.
+> - **OPEN for Yash:** P9 social icons (steps in pending.md); Google Business Profile (does one exist?); P13 off-site address text; LinkedIn batch 2 posting; optional RDSO reference; P10 decision (Enterprise cost).
+> - **OPEN for Claude next:** KPI search re-check 10 Dec and 24 Dec (PHASE4-PLAN.md); LinkedIn batch 2 links for C1-C4 (add 4 posts); next content wave. Do not ask Yash to run Sited.
+>
+> ## HANDOVER: 27 Nov run 3 (superseded)
 > - **Reviewer PASS (reported by orchestrator):** FAQPage JSON-LD on 21 blog posts; 'Capability claims:' label removed on homepage and /forging (CC closed); /forging exactly 1 H1 (P18 closed).
 > - **Blog meta description fix: DONE via Wix Blog API (VflWebsite b5ce3a7 all posts, 574f4a7 canary, 355b59e job removed; results `ops/results/run-2026-11-26T21-09-00-027Z.json` (canary) and the following 'ops results' commit 57d874e).** Reviewer found live posts had no `<meta name="description">`. New job `ops/blog-meta.js` (same Draft Posts PATCH `UPDATE_PUBLISH` mechanism as the FAQ job): appends meta description (post excerpt, 130-154 chars) keeping all existing tags. Read-back, all 25 posts: `metaDescriptionPresent` true, `hasUnpublishedChanges` false, slug unchanged; FAQPage tag still present on 23 (ES and DE posts never had one). 22 posts patched, 3 already had a description (L3, buyer-guide, precision-forging-cost). **Awaiting reviewer verify live `<head>`** (2-3 posts incl. ES/DE).
 > - Next: reviewer verifies meta descriptions live; KPI re-check 10 Dec; LinkedIn batch 2; GBP walkthrough once Yash answers.
@@ -567,3 +572,6 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
   - Label removal: new op `removeParas` (w6content.js) deletes the whole `<p>` whose text is exactly 'Capability claims:'; registered for t6wcz, plew4, a3evt in w6ops-retag.js. Anchors taken from live DOM on /quality only; homepage and /forging assume the same standalone-paragraph structure (unverified until the reviewer checks).
 - Not self-verified live; reviewer to confirm.
 
+## 27 Nov 2026 (end of 02:15 run): blog meta descriptions verified, run closed
+- Reviewer rv6 PASS: exactly 1 `<meta name="description">` on the tie-rod, railway-bogie and DE posts; FAQPage + BlogPosting JSON-LD parse; titles and first H2 OK. Closes pending.md row MD (25/25 via `ops/blog-meta.js`, VflWebsite b5ce3a7).
+- Run state: QS1/P17/P18/CC closed, C1-C4 live (25 posts), links round 2 on 5 pages, FAQPage JSON-LD on 21 posts, meta description on all 25 posts, all reviewer-verified. HANDOVER, NEXT-SESSION.md and PHASE3-PLAN.md refreshed.

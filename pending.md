@@ -12,7 +12,7 @@
 | P18 | /forging 3 DOM H1s | Claude | CLOSED 27 Nov: reviewer PASS, exactly 1 H1 (4fca538) |
 | Note | Reviewer 'title run-together' on /forging-company-aurangabad | - | Parser artifact: SVG `<title>` elements inside the body, not an SEO bug. Pune H1 contains 'CNC' without a count: allowed |
 | FAQ-LD | FAQPage JSON-LD on blog posts | Claude | CLOSED 27 Nov: 21/21 via Draft Posts PATCH (9dfa187), reviewer PASS |
-| MD | Blog posts had no `<meta name="description">` | Claude | DONE 27 Nov: 25/25 via `ops/blog-meta.js` (VflWebsite b5ce3a7), API read-back all present; AWAITING reviewer live `<head>` verify |
+| MD | Blog posts had no `<meta name="description">` | Claude | DONE 27 Nov: 25/25 via `ops/blog-meta.js` (VflWebsite b5ce3a7), API read-back all present; reviewer rv6 PASS live (1 meta description on tie-rod, railway-bogie, DE posts); CLOSED 27 Nov |
 | P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
 | P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |
 | RDSO | Approval reference number | Yash (optional) | Add to L2/B4 posts when supplied |

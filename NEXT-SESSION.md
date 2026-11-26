@@ -28,7 +28,12 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
-## START HERE (27 Nov run 3)
+## START HERE (end of 27 Nov 02:15 run)
+1. **Closed and reviewer-verified:** QS1, P17, P18, CC, C1-C4 (25 posts), links round 2, FAQPage JSON-LD (21 posts), blog meta descriptions (25/25; rv6 PASS). Nothing in flight.
+2. **Claude next:** KPI search re-check 10 Dec and 24 Dec (PHASE4-PLAN.md); LinkedIn batch 2 links for C1-C4 (add 4 posts); next content wave. Do not ask Yash to run Sited.
+3. **Open for Yash:** P9 social icons (pending.md), Google Business Profile (does one exist?), P13 off-site address text, LinkedIn batch 2 posting, optional RDSO reference, P10 decision.
+
+## START HERE (27 Nov run 3; superseded)
 1. **Reviewer (Haiku) verifies blog meta descriptions live:** `<meta name="description">` present in `<head>` on 3 posts (one EN, ES, DE) and the FAQPage JSON-LD still parses (VflWebsite b5ce3a7; API read-back 25/25 already done).
 2. CC, P18, FAQ-LD are closed (reviewer PASS). Nothing else in flight.
 3. KPI re-check 10 Dec (PHASE4-PLAN.md), LinkedIn batch 2, GBP walkthrough once Yash answers. Do not ask Yash to run Sited.

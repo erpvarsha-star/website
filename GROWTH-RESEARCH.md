@@ -21,6 +21,8 @@ These target search intents competitors rank for and Varsha does not. Each maps 
 
 **L1 + L2 STATUS — LIVE 26 Nov (blog channel):** https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready · https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable. Static-page versions still need Editor-created pages (P7 pattern).
 
+**L5-L8 STATUS — LIVE 26 Nov (blog channel).** All 8 landing topics now live as posts.
+
 **Build note:** L1, L2, L3, L6 first — biggest gap vs. competitors, strongest FACTS backing. All need one Text element if the page is new (P7 lesson); build via the W6 pattern.
 
 **L3 STATUS — LIVE 23 Nov (blog channel):** owner waived review ("you're the expert"), full line-by-line FACTS audit passed and logged. Published via content-ops blog publish as a blog post (static-page version still needs an Editor-created page, queued with P7): https://www.varshaforgings.com/post/a-proven-indian-forging-partner-for-german-and-european-manufacturers — verified live: 0 banned terms, all key claims present. Lesson: blog v3 draft-posts requires `memberId` (resolve from an existing post); publish endpoint returns 200 without a `post` object — verify by curl, not by response shape. German version drafted (`content-drafts/DE-buyers-guide-DRAFT.md`), held for native-speaker review before publishing; hreflang pairing when it goes live.

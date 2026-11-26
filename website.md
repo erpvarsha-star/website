@@ -5,6 +5,7 @@
 > - **P14 CLOSED via Velo `wix-seo-frontend` override** (VflWebsite e18884e, 484469a): 10 pages now serve the renamed SEO head; future SEO edits on those 10 pages go through `ops/tools/gen-seo-override.js` (Velo overrides the API values). Yash's Editor Publish did not help, which ruled out the publish route.
 > - **P12 CLOSED** (9af45ca): 3 short titles live; /electric-mobility + /transmission-and-driveline noindex (P7 decision: keep /product gallery). P16 was a false positive (warmup-JSON copy).
 > - **LIVE 26 Nov:** L1 tie-rod-end post (https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready) and L2 RDSO railway post (https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable), via content-ops (VflWebsite f8159a6, results 6e020f9). Verified by Firecrawl maxAge 0: body renders, all claims in FACTS. 7 posts live.
+> - **L5-L8 LIVE 26 Nov** (VflWebsite 7d42b45): steering knuckles, prototype/low-volume, agriculture, oil & gas flanges. **21 blog posts live.** All 8 GROWTH-RESEARCH landing topics + B1-B10 now live. Next: internal 'related guides' links from service pages (Velo).
 > - **B2-B10 LIVE 26 Nov** (VflWebsite 534d0e0; 17 blog posts total incl. L1/L2/L3/ES/DE/2 older). LinkedIn batch 2 (12 posts, real URLs) ready: `content-drafts/linkedin-posts-batch2-DRAFT.md`. Drafting L5-L8.
 > - **B1 LIVE 26 Nov:** /post/forging-vs-casting-vs-machining-a-buyer-s-decision-guide (VflWebsite 8b5baf6). B2-B10 drafted + gated (website 065db9d, ab2c605); publishing as one content-ops batch now. P13 off-site text ready for Yash.
 >
@@ -501,4 +502,9 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 | B8 | https://www.varshaforgings.com/post/heat-treatment-for-forged-components-what-to-specify |
 | B9 | https://www.varshaforgings.com/post/sourcing-forgings-from-india-to-europe-logistics-and-certificates |
 | B10 | https://www.varshaforgings.com/post/why-safety-critical-steering-parts-are-forged-not-cast |
+- L5-L8 published (7d42b45), agent verified 4/4 live 200 + first H2; Opus re-verified L8 live.
+| L5 | https://www.varshaforgings.com/post/forged-steering-knuckles-from-india-hot-closed-die-traceable-ppap-ready |
+| L6 | https://www.varshaforgings.com/post/prototype-and-low-volume-forgings-from-india-start-with-one-drawing |
+| L7 | https://www.varshaforgings.com/post/agricultural-machinery-forgings-from-india-hot-closed-die-traceable-ppap-ready |
+| L8 | https://www.varshaforgings.com/post/valve-body-and-flange-forgings-from-india-a105-lf2-f11-and-f22 |
 

@@ -14,6 +14,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W1 | Velo route research (HTML-embed reach, element IDs, publish flow) → `VELO-ROUTE.md` | Sonnet | Running | Doc cites Wix docs |
 | W2 | Brand kit: logo files/URLs, colours, fonts, spacing, button and heading styles from the live site → `BRAND.md` | Sonnet | Yes, now | Values read from the live site, not invented |
 | 27 Nov | QS1/P17 attempt 2 reviewer PASS (1 H1, 62adc58); C1-C4 live (fd57fe0, 25 posts); links round 2 + 'Capability claims' removal pushed (7354946), publish green, AWAITING reviewer | website.md HANDOVER (27 Nov 02:15), pending.md IL2/CC |
+| 27 Nov run 2 | ✅ FAQPage JSON-LD on 21 blog posts (VflWebsite 9dfa187, API read-back 21/21); ✅ IL2, C1-C4, /quality label reviewer PASS; ◐ Capability claims attempt 2 + /forging H1 retag pushed (4fca538), awaiting reviewer | website.md HANDOVER 27 Nov run 2 |
 | W3 | Content: finalise the 7 rewrites, F28 thin pages (/alloy-steel-forgings, /forged-machined-components-vf), the wrong article on /steering-suspension-components, and corrected HTML for every flagged embed → `content-drafts/`, `embeds/` | Sonnet | Yes, now | `check-wordcount.sh` + reviewer FACTS check |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
 | W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | `baseline/w5-verify.md`; publish run 45068992337 |

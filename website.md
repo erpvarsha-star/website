@@ -1,6 +1,13 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
-> ## HANDOVER: 27 Nov 02:15 run (READ THIS FIRST; supersedes the 'IN PROGRESS' block below)
+> ## HANDOVER: 27 Nov run 2 (READ THIS FIRST; supersedes the 02:15 block below)
+> - **Reviewer results (reported by orchestrator):** C1-C4 blog posts PASS live; links round 2 (IL2) PASS 5/5 pages; 'Capability claims:' label PASS on /quality; homepage and /forging label still present after attempt 1 (7354946).
+> - **Capability-claims attempt 2 (VflWebsite 4fca538, Publish green):** live markup is not a `<p>`: it is a text line inside one `<p>`, `...<br>\nCapability claims:<br>\n• ...`. New `removeLines` op in `w6content.js` removes the label line plus its `<br>` (whole-line match; inline sentences kept). Applied to plew4 (homepage) and a3evt (/forging). Unit tests extended (live-markup case), lint clean. **Awaiting reviewer verify.** If it persists, this is fail-twice: Editor delete by Yash (pending.md CC).
+> - **/forging H1s (P18, same release):** DOM has 3 H1s: descriptive 'Closed-Die Forging for Carbon and Alloy Steel Components' (KEPT as page H1), an empty `<h1>&nbsp;</h1>` (removed with the existing `stripEmptyH1` op; it sits in the same rich-text element as the descriptive H1), and 'FORGING' (retagged h1 -> p, inline styles kept). **Awaiting reviewer verify** (expect exactly 1 H1).
+> - **FAQPage JSON-LD on blog posts: DONE via Wix Blog API, 21/21 posts** (VflWebsite 2aa5b24 canary, 9dfa187 all, 9273f5d job removed; results `ops/results/run-2026-11-26T21-00-49-647Z.json`). Mechanism: Draft Posts PATCH `draftPost.seoData.tags` with `action: UPDATE_PUBLISH` (Posts API is read-only). Every post read back with `faqPagePresent: true`, question counts equal to the payload (3-6 Q&A, 1,043-1,836 chars each), slug unchanged, `hasUnpublishedChanges` false. All 21 posts had 0 existing seo tags, so the FAQPage script is their only seoData tag; reviewer should confirm live `<head>` still has title/description and the JSON-LD parses. Note: the orchestrator's count of 25 does not match; the payload has 20 posts with an FAQ section (22 minus ES and DE) plus the L3 Germany post in run.js = 21; the other 4 inventory posts (ES, DE, 2 older) have no FAQ section.
+> - Next: reviewer verifies attempt 2 (homepage, /forging labels; /forging H1 count) and the FAQPage tags live (Google Rich Results style check of 2-3 posts); KPI re-check 10 Dec.
+>
+> ## HANDOVER: 27 Nov 02:15 run (superseded) (READ THIS FIRST; supersedes the 'IN PROGRESS' block below)
 > - **QS1 + P17 attempt 2** (VflWebsite 62adc58, w6content text-matching): reviewer PASS on exactly 1 H1 on /quality and /automotive-steering-powertrain.
 > - **C1-C4 blog posts LIVE** (content-ops fd57fe0, run-2026-11-26T20-50-40-925Z, drafts e6df43c): total 25 posts. C1 `how-to-choose-a-closed-die-forging-company-in-india-for-oems`, C2 `ppap-level-5-forging-supplier-in-india-a-capability-profile`, C3 `iatf-16949-forging-supplier-in-india-export-to-europe`, C4 `railway-bogie-component-forgings-from-india-buyer-guide` (all under /post/). Wix returned bare 200; reviewer must confirm each URL.
 > - **Links round 2 + 'Capability claims:' label removal** pushed to VflWebsite 7354946 (+ f6989dd test fix), both Publish runs green. Related buyer guides on /about-1 (l95rc), /forging-manufacturer-india (q1c5f), /forging-company-maharashtra (n1h72), /forging-company-aurangabad (dpizt), /forging-manufacturer-pune (lgtlq); new `removeParas` op removes the label paragraph on /quality, homepage and /forging. **Awaiting reviewer verification of both.**
@@ -75,6 +82,11 @@ This file is the single working log for this fix cycle. Every action taken is lo
 ---
 
 ## Action Log
+
+### 2026-11-27 - FAQPage JSON-LD on 21 blog posts; Capability claims attempt 2; /forging H1s (executor)
+- **FAQPage:** new `ops/blog-faq.js` + `ops/payloads/blog-faq-schema.json` in VflWebsite (job-file mode like the rename job; job file deleted after the run). Wix docs: Posts API is read-only; edits go through Draft Posts PATCH with `action: UPDATE_PUBLISH`. Canary on 1 post (2aa5b24) read back OK, then all 21 (9dfa187): 21/21 PATCHED/ALREADY, 0 failures, 0 retries. Q&A copied exactly from payload nodes; no trimming needed (max 1,836 chars vs 3,600 limit). Backups in `ops/results/blog-faq-backup-*.json`.
+- **Capability claims attempt 2 + /forging H1s:** VflWebsite 4fca538, Publish run 45895587615 success. Details in the HANDOVER block above.
+- Pipeline lesson: pushing a code commit after the bot's "ops results" commit needs `git pull --rebase` first.
 
 ### 2026-11-27 ~01:30 IST - QS1/P17 first attempt FAILED (logged by Opus)
 - Executor pushed to VflWebsite main: aa1e9cb (Quality.t6wcz.js: Velo rewrite of slide-1 text in comp-mu59fb5u, remove 'Capability claims:'), aab379e (tfegr: 22 'forged' link items comp-mtu3.../comp-mttzn3j4 h1->p), 000d668 (Quality slide-1 heading comp-mu59fb5s h1->h2). All publish runs green.

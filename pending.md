@@ -4,11 +4,14 @@
 | # | Item | Owner | Next step |
 |---|---|---|---|
 | IL | Internal 'Related buyer guides' links (Velo) — LIVE on 7 pages (VflWebsite 2c1f872 + stage 2); /railway, /agriculture skipped (image-only) | Claude | ✅ Haiku reviewer PASS 7/7 pages (26 Nov). Yash: glance at /quality on phone for layout overlap |
-| IL2 | Links round 2 on /about-1, /forging-manufacturer-india, /forging-company-maharashtra, /forging-company-aurangabad, /forging-manufacturer-pune | Claude | Pushed 7354946; AWAITING reviewer verify. Maharashtra anchors on an h4 (last native text; page is mostly embeds) |
-| C1-4 | C1-C4 blog posts published (bare 200) | Claude | Reviewer to confirm 4 URLs live (see website.md 27 Nov entry) |
+| IL2 | Links round 2 (5 pages) | Claude | CLOSED 27 Nov: reviewer PASS 5/5 (7354946) |
+| C1-4 | C1-C4 blog posts | Claude | CLOSED 27 Nov: reviewer PASS live |
 | QS1 | /quality slide 1 heading clipped on mobile | Claude | Attempt 2 (VflWebsite 62adc58) reviewer PASS: 1 H1. Remaining: 'Capability claims:' label, see CC (7354946 pending reviewer) |
 | P17 | /automotive-steering-powertrain 23 DOM H1s | Claude | CLOSED 27 Nov: attempt 2 (62adc58) reviewer PASS, 1 H1 |
-| CC | 'Capability claims:' label on /quality, homepage, /forging | Claude | Pushed VflWebsite 7354946 (removeParas op); AWAITING reviewer verify. Homepage and /forging structure unverified; if label persists, Editor delete (Yash) |
+| CC | 'Capability claims:' label on /quality, homepage, /forging | Claude | /quality PASS. Homepage + /forging: attempt 2 pushed (VflWebsite 4fca538, `removeLines` op; label is a `<br>`-separated text line inside one `<p>`, not a block); AWAITING reviewer verify. If it persists = failed twice: Editor delete by Yash |
+| P18 | /forging has 3 DOM H1s (descriptive title, empty `&nbsp;` h1, 'FORGING') | Claude | Pushed 4fca538: empty H1 stripped, 'FORGING' h1 -> p, descriptive H1 kept. AWAITING reviewer verify (expect 1 H1) |
+| Note | Reviewer 'title run-together' on /forging-company-aurangabad | - | Parser artifact: SVG `<title>` elements inside the body, not an SEO bug. Pune H1 contains 'CNC' without a count: allowed |
+| FAQ-LD | FAQPage JSON-LD on blog posts | Claude | DONE 27 Nov: 21/21 via Draft Posts PATCH seoData (VflWebsite 9dfa187); reviewer to confirm live |
 | P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
 | P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |
 | RDSO | Approval reference number | Yash (optional) | Add to L2/B4 posts when supplied |

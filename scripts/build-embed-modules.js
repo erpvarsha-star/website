@@ -36,6 +36,7 @@ const PAGE_IDS = {
   'about-1-1': 'slfrq',
   'forged-machined-components-vf': 'owlox',
   'buying-forgings-from-india': 'ztibo',
+  'steering-suspension-components': 'i5dze',
   'heat-treatment-metallurgy': 'nwsbm',
   'forging-company-aurangabad': 'dpizt',
 };

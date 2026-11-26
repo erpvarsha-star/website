@@ -10,13 +10,13 @@ All company facts are drawn from `FACTS.md` (22 Nov 2026) only. General engineer
 Alloy Steel Forgings Manufacturer in India | EN19, EN24, 42CrMo4 | Varsha Forgings
 
 ### Meta description
-Hot closed-die alloy and carbon steel forgings of 1 to 25 kg from Aurangabad, India: EN19, EN24, 20MnCr5, 42CrMo4, in-house heat treatment, IATF 16949 certified.
+Hot closed-die alloy and carbon steel forgings of 1 to 25 kg from Chhatrapati Sambhajinagar (Aurangabad), India: EN19, EN24, 20MnCr5, 42CrMo4, in-house heat treatment, IATF 16949 certified.
 
 ### Body copy
 
-**H1: Alloy Steel Forgings from Aurangabad, India**
+**H1: Alloy Steel Forgings from Chhatrapati Sambhajinagar (Aurangabad), India**
 
-Varsha Forgings makes alloy steel and carbon steel forgings by hot closed-die forging at its Aurangabad plant, where the Forging Division was established in 1989. Forged components range from 1 kg to 25 kg, and annual capacity is over 12,000 metric tons and over 3 million assorted pieces. Parts are heat treated, tested, machined and, where required, assembled under one IATF 16949 certified supplier, for automotive, commercial vehicle, railway, agriculture, oil and gas, mining, construction, infrastructure and defense customers.
+Varsha Forgings makes alloy steel and carbon steel forgings by hot closed-die forging at its Chhatrapati Sambhajinagar (Aurangabad) plant, where the Forging Division was established in 1989. Forged components range from 1 kg to 25 kg, and annual capacity is over 12,000 metric tons and over 3 million assorted pieces. Parts are heat treated, tested, machined and, where required, assembled under one IATF 16949 certified supplier, for automotive, commercial vehicle, railway, agriculture, oil and gas, mining, construction, infrastructure and defense customers.
 
 **H2: Which alloy and carbon steel grades does Varsha Forgings forge?**
 
@@ -26,7 +26,7 @@ As general engineering background, alloying elements change what a steel can do.
 
 **H2: How are alloy steel forgings made at Varsha Forgings?**
 
-Forging is hot closed-die only. Billets are cut on CNC circular saws, shearing machines or band saws, heated by induction to between 1,100 and 1,250 °C, and forged on presses or hammers. The Aurangabad plant runs presses from 800 T to 2,500 T: a 2,500 T Erie press, two 1,300 T press lines, a recently added 1,000 T press and an 800 T screw press. Friction drop hammers of 3 MT, 2 MT, 1.5 MT and 1 MT handle parts that suit hammer forging.
+Forging is hot closed-die only. Billets are cut on CNC circular saws, shearing machines or band saws, heated by induction to between 1,100 and 1,250 °C, and forged on presses or hammers. The Chhatrapati Sambhajinagar (Aurangabad) plant runs presses from 800 T to 2,500 T: a 2,500 T Erie press, two 1,300 T press lines, a recently added 1,000 T press and an 800 T screw press. Friction drop hammers of 3 MT, 2 MT, 1.5 MT and 1 MT handle parts that suit hammer forging.
 
 Dies are made in-house in H13 and DIN 1.2714 (DB6) die steels. Die design and programming use Creo 3.0, BricsCAD and Dell Cam 3D programming software, and SimuFact Forming 15.0 simulates metal flow before dies are cut. The die shop adds VMC machining, an Etchon laser machine and radial drilling.
 
@@ -77,7 +77,7 @@ Varsha Forgings forges, heat treats and machines components of 1 to 25 kg in Ind
 
 **H1: Forged and Machined Components from One Supplier**
 
-Varsha Forgings forges, heat treats, machines and inspects components under one IATF 16949 certified supplier. Forging is done at the Aurangabad plant, established in 1989, and assemblies are built at the Pune plant, operating since 2007. Buyers deal with one company accountable for the finished part, instead of coordinating a forge, a heat treater and a machine shop separately. Forged components range from 1 kg to 25 kg, with forging tolerance of ±0.5 mm and machining tolerance of ±0.02 mm.
+Varsha Forgings forges, heat treats, machines and inspects components under one IATF 16949 certified supplier. Forging is done at the Chhatrapati Sambhajinagar (Aurangabad) plant, established in 1989, and assemblies are built at the Pune plant, operating since 2007. Buyers deal with one company accountable for the finished part, instead of coordinating a forge, a heat treater and a machine shop separately. Forged components range from 1 kg to 25 kg, with forging tolerance of ±0.5 mm and machining tolerance of ±0.02 mm.
 
 **H2: What does one supplier for forging and machining include?**
 
@@ -130,7 +130,7 @@ Forged steering and suspension components from India: idler arms, drop arms, bal
 
 **H1: Forged Steering and Suspension Components**
 
-Steering and suspension parts carry the loads that keep a vehicle controllable, so they are safety-critical forgings. Varsha Forgings forges these parts at Aurangabad, machines them, and builds assemblies at its Pune plant, which has operated since 2007 as the Maxility suspension and machining division. The company is IATF 16949 certified and supplies OEMs as a Tier 1 and Tier 2 supplier, including Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo.
+Steering and suspension parts carry the loads that keep a vehicle controllable, so they are safety-critical forgings. Varsha Forgings forges these parts at Chhatrapati Sambhajinagar (Aurangabad), machines them, and builds assemblies at its Pune plant, which has operated since 2007 as the Maxility suspension and machining division. The company is IATF 16949 certified and supplies OEMs as a Tier 1 and Tier 2 supplier, including Daimler, Ashok Leyland, MAN Trucks India, Mahindra Trucks & Buses, Paccar, Scania and Tata Daewoo.
 
 **H2: Which steering components does Varsha Forgings make?**
 

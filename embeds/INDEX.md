@@ -60,7 +60,7 @@ Source: each page's `rawHtml` (Firecrawl, maxAge 0, waitFor 8000) contains every
 | /buying-forgings-from-india | 1 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_b0690ef9ff92162af2867790a5648e6d.html | 38 | China comparison column, MOQ, lead times, freight days, tariff/currency claims removed; rewritten as Varsha strengths from FACTS |
 | /heat-treatment-metallurgy | 1 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_e3881114786b55b77006a4a456f6b3f7.html | 0 | No FACTS conflicts found; unchanged |
 | /heat-treatment-metallurgy | 2 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_b4631705d3fd6b5aecfaf145eaf5f48b.html | 3 | Charpy -40 °C and blanket 100% claims removed |
-| /forging-company-aurangabad | 1 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_311c6f7c78757586d5299469d031eab5.html | 0 | No FACTS conflicts found; unchanged |
+| /forging-company-aurangabad | 1 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_311c6f7c78757586d5299469d031eab5.html | 1 | City name: Chhatrapati Sambhajinagar (Aurangabad) (26 Nov 2026) |
 | /forging-company-aurangabad | 2 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_815d1cad9a978c1e52331625961c6167.html | 2 | Weight 1–25 kg; hours to 09:00–18:00, closed Friday |
 | /forging-company-aurangabad | 3 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_00f33c5bca1de0ea4dc9ac61a346eeac.html | 0 | No FACTS conflicts found; unchanged |
 | /forging-company-aurangabad | 4 | https://www-varshaforgings-com.filesusr.com/html/72f2bf_2b516425ead2c189e4c36514951f3c13.html | 0 | No FACTS conflicts found; unchanged |

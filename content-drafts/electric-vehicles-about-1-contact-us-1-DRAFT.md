@@ -9,13 +9,13 @@
 Forged Components for Electric Vehicles | Varsha Forgings, India
 
 ### Meta description
-IATF 16949 certified forged and machined suspension and steering components with heat-number traceability. Products developed for electric vehicles (2024). Aurangabad and Pune, India.
+IATF 16949 certified forged and machined suspension and steering components with heat-number traceability. Products developed for electric vehicles (2024). Chhatrapati Sambhajinagar (Aurangabad) and Pune, India.
 
 ### Body copy
 
 **H1: Forged Components for Electric Vehicles**
 
-Varsha Forgings has developed products for electric vehicles, and supply for electric vehicles is a company milestone dated 2024. The work draws on forging experience since the establishment of the Forging Division in Aurangabad in 1989, and on two plants in Maharashtra: Aurangabad for forging and Pune for assembly. The company is IATF 16949 certified and serves electric transit buses as well as other electric vehicle programmes.
+Varsha Forgings has developed products for electric vehicles, and supply for electric vehicles is a company milestone dated 2024. The work draws on forging experience since the establishment of the Forging Division in Chhatrapati Sambhajinagar (Aurangabad) in 1989, and on two plants in Maharashtra: Chhatrapati Sambhajinagar (Aurangabad) for forging and Pune for assembly. The company is IATF 16949 certified and serves electric transit buses as well as other electric vehicle programmes.
 
 **H2: Which component families does Varsha Forgings forge and machine?**
 
@@ -66,13 +66,13 @@ Send your drawing, material grade and annual volume through our Request for Quot
 Closed-Die Forging: Process, Presses & Capabilities | Varsha Forgings
 
 ### Meta description
-How closed-die forging works at Varsha Forgings: a 2,500 T press, hammers from 1 to 3 MT, in-house heat treatment and metallurgy lab, with heat-number traceability. Aurangabad, India.
+How closed-die forging works at Varsha Forgings: a 2,500 T press, hammers from 1 to 3 MT, in-house heat treatment and metallurgy lab, with heat-number traceability. Chhatrapati Sambhajinagar (Aurangabad), India.
 
 ### Body copy
 
 **H1: Closed-Die Forging at Varsha Forgings**
 
-Closed-die forging shapes a heated steel billet between two dies under high pressure, so the metal fills a precise cavity and takes the shape of the part. Varsha Forgings has run closed-die forging at its Aurangabad plant since 1989, producing alloy steel forgings of 1 kg to 25 kg and machined components for OEMs, including products developed for electric vehicles.
+Closed-die forging shapes a heated steel billet between two dies under high pressure, so the metal fills a precise cavity and takes the shape of the part. Varsha Forgings has run closed-die forging at its Chhatrapati Sambhajinagar (Aurangabad) plant since 1989, producing alloy steel forgings of 1 kg to 25 kg and machined components for OEMs, including products developed for electric vehicles.
 
 **H2: What is closed-die forging?**
 
@@ -117,10 +117,10 @@ Generally yes. Forged parts have directional grain flow and no casting porosity,
 ## /contact-us-1
 
 ### SEO title
-Contact Varsha Forgings | RFQ & Enquiries | Aurangabad & Pune, India
+Contact Varsha Forgings | RFQ & Enquiries | Chh. Sambhajinagar (Aurangabad) & Pune, India
 
 ### Meta description
-Send drawings and RFQs to Varsha Forgings. Forging plant at MIDC Waluj, Aurangabad; assembly plant in Markal, Pune. Call +91 8411000551 or email marketing@varshaforgings.com.
+Send drawings and RFQs to Varsha Forgings. Forging plant at MIDC Waluj, Chhatrapati Sambhajinagar (Aurangabad); assembly plant in Markal, Pune. Call +91 8411000551 or email marketing@varshaforgings.com.
 
 ### Body copy
 
@@ -151,7 +151,7 @@ Include as much of this as you can with your drawing.
 
 **H2: Where are Varsha Forgings' plants?**
 
-**Plant 1 — Forging, Aurangabad**
+**Plant 1 — Forging, Chhatrapati Sambhajinagar (Aurangabad)**
 Plot No. B-7, MIDC Waluj, Chhatrapati Sambhajinagar (Aurangabad) 431136, Maharashtra, India.
 Established in 1989, with 350 employees on a 20,234 m² site. It produces alloy steel forgings and machined components.
 
@@ -161,13 +161,13 @@ Operating since 2007 as the Maxility suspension and machining division, with 150
 
 Both plants can be reached on +91 8411000551 and at marketing@varshaforgings.com.
 
-**Plant hours.** Aurangabad is open 09:00 to 18:00, Saturday to Thursday (closed Friday). Pune is open 09:00 to 18:00, Monday to Saturday (closed Sunday).
+**Plant hours.** The Chhatrapati Sambhajinagar (Aurangabad) plant is open 09:00 to 18:00, Saturday to Thursday (closed Friday). Pune is open 09:00 to 18:00, Monday to Saturday (closed Sunday).
 
 **H2: What can Varsha Forgings make for me?**
 
 We forge, machine and assemble steering and suspension components. Typical parts include idler arms, sector shafts, drop arms, worms, eye ends, spherical ball pins, swing arms, yokes, front wheel hubs, connecting rods, gear blanks, pinions, planet and helical gears, crown wheels and pinions, and wheel carriers. In-house we cover die making, forging, heat treatment, shot blasting, crack testing, grinding, machining, painting and final inspection. A dedicated vendor base adds gear cutting, rubber bonding, stamping, zinc plating, phosphating and anodizing, so a finished part or assembly can come from one supplier.
 
-Forgings of 1 kg to 25 kg are produced at the Aurangabad plant on presses from 800 T to 2,500 T (including a 1,000 T press) and 3 MT, 2 MT, 1.5 MT and 1 MT hammers. Quality checks include a metallurgy lab with a Baird vacuum emission spectrometer, hardness testing, Magnaflux magnetic particle inspection and a standards room with a Faro Arm CMM, and PPAP submission at Levels 1 to 5 is available for new part approvals.
+Forgings of 1 kg to 25 kg are produced at the Chhatrapati Sambhajinagar (Aurangabad) plant on presses from 800 T to 2,500 T (including a 1,000 T press) and 3 MT, 2 MT, 1.5 MT and 1 MT hammers. Quality checks include a metallurgy lab with a Baird vacuum emission spectrometer, hardness testing, Magnaflux magnetic particle inspection and a standards room with a Faro Arm CMM, and PPAP submission at Levels 1 to 5 is available for new part approvals.
 
 **H2: Who do you supply?**
 

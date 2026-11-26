@@ -10,7 +10,7 @@ Target queries: "forging supplier India for Germany", "closed die forgings India
 
 ## H2: Supplying Europe's Automotive and Engineering Industries Since 1989
 
-Varsha Forgings is an IATF 16949-certified closed-die forging manufacturer supplying OEMs and Tier 1 suppliers across Europe, including Germany, Spain, Italy, Portugal and Austria. From our forging plant in Aurangabad and our machining and assembly plant in Pune, we produce forged, machined and assembled components in the 1 kg to 25 kg range — over 12,000 metric tons and more than 3 million pieces per year.
+Varsha Forgings is an IATF 16949-certified closed-die forging manufacturer supplying OEMs and Tier 1 suppliers across Europe, including Germany, Spain, Italy, Portugal and Austria. From our forging plant in Chhatrapati Sambhajinagar (Aurangabad) and our machining and assembly plant in Pune, we produce forged, machined and assembled components in the 1 kg to 25 kg range — over 12,000 metric tons and more than 3 million pieces per year.
 
 European buyers choose Varsha Forgings for one reason above all: documentation depth that matches European expectations. Every batch ships with EN 10204 type 3.1 material certificates (type 3.2 on request), full PPAP submission at Levels 1–5, APQP project management and IMDS entries — the same documentation discipline you would expect from a domestic European forge.
 

@@ -42,7 +42,7 @@ Los envíos a Europa se realizan a través del puerto de JNPT (Nhava Sheva) en c
 
 ## H2: Sobre Varsha Forgings
 
-Varsha Forgings Private Limited es un fabricante indio de forja en matriz cerrada fundado en 1989, con planta de forja en Aurangabad y planta de mecanizado y montaje en Pune. Más del 60 % de la producción se destina a OEMs; entre los clientes figuran Daimler, Ashok Leyland, MAN Trucks India, Scania y Tata Motors. Reconocimientos: Daimler India Best Supplier Award 2016, premios ACMA 2015–2020, Ashok Leyland 2023 e India SME 100 Award 2025 (ganador final entre 27.467 candidaturas). Certificaciones: IATF 16949, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018; aprobación RDSO para Indian Railways.
+Varsha Forgings Private Limited es un fabricante indio de forja en matriz cerrada fundado en 1989, con planta de forja en Chhatrapati Sambhajinagar (Aurangabad) y planta de mecanizado y montaje en Pune. Más del 60 % de la producción se destina a OEMs; entre los clientes figuran Daimler, Ashok Leyland, MAN Trucks India, Scania y Tata Motors. Reconocimientos: Daimler India Best Supplier Award 2016, premios ACMA 2015–2020, Ashok Leyland 2023 e India SME 100 Award 2025 (ganador final entre 27.467 candidaturas). Certificaciones: IATF 16949, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018; aprobación RDSO para Indian Railways.
 
 ## H2: Empiece con un plano
 

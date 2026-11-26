@@ -40,7 +40,7 @@ Der Versand nach Europa erfolgt über den Hafen JNPT (Nhava Sheva) in ISPM-15-ko
 
 ## H2: Über Varsha Forgings
 
-Varsha Forgings Private Limited ist ein seit 1989 bestehender indischer Gesenkschmiedehersteller mit Schmiedewerk in Aurangabad sowie Bearbeitungs- und Montagewerk in Pune. Über 60 % der Produktion gehen an OEMs; zu den Kunden zählen Daimler, Ashok Leyland, MAN Trucks India, Scania und Tata Motors. Auszeichnungen: Daimler India Best Supplier Award 2016, ACMA-Auszeichnungen 2015–2020, Ashok Leyland 2023 und India SME 100 Award 2025 (Finalgewinner aus 27.467 Nominierungen). Zertifizierungen: IATF 16949, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018; RDSO-zugelassen für Indian Railways.
+Varsha Forgings Private Limited ist ein seit 1989 bestehender indischer Gesenkschmiedehersteller mit Schmiedewerk in Chhatrapati Sambhajinagar (Aurangabad) sowie Bearbeitungs- und Montagewerk in Pune. Über 60 % der Produktion gehen an OEMs; zu den Kunden zählen Daimler, Ashok Leyland, MAN Trucks India, Scania und Tata Motors. Auszeichnungen: Daimler India Best Supplier Award 2016, ACMA-Auszeichnungen 2015–2020, Ashok Leyland 2023 und India SME 100 Award 2025 (Finalgewinner aus 27.467 Nominierungen). Zertifizierungen: IATF 16949, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018; RDSO-zugelassen für Indian Railways.
 
 ## H2: Beginnen Sie mit einer Zeichnung
 

@@ -28,6 +28,11 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
+## START HERE (end of 26 Nov session 3)
+1. Follow the model rule strictly: Opus briefs only; executor (Sonnet) does; **reviewer (Haiku) verifies** — Opus never scrapes/greps itself.
+2. Verify the in-progress internal-links release (see website.md HANDOVER) via `reviewer`; revert if broken.
+3. Then: LinkedIn batch 2 scheduling help for Yash, GBP walkthrough once Yash answers, KPI re-check 10 Dec.
+
 ## Update 26 Nov (session 3)
 - Sited 83/100 received; its one finding is already fixed live. **Never ask Yash to run Sited** — he sends results himself.
 - P14 re-checked: still not rendering; data layer correct. Waiting on Yash's Editor Publish click; Wix support text ready in `handover/P14-wix-support-repro.md`.

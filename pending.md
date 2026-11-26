@@ -1,5 +1,17 @@
 # Pending — failed twice or blocked, do not retry without the listed unblock
 
+## OPEN at end of 26 Nov session 3
+| # | Item | Owner | Next step |
+|---|---|---|---|
+| IL | Internal 'Related buyer guides' links (Velo) | Claude | Verify with `reviewer`: check VflWebsite log for 'Related guides links' commits; live-check links + DOM H1 count; revert on regression |
+| P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
+| P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |
+| RDSO | Approval reference number | Yash (optional) | Add to L2/B4 posts when supplied |
+| P10 | CSP = Enterprise upgrade | Yash | Cost decision |
+| LI | LinkedIn batch 2 (12 posts) | Yash / Claude | Post Tue/Wed/Thu from `content-drafts/linkedin-posts-batch2-DRAFT.md` |
+| KPI | Search re-check | Claude | 10 Dec + 24 Dec (queries in PHASE4-PLAN.md) |
+
+
 Rule (owner instruction, 23 Nov 2026): **if a task fails more than once, stop, log it here, and move to the next task.** Review this file at the start of every session; retry an item only when its unblock condition is met.
 
 ## Resolved this session (23 Nov 2026, content-ops pipeline)

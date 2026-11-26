@@ -29,6 +29,8 @@ Visible text cannot be edited by API on this Wix Classic site; never hand Yash c
 
 Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifies against the gate → Opus logs, commits and pushes.
 
+**Common gotcha (owner correction, 26 Nov 2026 — limits were burned):** Opus must NOT run gate checks, greps, Firecrawl scrapes or live verifications itself. Every verification goes to the `reviewer` agent (Haiku). Opus only briefs, decides, logs and commits. Keep Opus turns short.
+
 ## Fact-gathering rule (owner, 22 Nov 2026)
 When a gap or conflict is found (e.g. press sizes, weights, tolerances), ask Yash **one question at a time with multiple-choice answers** (AskUserQuestion), recommended option first. Record each answer in `FACTS.md` immediately with source [Y] and date, commit, then queue the correction everywhere it appears (API for SEO/schema, Yash's click-list for visible text).
 

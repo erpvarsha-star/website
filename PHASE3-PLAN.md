@@ -32,7 +32,7 @@ Created 22 Nov 2026, after Yash connected Wix to GitHub (`erpvarsha-star/VflWebs
 | W0 | ✅ Done (9cf3803) | 49 pages in `baseline/INDEX.md`; 2 empty bodies (/transmission-and-driveline, /electric-mobility) |
 | W1 | ✅ Done | `VELO-ROUTE.md` (c5e5b9d) |
 | W2 | ✅ Done | `BRAND.md` (d37863c) |
-| 26 Nov S3 | ✅ L1/L2 live as blog posts; Sited 83 (heading fix live); P14 open (Yash Editor Publish) | website.md 26 Nov session 3 |
+| 26 Nov S3 | ✅ P14/P12/P16 closed; 21 blog posts live (L1-L8 topics, B1-B10); noindex 2 empty pages; internal links IN PROGRESS | website.md HANDOVER (end of session 3) |
 | W3 | ✅ Drafted (ce78c18); review 4d2a602: 50/60 PASS; 5 true conflicts fixed (10f5a11; w5-embeds 7f64c4b); drafts PASS (review FAILs were non-conflicts) | 60 embeds, 41 corrected (175 edits) in `embeds/`; F28 drafts pass the word-count gate |
 | W4 | ✅ Verified via diag-1: Velo runs server-side (env backend); footer email typo 0 in the no-JS HTML; HtmlComponent.src readable. The first publish predated the code sync. | `baseline/diag-1.md` |
 | W5 | ✅ Live and verified: 17/17 pages clean, embeds swapped, 0 visible DNP hits | `baseline/w5-verify.md`; publish run 45068992337 |

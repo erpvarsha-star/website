@@ -11,7 +11,7 @@
 > - **21 blog posts live:** L1, L2, L5-L8 landing posts + B1-B10 + L3/ES/DE + 2 older. URLs in the log below.
 > - Drafts ready: P13 off-site address text, LinkedIn batch 2 (12 posts, real URLs) in `content-drafts/`.
 > - Search baseline logged in PHASE4-PLAN.md (Varsha not top-10 yet; re-run 10 Dec and 24 Dec).
-> **IN PROGRESS when session ended:** "Related buyer guides" internal links from service pages to the new posts via Velo (executor, stage 1 = /quality, stage 2 = 8 more pages). **First thing next session:** check VflWebsite `git log` for commits "Related guides links"; have the `reviewer` verify live links + H1 counts on /quality, /railway, /steering-suspension-components, /buying-forgings-from-india; revert if broken.
+> **DONE (reviewer PASS 7/7):** "Related buyer guides" internal links from service pages to the new posts via Velo (executor, stage 1 = /quality, stage 2 = 8 more pages). **First thing next session:** check VflWebsite `git log` for commits "Related guides links"; have the `reviewer` verify live links + H1 counts on /quality, /railway, /steering-suspension-components, /buying-forgings-from-india; revert if broken.
 > **Yash's list:** (1) P9 social icons (steps in chat 26 Nov; also in pending.md), (2) tell Claude if a Google Business Profile exists, (3) paste P13 text into outside listings, (4) optional: RDSO approval reference. Apollo/Lusha parked (recommend not now). P10 Enterprise cost decision still open.
 >
 > ## HANDOVER (previous): as of 26 Nov 2026 (two concurrent threads, same account — confirmed fine by Yash). Read `pending.md` first. Growth plan is `PHASE4-PLAN.md`.

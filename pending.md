@@ -3,7 +3,7 @@
 ## OPEN at end of 26 Nov session 3
 | # | Item | Owner | Next step |
 |---|---|---|---|
-| IL | Internal 'Related buyer guides' links (Velo) — LIVE on 7 pages (VflWebsite 2c1f872 + stage 2); /railway, /agriculture skipped (image-only) | Claude | Haiku reviewer verification dispatched 26 Nov; Yash: glance at /quality on phone for layout overlap |
+| IL | Internal 'Related buyer guides' links (Velo) — LIVE on 7 pages (VflWebsite 2c1f872 + stage 2); /railway, /agriculture skipped (image-only) | Claude | ✅ Haiku reviewer PASS 7/7 pages (26 Nov). Yash: glance at /quality on phone for layout overlap |
 | P17 | /automotive-steering-powertrain has 23 DOM H1s (link block); /quality, /steering-suspension-components, /electric-vehicles have 2 | Claude | Velo retag extra H1→p/h2 (homepage pattern); executor + reviewer |
 | P9 | Social Bar: remove FB/IG, WhatsApp → https://wa.me/918411000551 | Yash | Editor: click icons → Set Social Links → delete FB, IG → WhatsApp Link → Web address → Publish |
 | P13 | Off-site listings rename | Yash | Paste `content-drafts/P13-offsite-address-strings-DRAFT.md`; first tell Claude if GBP exists |

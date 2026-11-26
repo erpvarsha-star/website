@@ -17,7 +17,8 @@ Sources: **[P]** company presentation (DOC-20261116-WA0021.pptx) · **[Y]** conf
 | Phone (both plants) | +91 8411000551 | [L] |
 | Email | marketing@varshaforgings.com | [L] |
 | LinkedIn (sameAs) | https://www.linkedin.com/company/varsha-forgings-private-limited/ | [Y] |
-| Facebook / Instagram | **None verified.** Site icons currently point to Wix's own accounts (F10). Do not use them in sameAs. | [L] |
+| Facebook / Instagram | **No real accounts [Y] 23 Nov 2026.** Site icons point to Wix's own accounts — remove the links (don't fabricate a URL); do not use in sameAs. | [Y] |
+| WhatsApp | Click-to-chat should use the real number: https://wa.me/918411000551 (Yash approved adding/fixing WhatsApp if it's standard on peer forging-company sites, 23 Nov 2026) | [Y] |
 
 ## City name [Y] (owner 26 Nov 2026)
 - Write **Chhatrapati Sambhajinagar (Aurangabad)** everywhere the city is named (official spelling since 2023; old name kept in brackets for search). Short form only where space is tight: "Chh. Sambhajinagar (Aurangabad)".
@@ -152,6 +153,7 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **Suspension:** eye end · spherical ball pin · swing arm (RH/LH) · connectors · housing cup · monoshock
 - **EV:** products developed for electric vehicles (2024 milestone)
 - **Also confirmed [Y] 22 Nov 2026:**
+  - **Tie rods [Y] 26 Nov 2026:** Varsha makes tie rods as complete assemblies (a product), and also forges tie rod ends on their own for buyers who want only the forging, not the assembly.
   - Steering & suspension: ball joints · drag links · tie rods · anti-roll bar linkages · axle mounts · swing-arm mounts · steering levers · torque rods · radius rods · V-links
   - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks (**not EV motor parts** [Y])
   - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets

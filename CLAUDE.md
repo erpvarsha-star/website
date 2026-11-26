@@ -27,7 +27,9 @@ Visible text cannot be edited by API on this Wix Classic site; never hand Yash c
 | Reading, auditing, review, verification, read-backs | **Haiku** | `reviewer` agent (`.claude/agents/reviewer.md`) |
 | Drafting, file edits, Wix API writes, everything else | **Sonnet** | `executor` agent (`.claude/agents/executor.md`) |
 
-Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifies against the gate → Opus logs, commits and pushes.
+Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifies against the gate → **Sonnet executor logs (website.md, pending.md, NEXT-SESSION.md, PHASE3-PLAN.md), commits and pushes, as Opus instructs** (owner, 27 Nov 2026). Opus writes no log entries itself.
+
+**Common gotcha (owner correction, 26 Nov 2026 — limits were burned):** Opus must NOT run gate checks, greps, Firecrawl scrapes or live verifications itself. Every verification goes to the `reviewer` agent (Haiku). Opus only briefs and decides; logging, commits and pushes are also done by the executor. Keep Opus turns short.
 
 ## Fact-gathering rule (owner, 22 Nov 2026)
 When a gap or conflict is found (e.g. press sizes, weights, tolerances), ask Yash **one question at a time with multiple-choice answers** (AskUserQuestion), recommended option first. Record each answer in `FACTS.md` immediately with source [Y] and date, commit, then queue the correction everywhere it appears (API for SEO/schema, Yash's click-list for visible text).
@@ -40,6 +42,7 @@ Yash approved pushing to `erpvarsha-star/VflWebsite` main, which **auto-publishe
 - One Wix writer at a time: never run two executors that write to Wix in parallel.
 - Every phase passes a measured gate (script or read-back), never an agent's self-report.
 - Log every change in `website.md`; commit and push after every step. **Also refresh the HANDOVER block at the top of `website.md` and the Status table in `PHASE3-PLAN.md` (owner, 22 Nov 2026) whenever a workstream starts, finishes or blocks, so a new session can resume with nothing missed.**
+- **Never ask Yash to run Sited (owner, 26 Nov 2026).** He runs it on his own schedule and sends the result; measure with Firecrawl/ssr-check meanwhile.
 - Spend over $50 (one-time or recurring) needs the owner's explicit yes. No new tool sign-ups without the owner's ask; Sited (already paid) plus GA4 are the measurement stack.
 - **General engineering explanation is allowed** (e.g. why forgings outperform castings) as long as it isn't a claim about Varsha. Company-specific claims must be in `FACTS.md`.
 - **Ask Yash only on conflicts (owner, 22 Nov 2026: "If there are no conflicts why ask on data that is there").** A pre-existing live claim that does not conflict with `FACTS.md` or the DO NOT PUBLISH table stays as is, without questioning; record it in `FACTS.md` as [L]. Claims that *conflict* with `FACTS.md`, or break DO NOT PUBLISH, are fixed straight away; ask only when the conflict can't be resolved from `FACTS.md`.

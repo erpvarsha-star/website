@@ -14,6 +14,8 @@
 >
 > **City rename (26 Nov 2026, owner GO): steps 1-4 DONE on `erpvarsha-star/VflWebsite` branch `rename-csn` (not on main).** Source edits, server-side rule (layer-3) with unit test, 10 SEO items and 3 blog posts already written to Wix (SEO tags render after the next publish). Step 5 (Opus merges `rename-csn`, publishes, Haiku re-scan) is next. Open: P11-P13 in `pending.md`. Details: `AURANGABAD-RENAME-PLAN.md` execution status.
 >
+> - **City rename (26 Nov):** "Chhatrapati Sambhajinagar (Aurangabad)" is live on visible text across all 55 pages, the footer and the blogs (`AURANGABAD-RENAME-PLAN.md`). Open: P14 (renamed SEO tags saved but not rendering), P11 (legacy FAQ edits, Yash), P13 (off-site, Yash).
+>
 > **Open, in order** (details in `pending.md` and `PHASE4-PLAN.md`)
 > 1. **Yash, 5 minutes (P4b):** FAQ app → edit "What forging processes does Varsha Forgings offer?" → "Varsha Forgings provides hot closed-die forging solutions supported by its press and hammer systems." → Save.
 > 2. **Yash: run Sited.** Everything API-fixable is live and verified; the only expected residue is the Maharashtra FAQ sentence until P4b is done.
@@ -399,3 +401,5 @@ Branch `rename-csn` on VflWebsite (not merged, main untouched). Commits: 6aa94e3
 - **Housekeeping:** `ops/rename-csn.js` runs only while `ops/payloads/rename-csn-job.json` exists; the file was deleted after apply so the normal pipeline resumes (a normal run afterwards: ALREADY_EXISTS for all payload posts, FAQ 500 clean). Generator re-run rewrites `src/pages/*` wiring cosmetically (pre-existing); keep only intended page diffs.
 
 **Correction to the entry above (checked via git, 26 Nov 2026):** the note "Branch `rename-csn` on VflWebsite (not merged, main untouched)" is stale — `rename-csn` (tip d07e5eb) is now an ancestor of `main` (tip 1d103cb), confirmed via `git merge-base --is-ancestor`. The city-rename work is merged and live. Noting this here since I (a second, concurrent session on this account) don't want to rewrite that entry's narrative — just flagging that "main untouched" no longer holds by the time this was read.
+### 2026-11-26: City rename to Chhatrapati Sambhajinagar (Aurangabad)
+Owner decisions are in FACTS.md: official spelling, short form for titles, URL kept. Audit: 510 live hits. Release VflWebsite d07e5eb covered source edits, the server-side rule (25/25 tests) and 3 blog posts; content-ops patched SEO on 10 items. Re-check after republish 78dd6ec: footer 0, body 0 (outside the FAQ widget), blogs 0. 49 hits remain: 31 SEO tags saved but not rendered (P14, parked after 2 publishes), 15 legacy FAQ widget items or their mirrored JSON-LD (P11, owner), 2 FAQ-widget "plant visit" answers, and the homepage addressLocality (part of P14).

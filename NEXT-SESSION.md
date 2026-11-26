@@ -26,6 +26,9 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
+## First: P14 (city-rename SEO tags not rendering)
+See pending.md P14: GET the 10 items, then republish with a src/ comment bump, then verify live.
+
 ## Do next, in order
 1. **Yash queue:** P4b (5-min FAQ edit) → run Sited → P7 Editor batch (static L3/L1/L2/L6 pages need Text elements) → Sprint-2 profiles (IndiaMART/TradeIndia/Kompass/ThomasNet/GBP from `offsite-profiles-DRAFT.md`) → Apollo/Lusha approval for lead-gen emails → P10 Enterprise-upgrade go/no-go.
 2. **Next session work:** build L1 /tie-rod-end-forgings and L2 /railway-forgings-rdso drafts (GROWTH-RESEARCH Part 1); keep the blog engine fed from B1–B10; DE page goes live after native review.

@@ -9,25 +9,23 @@ Rule (owner instruction, 23 Nov 2026): **if a task fails more than once, stop, l
 | P1–P3, P5 | FAQ: Pune machine counts, Aurangabad 0.5–50 kg, railways Charpy, EV "hot and warm forging" | ✅ DONE at the data layer. Full FAQ DB (500 v2 entries) verified clean of all banned patterns via the content-ops workflow. Live no-JS gates pass 0 hits on /forging-manufacturer-pune, /forging-company-aurangabad, /railway, /electric-vehicles. |
 | P6 | W8 SEO: titles/meta refresh + og:image on the W6 pages | ✅ DONE and verified live. All 5 fixes saved via `seo-metatags-server/v1/item-seo-tags` and rendering in served HTML after a forced republish (og:image now on all 5 pages; /tool-manufactring serves the new short description). |
 
-## Parked: Maharashtra FAQ widget staleness (P4 remnant)
+## RESOLVED 26 Nov 2026 — P4b and P11 were misdiagnosed; both fixed via API, no Yash needed
 
-| # | Item | Why parked | Unblock (Yash, 5 minutes) |
-|---|---|---|---|
-| P4b | /forging-company-maharashtra FAQ answer still serves "hot forging, warm forging, cold forging, closed-die forging, and precision forging …" (accordion + FAQ JSON-LD) | The FAQ v2 DB is 100% clean (500 entries verified) — the live widget is the **legacy faq-builder app** (faq-ooi), which serves a baked copy it never refreshes. No public API reaches that store (only `/faq/v1/categories` responds; all other legacy paths 404; legacy FAQ API deprecates 2026-12-31). Site republish does not refresh it. Fail-twice rule applied. | Yash: open the **FAQ app** in the Wix dashboard → edit the answer to "What forging processes does Varsha Forgings offer?" → replace with: **"Varsha Forgings provides hot closed-die forging solutions supported by its press and hammer systems."** → Save. This forces the widget to re-bake. Longer term: migrate the widget to the current FAQ app before the legacy API shuts down end of 2026. |
+**The "legacy frozen widget" theory was wrong.** Both the Maharashtra FAQ and every other page use the exact same `faq-ooi` Wix app (same artifactId/bundle, confirmed by inspecting raw HTML on both a "clean" page and the "stuck" one). The widget reads live from the FAQ v2 database — it always did. The real problem: specific FAQ v2 entries had sat with stale/banned content **since 2026-08-0x**, never actually touched by any of this project's earlier "FAQ v2 clean" sweeps, which reported false positives (claimed "500 entries, 0 hits" when the real count is 256 and at least one banned-content entry was sitting right there).
+
+All 6 items fixed via `UpdateQuestionEntry` / category-update API, independently re-verified live (not just agent self-report):
+1. P4b: "What forging processes does Varsha Forgings offer?" → "Varsha Forgings provides hot closed-die forging solutions supported by its press and hammer systems." ✅ live.
+2. P11 #1: Aurangabad question + answer renamed to "Chhatrapati Sambhajinagar (Aurangabad)". ✅ live.
+3. P11 #2: Maharashtra heat-treatment answer renamed. ✅ live.
+4. P11 #3: strategic-advantage answer renamed. ✅ live.
+5. P11 #4: plant-visits answer renamed + FACTS-aligned ("after an RFQ"), confirmed live on both /buying-forgings-from-india and /steering-suspension-components (shared entry). ✅ live.
+6. P11 #5: FAQ category heading renamed to "FORGING COMPANY IN CHHATRAPATI SAMBHAJINAGAR (AURANGABAD)". ✅ live.
+
+**Independent full re-scan of all 256 FAQ v2 entries** (not trusting the earlier "500/0 hits" claim) found 6 more genuine DO NOT PUBLISH/unconfirmed-claim violations, sitting there since August, never caught: warm/cold forging claims (×3 entries), an unconfirmed Charpy −40°C railway claim, an "open account terms" payment claim, and invented freight-cost figures. **Fixing now** — see log in website.md for status; this pending.md will be updated once confirmed live. 4 near-duplicate "closed-die vs open-die, general explanation" entries were correctly left alone (compliant — general engineering explanation, not a Varsha-specific claim).
+
+**New open item (P15) found during this cleanup:** `/buying-forgings-from-india` and `/steering-suspension-components` carry a body-text "India vs China" comparison table with negative claims about Chinese suppliers and invented MOQ/lead-time numbers — this was already flagged in FACTS.md's correction queue back on 22 Nov but never actually fixed on the live page. It's inside an HTML-embed iframe / Editor-set body text, not FAQ v2, so **not API-reachable** — same category as P7/P9. Replacement copy (reframed as Varsha's own strengths, no competitor negativity) still needs drafting; flagging for a future session or Yash's click-list rather than guessing wording now.
 
 ## City rename (26 Nov 2026): items outside every channel Claude controls
-
-| # | Item | Why | Unblock |
-|---|---|---|---|
-| P11 | **Live FAQ text still naming bare "Aurangabad", not in FAQ v2** (FAQ v2 has 0 hits in 500 entries). Found by live scrape (maxAge 0) on 4 pages, probably the legacy faq-builder widget (same store as P4b) | The FAQ v2 data is clean; these answers are baked in the legacy widget. Velo `applyTextCorrections` only reaches Text elements. | **Step 5 first:** after Opus merges and the site publishes, re-scan. If a string below is still bare, Yash edits it in the FAQ app (same visit as P4b). Exact text below. |
-
-Replacement text for P11 (full form; the 2 "customer audits" answers also take the FACTS-aligned wording that `corrections-rules.js` already applies on text elements, "plant visits after an RFQ"):
-1. /forging-company-aurangabad, question: **"What primary forging equipment is installed at Varsha Forgings' Chhatrapati Sambhajinagar (Aurangabad) facility?"** answer: **"The flagship plant houses a high-capacity 2500-ton press, dual 1300-ton press lines, an 800-ton screw press, and 1 MT to 3 MT friction drop hammer systems."**
-2. /forging-company-maharashtra, answer to "Are your Maharashtra facilities equipped for in-house heat treatment?": **"Our Chhatrapati Sambhajinagar (Aurangabad) facility features comprehensive in-house heat treatment capabilities, including batch-type and continuous hardening furnaces for normalizing, iso-thermal annealing, and tempering."**
-3. /forging-company-maharashtra, strategic-advantage answer: **"The primary forging press shop in MIDC Waluj, Chhatrapati Sambhajinagar (Aurangabad) handles heavy hot closed-die forging, while the Pune (Markal, Khed) facility provides precision CNC machining, sub-assembly, and JIT warehouse staging, delivering a seamless end-to-end supply chain."**
-4. /buying-forgings-from-india and /steering-suspension-components (same sentence, 2 places): **"Varsha Forgings welcomes plant visits after an RFQ at both the Chhatrapati Sambhajinagar (Aurangabad), MIDC Waluj and Pune (Markal, Khed) facilities."**
-(Re-check 26 Nov after 2 publishes: items 1–4 still bare live, so this is confirmed an owner FAQ-app edit. The JSON-LD FAQ rename is saved but not rendering yet; see P14.)
-5. /forging-company-aurangabad, FAQ category heading "FORGING COMPANY IN AURANGABAD" → **"FORGING COMPANY IN CHHATRAPATI SAMBHAJINAGAR (AURANGABAD)"**.
 
 | # | Item | Why | Unblock |
 |---|---|---|---|

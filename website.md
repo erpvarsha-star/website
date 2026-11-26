@@ -425,3 +425,17 @@ Picked back up after confirming with Yash that the parallel thread (city-rename 
 - **Status: genuinely stuck.** Two root-cause attempts exhausted per the fail-twice rule. Parked in `pending.md` with a suggested next diagnostic (one Editor-triggered publish from Yash, to test whether this is a CLI-publish-specific gap worth reporting to Wix) rather than a third blind guess.
 
 No other files touched; `richtext.js`'s comment bump is harmless and left in place (it's accurate — it genuinely was pushed to test the re-bake).
+
+### 2026-11-26 (continued) — P4b/P11 misdiagnosis found and fixed; FAQ v2 "500 clean" claim debunked
+
+Yash asked why P4b/P11 needed him, pushed back, and asked for the FAQ app/widget migration to be scoped and built (Opus plans, Sonnet executes, Haiku reviews). Scoping the migration led to a bigger discovery: **there is no legacy-vs-current app split.** Inspected raw HTML on both the "stuck" Maharashtra page and a normal page — both use the identical `faq-ooi` Wix app (same artifactId, same bundle). The widget reads live from the FAQ v2 database; it always did. The actual bug: 6 specific FAQ v2 entries + 1 category title had sat with stale/banned content since **2026-08-0x**, never touched by any later "FAQ v2 clean" claim.
+
+**Fixed via API (Sonnet executor, independently re-verified live via Firecrawl, not just self-report):**
+- P4b: "forging processes" answer — banned warm/cold forging text replaced with FACTS-aligned hot-closed-die-only wording.
+- P11 #1–5: all renamed to "Chhatrapati Sambhajinagar (Aurangabad)" (2 FAQ answers, 1 question+answer, 1 shared plant-visits answer rendering correctly on both pages that use it, 1 category heading).
+
+**Independent full re-scan of all 256 FAQ v2 entries** (not 500 as previously claimed — that count itself was wrong) against every FACTS.md DO NOT PUBLISH / unconfirmed-claim rule. Found 6 more genuine violations sitting there since August, never caught by any earlier sweep: 2 duplicate warm/cold-forging claims, 1 EV warm-forging claim, 1 unconfirmed Charpy −40°C railway claim, 1 "open account terms" payment claim, 1 invented freight-cost figure. 4 near-duplicate "closed-die vs open-die, general explanation" entries were correctly identified as compliant (general engineering explanation, not a Varsha-specific claim) and left untouched. Dispatched a second executor pass to fix the 6 genuine violations — status to follow once it reports back.
+
+**New open item (P15):** the /buying-forgings-from-india and /steering-suspension-components "India vs China" body-text comparison table (negative competitor claims + invented MOQ/freight numbers) was flagged in FACTS.md's correction queue back on 22 Nov but was never actually fixed — it's Editor-only body text inside an HTML embed, not FAQ v2. Logged in pending.md; replacement copy not yet drafted.
+
+**Lesson for future sessions:** a prior session's "N entries, 0 hits, verified clean" claim is not self-evidently trustworthy — this session found it was wrong twice (wrong total count, and a live banned-content hit that should have been caught). Re-verify data-layer claims independently (direct API GET, not just trusting a logged scan result) before treating something as closed, especially before telling the owner an item needs their manual intervention.

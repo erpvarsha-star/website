@@ -28,9 +28,13 @@
 - Wix **reuses the draft id for the published post** — any draft purge must skip ids present in the posts inventory.
 - New posts may serve body client-side only at first (curl shows shell; headless browser shows all). Don't mistake that for a failed publish.
 
+## Update 26 Nov (session 3)
+- Sited 83/100 received; its one finding is already fixed live. **Never ask Yash to run Sited** — he sends results himself.
+- P14 re-checked: still not rendering; data layer correct. Waiting on Yash's Editor Publish click.
+
 ## First: P14 re-check, then the rest
 1. Re-scrape `/forging-company-aurangabad?nc=<new>` (Firecrawl maxAge 0). If the `<title>` now says "Chh. Sambhajinagar (Aurangabad)", P14 fixed itself: update pending.md, then do P12. If still bare, ask Yash for the one Editor Publish click, or write up the Wix support repro (API GET new value; 3 CLI publishes later live HTML old).
-2. Ask Yash to run Sited (everything API-fixable is live) and send the new score.
+2. ~~Ask Yash to run Sited~~ — removed by owner, 26 Nov.
 
 ## Do next, in order
 1. Yash queue: P9 (2 min) -> P7 Editor batch -> Editor Publish click for P14 diagnostic -> Sprint-2 profiles and LinkedIn photos -> Apollo/Lusha yes/no -> P10 cost decision.

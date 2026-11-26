@@ -1,7 +1,7 @@
 # L1 Landing Page DRAFT — /tie-rod-end-forgings
 **Status: DRAFT for owner review. Not live.** All facts from FACTS.md [P][Y][L] (source tags in the audit table at the end). Nothing from the DO NOT PUBLISH table, hot closed-die only, 1–25 kg, "Since 1989".
 Target query: "tie rod end forging manufacturer India". Secondary: "tie rod forgings India", "steering linkage forgings supplier".
-**Owner check before publish:** FACTS.md lists "tie rods", "drag links" and "ball joints" as confirmed products. It does not use the words "tie rod end". The copy below says "tie rods and tie rod ends" in a few places; please confirm that tie rod ends are made, or tell me to cut that wording.
+**Owner confirmed 26 Nov 2026 [Y]:** Varsha makes complete tie rod assemblies and also supplies tie rod end forgings on their own (forging only, no assembly). Copy cleared on this point.
 **Build note:** new page, so it needs one Text element (P7 lesson). The JSON-LD goes in the page's SEO tags via API, not in the visible body.
 
 ---
@@ -19,7 +19,7 @@ Tie Rod End Forgings from India: Hot Closed-Die, Traceable, PPAP-Ready
 
 A tie rod end connects the steering rack or drag link to the steering knuckle. It carries every steering input and every road shock, and it must not fail. That is why buyers specify forged parts for this job: hot closed-die forging aligns the grain flow of the steel with the shape of the part, which gives better fatigue life than a casting of the same size.
 
-Varsha Forgings Private Limited has made hot closed-die forgings since 1989. Our steering and suspension range includes tie rods and tie rod ends, drag links, ball joints, steering levers, steering knuckles, idler arms, drop arms, anti-roll bar linkages, torque rods, radius rods and V-links. We forge components from 1 kg to 25 kg at our plant in Chhatrapati Sambhajinagar (Aurangabad).
+Varsha Forgings Private Limited has made hot closed-die forgings since 1989. We supply complete tie rod assemblies, and we also forge tie rod ends on their own for buyers who need only the forging. Our steering and suspension range also includes drag links, ball joints, steering levers, steering knuckles, idler arms, drop arms, anti-roll bar linkages, torque rods, radius rods and V-links. We forge components from 1 kg to 25 kg at our plant in Chhatrapati Sambhajinagar (Aurangabad).
 
 ## H2: Grades We Forge
 

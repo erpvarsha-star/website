@@ -153,6 +153,7 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **Suspension:** eye end · spherical ball pin · swing arm (RH/LH) · connectors · housing cup · monoshock
 - **EV:** products developed for electric vehicles (2024 milestone)
 - **Also confirmed [Y] 22 Nov 2026:**
+  - **Tie rods [Y] 26 Nov 2026:** Varsha makes tie rods as complete assemblies (a product), and also forges tie rod ends on their own for buyers who want only the forging, not the assembly.
   - Steering & suspension: ball joints · drag links · tie rods · anti-roll bar linkages · axle mounts · swing-arm mounts · steering levers · torque rods · radius rods · V-links
   - Engine & driveline: crankshafts · connecting rods · steering knuckles · reverse gears · clutch bodies · differential gear blanks (**not EV motor parts** [Y])
   - Railway: bogie guide links · traction rods · brake levers · drawbar hooks · damper brackets

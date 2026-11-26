@@ -30,7 +30,9 @@
 
 ## Update 26 Nov (session 3)
 - Sited 83/100 received; its one finding is already fixed live. **Never ask Yash to run Sited** — he sends results himself.
-- P14 re-checked: still not rendering; data layer correct. Waiting on Yash's Editor Publish click.
+- P14 re-checked: still not rendering; data layer correct. Waiting on Yash's Editor Publish click; Wix support text ready in `handover/P14-wix-support-repro.md`.
+- P13 off-site address text drafted (`content-drafts/P13-offsite-address-strings-DRAFT.md`) for Yash.
+- L1 and L2 drafts gated and fact-cleared; next: publish via the blog channel (as L3), then blog B1-B10.
 
 ## First: P14 re-check, then the rest
 1. Re-scrape `/forging-company-aurangabad?nc=<new>` (Firecrawl maxAge 0). If the `<title>` now says "Chh. Sambhajinagar (Aurangabad)", P14 fixed itself: update pending.md, then do P12. If still bare, ask Yash for the one Editor Publish click, or write up the Wix support repro (API GET new value; 3 CLI publishes later live HTML old).

@@ -1,6 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
 > ## HANDOVER: as of 26 Nov 2026, end of session 3 (READ THIS FIRST)
+> **IN PROGRESS (27 Nov ~01:30 IST), first attempt FAILED, not yet fail-twice:**
+> 1. **QS1** /quality slide-1: VflWebsite aa1e9cb + 000d668 pushed, publish green, but reviewer rv2 (Firecrawl maxAge 0) shows served HTML still has 'Capability claims:' and 2 DOM H1s.
+> 2. **P17** /automotive-steering-powertrain: aab379e retagged 22 h1 items to p, but served HTML still 23 DOM H1s. /steering-suspension-components and /electric-vehicles already 1 DOM H1 (earlier counts were warmup-JSON copies).
+> 3. Next: executor diagnoses (likely client-only el.html vs SSR; compare Company.plew4.js; page-code error; CDN cache), one more attempt, reviewer verifies; if it fails again, pending.md as Editor-only. Also open: 'Capability claims:' label on homepage and /forging (see pending.md CC).
+>
 > **Rule breach this session:** Opus did verifications itself instead of the Haiku `reviewer` → limits burned. Next session: follow the model rule strictly (see CLAUDE.md gotcha).
 > **DONE + verified live today:**
 > - P14 CLOSED: renamed SEO titles/meta now served via Velo override (`src/public/seo-override.js`, generator `ops/tools/gen-seo-override.js`, VflWebsite e18884e, 484469a). Yash's Editor Publish did not help.
@@ -64,6 +69,12 @@ This file is the single working log for this fix cycle. Every action taken is lo
 ---
 
 ## Action Log
+
+### 2026-11-27 ~01:30 IST - QS1/P17 first attempt FAILED (logged by Opus)
+- Executor pushed to VflWebsite main: aa1e9cb (Quality.t6wcz.js: Velo rewrite of slide-1 text in comp-mu59fb5u, remove 'Capability claims:'), aab379e (tfegr: 22 'forged' link items comp-mtu3.../comp-mttzn3j4 h1->p), 000d668 (Quality slide-1 heading comp-mu59fb5s h1->h2). All publish runs green.
+- Haiku reviewer rv2 (Firecrawl maxAge 0): FAIL. Served HTML still OLD: /quality has 'Capability claims:' and 2 DOM H1s; /automotive-steering-powertrain 23 DOM H1s. PASS: titles and related-guide links. Mobile screenshot inconclusive.
+- /steering-suspension-components and /electric-vehicles already had 1 DOM H1 (P17 counts there were warmup-JSON copies).
+- First failure only. Hypotheses and next step in pending.md (QS1, P17, CC).
 
 ### 2026-11-22
 - **Published `/precision-forging-cost` as a Wix Blog post** (Owner's Path — no Editor page creation). SEO title/meta/FAQ schema set via API.

@@ -32,7 +32,7 @@
 **Scheduled restart:** task 'Varsha site work resume 2:15 IST' (trig_01PTT36Du9dsPRy9JdovtZzo) fires a fresh session at 27 Nov 02:15 IST with the full task list. It was created WITHOUT connectors (Firecrawl/Wix) — Yash should add them in claude.ai scheduled tasks, else the reviewer cannot scrape live pages.
 **In flight at handover:** executor fixing /quality slide-1 clipped heading (owner phone screenshot) + P17 extra H1s; needs reviewer verification.
 1. Follow the model rule strictly: Opus briefs only; executor (Sonnet) does; **reviewer (Haiku) verifies** — Opus never scrapes/greps itself.
-2. Verify the in-progress internal-links release (see website.md HANDOVER) via `reviewer`; revert if broken.
+2. **Diagnose QS1/P17 (first attempt failed 27 Nov):** VflWebsite aa1e9cb, aab379e, 000d668 are live and green, but the served HTML is unchanged ('Capability claims:' on /quality; 2 DOM H1s there; 23 on /automotive-steering-powertrain). Executor to diagnose: (1) Velo el.html/retag client-only vs SSR (compare Company.plew4.js homepage H6 retag, wixWindow.rendering), (2) onReady error in 'Automotive Steering & Powertrain.tfegr.js', (3) CDN cache. One more attempt; reviewer (Haiku) verifies; if it fails again, move to pending.md as Editor-only. Also 'Capability claims:' on homepage and /forging.
 3. Then: LinkedIn batch 2 scheduling help for Yash, GBP walkthrough once Yash answers, KPI re-check 10 Dec.
 
 ## Update 26 Nov (session 3)

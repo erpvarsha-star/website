@@ -2,7 +2,8 @@
 
 > ## HANDOVER: as of 26 Nov 2026, session 3 (latest first; older handover text below is history)
 > - **Sited re-run (owner, 26 Nov): 83/100.** Only finding (homepage H1->H6) is already fixed live (verified: 1 H1, 10 H2, 0 H3-H6). **Never ask Yash to run Sited again** (CLAUDE.md rule).
-> - **P14 still open:** API stores the renamed SEO titles (tags + resolvedTags) on dpizt/kihd6/n1h72; live HTML still serves old titles. Waiting on Yash's one Editor Publish click; else Wix support repro.
+> - **P14 CLOSED via Velo `wix-seo-frontend` override** (VflWebsite e18884e, 484469a): 10 pages now serve the renamed SEO head; future SEO edits on those 10 pages go through `ops/tools/gen-seo-override.js` (Velo overrides the API values). Yash's Editor Publish did not help, which ruled out the publish route.
+> - **Running:** P12 shorter titles + noindex on /electric-mobility and /transmission-and-driveline (P7 decision: keep /product, hide the 2 empty pages).
 > - **LIVE 26 Nov:** L1 tie-rod-end post (https://www.varshaforgings.com/post/tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready) and L2 RDSO railway post (https://www.varshaforgings.com/post/rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable), via content-ops (VflWebsite f8159a6, results 6e020f9). Verified by Firecrawl maxAge 0: body renders, all claims in FACTS. 7 posts live.
 > - **Drafted:** P13 off-site address text (for Yash), B1 forging vs casting vs machining (gated, publish next via content-ops).
 >
@@ -479,4 +480,5 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - **L1 + L2 published as blog posts (owner GO 26 Nov).** content-ops run-2026-11-26T18-44-36: both PUBLISHED_BARE_200; seoFixes all NO_CHANGE_NEEDED; 3 older posts ALREADY_EXISTS. Live check (Firecrawl maxAge 0, ?nc=261126c): both render full body; claims checked against FACTS (60% OEM, OEM list, RDSO, 100% MPI, tolerances, 48 h single drawing). Stainless denials removed for BLOG_BANNED. Live slugs: tie-rod-end-forgings-from-india-hot-closed-die-traceable-ppap-ready, rdso-approved-railway-forgings-from-india-hot-closed-die-fully-traceable.
 - B1 draft committed (1,244 words, 0 DNP, all Varsha claims traced to FACTS).
 - Noted: Spanish post live slug ends in "-2" (possible earlier duplicate/deleted original); social bar still links facebook.com/wix (P9, Yash).
+- P14 closed via Velo SEO override (stage 1 dpizt, stage 2 nine more; lint clean, city-rename tests 25/25). Opus independently verified /forging-company-aurangabad and /contact-us-1 live. Note: /tool-manufactring meta says "CNC and VMC machining" (capability mention, no count) — allowed; counts stay banned.
 

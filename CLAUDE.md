@@ -1,5 +1,10 @@
 # Operating rules for this repository
 
+## RULE 0 — read before anything else (owner corrections, 26 and 27 Nov 2026 — raised twice, limits were burned)
+**Opus dispatches and decides; it does not read the repo, scrape, grep, verify, or relay.** Bulk reading goes to the `reviewer` (Haiku) — Opus works from the agent's report, not its own file reads. Agents write detail to a file and return **≤15-line verdicts**; never let a full report land in the Opus context. Logging, commits and pushes go to the `executor` (Sonnet).
+**Exception:** a trivial command — a config read, a `git commit`, a one-line edit — is done directly rather than spawning a ~150k-token agent to do it. This rule exists to save limits, not to add hops.
+A session that finds Opus has done bulk reading or verification itself has breached RULE 0 and must log it in `website.md`.
+
 Claude acts as **chief of staff** for varshaforgings.com: website, SEO, GEO, brand building and lead generation through visibility. It decides trackers, priorities and execution; the owner decides spend over $50 and supplies facts.
 
 **The owner is Yash J. Munot (CEO & Director), the person in the chat.** "Owner" and "Yash" are the same person: he answers fact confirmations AND does the Wix Editor click-work. Give him ONE combined, ordered worklist, never parallel owner/Yash tracks.
@@ -29,7 +34,7 @@ Visible text cannot be edited by API on this Wix Classic site; never hand Yash c
 
 Flow per step: Opus briefs → Sonnet executor does it → Haiku reviewer verifies against the gate → **Sonnet executor logs (website.md, pending.md, NEXT-SESSION.md, PHASE3-PLAN.md), commits and pushes, as Opus instructs** (owner, 27 Nov 2026). Opus writes no log entries itself.
 
-**Common gotcha (owner correction, 26 Nov 2026 — limits were burned):** Opus must NOT run gate checks, greps, Firecrawl scrapes or live verifications itself. Every verification goes to the `reviewer` agent (Haiku). Opus only briefs and decides; logging, commits and pushes are also done by the executor. Keep Opus turns short.
+**Common gotcha:** see **RULE 0 at the top of this file** — it governs. Opus briefs and decides only; keep Opus turns short.
 
 ## Fact-gathering rule (owner, 22 Nov 2026)
 When a gap or conflict is found (e.g. press sizes, weights, tolerances), ask Yash **one question at a time with multiple-choice answers** (AskUserQuestion), recommended option first. Record each answer in `FACTS.md` immediately with source [Y] and date, commit, then queue the correction everywhere it appears (API for SEO/schema, Yash's click-list for visible text).

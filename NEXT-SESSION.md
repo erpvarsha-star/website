@@ -1,5 +1,8 @@
 # Brief for the next session (updated 26 Nov 2026, end of long session)
 
+## ⚠ RULE 0 FIRST — model discipline (owner, raised twice; limits were burned)
+**Opus dispatches and decides. It does not read the repo, scrape, grep, verify, or relay.** Bulk reading → `reviewer` (Haiku). Edits, logs, commits, pushes → `executor` (Sonnet). Agents write detail to a FILE and return **≤15-line verdicts** — never let a full agent report land in the Opus context. Exception: a trivial command (config read, `git commit`, one-line edit) is done directly rather than spawning a ~150k-token agent for it. Full text: **RULE 0 at the top of `CLAUDE.md`**. Breaching it means logging the breach in `website.md`.
+
 **Standing rules (CLAUDE.md):** fail twice → `pending.md`, move on · chief-of-staff growth mandate, plan in `PHASE4-PLAN.md` · `pending.md` is owned by the site-fix workstream (Claude Code updates it for P10 etc.) — do not rewrite it from chat sessions.
 
 **Branch note:** sessions get a fresh branch name each time — check `CLAUDE.md`'s "Git Development Branch Requirements" for the current one; don't assume the name below is still right.

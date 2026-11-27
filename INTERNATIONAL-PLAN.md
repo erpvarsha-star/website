@@ -18,13 +18,13 @@ The audit's architecture, off-site entity and conversion findings are valuable a
 | R1 | Weight envelope 0.5-50 kg | 1-25 kg | [Y] 22 Nov | Owner-confirmed range; 0.5-50 kg is on the correction queue as wrong text |
 | R2 | 60+ CNC turning centers, 17 VMCs, 2 HMCs, 5 gear hobbers, broaching as in-house | No machine counts, ever. Broaching is a vendor process; capacity is split between in-house and a vendor base | DO NOT PUBLISH [Y] 22 Nov | Owner decision: describe capability, not numbers |
 | R3 | Machining tolerance +/-0.01 mm | Forging +/-0.5 mm, machining +/-0.02 mm | [Y] 22 Nov | +/-0.01 mm is on the correction queue |
-| R4 | CQI-9 heat-treatment compliance | Certifications held: IATF 16949, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, PPAP L1-5, APQP, IMDS, RDSO. CQI-9 absent | [Y] | Not held or not confirmed; asked as question 5(b) |
-| R5 | ARAI-certified sealed ball joints | Not in FACTS | none | No source; asked as question 5(c) |
-| R6 | PED 2014/68/EU and AD 2000-Merkblatt W0 | Not held. ASME flange ratings also on the not-confirmed list | none | No approval on record; asked as question 5(h) |
+| R4 | CQI-9 heat-treatment compliance | **SUPERSEDED 27 Nov 2026:** owner confirms CQI-9 HELD; publish as held with no dates or revision numbers [Y] | [Y] | Was rejected as unconfirmed; now owner-confirmed. Not a conflict any more |
+| R5 | ARAI-certified sealed ball joints | **SUPERSEDED 27 Nov 2026 in part:** ARAI claim approved as "all safety-critical parts used in our assemblies have been ARAI certified", WITHOUT part names [Y] | [Y] | The general claim is now published-eligible; the specific "sealed ball joints" wording stays rejected because it names a part |
+| R6 | PED 2014/68/EU and AD 2000-Merkblatt W0 | **CLOSED 27 Nov 2026: NOT APPLICABLE, Varsha is automotive only [Y].** ASME flange ratings remain on the not-confirmed list | [Y] | Closed question; never raise again |
 | R7 | EN / UIC / AAR railway standards | "Not held, never claim." Railway claim is RDSO only | [Y] | Direct conflict |
 | R8 | 100% UT coverage | Only 100% MPI on safety-critical parts is confirmed; UT is a test method used, not a 100% claim | [Y] | "100% UT" is on the correction queue |
 | R9 | 32 MT axle loads, 30+ year life | Unconfirmed, remove | [Y] | On the correction queue and in the Processes "Not confirmed" list |
-| R10 | 5 MW metered solar | 150 kW rooftop solar | [P] | Conflict. The 5 MW figure comes from yashmunot.com and may belong to another entity; asked as question 5(a) |
+| R10 | 5 MW metered solar | **SUPERSEDED 27 Nov 2026:** Varsha owns a 5 MW plant in a solar park outright (own asset), plus rooftop solar at Pune (150 kW as FACTS records) [Y] | [Y] | No longer a conflict. "Metered" and any generation figures remain unpublished until the owner supplies them |
 | R11 | Publish the CIN / MCA record | CIN is never published anywhere | DO NOT PUBLISH [Y] 22 Nov | Owner decision. MCA data also gave the wrong founding year (see R12) |
 | R12 | Founding year 1988 (from MCA) | 1989, Aurangabad | [P][Y] | "Founding year 1988" is on DO NOT PUBLISH |
 | R13 | 91% schedule compliance | Not in FACTS | none | Unsourced metric |
@@ -52,7 +52,7 @@ Channels: Velo corrections layer (`src/public` rules) | Velo w6content | seo-ove
 | A7 | Orphaned landing pages (/forging-manufacturer-india, /forged-components-railways, /forging-company-aurangabad, /forging-manufacturer-pune, /forging-company-maharashtra, /heat-treatment-metallurgy, /assembly-services, /alloy-steel-forgings, /forging-presses-hammers, /forging-vs-casting, /steering-suspension-components, /transmission-and-driveline, /agriculture) not reachable from nav or footer | Link equity and crawl depth. Nav is Editor-only, so hub-and-spoke is simulated with Velo "Related buyer guides" link blocks (pattern proven on 12 pages) | Velo w6content link blocks (nav-level change stays Editor-Yash, optional) | Claude | P1 |
 | A8 | Duplicate and misspelled slugs (/tool-manufactring, /copy-of-articles, /copy-of-awards; Product dropdown all to /product; CSR loops to home; Enquiry/Careers/Location all to /contact-us-1) | Duplicate signals and broken navigation. Redirect API has no update method: delete then create | Wix Redirects API (301), one writer at a time; link targets via Velo | Claude (nav labels and CSR link: Editor-Yash) | P2 |
 | A9 | /llms.txt index file | Cheap AI-crawler guidance | Velo HTTP function or static route, content from FACTS only | Claude | P2 |
-| A10 | Schema expansion: Organization to ["Organization","Manufacturer"]; two plant location nodes; hasCredential for IATF 16949, ISO 9001, ISO 45001, ISO 14001 only (no issuing body or expiry); Person schema for Yash J. Munot incl. AIFI presidency (leadership bio, FACTS); Service with areaServed (named export markets only); Product per component family with FACTS-only grades, forging +/-0.5 mm, machining +/-0.02 mm, presses 800-2,500 T; BreadcrumbList on secondary routes; FAQPage on de-duplicated Q&As | Entity clarity for AI engines. Each JSON-LD block under 4,096 bytes | seo-override generator (Velo) for the 10 pages it owns; Wix SEO API for the rest | Claude | P2 |
+| A10 | Schema expansion: Organization to ["Organization","Manufacturer"]; two plant location nodes; hasCredential for IATF 16949, ISO 9001, ISO 45001, ISO 14001 (no issuing body or expiry) **plus, as of 27 Nov 2026, CQI-9, ARAI and RDSO (no dates, revision numbers, part names or reference numbers)**; Person schema for Yash J. Munot incl. AIFI presidency **with years 2024-26 now owner-confirmed**; Service with areaServed (named export markets only); Product per component family with FACTS-only grades, forging +/-0.5 mm, machining +/-0.02 mm, presses 800-2,500 T; BreadcrumbList on secondary routes; FAQPage on de-duplicated Q&As | Entity clarity for AI engines. Each JSON-LD block under 4,096 bytes | seo-override generator (Velo) for the 10 pages it owns; Wix SEO API for the rest | Claude | P2 |
 | A11 | Structured RFQ form (drawing upload, quantity, target country and Incoterm, material grade, NDA toggle) on /contact-us-1 | Conversion for international buyers. Follows the FACTS RFQ sequence: drawing, feasibility within 48 h for a single drawing, quotation, PPAP | Editor-Yash (form is a Wix Forms element); Claude writes field spec and copy | Yash + Claude | P2 |
 | A12 | Directory entity cleanup: Kompass (old legal name, wrong year, wrong category, wrong pincode, http link, employee band); IndiaMART two competing profiles; TradeIndia founding year and "supplying & trading"; Justdial "EV Motor Shaft" wording (FACTS: no motor parts, suspension and steering only); MESH Works unaudited listing; RocketReach/GraphIQ scraped data; Maxility contact page gmail addresses | Wrong third-party data feeds AI answers. Correct values from FACTS: Varsha Forgings Private Limited, 1989, Pune 412105, marketing@varshaforgings.com, +91 8411000551. Builds on P13 strings in `content-drafts/` | off-site-Yash with Claude-written paste text | Yash + Claude | P1 |
 | A13 | Register on Thomasnet, Europages, GlobalSpec/Engineering360 | Where overseas buyers shortlist suppliers. Free tiers only; any paid listing over $50 needs owner approval | off-site-Yash, Claude drafts profile text | Yash + Claude | P2 |
@@ -84,9 +84,11 @@ Channels: Velo corrections layer (`src/public` rules) | Velo w6content | seo-ove
 
 ---
 
-## 5. Owner questions
+## 5. Owner questions: FULLY CLOSED 27 Nov 2026
 
-**Already answered in FACTS.md (do not re-ask Yash):**
+Every question below was answered by Yash on 27 Nov 2026 and recorded in FACTS.md ("Owner answers 27 Nov 2026", source [Y]). Nothing in this section is open; do not re-ask.
+
+**Previously answered in FACTS.md (22-26 Nov):**
 
 | Audit question | Answer on record |
 |---|---|
@@ -95,20 +97,22 @@ Channels: Velo corrections layer (`src/public` rules) | Velo w6content | seo-ove
 | Simulation software stack | Creo 3.0, SimuFact Forming 15.0, BricsCAD, Dell Cam [Y] |
 | Wix vs migration | Stay on Wix. The Velo + GitHub pipeline makes it productive (CLAUDE.md channels) |
 
-**Genuinely open (ask one at a time, recommended option first):**
+**Answered 27 Nov 2026 (each answer against its question):**
 
-| Q | Question | Options (recommended first) | Blocks queued work? |
+| Q | Question | Owner answer [Y] 27 Nov 2026 | Effect |
 |---|---|---|---|
-| (a) | Solar: FACTS holds a 150 kW rooftop (deck). The audit cites a 5 MW metered project on yashmunot.com. Which is Varsha Forgings' own, and may we publish it for EU CBAM buyers? | 1. Only the 150 kW rooftop is Varsha's; publish that. 2. The 5 MW project is Varsha's too; supply the source. 3. The 5 MW belongs to another group entity; do not publish for Varsha | No. ESG content (Wave 4) waits for the answer; 150 kW is usable meanwhile |
-| (b) | CQI-9 heat-treatment compliance | 1. Not claimed (recommended default). 2. In progress. 3. Held, supply evidence | No |
-| (c) | ARAI certification for sealed ball joints | 1. Not held; do not mention. 2. Held, supply evidence | No |
-| (d) | Priority export geographies, next 12 months | 1. Europe/DACH + North America. 2. Europe only. 3. Add Asia-Pacific and Middle East & Africa | No. Shapes Wave 4 content order only |
-| (e) | OEM logos and named case studies | 1. Pre-approved list only (Yash names the OEMs). 2. Anonymised only. 3. Named case studies for all confirmed OEMs | No. Case studies in Wave 4 start anonymised |
-| (f) | International MOQ and prototype wording | 1. "Prototype and low-volume accepted; feasibility and commercial terms per drawing within 48 hours" (matches FACTS). 2. Add a stated MOQ (supply the number) | No. Wording 1 can be used now |
-| (g) | Group branding: how Maxility and KCTR Varsha Automotive appear on varshaforgings.com | 1. Mention as group companies on the Company Profile page only. 2. Separate group page. 3. No mention | No. Affects the Leadership page and Maxility directory cleanup |
-| (h) | PED / AD 2000 valve and pressure positioning | 1. Remove valve and pressure claims from directory listings and do not pursue approval now. 2. Pursue approval (spend decision if over $50) | No |
+| (a) | Solar: 150 kW rooftop or 5 MW? | **Both are Varsha's.** Rooftop solar at the Pune plant (150 kW as FACTS records) AND a 5 MW solar plant in a solar park, owned outright (own asset) | ESG page UNBLOCKED; CBAM/ESG position upgraded; no generation figures until supplied |
+| (b) | CQI-9 | **Held.** Publish without dates or revision numbers (owner declined to supply them) | Add to hasCredential and copy (queue A) |
+| (c) | ARAI | **Claimable.** Certification obtained by conducting tests at ARAI for various parts used in assemblies made by VFL and its JVs; may be published WITHOUT part names. Wording: "all safety-critical parts used in our assemblies have been ARAI certified" | Add to hasCredential and copy (queue A); JV framing is a place where Maxility/KCTR may be mentioned |
+| (d) | Priority export geographies | **1 Europe/EU incl. Germany, 2 North America (US, Mexico), 3 Middle East and Africa.** Southeast Asia, Japan, Korea deprioritised | Equivalency matrix leads DIN/EN and SAE/AISI; JIS optional, last |
+| (e) | OEM logos and named case studies | **Anonymised only**: no customer names, no metrics; no permissions needed | 3 anonymised case studies in Wave 4 |
+| (f) | International MOQ wording | **No number published.** "Project-dependent, discussed at enquiry" | Use that wording wherever MOQ arises |
+| (g) | Group branding (Maxility, KCTR) | **Mention only where genuinely relevant** (e.g. JV framing in the ARAI claim). No parentOrganization/subOrganization schema, no group umbrella | No group page; Maxility directory cleanup unaffected |
+| (h) | PED / AD 2000 | **STRUCK: not applicable, automotive only.** Closed | Remove valve and pressure positioning from any listing; never raise again |
 
----
+**Also closed 27 Nov 2026:**
+- **Apollo / Lusha: DEFERRED to Q1 2027** (as originally recommended). A third-party planning document wrongly recorded it as closed by the owner; the owner has now confirmed the deferral. Not an open question; revisit Q1 2027 only.
+- **Owner-confirmed additions:** AIFI presidency currently served, term 2024-26 (years publishable); RDSO added with no reference number; Google Business Profile exists for both plants.
 
 ## 6. Execution waves
 
@@ -119,7 +123,7 @@ One Wix writer at a time across every wave; waves run in order. Flow per wave: O
 | 1. Credibility repair | A2 typos, A3 copyright, A4 email, A5 http link, A15 alt text, A6 retrievability fixes | Claude (executor) | Velo corrections layer, VflWebsite staged release | Reviewer scrape: 0 occurrences of each typo string, email and "2024" footer; 0 DNP hits; lint and unit tests green; Publish workflow green |
 | 2. /llms.txt and schema | A9, A10 | Claude | Velo route; seo-override generator; Wix SEO API for non-owned pages | /llms.txt returns 200 with FACTS-only content; every JSON-LD block parses, under 4,096 bytes; read-back of tags on each page; Rich Results style parse of 3 pages |
 | 3. Architecture | A7 link blocks, A8 301s, A19, A1 (mail. decommission, Yash) | Claude; Yash for DNS | Velo w6content; Redirects API (delete then create); DNS/hosting-Yash | Every orphaned page has at least 1 inbound internal link in served HTML; each retired slug returns 301 to its target; mail. host returns redirect or gone; 1 H1 per page unchanged |
-| 4. Content | A16 equivalency matrix, A17 component and vertical pages (incl. commercial vehicle), ESG and case studies after questions (a) and (e), A11 RFQ form spec | Claude; Yash for the form element | content-ops blog; Velo; Editor-Yash | `scripts/check-wordcount.sh` pass; FACTS audit with 0 DNP hits; live URL 200; meta description and 1 H1 present |
+| 4. Content | A16 equivalency matrix (DIN/EN and SAE/AISI lead), A17 component and vertical pages (incl. commercial vehicle), ESG page and 3 anonymised case studies (questions (a) and (e) now answered, UNBLOCKED), A11 RFQ form spec | Claude; Yash for the form element | content-ops blog; Velo; Editor-Yash | `scripts/check-wordcount.sh` pass; FACTS audit with 0 DNP hits; live URL 200; meta description and 1 H1 present |
 | 5. Off-site entity | A12 cleanup, A13 registrations, A14 sameAs links, A18 social icons | Yash (Claude writes all paste text) | off-site-Yash | Reviewer re-scrapes each profile: correct legal name, 1989, 412105, email and phone match FACTS; no duplicate IndiaMART profile; KPI re-check 10 Dec and 24 Dec (PHASE4-PLAN.md) |
 
 Timing against the audit's 90-day frame: Waves 1-2 map to days 1-45, Wave 3 to days 15-45, Waves 4-5 to days 46-90. Phase 4 platform and localization (day 90 onward) is not scheduled; A20 is revisited then. Spend over $50 on any listing or tool needs Yash's explicit yes.
@@ -137,3 +141,20 @@ Timing against the audit's 90-day frame: Waves 1-2 map to days 1-45, Wave 3 to d
 | 5 (off-site) | Yash restores the previous listing text from the saved copy | Claude keeps the before-and-after strings in `content-drafts/` |
 
 Any task that fails twice is stopped and logged in pending.md with its unblock condition (CLAUDE.md task-failure rule). After each wave the executor refreshes the website.md HANDOVER block, PHASE3-PLAN.md status, NEXT-SESSION.md and pending.md.
+
+---
+
+## 8. Forward queue (set 27 Nov 2026, after the owner's 16 answers)
+
+Ordered. One Wix writer at a time; one page per Wix API call, full tag set replacement; every gate measured by the reviewer (Firecrawl maxAge 0), never self-report. Facts only from FACTS.md "Owner answers 27 Nov 2026". Keep JSON-LD per script at or under the 4,096-character house policy (API cap is 12,000).
+
+| Step | Work | Channel | Notes and gate |
+|---|---|---|---|
+| A | **Credential and fact wave.** Add CQI-9, ARAI and RDSO to hasCredential (no dates, revision numbers, part names or reference numbers); add AIFI years (2024-26) to Person; add the solar facts (rooftop at Pune; 5 MW owned plant in a solar park) where they belong | Wix item-seo-tags API, STATIC_PAGE, one page per call, full tag set, publish:true; GET before and after | Homepage plew4 (Organization hasCredential) and /company-profile unlvj (Person) first; read-back equal to payload; live JSON-LD parses; 0 duplicate @id; 0 DNP hits; no group parentOrganization/subOrganization |
+| B | **P19 / P20 / P23, one bounded code attempt each** (owner-authorised; two-failure rule overridden for this one attempt). P23 /forging repeater and P19 /product button labels via the W6 mechanism; P19 re-test of Velo reach. P20 needs a Text element that does not exist and Velo cannot create elements, so expected to stay Editor-only | Velo W6 (VflWebsite) | Each attempt measured live; on failure, back to pending.md for Yash (Editor) |
+| C | **P26 code fix attempt:** collapse the blank boxes on /forged-components-ev and /about-1-1 and the spare space under the EV embed (owner authorised) | Velo collapse() route | Note collapse() is not SSR-visible; verify rendered layout, H1 counts unchanged |
+| D | **P22:** derive nav membership from the live header/footer by scrape; produce a PROPOSED 301 map for owner approval BEFORE creating any redirect | Firecrawl scrape, then Wix Redirects API after approval | Merge content first, redirect last; /copy-of-awards is not a duplicate; /tool-manufactring slug stays; record redirect IDs |
+| E | **P25:** identify the two noindex pages, report to the owner what is on them, then lift noindex (owner chose lift) | seo-override generator | Do not lift before the owner has seen the pages; both pages are 0-word, so content likely needed first |
+| F | **Wave 4 content:** steel equivalency matrix (DIN/EN + SAE/AISI lead, JIS optional last), ESG page (UNBLOCKED by the solar answer), 3 anonymised case studies (no names, no metrics), commercial-vehicle vertical page | content-ops blog / Velo | `scripts/check-wordcount.sh` pass; 0 DNP hits; live URL 200; meta description and 1 H1; no group umbrella |
+| G | **GBP cleanup list for both plants** (profiles exist), for the owner to action | content-drafts, owner pastes | Strings from FACTS; builds on P13 draft |
+| H | **KPI search re-check 10 Dec and 24 Dec** | PHASE4-PLAN.md queries | Reviewer-measured |

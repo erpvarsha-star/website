@@ -40,13 +40,13 @@ Source: [P][L]
 - **Origins: founded 1989 only.** Don't write "group roots trace to 1981"; 1981 appears only in the leadership bio (ZF Steering Gear). [Y]
 - Positioned as a **Tier 1 and Tier 2 supplier** to OEMs.
 - Leadership bios on /company-profile are accurate (ZF Steering Gear 1981, Prima Feintechnik 2005, KCTR JV 2013 for Tata Motors & Mahindra, youngest AIFI president, EO Pune, Stego Lifestyle LLP).
-- CSR: blood donation · tree plantation · education sponsorship; 150 kW rooftop solar.
+- CSR: blood donation · tree plantation · education sponsorship; solar (see **Sustainability** and **Owner answers 27 Nov 2026**).
 - **Remove:** the slogan "Under Promise, Over Delivery" (/quality).
 - Write experience as **"since 1989"**, never a year count ("35 years" etc. goes stale).
 
 ## Certifications [Y]
-IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submission at **Levels 1–5** [Y] 22 Nov 2026 (supersedes "Level 3 capability") · APQP · IMDS · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; approval reference not yet supplied).
-**Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates.
+IATF 16949 · ISO 9001:2015 · ISO 45001:2018 · ISO 14001:2015 · PPAP submission at **Levels 1–5** [Y] 22 Nov 2026 (supersedes "Level 3 capability") · APQP · IMDS · **RDSO approved** (Indian Railways; owner-confirmed 22 Nov 2026; **publish with NO approval reference number** [Y] 27 Nov 2026, supersedes "reference not yet supplied") · **CQI-9 held** [Y] 27 Nov 2026 · **ARAI certification** [Y] 27 Nov 2026 (exact framing in Owner answers 27 Nov 2026, item 3).
+**Not held, never claim:** EN, UIC or AAR railway standards compliance. TS-16949 is historical only (2009). Do not publish issuing body or expiry dates, or any CQI-9 date or revision number.
 
 ## Milestones & Awards [P]
 2009 TS-16949 · 2011 Design patent granted by the Indian Government · 2014 India SME Excellence Award in Innovation & Invention · 2014 Certificate of Excellence · 2015 Excellence in Manufacturing Gold Trophy (ACMA) · 2016 Daimler India Best Supplier Award · 2017 IATF 16949 · 2017 Best Employer Brand Award · 2018 Brand Leadership Award · 2018 Productivity Improvement Bronze Trophy (ACMA) · 2019 Best Performing Cluster Company (ACMA) · 2023 Daimler India Performance Appreciation Letter · 2024 Supply for electric vehicles · 2025 India SME 100 Award, final winner, 11th Edition (from 27,467 nominations [Y])
@@ -172,9 +172,25 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 - **Confirmed current [Y] 22 Nov 2026:** Ferrabyrne · Four Star Industries · Indo Schottle · Innova Rubbers · Jagadamba Auto-components · Laxmi-Agni · NR Industries · Mansons · MSL · Piaggio · Polybond · Sanjeev · Tork Motors
 - **Not a customer:** Corvette (remove the homepage image alt text "corvtte customer")
 - **Export markets:** Germany · Spain · Italy · Portugal · Austria · United States · **Asia-Pacific** [Y] · **Middle East & Africa** [Y 22 Nov 2026]
+- **Export priority order [Y] 27 Nov 2026:** see Owner answers 27 Nov 2026, item 7 (Europe/EU first; Southeast Asia, Japan, Korea deprioritised).
 
-## Sustainability [P]
-150 kW rooftop solar installation.
+## Sustainability [P][Y]
+- **Rooftop solar at the Pune plant: 150 kW** [P] figure kept as recorded; plant attribution [Y] 27 Nov 2026 (the deck gave no plant; see Owner answers item 1).
+- **5 MW solar plant in a solar park, owned outright by Varsha Forgings (its own asset)** [Y] 27 Nov 2026. Supersedes the earlier record of "150 kW rooftop" as the only solar fact. Do not publish the park name or location, generation or consumption-share figures, or CBAM/emission numbers unless the owner supplies them.
+
+## Owner answers 27 Nov 2026 [Y] (16 questions, all source [Y], dated 27 Nov 2026)
+1. **Solar.** Both exist. (a) Rooftop solar at the **Pune plant**; the figure stays **150 kW** as FACTS recorded it. (b) A **5 MW solar plant in a solar park, owned outright by Varsha Forgings (its own asset)**. Supersedes "150 kW rooftop" as the only solar fact, and supersedes INTERNATIONAL-PLAN R10 and Q(a) option 3 (5 MW "may belong to another entity"). Reconciliation: FACTS previously attributed the rooftop to no plant (deck line only), so there was no conflicting plant; Pune is now the recorded plant. Open detail, do not guess: the owner did not restate the rooftop kW for Pune, so "150 kW at Pune" links the deck figure to Pune by the absence of any other attribution; the 5 MW park name, location and whether the output is metered or consumed by the plants are not supplied. Strengthens the CBAM/ESG position and unblocks the ESG page.
+2. **CQI-9: HELD.** Publish as held, **without any dates or revision numbers** (owner explicitly declined to supply them).
+3. **ARAI: claimable.** Owner's position, recorded verbatim so no session narrows or widens it: "certification is obtained by conducting tests at ARAI for various parts used in assemblies made by VFL and its joint ventures; the claim of certification is correct and may be published WITHOUT specific part names." Approved wording: **"all safety-critical parts used in our assemblies have been ARAI certified."** Supersedes INTERNATIONAL-PLAN R5 (as a general claim; the specific "ARAI-certified sealed ball joints" wording remains unpublished because it names a part).
+4. **AIFI presidency.** Yash J. Munot is **currently serving** as president of AIFI, **term 2024-26**. Owner-confirmed, so the years may be published (previously third-party-only, from indianforging.org, and deliberately omitted from the 27 Nov Person schema). The existing bio phrase "youngest AIFI president" remains consistent.
+5. **RDSO:** add now to hasCredential and railway copy with **no approval reference number**.
+6. **Google Business Profile:** profiles exist for **both plants** (Aurangabad and Pune).
+7. **Export priorities, in order:** (1) Europe/EU including Germany, (2) North America (US, Mexico), (3) Middle East and Africa. **Southeast Asia, Japan and Korea are deprioritised.** The steel equivalency matrix leads with DIN/EN and SAE/AISI; JIS optional and last.
+8. **Case studies:** anonymised only: no customer names, no performance metrics. No permissions needed.
+9. **MOQ:** no number published. Wording: project-dependent, discussed at enquiry. (Prototype and low-volume acceptance and the 48 h single-drawing feasibility response stay as in RFQ section.)
+10. **Group branding (Maxility / KCTR):** mention only where genuinely relevant, e.g. the JV framing in the ARAI claim. No parentOrganization/subOrganization schema, no group umbrella.
+11. **PED / AD 2000: NOT APPLICABLE** (automotive only). Closed; do not raise again.
+(Items 12-17 of the owner's 27 Nov answers are decisions, recorded in CLAUDE.md, pending.md and INTERNATIONAL-PLAN.md: Wix JSON-LD cap policy, P10 dropped, P25, P26, P19/P20/P23, Apollo/Lusha deferred.)
 
 ---
 
@@ -189,3 +205,10 @@ Batch code per raw-material heat (A, B, C … Z) · code engraved on forging die
 | Founding year 1988 | Wrong; 1989 confirmed |
 | Negative claims about competitors (incl. Chinese suppliers) | Owner decision 22 Nov 2026: present Varsha's strengths only |
 | "SME Chamber of India award" | Wrong name; real award is India SME Excellence Award in Innovation & Invention |
+| CQI-9 dates, revision numbers, issuing/assessing body | Owner explicitly declined to supply them 27 Nov 2026; publish "CQI-9 held" only |
+| Specific part names under the ARAI claim (incl. "sealed ball joints") | Owner 27 Nov 2026: publish WITHOUT part names |
+| RDSO approval reference number | Owner 27 Nov 2026: add RDSO with no reference number |
+| Any stated MOQ number | Owner 27 Nov 2026: project-dependent, discussed at enquiry |
+| Customer names or performance metrics in case studies | Owner 27 Nov 2026: anonymised only |
+| Group umbrella branding / parentOrganization / subOrganization schema | Owner 27 Nov 2026: Maxility/KCTR only where genuinely relevant |
+| PED 2014/68/EU, AD 2000-Merkblatt | Not applicable: Varsha is automotive only (owner 27 Nov 2026) |

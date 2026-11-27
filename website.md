@@ -1,5 +1,12 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 27 Nov 2026 step B (P19/P20/P23) ran: P23 FIXED live, P19 PARTIAL, P20 Editor-only (READ THIS FIRST; supersedes the step A "Next: step B")
+> - **Mechanism found (new, reusable):** Velo `$item('Text')`/`$item('Button')` TYPE selectors are NOT item-scoped (return the whole page's elements); `$item('#id')` IS item-scoped, and `$w('Repeater')` reaches every repeater. Element ids read via a temporary `x-diag` meta (wix-seo-frontend setMetaTags, SSR-visible; removed again). FAQ v2 (3 pages via pagingMetadata.cursors.next, 256 entries): 0 hits for the repeater text; the block is not an embed (0 HtmlComponent on /product; DOM repeater on /forging), so it was Velo.
+> - **P23 /forging FIXED live (VflWebsite 39007ae):** new W6 op `itemBlank` blanks text14 (heading) and text15 (body) of repeater6 items 1-3. Live rawHtml waitFor 1000, maxAge 0: 'Specialization in hot forgings' in the repeater 4 -> 1 (2 other hits are in an unrelated section at the page foot), 'Key Features' 1, 'Industries Served', 'Equipment and Capacity', 'Product Range' 0 in the repeater.
+> - **P19 /product PARTIAL (39007ae + 88d58da):** new op `itemLabelSub` (item-scoped by id) reaches SOME buttons: aria-label count before/after: 'Secotr Shaft' see log, 'Sector Shaft' 0 -> 2; 6 buttons (comp-m375d8tc, comp-m375dac84, comp-m375ddpo3 item families) still show the typo after an id sweep button1..button80. Cause undetermined; no second mechanism tried (owner: one attempt). Image filenames/alt text also contain 'Secotr' (not button labels, not changed).
+> - **P20 /product H1: Editor-only, confirmed.** 0 HtmlComponent, `$w('Text')`=32 all template/footer text, no page-level text to retag; Velo cannot create elements.
+> - Live scrapes of /forging and /product at maxAge 0 succeeded 8 of 8 today (about 10 s); no cached copies used.
+
 > ## HANDOVER: 27 Nov 2026 step A credential + Person wave WRITTEN (live verification pending) (READ THIS FIRST; supersedes the "Not emitted" lines below for CQI-9, ARAI, RDSO, AIFI years)
 > - **Wix writes (STATIC_PAGE, full tag set, publish:true, one page per call):** `/` (plew4) hasCredential now SEVEN (IATF 16949, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, CQI-9, ARAI, RDSO; the three new carry no dates, revision numbers, reference numbers, part names or issuing bodies). `/company-profile` (unlvj) Person: memberOf OrganizationRole President of AIFI, startDate 2024, no endDate (current), description states term 2024-26; jobTitle unchanged "CEO & Director". Other nodes untouched.
 > - **Measured:** PATCH 200 both; API GET read-back JSON-LD identical to payload; plew4 2,868 chars, unlvj 1,916 chars (both under 4,096); tag counts unchanged (4 and 4); one @id (#organization) per page, no duplicates. No solar/ESG, PED, Maxility/KCTR, CIN, machine counts.
@@ -679,3 +686,8 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 
 ## 27 Nov 2026, step A credential and Person wave (executor)
 - Wrote plew4 and unlvj as in HANDOVER; GET before (4 tags each) and after equal; sizes 2,868 / 1,916. Firecrawl live check failed 4x (timeout), logged as P27. Not marked done.
+
+## 27 Nov 2026, step B P23/P19/P20 (executor)
+- Investigation order: (1) FAQ v2 paged to exhaustion (3 pages, 256 entries): 0 matches. (2) /_functions/embed iframes: none on /product, repeater is native DOM on /forging. (3) Velo reach: temporary diagnostic release f154a23, f25971f (x-diag meta) showed page-level $w('Repeater')=1 on /forging (repeater6, 4 items text14/text15) and 11 repeaters of 12 items on /product; `$item('Text')` returned all 57 page texts (not item-scoped), which is why attempts of 26-27 Nov failed. `$item('#id')` read per-item values correctly.
+- Fix release 39007ae (itemBlank on a3evt, itemLabelSub on hd575, W6 block added to Product page file, diagnostics removed), then 88d58da (sweep button1..button80). Lint clean, 5 test files pass.
+- Results: see HANDOVER above. P19 remaining: 6 button labels live. Next step for P19, if retried: log which button ids exist per repeater (diagnostic meta again) rather than sweeping.

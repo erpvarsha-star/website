@@ -1,5 +1,8 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 27 Nov 2026 step F accuracy fixes applied to F1 and F2 drafts (READ THIS FIRST; adds to the steps E and F block below)
+> - **Drafting only: no Wix writes, no VflWebsite push.** Accuracy review fixes applied (INTERNATIONAL-PLAN.md section 8 step F). F1: CBAM obligations qualified to importers above the 50-tonne threshold; one sentence added that the Commission's roughly-180-product downstream extension from 1 Jan 2028 is PROPOSED, not law (Council position agreed, Parliament not adopted); specific CN code deleted (unverified against Annex I), sector-level iron and steel kept. F2: EN19 and EN24 rows marked approx.; key now says "None close"; oil-and-gas end-use wording replaced with general standard usage (no VFL market claim). Metallurgist sign-off caveat and column-1 grade list untouched. Reviewer to re-check.
+
 > ## HANDOVER: 27 Nov 2026 steps E and F content DRAFTED (READ THIS FIRST; adds to the step B2 block below, which still stands)
 > - **Drafting only: no Wix writes, no VflWebsite push, nothing live.** Six drafts in content-drafts/, each passing `scripts/check-wordcount.sh 550` (page copy under one `## Page copy` heading; fact audit and owner questions sit above it, outside the counted body): F1-esg-sustainability (750 words), F2-steel-equivalency-matrix (839), F3-anonymised-case-studies (637), F4-commercial-vehicle-forgings (712, improves the existing /commercial-vehicle orphan), E1-transmission-and-driveline (647), E2-electric-mobility (615).
 > - **Owner decisions needed before any publish:** F3 cases are scaffolds, FACTS has no project histories, so the owner must confirm each matches a real project or approve them as generic capability scenarios. F2 equivalents are general engineering reference (no VFL grade-equivalence claim; first column only is from FACTS Materials); a metallurgist should spot-check rows. F1: confirm Pune rooftop is 150 kW; park name, metering and use by the plants stay unpublished; no emissions or share figures. Each draft lists its own owner questions.
@@ -712,3 +715,7 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - Wrote content-drafts/F1-esg-sustainability, F2-steel-equivalency-matrix, F3-anonymised-case-studies, F4-commercial-vehicle-forgings, E1-transmission-and-driveline, E2-electric-mobility (all *-DRAFT.md). check-wordcount.sh 550: all six PASS (750, 839, 637, 712, 647, 615). Grep for DNP terms (captive, CIN, machine counts, PED/AD 2000, Maxility/KCTR, BMW/KTM, MOQ number, ZLD, stainless claims) found no page-copy hits.
 - Wording rules applied: solar = "owned"/"own asset" (never "captive"); ARAI only as the approved sentence with no part names; CQI-9 and RDSO with no dates or numbers; no MOQ number; EV pages state the exclusion of motor, gearbox and powertrain parts; PED/AD 2000 not mentioned; case studies anonymised with no metrics.
 - No Wix writes, no VflWebsite push. Reviewer verification pending.
+
+
+## 27 Nov 2026 step F accuracy fixes (F1 ESG, F2 steel matrix)
+Applied seven review fixes to content-drafts/F1-esg-sustainability-DRAFT.md and F2-steel-equivalency-matrix-DRAFT.md (see HANDOVER). Drafts only; nothing published.

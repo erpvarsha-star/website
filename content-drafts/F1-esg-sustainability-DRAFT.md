@@ -56,7 +56,7 @@ At Varsha, billets are heated by induction to between 1,100 and 1,250 degrees C 
 
 ### H2: For European Buyers Assessing CBAM Exposure
 
-The EU Carbon Border Adjustment Mechanism (CBAM) puts a carbon-cost reporting and certificate obligation on importers of covered goods, which include certain iron and steel products. Its definitive period began on 1 January 2026. Whether a particular forged component falls inside CBAM depends on its customs classification and on the rules in force on the import date, which continue to be refined. Confirm it with your customs adviser and the current regulation text. This is general background and not legal advice.
+The EU Carbon Border Adjustment Mechanism (CBAM) puts carbon-cost reporting and certificate obligations on importers of covered goods above a single 50-tonne annual mass threshold (authorised-declarant status and certificate surrender apply above it). Covered goods include iron and steel at sector level. Its definitive period began on 1 January 2026. Whether a particular forged component falls inside CBAM depends on its customs classification and on the rules in force on the import date, which continue to be refined. The European Commission has proposed extending CBAM to roughly 180 downstream steel and aluminium-intensive products from 1 January 2028; this is a proposal, not law, and has not yet been adopted by Parliament. Confirm it with your customs adviser and the current regulation text. This is general background and not legal advice.
 
 What a buyer can reasonably ask of a supplier in this position:
 

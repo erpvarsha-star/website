@@ -35,14 +35,14 @@ Read it as a map, not a contract. Equivalent grades are close in chemistry and p
 
 ### H2: The Matrix
 
-Columns run in the order most of our buyers use: DIN/EN first, then SAE/AISI, then BS, then JIS. The first column is the grade as we list it. A dash means we do not give a close equivalent.
+Columns run in the order most of our buyers use: DIN/EN first, then SAE/AISI, then BS, then JIS. The first column is the grade as we list it. "None close" means we do not give a close equivalent.
 
 | Grade we list | DIN / EN designation (material no.) | SAE / AISI / ASTM | BS (older BS 970) | JIS |
 |---|---|---|---|---|
 | EN8 | C45 / C40 range (1.0503 / 1.0511), approx. | 1040 to 1045 | 080M40 | S45C approx. |
 | EN9 | C55 (1.0535), approx. | 1055 | 070M55 | S55C |
-| EN19 | 42CrMo4 (1.7225) | 4140 | 709M40 / 708M40 | SCM440 |
-| EN24 | 34CrNiMo6 (1.6582) | 4340 | 817M40 | SNCM439 approx. |
+| EN19 | 42CrMo4 (1.7225) approx. | 4140 approx. | 709M40 / 708M40 | SCM440 |
+| EN24 | 34CrNiMo6 (1.6582) approx. | 4340 approx. | 817M40 | SNCM439 approx. |
 | EN31 | 100Cr6 (1.3505) | 52100 | 534A99 | SUJ2 |
 | 42CrMo4 | 42CrMo4 (1.7225) | 4140 | 708M40 / 709M40 | SCM440 |
 | AISI 4140 | 42CrMo4 (1.7225) | 4140 | 708M40 / 709M40 | SCM440 |
@@ -71,7 +71,7 @@ General engineering background, not a Varsha claim.
 
 **Manganese steels (SAE1541).** Medium-carbon steels with a higher manganese content, giving more strength and hardenability than plain carbon steel of similar carbon.
 
-**Pressure and low-temperature forging grades (ASTM A105, LF2, F11, F22).** Specified under pressure-equipment and piping standards, for example in oil and gas flanges and valve bodies.
+**Pressure and low-temperature forging grades (ASTM A105, LF2, F11, F22).** Specified under pressure-equipment and piping standards, for example the standards commonly cover flanges, fittings and valve bodies in pressure piping. This describes how the standards are generally used, not a statement of Varsha Forgings' markets.
 
 ### H2: Specifying a Grade Without Ambiguity
 

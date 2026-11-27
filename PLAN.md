@@ -64,7 +64,7 @@ Every action in the Sited AI Visibility Report's "Prioritised Action Plan" (22 N
 | # | Report action | Finding | Impact | Status | Next step / owner |
 |---|---|---|---|---|---|
 | ST1 | Build verified off-site presence (directories, Wikidata, etc.) for sameAs | F15 | High (lifts Brand cap 80 → 100) | ✕ Not started | Yash: IndiaMART / TradeIndia / ExportersIndia listings audit; Claude: Wikidata entry draft |
-| ST2 | Topical authority: dated, bylined articles answering buyer questions | F16 | Medium | ◐ 1 blog post live (precision forging cost) | Claude publishes via Blog API, zero Yash. Target 2 per month |
+| ST2 | Topical authority: dated, bylined articles answering buyer questions | F16 | Medium | ◐ 2 blog posts live (precision forging cost; sourcing forgings from India buyer's guide, 23 Nov) | Claude publishes via Blog API, zero Yash. Target 2 per month |
 | ST3 | **Downloadable technical resources: capability sheet, spec sheets, traceability docs** | **F20 (new)** | Medium | ✕ Not started | Claude builds a capability-sheet PDF from FACTS.md → owner approves → upload via API |
 
 ### Other report items not in its action table (added)

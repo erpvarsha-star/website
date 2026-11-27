@@ -98,3 +98,12 @@ Positioning (use everywhere, one sentence): **"Varsha Forgings — closed-die fo
 | Off-site profiles live | LinkedIn only | 6 profiles | 6 profiles + 3 listicle inclusions |
 
 **Definition of winning (owner's goal):** a buyer in Germany, the US or Japan asking an AI assistant or Google for a forging supplier in India gets Varsha Forgings in the answer — and the site converts that visit into an RFQ.
+
+## Search visibility baseline (26 Nov 2026, Firecrawl web search, top 10)
+| Query | Varsha in top 10? | Who ranks |
+|---|---|---|
+| RDSO approved forging suppliers India | No | RDSO vendor directory PDF (#1), Jai Dadi, Sarita, Lalbaba, Vishnu Forge |
+| tie rod end forging manufacturer India | No | Shivam Forge (#1, dedicated page), Ludhiana/Rajkot SMEs, IndiaMART, Avadh |
+| closed die forging company India automotive OEM supplier | No | Caparo, Kalaria, IndiaMART, Frigate, Sadhu, KEMS |
+Expected: L1/L2/B1-B10 went live today; Google needs 2-6 weeks to index and rank. Re-run these 3 + the 8 GROWTH-RESEARCH Part 3 prompts on 10 Dec and 24 Dec.
+Takeaways: (1) directories (IndiaMART) rank on every query → Sprint-2 profiles matter; (2) the RDSO vendor directory is the #1 railway result → confirm Varsha's listing there and link to it from L2/B4 once Yash supplies the reference.

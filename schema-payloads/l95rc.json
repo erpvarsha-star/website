@@ -1,0 +1,40 @@
+{
+  "pageId": "l95rc",
+  "path": "/about-1",
+  "source": "scripts/gen-schema-wave.js (INTERNATIONAL-PLAN A10)",
+  "tags": [
+    {
+      "type": "title",
+      "children": "About Closed-Die Forging | Varsha Forgings | Process & Capabilities",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "meta",
+      "props": {
+        "name": "description",
+        "content": "Closed-die forging explained: process overview, press capacity, materials, tolerances and comparison with other forming methods. Varsha Forgings, Aurangabad India."
+      },
+      "children": "",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "script",
+      "props": {
+        "type": "application/ld+json"
+      },
+      "children": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Person\",\"name\":\"Yash J. Munot\",\"jobTitle\":[\"CEO & Director\",\"President, AIFI\"],\"description\":\"CEO & Director of Varsha Forgings Private Limited; youngest president of AIFI.\",\"worksFor\":{\"@id\":\"https://www.varshaforgings.com/#organization\"},\"affiliation\":{\"@type\":\"Organization\",\"name\":\"AIFI\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.varshaforgings.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"About\",\"item\":\"https://www.varshaforgings.com/about-1\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What is closed-die forging?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Closed-die forging shapes heated metal between two dies under high pressure, producing components with better grain flow, strength and dimensional accuracy than casting.\"}},{\"@type\":\"Question\",\"name\":\"What press capacity does Varsha Forgings use for closed-die forging?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Varsha Forgings operates closed-die presses from 800 T to 2,500 T and hammers from 1 to 3 MT.\"}}]}]}"
+    },
+    {
+      "type": "meta",
+      "props": {
+        "property": "og:image",
+        "content": "https://static.wixstatic.com/media/72f2bf_aab39c18b06549e2a84bcca908826d5a~mv2.png"
+      },
+      "children": "",
+      "custom": false,
+      "disabled": false
+    }
+  ]
+}

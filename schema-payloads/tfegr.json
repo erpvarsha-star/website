@@ -1,0 +1,30 @@
+{
+  "pageId": "tfegr",
+  "path": "/automotive-steering-powertrain",
+  "source": "scripts/gen-schema-wave.js (INTERNATIONAL-PLAN A10)",
+  "tags": [
+    {
+      "type": "title",
+      "children": "Metal Forging for Automotive Steering & Powertrain Parts | Varsha Forgings",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "meta",
+      "props": {
+        "name": "description",
+        "content": "Automotive steering and powertrain components from 1 to 25 kg: forging at Aurangabad (since 1989), machining and assembly at Pune (since 2007). EN8, EN19, EN24, EN31, 20MnCr5, SAE 8620, AISI 4140 and AISI 1045 grades; IATF 16949 and ISO 9001:2015 certified."
+      },
+      "children": "",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "script",
+      "props": {
+        "type": "application/ld+json"
+      },
+      "children": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Product\",\"name\":\"Forged steering and powertrain components\",\"manufacturer\":{\"@id\":\"https://www.varshaforgings.com/#organization\"},\"description\":\"Hot closed-die forged and machined steering and powertrain components in alloy steel.\",\"additionalProperty\":[{\"@type\":\"PropertyValue\",\"name\":\"Forged component weight\",\"value\":\"1 kg - 25 kg\"},{\"@type\":\"PropertyValue\",\"name\":\"Forging tolerance\",\"value\":\"±0.5 mm\"},{\"@type\":\"PropertyValue\",\"name\":\"Machining tolerance\",\"value\":\"±0.02 mm\"},{\"@type\":\"PropertyValue\",\"name\":\"Forging press tonnage\",\"value\":\"800 T - 2,500 T\"}]},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.varshaforgings.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Automotive Steering & Powertrain\",\"item\":\"https://www.varshaforgings.com/automotive-steering-powertrain\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What automotive parts does Varsha Forgings forge?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Varsha Forgings supplies forged and machined steering and powertrain components to OEMs and Tier 1 manufacturers, ranging from 1 kg to 25 kg, including torque rod, radius rod and V-link assemblies.\"}},{\"@type\":\"Question\",\"name\":\"What steel grades does Varsha Forgings use for automotive forgings?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Production uses EN8, EN19, EN24, EN31, 20MnCr5, SAE 8620, AISI 4140 and AISI 1045 grades.\"}},{\"@type\":\"Question\",\"name\":\"Where does Varsha Forgings manufacture automotive forgings?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"At two IATF 16949 and ISO 9001:2015 certified plants in India: forging at Chhatrapati Sambhajinagar (Aurangabad), since 1989, and machining and assembly at Pune, since 2007.\"}}]}]}"
+    }
+  ]
+}

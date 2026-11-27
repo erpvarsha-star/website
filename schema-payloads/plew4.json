@@ -1,0 +1,40 @@
+{
+  "pageId": "plew4",
+  "path": "/",
+  "source": "scripts/gen-schema-wave.js (INTERNATIONAL-PLAN A10)",
+  "tags": [
+    {
+      "type": "title",
+      "children": "Varsha Forgings | Closed-Die Forgings, Precision Machining and Assembly from India",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "meta",
+      "props": {
+        "name": "description",
+        "content": "Explore Varsha Forgings' design, forging, machining and assembly capabilities. Discuss your component requirements with our engineering team."
+      },
+      "children": "",
+      "custom": false,
+      "disabled": false
+    },
+    {
+      "type": "script",
+      "props": {
+        "type": "application/ld+json"
+      },
+      "children": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":[\"Organization\",\"Manufacturer\"],\"@id\":\"https://www.varshaforgings.com/#organization\",\"name\":\"Varsha Forgings\",\"legalName\":\"Varsha Forgings Private Limited\",\"url\":\"https://www.varshaforgings.com\",\"foundingDate\":\"1989\",\"email\":\"marketing@varshaforgings.com\",\"telephone\":\"+91 8411000551\",\"description\":\"India-based manufacturer of closed-die forgings, precision machining and assembly components.\",\"sameAs\":[\"https://www.linkedin.com/company/varsha-forgings-private-limited/\"],\"location\":[{\"@type\":\"Place\",\"name\":\"Varsha Forgings Plant 1 (Forging), Chhatrapati Sambhajinagar (Aurangabad)\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Plot No. B-7, MIDC Waluj\",\"addressLocality\":\"Chhatrapati Sambhajinagar (Aurangabad)\",\"addressRegion\":\"Maharashtra\",\"postalCode\":\"431136\",\"addressCountry\":\"IN\"}},{\"@type\":\"Place\",\"name\":\"Varsha Forgings Plant 2 (Assembly), Pune\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Gut No. 161, Mauje-Markal, Tal-Khed\",\"addressLocality\":\"Pune\",\"addressRegion\":\"Maharashtra\",\"postalCode\":\"412105\",\"addressCountry\":\"IN\"}}],\"hasCredential\":[{\"@type\":\"EducationalOccupationalCredential\",\"name\":\"IATF 16949\",\"credentialCategory\":\"certification\"},{\"@type\":\"EducationalOccupationalCredential\",\"name\":\"ISO 9001:2015\",\"credentialCategory\":\"certification\"},{\"@type\":\"EducationalOccupationalCredential\",\"name\":\"ISO 45001:2018\",\"credentialCategory\":\"certification\"},{\"@type\":\"EducationalOccupationalCredential\",\"name\":\"ISO 14001:2015\",\"credentialCategory\":\"certification\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What does Varsha Forgings make?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Varsha Forgings is an India-based manufacturer of closed-die forgings, precision machining and assembly for automotive, agricultural and industrial OEM customers.\"}},{\"@type\":\"Question\",\"name\":\"Is Varsha Forgings certified?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, Varsha Forgings is IATF 16949, ISO 9001:2015, ISO 45001:2018 and ISO 14001:2015 certified, with PPAP submission at Levels 1–5.\"}},{\"@type\":\"Question\",\"name\":\"Where is Varsha Forgings located?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Varsha Forgings operates two plants in Maharashtra, India: a forging division in MIDC Waluj, Aurangabad, established in 1989, and a machining and assembly division in Markal, Khed, Pune.\"}}]}]}"
+    },
+    {
+      "type": "meta",
+      "props": {
+        "property": "og:image",
+        "content": "https://static.wixstatic.com/media/72f2bf_aab39c18b06549e2a84bcca908826d5a~mv2.png"
+      },
+      "children": "",
+      "custom": false,
+      "disabled": false
+    }
+  ]
+}

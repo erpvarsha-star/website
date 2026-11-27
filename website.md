@@ -3,6 +3,11 @@
 > ## HANDOVER: 27 Nov 2026 step F accuracy fixes applied to F1 and F2 drafts (READ THIS FIRST; adds to the steps E and F block below)
 > - **Drafting only: no Wix writes, no VflWebsite push.** Accuracy review fixes applied (INTERNATIONAL-PLAN.md section 8 step F). F1: CBAM obligations qualified to importers above the 50-tonne threshold; one sentence added that the Commission's roughly-180-product downstream extension from 1 Jan 2028 is PROPOSED, not law (Council position agreed, Parliament not adopted); specific CN code deleted (unverified against Annex I), sector-level iron and steel kept. F2: EN19 and EN24 rows marked approx.; key now says "None close"; oil-and-gas end-use wording replaced with general standard usage (no VFL market claim). Metallurgist sign-off caveat and column-1 grade list untouched. Reviewer to re-check.
 
+> ## HANDOVER: 27 Nov 2026 F3 real-case-study research and owner input form DONE (READ THIS FIRST; adds to the block below)
+> - **Internal research, not site copy; no Wix writes, no VflWebsite push.** content-drafts/F3-research-real-case-studies-and-input-form-INTERNAL.md: four real published closed-die case studies (FIA Nos. 12, 4, 9 and Cao et al. 2025 Manufacturing Review), a 32-field input form (22 safe anonymised, 6 need customer written permission, 4 never publish), and a table of what the F3 scaffolds guessed.
+> - **Owner action:** complete the form for at least three real jobs, or approve F3 as labelled generic capability scenarios. F3 stays unpublishable until then (INTERNATIONAL-PLAN.md section 8 step F).
+> - **Limit:** no public PPAP-specific case study was found; the qualification evidence in the sample is test lists only.
+
 > ## HANDOVER: 27 Nov 2026 steps E and F content DRAFTED (READ THIS FIRST; adds to the step B2 block below, which still stands)
 > - **Drafting only: no Wix writes, no VflWebsite push, nothing live.** Six drafts in content-drafts/, each passing `scripts/check-wordcount.sh 550` (page copy under one `## Page copy` heading; fact audit and owner questions sit above it, outside the counted body): F1-esg-sustainability (750 words), F2-steel-equivalency-matrix (839), F3-anonymised-case-studies (637), F4-commercial-vehicle-forgings (712, improves the existing /commercial-vehicle orphan), E1-transmission-and-driveline (647), E2-electric-mobility (615).
 > - **Owner decisions needed before any publish:** F3 cases are scaffolds, FACTS has no project histories, so the owner must confirm each matches a real project or approve them as generic capability scenarios. F2 equivalents are general engineering reference (no VFL grade-equivalence claim; first column only is from FACTS Materials); a metallurgist should spot-check rows. F1: confirm Pune rooftop is 150 kW; park name, metering and use by the plants stay unpublished; no emissions or share figures. Each draft lists its own owner questions.
@@ -719,3 +724,9 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 
 ## 27 Nov 2026 step F accuracy fixes (F1 ESG, F2 steel matrix)
 Applied seven review fixes to content-drafts/F1-esg-sustainability-DRAFT.md and F2-steel-equivalency-matrix-DRAFT.md (see HANDOVER). Drafts only; nothing published.
+
+## 27 Nov 2026, F3 research: real closed-die case studies and input form (executor, research only)
+- Added content-drafts/F3-research-real-case-studies-and-input-form-INTERNAL.md (internal, not for publication). Sources read by Firecrawl scrape: three FIA Design Engineering Center case studies (Nos. 12, 4, 9) and one open-access paper (Cao et al., Manufacturing Review 2025). Summaries only; no text copied.
+- Kinds covered: conversion plus qualification (No. 12), cost and weight (No. 4), near-net process optimisation (No. 9), defect-driven redesign by simulation (Cao). Gap logged: no public PPAP case found.
+- Form: 32 fields; permission-needed fields 24, 25, 26, 27, 28, 30. F3 guessed fields listed against form field numbers.
+- Noted against INTERNATIONAL-PLAN.md section 8 step F (F3 remains drafted, unpublishable pending real inputs). Plan file itself not edited. Reviewer verification pending.

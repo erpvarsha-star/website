@@ -14,6 +14,8 @@
 >
 > - **City rename (26 Nov):** "Chhatrapati Sambhajinagar (Aurangabad)" is live on visible text across all 55 pages, the footer and the blogs (`AURANGABAD-RENAME-PLAN.md`). Open: P14 (renamed SEO tags saved but not rendering), P11 (legacy FAQ edits, Yash), P13 (off-site, Yash).
 >
+> **NEW 27 Nov 2026: Ahrefs audit (32 issues, 17 new) + prompt scan (9/10 at 0%, ISO prompt 14%).** Full plan in `AuditFixPlan_27NOV2026_2242.md` (32/32 rows, 10/10 prompts, root causes + permanent guardrails). **PLAN ONLY: awaiting Yash's approval/GO; SEO writes frozen until the manifest + lint exist.**
+>
 > **Open, in order** (details in `pending.md` and `PHASE4-PLAN.md`)
 > 1. **Yash, 5 minutes (P4b):** FAQ app → edit "What forging processes does Varsha Forgings offer?" → "Varsha Forgings provides hot closed-die forging solutions supported by its press and hammer systems." → Save.
 > 2. **Yash: run Sited.** Everything API-fixable is live and verified; the only expected residue is the Maharashtra FAQ sentence until P4b is done.
@@ -369,3 +371,7 @@ Branch `rename-csn` on VflWebsite (not merged, main untouched). Commits: 6aa94e3
 
 ### 2026-11-26: City rename to Chhatrapati Sambhajinagar (Aurangabad)
 Owner decisions are in FACTS.md: official spelling, short form for titles, URL kept. Audit: 510 live hits. Release VflWebsite d07e5eb covered source edits, the server-side rule (25/25 tests) and 3 blog posts; content-ops patched SEO on 10 items. Re-check after republish 78dd6ec: footer 0, body 0 (outside the FAQ widget), blogs 0. 49 hits remain: 31 SEO tags saved but not rendered (P14, parked after 2 publishes), 15 legacy FAQ widget items or their mirrored JSON-LD (P11, owner), 2 FAQ-widget "plant visit" answers, and the homepage addressLocality (part of P14).
+
+### 2026-11-27 — Ahrefs audit + AI prompt scan reviewed
+- Inputs: Ahrefs Site Audit 27 Nov (vs 20 Nov): 32 issue types, 17 new; errors = 4 orphan pages, 2 noindex pages in sitemap, 1 3XX in sitemap. Prompt scan 27 Nov: 9/10 prompts 0%, "certified forging manufacturer ISO approved" 14% (first movement off the 0% baseline).
+- Wrote `AuditFixPlan_27NOV2026_2242.md`: per-row coverage matrix with hypotheses, fixes, gates and recurrence guards; 8 root causes; guardrails G1–G8 (SEO manifest, CI lint, post-publish site-health crawl, Definition of Done, exceptions register, reconciliation); stability item S1 (legacy FAQ widget API ends 31 Dec 2026); decisions D1–D6. No site changes made. Status: awaiting owner approval.

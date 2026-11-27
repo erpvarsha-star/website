@@ -1,5 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 27 Nov 2026 step A credential + Person wave WRITTEN (live verification pending) (READ THIS FIRST; supersedes the "Not emitted" lines below for CQI-9, ARAI, RDSO, AIFI years)
+> - **Wix writes (STATIC_PAGE, full tag set, publish:true, one page per call):** `/` (plew4) hasCredential now SEVEN (IATF 16949, ISO 9001:2015, ISO 45001:2018, ISO 14001:2015, CQI-9, ARAI, RDSO; the three new carry no dates, revision numbers, reference numbers, part names or issuing bodies). `/company-profile` (unlvj) Person: memberOf OrganizationRole President of AIFI, startDate 2024, no endDate (current), description states term 2024-26; jobTitle unchanged "CEO & Director". Other nodes untouched.
+> - **Measured:** PATCH 200 both; API GET read-back JSON-LD identical to payload; plew4 2,868 chars, unlvj 1,916 chars (both under 4,096); tag counts unchanged (4 and 4); one @id (#organization) per page, no duplicates. No solar/ESG, PED, Maxility/KCTR, CIN, machine counts.
+> - **NOT verified:** live Firecrawl scrape timed out 4 times at the 60s tool limit (pending.md P27). Reviewer must confirm live parse before step A is marked done. Next: step B.
+
+
 > ## HANDOVER: 27 Nov 2026 owner answers recorded, forward queue set (READ THIS FIRST; supersedes the A10 block below on RDSO, CQI-9, ARAI, AIFI years, solar)
 > - **Record-keeping only this step:** no Wix writes, no VflWebsite push. Yash answered 16 questions on 27 Nov 2026; all are in FACTS.md under "Owner answers 27 Nov 2026" with source [Y] (CQI-9 held, no dates; ARAI claimable without part names, owner's framing verbatim; AIFI president, currently serving, term 2024-26, years now publishable; RDSO added with no reference number; GBP exists for both plants; solar = Pune rooftop (150 kW as FACTS records) + 5 MW owned plant in a solar park; export order EU/Germany, North America, Middle East and Africa, SE Asia/Japan/Korea deprioritised; anonymised case studies only; no MOQ number; no group schema; PED/AD 2000 not applicable).
 > - **Decisions:** CLAUDE.md Wix API row corrected (real cap 12,000 chars per JSON-LD script, no whole-tag-set cap, 4,096 kept as house policy). P10 DROPPED (pending.md; never re-raise). P25 lift noindex, DECIDED but pending identification (show Yash what is on both pages first; lift nothing yet). P26 authorised for a Velo collapse() code attempt. P19/P23 (and a P20 attempt, expected Editor-only) authorised for ONE bounded code attempt each, two-failure rule explicitly overridden for that one attempt. Apollo/Lusha DEFERRED to Q1 2027. INTERNATIONAL-PLAN.md section 5 is fully closed.
@@ -669,3 +675,7 @@ Both are visible body text (Editor-only), not reachable by any API channel — s
 - **INTERNATIONAL-PLAN.md:** R4, R5, R6, R10 marked superseded/closed; A10 credential list extended; section 5 rewritten as fully closed with each answer against its question (PED/AD 2000 struck, Apollo noted); Wave 4 unblocked; new section 8 forward queue A-H.
 - **PHASE3-PLAN.md** status row added; **NEXT-SESSION.md** rewritten (was stale, dated 26 Nov).
 - No gate scripts apply (no content drafts). No Opus bulk reading.
+
+
+## 27 Nov 2026, step A credential and Person wave (executor)
+- Wrote plew4 and unlvj as in HANDOVER; GET before (4 tags each) and after equal; sizes 2,868 / 1,916. Firecrawl live check failed 4x (timeout), logged as P27. Not marked done.

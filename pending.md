@@ -1,5 +1,8 @@
 # Pending — failed twice or blocked, do not retry without the listed unblock
 
+## OPEN 27 Nov 2026, step A live verification
+- P27: live Firecrawl check of `/` and `/company-profile` JSON-LD (step A) timed out at 60s on 4 attempts (rawHtml, query format, waitFor 6000 and 3000). Wix API read-back is equal to payload and publish returned 200. Unblock: reviewer retries Firecrawl later (or ssr-check) and confirms 7 credentials on `/` and Person memberOf on `/company-profile`; revert via the 27 Nov A10 payloads (schema-payloads/plew4.json) on any regression.
+
 ## OPEN at end of 26 Nov session 3
 | # | Item | Owner | Next step |
 |---|---|---|---|

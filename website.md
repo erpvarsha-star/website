@@ -1,5 +1,11 @@
 # Varsha Forgings — GEO/AI-Visibility Fix Log
 
+> ## HANDOVER: 27 Nov 2026 F4 /commercial-vehicle LIVE via Velo W6 (READ THIS FIRST; adds to the blocks below)
+> - **/commercial-vehicle published** (VflWebsite 84310a2 content + H1, 6d1c68c typo op; both Publish runs success). Page-level H2 `comp-m39vir8w` ("Product > Commercial Vehicle") replaced by F4 copy via new module `src/public/w6ops-toof5.js` (ops key `toof5`, page file wired). Live (Firecrawl rawHtml, maxAge 0, ~10s; first scrape right after the publish still showed the old page, propagation took a few minutes): DOM h1 = 1 (H1 retag/set took), body about 946 words incl. chrome, all 10 other product labels unchanged (counts identical before/after), header/footer present.
+> - **Typo fix:** `itemLabelSub` text-match op (the proven item-scoped one, NOT itemLabelById). Before: 'Secotr Shaft' 4 (2 items x label+aria), 'Sector Shaft' 2. After: 'Secotr Shaft' 0, 'Sector Shaft' 6; Ball Joint 3, Drop Arm 6, Housing Cover 3, Ball Stud 3, End Body Turning 3, Bearing Bush 3, Eye End 3, Gear Primary Helical 3, Tow Hook 3 unchanged. Shipped as a separate release so it could be reverted alone.
+> - **Dropped from the draft:** nothing. Every claim traced to FACTS.md (customers, Daimler 2016 and 2023, Ashok Leyland Medal 2023, ARAI wording verbatim without part names, CQI-9 undated, MOQ project-dependent). Only edit: 'CMM, a coordinate measuring machine' reworded to 'Faro Arm CMM, a CMM' (FACTS lists both). Added internal links (contact page plus 6 related pages). No solar/ESG, PED, Maxility/KCTR, machine counts, CIN.
+> - **Not touched:** noindex (the served HTML had no robots meta in this scrape; P25 sweep owns it). Title/meta unchanged (live meta already names Daimler and Ashok Leyland). Reviewer to confirm visually (layout/overlap of the long body above the repeater not screenshot-checked).
+
 > ## HANDOVER: 27 Nov 2026 F2 second verification pass applied (READ THIS FIRST; adds to the block below)
 > - **Drafting only: no Wix writes, no VflWebsite push.** F2 steel matrix (INTERNATIONAL-PLAN.md section 8 step F): global indicative-only caveat added at the top of page copy; 16MnCr5 JIS SCr415 replaced by SCM420 approx.; BS cells dropped ("none confirmed") for EN31 (sources dispute 534A99 vs 535A99) and 16MnCr5 (527M17 unverified); approx. hedges added to EN8, EN9, EN31, 20MnCr5, 16MnCr5, SAE8620, AISI 1045 rows; F11 and F22 shown by composition only, DIN/EN mapping removed as unverified. Column 1 untouched. Reviewer to re-check; metallurgist sign-off still needed.
 
@@ -736,3 +742,7 @@ Applied seven review fixes to content-drafts/F1-esg-sustainability-DRAFT.md and 
 
 ## 27 Nov 2026 - F2 steel matrix second verification pass (INTERNATIONAL-PLAN.md section 8 step F)
 Edited content-drafts/F2-steel-equivalency-matrix-DRAFT.md only. Fixes: 16MnCr5 JIS to SCM420 approx.; EN31 and 16MnCr5 BS cells dropped as disputed/unverified; hedging added to EN9, SAE8620, 20MnCr5, 16MnCr5 plus EN8, EN31, AISI 1045 (found unhedged); F11/F22 DIN/EN mapping removed; global caveat added at top of page copy; key updated. check-wordcount 550 PASS (1017 words in page copy).
+
+## 27 Nov 2026 - F4 /commercial-vehicle published (executor, INTERNATIONAL-PLAN.md section 8 step F)
+- VflWebsite: new w6ops-toof5.js, import and W6_OPS['toof5'] in w6content.js, W6 block in `Commercial Vehicle.toof5.js`. Release 1 84310a2 (content + H1), release 2 6d1c68c (itemLabelSub Secotr -> Sector). Lint clean, 5 test files pass. Both Publish runs success.
+- Live read-back: see HANDOVER. DOM h1 1, Secotr 0, Sector 6, 9 other label strings unchanged. No revert needed.

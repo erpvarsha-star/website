@@ -27,6 +27,8 @@ Steel Grade Equivalency Matrix for Forged Components: DIN/EN, SAE/AISI and BS
 
 ## Page copy
 
+**Read this first.** Cross-standard equivalents are indicative only. No row in this table is an exact match: carbon, manganese, chromium, nickel and molybdenum ranges, residual-element limits and required mechanical properties differ from one standard to the next, and a grade that is close in one respect can be outside the other standard's limits in another. Before you rely on a grade for a design or an order, confirm it against the actual standard and the specification that applies to your part.
+
 ### H2: How to Read This Matrix
 
 Engineers buying forgings across borders meet the same steel under several names. A drawing from a European plant may say 42CrMo4. A North American drawing may say AISI 4140. An older British drawing may say EN19. This matrix lines up the carbon and alloy steels that Varsha Forgings lists, so you can see the family a grade belongs to and check that your drawing and our quotation mean the same material.
@@ -35,27 +37,27 @@ Read it as a map, not a contract. Equivalent grades are close in chemistry and p
 
 ### H2: The Matrix
 
-Columns run in the order most of our buyers use: DIN/EN first, then SAE/AISI, then BS, then JIS. The first column is the grade as we list it. "None close" means we do not give a close equivalent.
+Columns run in the order most of our buyers use: DIN/EN first, then SAE/AISI, then BS, then JIS. The first column is the grade as we list it. "approx." marks the nearest commonly cited grade, not an exact match. "None close" means we do not give a close equivalent, and "none confirmed" means published sources disagree or we could not verify one, so we show nothing rather than guess. The F11 and F22 rows are given by nominal composition; we do not state a DIN/EN designation for them.
 
 | Grade we list | DIN / EN designation (material no.) | SAE / AISI / ASTM | BS (older BS 970) | JIS |
 |---|---|---|---|---|
-| EN8 | C45 / C40 range (1.0503 / 1.0511), approx. | 1040 to 1045 | 080M40 | S45C approx. |
-| EN9 | C55 (1.0535), approx. | 1055 | 070M55 | S55C |
+| EN8 | C45 / C40 range (1.0503 / 1.0511), approx. | 1040 to 1045 approx. | 080M40 approx. | S45C approx. |
+| EN9 | C55 (1.0535), approx. | 1055 approx. | 070M55 approx. | S55C approx. |
 | EN19 | 42CrMo4 (1.7225) approx. | 4140 approx. | 709M40 / 708M40 | SCM440 |
 | EN24 | 34CrNiMo6 (1.6582) approx. | 4340 approx. | 817M40 | SNCM439 approx. |
-| EN31 | 100Cr6 (1.3505) | 52100 | 534A99 | SUJ2 |
+| EN31 | 100Cr6 (1.3505), approx. | 52100 approx. | none confirmed | SUJ2 approx. |
 | 42CrMo4 | 42CrMo4 (1.7225) | 4140 | 708M40 / 709M40 | SCM440 |
 | AISI 4140 | 42CrMo4 (1.7225) | 4140 | 708M40 / 709M40 | SCM440 |
-| 20MnCr5 | 20MnCr5 (1.7147) | 5120 approx. | 527M20 | SMnC420 approx. |
-| 16MnCr5 | 16MnCr5 (1.7131) | 5115 approx. | 527M17 approx. | SCr415 approx. |
+| 20MnCr5 | 20MnCr5 (1.7147) | 5120 approx. | 527M20 approx. | SMnC420 approx. |
+| 16MnCr5 | 16MnCr5 (1.7131) | 5115 approx. (5120 also cited) | none confirmed | SCM420 approx. |
 | 20MoCr4E | 20MoCr4 (1.7321) | 4118 / 4120 approx. | none close | none close |
-| SAE8620 | 21NiCrMo2 (1.6523) | 8620 | 805M20 | SNCM220 |
+| SAE8620 | 21NiCrMo2 (1.6523), approx. | 8620 | 805M20 approx. | SNCM220 approx. |
 | SAE1541 | 36Mn5 (1.1167), approx. | 1541 | 150M36 approx. | SMn438 approx. |
-| AISI 1045 | C45 (1.0503) | 1045 | 080M46 approx. | S45C |
+| AISI 1045 | C45 (1.0503), approx. | 1045 | 080M46 approx. | S45C approx. |
 | ASTM A105 | P250GH (1.0460), nearest | A105 | none close | SFVC2A approx. |
 | LF2 | EN 10222 low-temperature family, no one-to-one | ASTM A350 LF2 | none close | none close |
-| F11 | 13CrMo4-5 (1.7335), approx. | ASTM F11 (1.25Cr-0.5Mo) | none close | none close |
-| F22 | 10CrMo9-10 (1.7380), approx. | ASTM F22 (2.25Cr-1Mo) | none close | none close |
+| F11 | DIN/EN mapping not verified; nominal 1.25Cr-0.5Mo | ASTM F11 (1.25Cr-0.5Mo) | none close | none close |
+| F22 | DIN/EN mapping not verified; nominal 2.25Cr-1Mo | ASTM F22 (2.25Cr-1Mo) | none close | none close |
 
 ### H2: Which Grade Family Does What
 
